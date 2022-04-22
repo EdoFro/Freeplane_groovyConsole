@@ -1,6 +1,6 @@
 <map version="freeplane 1.9.13">
 <!--To view this file, download free mind mapping software Freeplane from https://www.freeplane.org -->
-<node TEXT="groovyConsole" LOCALIZED_STYLE_REF="AutomaticLayout.level.root" ID="ID_1090958577" LINK="https://github.com/EdoFro/Freeplane_groovy_Console_2" STYLE="bubble" SHAPE_HORIZONTAL_MARGIN="10 pt" SHAPE_VERTICAL_MARGIN="15 pt" MAX_WIDTH="15 cm"><hook NAME="MapStyle" background="#f9f9f8" zoom="0.909">
+<node TEXT="groovyConsole" LOCALIZED_STYLE_REF="AutomaticLayout.level.root" ID="ID_1090958577" LINK="https://github.com/EdoFro/Freeplane_groovyConsole" STYLE="bubble" SHAPE_HORIZONTAL_MARGIN="10 pt" SHAPE_VERTICAL_MARGIN="15 pt" MAX_WIDTH="15 cm"><hook NAME="MapStyle" background="#f9f9f8">
     <properties show_icon_for_attributes="true" edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff" mapUsesOwnSaveOptions="true" save_modification_times="false" save_last_visited_node="default" show_note_icons="true" associatedTemplateLocation="template:/vis01%20light_nord_template%20vEdo.mm" save_folding="never_save_folding" fit_to_viewport="false"/>
 
 <map_styles>
@@ -8,7 +8,7 @@
 <font SIZE="24"/>
 <stylenode LOCALIZED_TEXT="styles.predefined" POSITION="right" STYLE="bubble">
 <stylenode LOCALIZED_TEXT="default" ID="ID_506805493" ICON_SIZE="12 pt" FORMAT_AS_HYPERLINK="false" COLOR="#484747" BACKGROUND_COLOR="#efefef" STYLE="bubble" SHAPE_HORIZONTAL_MARGIN="5 px" SHAPE_VERTICAL_MARGIN="2 px" NUMBERED="false" FORMAT="STANDARD_FORMAT" TEXT_ALIGN="DEFAULT" BORDER_WIDTH_LIKE_EDGE="false" BORDER_WIDTH="1.9 px" BORDER_COLOR_LIKE_EDGE="false" BORDER_COLOR="#8fbcbb" BORDER_DASH_LIKE_EDGE="true" BORDER_DASH="SOLID" VGAP_QUANTITY="2 px" MAX_WIDTH="10 cm" MIN_WIDTH="0 cm">
-<arrowlink SHAPE="CUBIC_CURVE" COLOR="#bf5d3f" WIDTH="2" TRANSPARENCY="200" DASH="" FONT_SIZE="9" FONT_FAMILY="SansSerif" DESTINATION="ID_506805493" STARTINCLINATION="45 pt;-12.75 pt;" ENDINCLINATION="57 pt;30 pt;" STARTARROW="NONE" ENDARROW="DEFAULT"/>
+<arrowlink SHAPE="CUBIC_CURVE" COLOR="#bf5d3f" WIDTH="2" TRANSPARENCY="200" DASH="" FONT_SIZE="9" FONT_FAMILY="SansSerif" DESTINATION="ID_506805493" STARTINCLINATION="45 pt;-12 pt;" ENDINCLINATION="57 pt;30 pt;" STARTARROW="NONE" ENDARROW="DEFAULT"/>
 <font NAME="Dialog" SIZE="10" BOLD="false" STRIKETHROUGH="false" ITALIC="false"/>
 <edge STYLE="horizontal" COLOR="#2e3440" WIDTH="1" DASH="SOLID"/>
 <richcontent CONTENT-TYPE="plain/auto" TYPE="DETAILS"/>
@@ -179,7 +179,24 @@
   </body>
 </html>
 </richcontent>
-<node TEXT="New groovy console for Freeplane:&#xa;A groovy console that runs on groovy 4 and java 17 to replace wikdshell add-on" ID="ID_1758279751"/>
+<node ID="ID_1758279751"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <h2>
+      <b>New <u>groovy console</u>&nbsp;for Freeplane:</b>
+    </h2>
+    <p>
+      A <b>groovy console</b>&nbsp;that runs on groovy 4 and java 17 to replace <b>wikdshell</b>&nbsp;&nbsp;add-on
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
 </node>
 <node TEXT="changes" POSITION="left" ID="ID_1212993495"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
 <html>
@@ -534,12 +551,12 @@
 <attribute NAME="menuTitleKey" VALUE="addons.${name}.openWithGroovyConsole"/>
 <attribute NAME="menuLocation" VALUE="${addonsMenu}/addons.${name}"/>
 <attribute NAME="executionMode" VALUE="on_single_node"/>
-<attribute NAME="keyboardShortcut" VALUE=""/>
+<attribute NAME="keyboardShortcut" VALUE="control alt G"/>
 <attribute NAME="execute_scripts_without_asking" VALUE="true"/>
 <attribute NAME="execute_scripts_without_file_restriction" VALUE="true"/>
 <attribute NAME="execute_scripts_without_write_restriction" VALUE="true"/>
-<attribute NAME="execute_scripts_without_exec_restriction" VALUE="true"/>
-<attribute NAME="execute_scripts_without_network_restriction" VALUE="true"/>
+<attribute NAME="execute_scripts_without_exec_restriction" VALUE="false"/>
+<attribute NAME="execute_scripts_without_network_restriction" VALUE="false"/>
 </node>
 </node>
 <node TEXT="lib" POSITION="right" ID="ID_991651799"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
@@ -580,7 +597,7 @@
 </richcontent>
 <node TEXT="groovyConsole.jar" ID="ID_2004676"/>
 </node>
-<node TEXT="zips" POSITION="right" ID="ID_1220285819"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
+<node TEXT="zips" POSITION="right" ID="ID_1220285819" VGAP_QUANTITY="2 px"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
 <html>
   <head>
     

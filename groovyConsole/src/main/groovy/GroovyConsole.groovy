@@ -6,9 +6,10 @@ import javax.swing.JOptionPane
 import groovy.console.ui.Console
 import groovy.swing.SwingBuilder
 
+import org.freeplane.core.util.MenuUtils            as menuUtils
 import org.freeplane.plugin.script.FreeplaneScriptBaseClass
 import org.freeplane.plugin.script.FreeplaneScriptBaseClass.ConfigProperties
-import org.freeplane.core.util.MenuUtils            as menuUtils
+import org.freeplane.plugin.script.GroovyScript
 
 
 class GroovyConsole {
@@ -29,7 +30,7 @@ class GroovyConsole {
     }
 
     def static openGroovyConsole(n, bind, inPut, source, boolean fs = fullScreen){
-        Console console = new Console(bind)
+        Console console = new Console(null, bind, GroovyScript.createCompilerConfiguration())
         console.setVariable('map', n.map)
         console.setVariable('root', n.map.root)
         console.setVariable('source', source)
@@ -43,8 +44,10 @@ class GroovyConsole {
 
         console.run()
 
-        //console.setVariable('toolbar',console.toolbar)
         console.setVariable('console',console)
+
+        addButtonsTo(console)
+        console.systemOutInterceptor.start()
 
         switch(inPut?.class){
             case File:
@@ -54,14 +57,12 @@ class GroovyConsole {
                 console.inputArea.setText(inPut + "\n\n\n")
                break;
         }
-        
-        addButtonsTo(console)
-        
         console.setDirty(false)        
+        
         if (fs) console.getFrame().setExtendedState(JFrame.MAXIMIZED_BOTH);
+
         // updateTitle(console)
         
-        //n.createChild('rrr').note = console.toolbar.components.collect{it.class.name?:'xx'}.join('\n ')
         
     }
 
@@ -293,25 +294,39 @@ class GroovyConsole {
                 icon : menuUtils.getMenuItemIcon('IconAction.emoji-2198'),
                 actionPerformed : {e -> writeTo(console)},
              )
+        def refreshCompilerConfiguration = swing.button(
+                label : 'refresh Compiler Config',
+                toolTipText : "refreshes the Freeplane's GroovyScript Compiler Configuration (libraries included)",
+                icon : menuUtils.getMenuItemIcon('IconAction.emoji-1F4DA'),
+                actionPerformed : {e -> console.shell = updateNode(console.shell, GroovyScript.createCompilerConfiguration())},
+             )
+        // def startSysOutInterceptor = swing.button(
+                // label : 'starts System.out interceptor',
+                // toolTipText : "restarts the systemOutInterceptor so that print() and println() get written in the log file or the console \nuse 'View / Capture Standard Output' to direct the output to the console or to Freeplane's log.0 file",
+                // icon : menuUtils.getMenuItemIcon('IconAction.emoji-1F5A8'),
+                // actionPerformed : {e -> console.systemOutInterceptor.start()},
+             // )
         
         console.toolbar.addSeparator()   
         console.toolbar.add(writeButton)
         console.toolbar.add(writeAsButton)
+        console.toolbar.addSeparator()   
+        console.toolbar.add(refreshCompilerConfiguration)
+    //    console.toolbar.add(startSysOutInterceptor)
     }
 
-/*
-    def static updateTitle(console) {
-        def frame = console.frame
-        def vars  = console.shell
-		if (frame.properties.containsKey('title')) {
-			if (console.scriptFile != null)
-				frame.title = "File: ${console.scriptFile.name} ${(console.dirty ? ' * ': '')} - $DEFAULT_WINDOW_TITLE"
-			else if (vars['targetNode'])
-				frame.title = "${vars['targetNodeText']} ${(console.dirty ? ' * ': '')} - $DEFAULT_WINDOW_TITLE"
-			else
-				frame.title = "${(console.dirty ? ' * ': '')} - $DEFAULT_WINDOW_TITLE"		}
-	}
-*/
+    // def static updateTitle(console) {
+        // def frame = console.frame
+        // def vars  = console.shell
+		// if (frame.properties.containsKey('title')) {
+			// if (console.scriptFile != null)
+				// frame.title = "File: ${console.scriptFile.name} ${(console.dirty ? ' * ': '')} - $DEFAULT_WINDOW_TITLE"
+			// else if (vars['targetNode'])
+				// frame.title = "${vars['targetNodeText']} ${(console.dirty ? ' * ': '')} - $DEFAULT_WINDOW_TITLE"
+			// else
+				// frame.title = "${(console.dirty ? ' * ': '')} - $DEFAULT_WINDOW_TITLE"		}
+	// }
+
 //end:
 
 }

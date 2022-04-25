@@ -25,7 +25,9 @@ groovyConsole is a new add-on that opens a Groovy Console and works with Groovy 
 
 ![groovyConsole_001.png](https://github.com/EdoFro/Freeplane_groovyConsole/blob/main/resources/groovyConsole_001.png)
 
-Additional features:
+-----
+
+### 2.1. Additional features:
 
 * It has access to the Freeplane API so it can interact with nodes and maps
 * It can load / save script files to be used with Freeplane
@@ -43,7 +45,7 @@ The script stays in the map, so you don't need to have multiple files for you sh
 
 -----
 
-### 2.1. Additional buttons
+### 2.2. Additional buttons
 
 |Button|Label|Description|
 |----|----|----|
@@ -54,7 +56,7 @@ The script stays in the map, so you don't need to have multiple files for you sh
 
 -----
 
-### 2.2. Add-on configuration
+### 2.3. Add-on configuration
 
 ![groovyConsole_009.png](https://github.com/EdoFro/Freeplane_groovyConsole/blob/main/resources/groovyConsole_009.png)
 

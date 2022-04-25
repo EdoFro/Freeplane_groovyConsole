@@ -210,7 +210,7 @@ blockquote {
 </richcontent>
 <node TEXT="= edofro.MarkDownHelper.MDH.linkedNodeText(node)" STYLE_REF="MarkdownHelperLink" ID="ID_987299215" LINK="#ID_1941588475"/>
 </node>
-<node TEXT="Additional features:" ID="ID_318297123"/>
+<node TEXT="Additional features:" ID="ID_318297123">
 <node TEXT="list" STYLE_REF="MarkdownHelperNode" ID="ID_1192258797"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
 <html>
   <head>
@@ -275,6 +275,7 @@ blockquote {
 </html>
 </richcontent>
 <node TEXT="= edofro.MarkDownHelper.MDH.linkedNodeText(node)" STYLE_REF="MarkdownHelperLink" ID="ID_1045513064" LINK="#ID_1693528645"/>
+</node>
 </node>
 <node TEXT="Additional buttons" ID="ID_484549552">
 <node TEXT="table" STYLE_REF="MarkdownHelperNode" ID="ID_515923454"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">

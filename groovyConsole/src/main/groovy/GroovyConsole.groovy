@@ -300,19 +300,19 @@ class GroovyConsole {
                 icon : menuUtils.getMenuItemIcon('IconAction.emoji-1F4DA'),
                 actionPerformed : {e -> console.shell = updateNode(console.shell, GroovyScript.createCompilerConfiguration())},
              )
-        // def startSysOutInterceptor = swing.button(
-                // label : 'starts System.out interceptor',
-                // toolTipText : "restarts the systemOutInterceptor so that print() and println() get written in the log file or the console \nuse 'View / Capture Standard Output' to direct the output to the console or to Freeplane's log.0 file",
-                // icon : menuUtils.getMenuItemIcon('IconAction.emoji-1F5A8'),
-                // actionPerformed : {e -> console.systemOutInterceptor.start()},
-             // )
+        def startSysOutInterceptor = swing.button(
+                label : 'starts System.out interceptor',
+                toolTipText : "restarts the systemOutInterceptor so that print() and println() get written in the log file or the console \nuse 'View / Capture Standard Output' to direct the output to the console or to Freeplane's log.0 file",
+                icon : menuUtils.getMenuItemIcon('IconAction.emoji-1F5A8'),
+                actionPerformed : {e -> console.systemOutInterceptor.start()},
+             )
         
         console.toolbar.addSeparator()   
         console.toolbar.add(writeButton)
         console.toolbar.add(writeAsButton)
         console.toolbar.addSeparator()   
         console.toolbar.add(refreshCompilerConfiguration)
-    //    console.toolbar.add(startSysOutInterceptor)
+        console.toolbar.add(startSysOutInterceptor)
     }
 
     // def static updateTitle(console) {

@@ -18,7 +18,8 @@ class GroovyConsole {
 
     static final String attributeForExtensions =  new ConfigProperties().getProperty('groovyConsole_attributeForExtensions','file_ext')
     static final Boolean fullScreen = new ConfigProperties().getBooleanProperty('groovyConsole_fullScreen')
-    //static final int defaultWriteTo = new ConfigProperties().getBooleanProperty('groovyConsole_defaultWriteTo') // TODO: agregar a preferences
+    static final Boolean showLabels = new ConfigProperties().getBooleanProperty('groovyConsole_showButtonLabels')
+    static final int defaultWriteTo = new ConfigProperties().getIntProperty('groovyConsole_defaultWriteTo',1)
     static String DEFAULT_WINDOW_TITLE = 'Groovy Console for Freeplane'
 
 //end:
@@ -47,7 +48,6 @@ class GroovyConsole {
         console.setVariable('console',console)
 
         addButtonsTo(console)
-        console.systemOutInterceptor.start()
 
         switch(inPut?.class){
             case File:
@@ -61,6 +61,7 @@ class GroovyConsole {
         
         if (fs) console.getFrame().setExtendedState(JFrame.MAXIMIZED_BOTH);
 
+        console.systemOutInterceptor.start()
         // updateTitle(console)
         
         
@@ -211,11 +212,14 @@ class GroovyConsole {
 
     def static changeTarget(vars){
         def nodo = whichNode(vars)
-        def source = whichSource()
-        if(nodo && source) {
-            vars['targetNode'] = nodo
-            vars['source']     = source
-            vars['targetNodeText'] = "Node '${nodo.text}'".toString()
+        def source
+        if (nodo) {
+            source = whichSource()
+            if(source) {
+                vars['targetNode'] = nodo
+                vars['source']     = source
+                vars['targetNodeText'] = "Node '${nodo.text}'".toString()
+            }
         }
         return [nodo, source]
     }
@@ -247,7 +251,7 @@ class GroovyConsole {
         def titulo = "Sending Script to MindMap"
         def pregunta =  "Select destination in node:"
         String[] opciones = ["node's note","node's 'script1' attribute"]
-        def resp = showInputDialogList(opciones, titulo, pregunta, 0) //TODO: opción por default debe estar en preferences
+        def resp = showInputDialogList(opciones, titulo, pregunta, defaultWriteTo)
         switch (resp) {
             case 0:
                 source = 'note'
@@ -283,25 +287,25 @@ class GroovyConsole {
         SwingBuilder swing      = new SwingBuilder()
          
         def writeButton = swing.button(
-                label : 'send to node',
+                label : showLabels? 'send to node' : null ,
                 toolTipText : 'save script into node',
                 icon : menuUtils.getMenuItemIcon('IconAction.emoji-2B07'),
                 actionPerformed : {e -> write(console)},
              )
         def writeAsButton = swing.button(
-                label : 'config + send to node',
+                label : showLabels? 'config + send to node' : null ,
                 toolTipText : 'select options and save script into node',
                 icon : menuUtils.getMenuItemIcon('IconAction.emoji-2198'),
                 actionPerformed : {e -> writeTo(console)},
              )
         def refreshCompilerConfiguration = swing.button(
-                label : 'refresh Compiler Config',
+                label : showLabels? 'refresh Compiler Config' : null ,
                 toolTipText : "refreshes the Freeplane's GroovyScript Compiler Configuration (libraries included)",
                 icon : menuUtils.getMenuItemIcon('IconAction.emoji-1F4DA'),
                 actionPerformed : {e -> console.shell = updateNode(console.shell, GroovyScript.createCompilerConfiguration())},
              )
         def startSysOutInterceptor = swing.button(
-                label : 'starts System.out interceptor',
+                label : showLabels? 'starts System.out interceptor' : null ,
                 toolTipText : "restarts the systemOutInterceptor so that print() and println() get written in the log file or the console \nuse 'View / Capture Standard Output' to direct the output to the console or to Freeplane's log.0 file",
                 icon : menuUtils.getMenuItemIcon('IconAction.emoji-1F5A8'),
                 actionPerformed : {e -> console.systemOutInterceptor.start()},

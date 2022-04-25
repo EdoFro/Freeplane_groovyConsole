@@ -1,5 +1,11 @@
 # History
 
+## v0.0.4
+
+* Added preference's parameters for Option Panel
+ - show button's labels
+ - default write to destination
+
 ## v0.0.3
 
 * bug corrections

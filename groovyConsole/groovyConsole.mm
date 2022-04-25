@@ -8,7 +8,7 @@
 <font SIZE="24"/>
 <stylenode LOCALIZED_TEXT="styles.predefined" POSITION="right" STYLE="bubble">
 <stylenode LOCALIZED_TEXT="default" ID="ID_506805493" ICON_SIZE="12 pt" FORMAT_AS_HYPERLINK="false" COLOR="#484747" BACKGROUND_COLOR="#efefef" STYLE="bubble" SHAPE_HORIZONTAL_MARGIN="5 px" SHAPE_VERTICAL_MARGIN="2 px" NUMBERED="false" FORMAT="STANDARD_FORMAT" TEXT_ALIGN="DEFAULT" BORDER_WIDTH_LIKE_EDGE="false" BORDER_WIDTH="1.9 px" BORDER_COLOR_LIKE_EDGE="false" BORDER_COLOR="#8fbcbb" BORDER_DASH_LIKE_EDGE="true" BORDER_DASH="SOLID" VGAP_QUANTITY="2 px" MAX_WIDTH="10 cm" MIN_WIDTH="0 cm">
-<arrowlink SHAPE="CUBIC_CURVE" COLOR="#bf5d3f" WIDTH="2" TRANSPARENCY="200" DASH="" FONT_SIZE="9" FONT_FAMILY="SansSerif" DESTINATION="ID_506805493" STARTINCLINATION="45 pt;-9 pt;" ENDINCLINATION="57 pt;30 pt;" STARTARROW="NONE" ENDARROW="DEFAULT"/>
+<arrowlink SHAPE="CUBIC_CURVE" COLOR="#bf5d3f" WIDTH="2" TRANSPARENCY="200" DASH="" FONT_SIZE="9" FONT_FAMILY="SansSerif" DESTINATION="ID_506805493" STARTINCLINATION="45 pt;-7.5 pt;" ENDINCLINATION="57 pt;30 pt;" STARTARROW="NONE" ENDARROW="DEFAULT"/>
 <font NAME="Dialog" SIZE="10" BOLD="false" STRIKETHROUGH="false" ITALIC="false"/>
 <edge STYLE="horizontal" COLOR="#2e3440" WIDTH="1" DASH="SOLID"/>
 <richcontent CONTENT-TYPE="plain/auto" TYPE="DETAILS"/>
@@ -78,7 +78,7 @@
 </hook>
 <attribute_layout NAME_WIDTH="108 pt" VALUE_WIDTH="262.49999 pt"/>
 <attribute NAME="name" VALUE="groovyConsole"/>
-<attribute NAME="version" VALUE="v0.0.2"/>
+<attribute NAME="version" VALUE="v0.0.3"/>
 <attribute NAME="author" VALUE="EdoFro"/>
 <attribute NAME="freeplaneVersionFrom" VALUE="v1.10.0"/>
 <attribute NAME="freeplaneVersionTo" VALUE=""/>
@@ -216,6 +216,10 @@
 <node TEXT="Added &quot;GroovyScript plugin&quot; &apos;s compiler configuration:&#xa;It adds access to Freeplane&apos;s and add-ons libraries" ID="ID_1508478809"/>
 <node TEXT="Added button to refresh Compiler Configuration" ID="ID_979188845"/>
 <node TEXT="Added console.systemOutInterceptor.start() to capture print() and println() in the output console or the log.0 file" ID="ID_1465596146"/>
+</node>
+<node TEXT="v0.0.3" ID="ID_1793390525">
+<node TEXT="bug corrections" ID="ID_52993962"/>
+<node TEXT="Added button &apos;starts System.out interceptor&apos;:&#xa;it restarts the systemOutInterceptor so that print() and println() get written in the log file or the console" ID="ID_500698045"/>
 </node>
 </node>
 <node TEXT="license" FOLDED="true" POSITION="left" ID="ID_1329071946" VGAP_QUANTITY="2 px"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
@@ -558,7 +562,7 @@
 <attribute NAME="keyboardShortcut" VALUE="control alt G"/>
 <attribute NAME="execute_scripts_without_asking" VALUE="true"/>
 <attribute NAME="execute_scripts_without_file_restriction" VALUE="true"/>
-<attribute NAME="execute_scripts_without_write_restriction" VALUE="false"/>
+<attribute NAME="execute_scripts_without_write_restriction" VALUE="true"/>
 <attribute NAME="execute_scripts_without_exec_restriction" VALUE="false"/>
 <attribute NAME="execute_scripts_without_network_restriction" VALUE="false"/>
 </node>

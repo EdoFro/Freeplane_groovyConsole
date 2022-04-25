@@ -1,5 +1,11 @@
 # History
 
+## v0.0.3
+
+* bug corrections
+* Added button 'starts System.out interceptor':
+it restarts the systemOutInterceptor so that print() and println() get written in the log file or the console
+
 ## v0.0.2
 
 * Added "GroovyScript plugin" 's compiler configuration:

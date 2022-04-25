@@ -108,7 +108,7 @@ blockquote {
 </hook>
 <node TEXT="Freeplane_groovyConsole" POSITION="right" ID="ID_108058596" LINK="file:/C:/Users/Edo/Documents/GitHub/Freeplane_groovyConsole">
 <attribute NAME="MarkdownRootFolder" VALUE="file:/C:/Users/Edo/Documents/GitHub/Freeplane_groovyConsole/" OBJECT="java.net.URI|file:/C:/Users/Edo/Documents/GitHub/Freeplane_groovyConsole/"/>
-<attribute NAME="MDHGithubBranch" VALUE="/main/wip"/>
+<attribute NAME="MDHGithubBranch" VALUE="/blob/main"/>
 <attribute NAME="MDHTargetRootPath" VALUE="https://github.com/EdoFro/Freeplane_groovyConsole"/>
 <node TEXT="README.MD" STYLE_REF="MarkdownHelperNode" ID="ID_160804169" LINK="file:/C:/Users/Edo/Documents/GitHub/Freeplane_groovyConsole/README.MD">
 <attribute_layout NAME_WIDTH="138.75 pt" VALUE_WIDTH="42 pt"/>

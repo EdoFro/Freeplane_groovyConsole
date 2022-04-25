@@ -8,7 +8,7 @@
 <font SIZE="24"/>
 <stylenode LOCALIZED_TEXT="styles.predefined" POSITION="right" STYLE="bubble">
 <stylenode LOCALIZED_TEXT="default" ID="ID_506805493" ICON_SIZE="12 pt" FORMAT_AS_HYPERLINK="false" COLOR="#484747" BACKGROUND_COLOR="#efefef" STYLE="bubble" SHAPE_HORIZONTAL_MARGIN="5 px" SHAPE_VERTICAL_MARGIN="2 px" NUMBERED="false" FORMAT="STANDARD_FORMAT" TEXT_ALIGN="DEFAULT" BORDER_WIDTH_LIKE_EDGE="false" BORDER_WIDTH="1.9 px" BORDER_COLOR_LIKE_EDGE="false" BORDER_COLOR="#8fbcbb" BORDER_DASH_LIKE_EDGE="true" BORDER_DASH="SOLID" VGAP_QUANTITY="2 px" MAX_WIDTH="10 cm" MIN_WIDTH="0 cm">
-<arrowlink SHAPE="CUBIC_CURVE" COLOR="#bf5d3f" WIDTH="2" TRANSPARENCY="200" DASH="" FONT_SIZE="9" FONT_FAMILY="SansSerif" DESTINATION="ID_506805493" STARTINCLINATION="45 pt;-7.5 pt;" ENDINCLINATION="57 pt;30 pt;" STARTARROW="NONE" ENDARROW="DEFAULT"/>
+<arrowlink SHAPE="CUBIC_CURVE" COLOR="#bf5d3f" WIDTH="2" TRANSPARENCY="200" DASH="" FONT_SIZE="9" FONT_FAMILY="SansSerif" DESTINATION="ID_506805493" STARTINCLINATION="45 pt;-5.25 pt;" ENDINCLINATION="57 pt;30 pt;" STARTARROW="NONE" ENDARROW="DEFAULT"/>
 <font NAME="Dialog" SIZE="10" BOLD="false" STRIKETHROUGH="false" ITALIC="false"/>
 <edge STYLE="horizontal" COLOR="#2e3440" WIDTH="1" DASH="SOLID"/>
 <richcontent CONTENT-TYPE="plain/auto" TYPE="DETAILS"/>
@@ -42,7 +42,7 @@
 <stylenode LOCALIZED_TEXT="AutomaticLayout.level.root" ID="ID_1209359852" COLOR="#ffffff" BACKGROUND_COLOR="#484747" STYLE="bubble" SHAPE_HORIZONTAL_MARGIN="10 pt" SHAPE_VERTICAL_MARGIN="15 pt" TEXT_ALIGN="CENTER" MAX_WIDTH="5 cm" MIN_WIDTH="3 cm">
 <font SIZE="18"/>
 </stylenode>
-<stylenode LOCALIZED_TEXT="AutomaticLayout.level,1" ID="ID_144205114" COLOR="#eceff4" BACKGROUND_COLOR="#d08770" STYLE="bubble" SHAPE_HORIZONTAL_MARGIN="6 pt" SHAPE_VERTICAL_MARGIN="4 pt" MAX_WIDTH="5.5 cm" MIN_WIDTH="5.5 cm">
+<stylenode LOCALIZED_TEXT="AutomaticLayout.level,1" ID="ID_144205114" COLOR="#eceff4" BACKGROUND_COLOR="#d08770" STYLE="bubble" SHAPE_HORIZONTAL_MARGIN="6 pt" SHAPE_VERTICAL_MARGIN="4 pt" MAX_WIDTH="10 cm" MIN_WIDTH="5.5 cm">
 <font SIZE="14"/>
 </stylenode>
 <stylenode LOCALIZED_TEXT="AutomaticLayout.level,2" ID="ID_159773648" COLOR="#3b4252" BACKGROUND_COLOR="#ebcb8b" MAX_WIDTH="15 cm">
@@ -78,7 +78,7 @@
 </hook>
 <attribute_layout NAME_WIDTH="108 pt" VALUE_WIDTH="262.49999 pt"/>
 <attribute NAME="name" VALUE="groovyConsole"/>
-<attribute NAME="version" VALUE="v0.0.3"/>
+<attribute NAME="version" VALUE="v0.0.4"/>
 <attribute NAME="author" VALUE="EdoFro"/>
 <attribute NAME="freeplaneVersionFrom" VALUE="v1.10.0"/>
 <attribute NAME="freeplaneVersionTo" VALUE=""/>
@@ -212,7 +212,7 @@
 <node TEXT="v0.0.1" FOLDED="true" ID="ID_522947734">
 <node TEXT="Initial release" ID="ID_809404112"/>
 </node>
-<node TEXT="v0.0.2" ID="ID_1912966277">
+<node TEXT="v0.0.2" FOLDED="true" ID="ID_1912966277">
 <node TEXT="Added &quot;GroovyScript plugin&quot; &apos;s compiler configuration:&#xa;It adds access to Freeplane&apos;s and add-ons libraries" ID="ID_1508478809"/>
 <node TEXT="Added button to refresh Compiler Configuration" ID="ID_979188845"/>
 <node TEXT="Added console.systemOutInterceptor.start() to capture print() and println() in the output console or the log.0 file" ID="ID_1465596146"/>
@@ -220,6 +220,9 @@
 <node TEXT="v0.0.3" ID="ID_1793390525">
 <node TEXT="bug corrections" ID="ID_52993962"/>
 <node TEXT="Added button &apos;starts System.out interceptor&apos;:&#xa;it restarts the systemOutInterceptor so that print() and println() get written in the log file or the console" ID="ID_500698045"/>
+</node>
+<node TEXT="v0.0.4" ID="ID_389069576">
+<node TEXT="Added preference&apos;s parameters for Option Panel&#xa; - show button&apos;s labels&#xa; - default write to destination" ID="ID_685472847"/>
 </node>
 </node>
 <node TEXT="license" FOLDED="true" POSITION="left" ID="ID_1329071946" VGAP_QUANTITY="2 px"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
@@ -350,9 +353,12 @@
   </body>
 </html>
 </richcontent>
+<attribute_layout NAME_WIDTH="111 pt" VALUE_WIDTH="51.75 pt"/>
 <attribute NAME="attributeForExtensions" VALUE="string"/>
 <attribute NAME="fullScreen" VALUE="boolean"/>
-<node TEXT="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#xa;&lt;preferences_structure&gt;&#xa;         &lt;tabbed_pane&gt;&#xa;                  &lt;tab name=&quot;plugins&quot;&gt;&#xa;                            &lt;separator name = &quot;${name}&quot;&gt;&#xa;                                    &lt;string name = &quot;${name}_attributeForExtensions&quot;/&gt;&#xa;                                    &lt;boolean name = &quot;${name}_fullScreen&quot;/&gt;&#xa;                           &lt;/separator&gt;&#xa;                  &lt;/tab&gt;&#xa;         &lt;/tabbed_pane&gt;&#xa;&lt;/preferences_structure&gt;" ID="ID_486925025" MAX_WIDTH="20 cm"/>
+<attribute NAME="showButtonLabels" VALUE="boolean"/>
+<attribute NAME="defaultWriteTo" VALUE="number,0,1"/>
+<node TEXT="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#xa;&lt;preferences_structure&gt;&#xa;         &lt;tabbed_pane&gt;&#xa;                  &lt;tab name=&quot;plugins&quot;&gt;&#xa;                            &lt;separator name = &quot;${name}&quot;&gt;&#xa;                                    &lt;string name = &quot;${name}_attributeForExtensions&quot;/&gt;&#xa;                                    &lt;boolean name = &quot;${name}_fullScreen&quot;/&gt;&#xa;                                    &lt;boolean name = &quot;${name}_showButtonLabels&quot;/&gt;&#xa;                                    &lt;number name  = &quot;${name}_defaultWriteTo&quot; min=&quot;0&quot; max=&quot;1&quot;/&gt;&#xa;                           &lt;/separator&gt;&#xa;                  &lt;/tab&gt;&#xa;         &lt;/tabbed_pane&gt;&#xa;&lt;/preferences_structure&gt;" ID="ID_486925025" MAX_WIDTH="20 cm"/>
 </node>
 <node TEXT="default.properties" POSITION="left" ID="ID_250057726"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
 <html>
@@ -377,6 +383,8 @@
 <attribute_layout NAME_WIDTH="148.5 pt" VALUE_WIDTH="49.5 pt"/>
 <attribute NAME="${name}_attributeForExtensions" VALUE="file_ext"/>
 <attribute NAME="${name}_fullScreen" VALUE="true"/>
+<attribute NAME="${name}_showButtonLabels" VALUE="true"/>
+<attribute NAME="${name}_defaultWriteTo" VALUE="1" OBJECT="org.freeplane.features.format.FormattedNumber|1|#0.####"/>
 </node>
 <node TEXT="translations" FOLDED="true" POSITION="left" ID="ID_1204579435"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
 <html>
@@ -410,15 +418,19 @@
   </body>
 </html>
 </richcontent>
-<node TEXT="en" ID="ID_416972964">
-<attribute_layout NAME_WIDTH="228.74999 pt" VALUE_WIDTH="329.24999 pt"/>
-<attribute NAME="addons.${name}" VALUE="groovyConsole"/>
-<attribute NAME="addons.${name}.openWithGroovyConsole" VALUE="Open with groovy console"/>
+<node TEXT="en" ID="ID_565589743">
+<attribute_layout NAME_WIDTH="228.74999 pt" VALUE_WIDTH="554.24998 pt"/>
 <attribute NAME="OptionPanel.separator.${name}" VALUE="groovyConsole"/>
-<attribute NAME="OptionPanel.${name}_attributeForExtensions" VALUE="Attribute for file extensions"/>
-<attribute NAME="OptionPanel.${name}_attributeForExtensions.tooltip" VALUE="Name of the attribute to indicate the file extension associated with the node"/>
 <attribute NAME="OptionPanel.${name}_fullScreen" VALUE="Open in full Screen mode?"/>
+<attribute NAME="addons.${name}" VALUE="groovyConsole"/>
+<attribute NAME="OptionPanel.${name}_showButtonLabels" VALUE="Show console button labels"/>
+<attribute NAME="OptionPanel.${name}_showButtonLabels.tooltip" VALUE="Shows the labels of the buttons added to thr Groovey Console&apos;s toolbar"/>
+<attribute NAME="addons.${name}.openWithGroovyConsole" VALUE="Open with groovy console"/>
+<attribute NAME="OptionPanel.${name}_attributeForExtensions" VALUE="Attribute for file extensions"/>
 <attribute NAME="OptionPanel.${name}_fullScreen.tooltip" VALUE="Groovy Console must open in full screen mode?"/>
+<attribute NAME="OptionPanel.${name}_defaultWriteTo" VALUE="Default writing target (see tooltip)"/>
+<attribute NAME="OptionPanel.${name}_attributeForExtensions.tooltip" VALUE="Name of the attribute to indicate the file extension associated with the node"/>
+<attribute NAME="OptionPanel.${name}_defaultWriteTo.tooltip" VALUE="When writing (saving) a script into a node, the default destination for the script&apos;s code is: (0: node&apos;s note, 1:node&apos;s attribute &quot;script1&quot;)"/>
 </node>
 </node>
 <node TEXT="deinstall" POSITION="left" ID="ID_1482851217"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">

@@ -108,9 +108,9 @@ blockquote {
 </hook>
 <node TEXT="Freeplane_groovyConsole" POSITION="right" ID="ID_108058596" LINK="file:/C:/Users/Edo/Documents/GitHub/Freeplane_groovyConsole">
 <attribute NAME="MarkdownRootFolder" VALUE="file:/C:/Users/Edo/Documents/GitHub/Freeplane_groovyConsole/" OBJECT="java.net.URI|file:/C:/Users/Edo/Documents/GitHub/Freeplane_groovyConsole/"/>
-<attribute NAME="MDHGithubBranch" VALUE="https://github.com/EdoFro/Freeplane_groovyConsole"/>
-<attribute NAME="MDHTargetRootPath" VALUE=""/>
-<node TEXT="README.MD" STYLE_REF="MarkdownHelperNode" ID="ID_160804169" LINK="file:/C:/Users/Edo/Documents/GitHub/Freeplane_groovy_console_2/README.MD">
+<attribute NAME="MDHGithubBranch" VALUE="/main/wip"/>
+<attribute NAME="MDHTargetRootPath" VALUE="https://github.com/EdoFro/Freeplane_groovyConsole"/>
+<node TEXT="README.MD" STYLE_REF="MarkdownHelperNode" ID="ID_160804169" LINK="file:/C:/Users/Edo/Documents/GitHub/Freeplane_groovyConsole/README.MD">
 <attribute_layout NAME_WIDTH="138.75 pt" VALUE_WIDTH="42 pt"/>
 <attribute NAME="headersToUnderline" VALUE="3" OBJECT="org.freeplane.features.format.FormattedNumber|3|#0.####"/>
 <attribute NAME="hideFolded" VALUE="false"/>
@@ -369,7 +369,7 @@ blockquote {
 </node>
 </node>
 <node TEXT="Add-on configuration" ID="ID_1173958944">
-<node TEXT="local image" STYLE_REF="MarkdownHelperNode" ID="ID_1367297767"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
+<node TEXT="local image" STYLE_REF="MarkdownHelperNode" ID="ID_1367297767"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/auto">
 <html>
   <head>
     
@@ -436,26 +436,7 @@ blockquote {
 </node>
 </node>
 </node>
-<node TEXT="README.MD" ID="ID_181733889" LINK="file:/C:/Users/Edo/Documents/GitHub/Freeplane_groovy_console_2/README.MD"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/markdown">
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      # new groovy console for Freeplane
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      A groovy console that runs on groovy 4 and java 17 to replace wikdshell add-on
-    </p>
-    <p>
-      
-    </p>
-  </body>
-</html></richcontent>
+<node TEXT="README.MD" ID="ID_181733889" LINK="file:/C:/Users/Edo/Documents/GitHub/Freeplane_groovyConsole/README.MD"><richcontent TYPE="NOTE" CONTENT-TYPE="plain/markdown"/>
 </node>
 <node TEXT="resources" ID="ID_1818290900" LINK="file:/C:/Users/Edo/Documents/GitHub/Freeplane_groovyConsole/resources/">
 <attribute NAME="lastModifiedTime" VALUE="17-04-22 10:42" OBJECT="org.freeplane.features.format.FormattedDate|2022-04-17T10:42-0400|datetime"/>

@@ -23,7 +23,7 @@ more info about it can be found in the [Groovy Console official page](https://do
 
 groovyConsole is a new add-on that opens a Groovy Console and works with Groovy 4 and can be used with the new versions of Freeplane.
 
-![groovyConsole_001.png](https://github.com/EdoFro/Freeplane_groovyConsole/wip/resources/groovyConsole_001.png)
+![groovyConsole_001.png](https://github.com/EdoFro/Freeplane_groovyConsole/blob/wip/resources/groovyConsole_001.png)
 
 Additional features:
 
@@ -33,13 +33,13 @@ Additional features:
 * If you select a node that has a script and then you open the groovy console, the script will be automatically loaded in the console editor
 * You can edit the script and 'save' them back to the node
 * You can choose if you want to save the script in its original node or into the currently selected one
-   * ![groovyConsole_002.png](https://github.com/EdoFro/Freeplane_groovyConsole/wip/resources/groovyConsole_002.png)
+   * ![groovyConsole_002.png](https://github.com/EdoFro/Freeplane_groovyConsole/blob/wip/resources/groovyConsole_002.png)
 * You can choose if you want to 'save' it as a note or as 'script1' attribute
-   * ![groovyConsole_003.png](https://github.com/EdoFro/Freeplane_groovyConsole/wip/resources/groovyConsole_003.png)
+   * ![groovyConsole_003.png](https://github.com/EdoFro/Freeplane_groovyConsole/blob/wip/resources/groovyConsole_003.png)
 
 The script stays in the map, so you don't need to have multiple files for you short scripts
 
-![groovyConsole_004.png](https://github.com/EdoFro/Freeplane_groovyConsole/wip/resources/groovyConsole_004.png)
+![groovyConsole_004.png](https://github.com/EdoFro/Freeplane_groovyConsole/blob/wip/resources/groovyConsole_004.png)
 
 -----
 
@@ -47,16 +47,16 @@ The script stays in the map, so you don't need to have multiple files for you sh
 
 |Button|Label|Description|
 |----|----|----|
-|![groovyConsole_005.png](https://github.com/EdoFro/Freeplane_groovyConsole/wip/resources/groovyConsole_005.png)|Send to node|Save script into node|
-|![groovyConsole_006.png](https://github.com/EdoFro/Freeplane_groovyConsole/wip/resources/groovyConsole_006.png)|Config + send to node|Select options and save script into node|
-|![groovyConsole_007.png](https://github.com/EdoFro/Freeplane_groovyConsole/wip/resources/groovyConsole_007.png)|Refresh Compiler Config|Refreshes the Freeplane's **GroovyScript Compiler Configuration**<br>(libraries included)|
-|![groovyConsole_008.png](https://github.com/EdoFro/Freeplane_groovyConsole/wip/resources/groovyConsole_008.png)|Starts System.out interceptor|Restarts the ```systemOutInterceptor``` so that ```print()``` and ```println()``` get written in the log file or the console.<br>Use '**View / Capture Standard Output**' to direct the output to the console or to Freeplane's *log.0* file|
+|![groovyConsole_005.png](https://github.com/EdoFro/Freeplane_groovyConsole/blob/wip/resources/groovyConsole_005.png)|Send to node|Save script into node|
+|![groovyConsole_006.png](https://github.com/EdoFro/Freeplane_groovyConsole/blob/wip/resources/groovyConsole_006.png)|Config + send to node|Select options and save script into node|
+|![groovyConsole_007.png](https://github.com/EdoFro/Freeplane_groovyConsole/blob/wip/resources/groovyConsole_007.png)|Refresh Compiler Config|Refreshes the Freeplane's **GroovyScript Compiler Configuration**<br>(libraries included)|
+|![groovyConsole_008.png](https://github.com/EdoFro/Freeplane_groovyConsole/blob/wip/resources/groovyConsole_008.png)|Starts System.out interceptor|Restarts the ```systemOutInterceptor``` so that ```print()``` and ```println()``` get written in the log file or the console.<br>Use '**View / Capture Standard Output**' to direct the output to the console or to Freeplane's *log.0* file|
 
 -----
 
 ### 2.2. Add-on configuration
 
-![groovyConsole_009.png](https://github.com/EdoFro/Freeplane_groovyConsole/wip/resources/groovyConsole_009.png)
+![groovyConsole_009.png](https://github.com/EdoFro/Freeplane_groovyConsole/blob/wip/resources/groovyConsole_009.png)
 
 You can configure some parameters of the add-on in Freeplane 's preferences.
 

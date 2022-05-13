@@ -8,7 +8,7 @@
 <font SIZE="24"/>
 <stylenode LOCALIZED_TEXT="styles.predefined" POSITION="right" STYLE="bubble">
 <stylenode LOCALIZED_TEXT="default" ID="ID_506805493" ICON_SIZE="12 pt" FORMAT_AS_HYPERLINK="false" COLOR="#484747" BACKGROUND_COLOR="#efefef" STYLE="bubble" SHAPE_HORIZONTAL_MARGIN="5 px" SHAPE_VERTICAL_MARGIN="2 px" NUMBERED="false" FORMAT="STANDARD_FORMAT" TEXT_ALIGN="DEFAULT" BORDER_WIDTH_LIKE_EDGE="false" BORDER_WIDTH="1.9 px" BORDER_COLOR_LIKE_EDGE="false" BORDER_COLOR="#8fbcbb" BORDER_DASH_LIKE_EDGE="true" BORDER_DASH="SOLID" VGAP_QUANTITY="2 px" MAX_WIDTH="10 cm" MIN_WIDTH="0 cm">
-<arrowlink SHAPE="CUBIC_CURVE" COLOR="#bf5d3f" WIDTH="2" TRANSPARENCY="200" DASH="" FONT_SIZE="9" FONT_FAMILY="SansSerif" DESTINATION="ID_506805493" STARTINCLINATION="45 pt;-5.25 pt;" ENDINCLINATION="57 pt;30 pt;" STARTARROW="NONE" ENDARROW="DEFAULT"/>
+<arrowlink SHAPE="CUBIC_CURVE" COLOR="#bf5d3f" WIDTH="2" TRANSPARENCY="200" DASH="" FONT_SIZE="9" FONT_FAMILY="SansSerif" DESTINATION="ID_506805493" STARTINCLINATION="45 pt;-3.75 pt;" ENDINCLINATION="57 pt;30 pt;" STARTARROW="NONE" ENDARROW="DEFAULT"/>
 <font NAME="Dialog" SIZE="10" BOLD="false" STRIKETHROUGH="false" ITALIC="false"/>
 <edge STYLE="horizontal" COLOR="#2e3440" WIDTH="1" DASH="SOLID"/>
 <richcontent CONTENT-TYPE="plain/auto" TYPE="DETAILS"/>
@@ -78,9 +78,9 @@
 </hook>
 <attribute_layout NAME_WIDTH="108 pt" VALUE_WIDTH="262.49999 pt"/>
 <attribute NAME="name" VALUE="groovyConsole"/>
-<attribute NAME="version" VALUE="v0.0.4"/>
+<attribute NAME="version" VALUE="v0.0.5"/>
 <attribute NAME="author" VALUE="EdoFro"/>
-<attribute NAME="freeplaneVersionFrom" VALUE="v1.10.0"/>
+<attribute NAME="freeplaneVersionFrom" VALUE="v1.9.5"/>
 <attribute NAME="freeplaneVersionTo" VALUE=""/>
 <attribute NAME="updateUrl" VALUE="${homepage}/releases/latest/download/version.properties"/>
 <attribute NAME="downloadUrl" VALUE="${homepage}/releases/download/${version}/"/>
@@ -158,8 +158,7 @@
       </li>
     </ul>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <hook NAME="accessories/plugins/AutomaticLayout.properties" VALUE="ALL"/>
 <node TEXT="description" POSITION="left" ID="ID_522572094"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
 <html>
@@ -177,8 +176,7 @@
       To translate the description you have to define a translation for the key 'addons.${name}.description'.
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node ID="ID_1758279751"><richcontent TYPE="NODE">
 
 <html>
@@ -207,8 +205,7 @@
       Change log of this add-on: append one node for each noteworthy version and put the details for each version into a child node.
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node TEXT="v0.0.1" FOLDED="true" ID="ID_522947734">
 <node TEXT="Initial release" ID="ID_809404112"/>
 </node>
@@ -217,12 +214,15 @@
 <node TEXT="Added button to refresh Compiler Configuration" ID="ID_979188845"/>
 <node TEXT="Added console.systemOutInterceptor.start() to capture print() and println() in the output console or the log.0 file" ID="ID_1465596146"/>
 </node>
-<node TEXT="v0.0.3" ID="ID_1793390525">
+<node TEXT="v0.0.3" FOLDED="true" ID="ID_1793390525">
 <node TEXT="bug corrections" ID="ID_52993962"/>
 <node TEXT="Added button &apos;starts System.out interceptor&apos;:&#xa;it restarts the systemOutInterceptor so that print() and println() get written in the log file or the console" ID="ID_500698045"/>
 </node>
-<node TEXT="v0.0.4" ID="ID_389069576">
+<node TEXT="v0.0.4" FOLDED="true" ID="ID_389069576">
 <node TEXT="Added preference&apos;s parameters for Option Panel&#xa; - show button&apos;s labels&#xa; - default write to destination" ID="ID_685472847"/>
+</node>
+<node TEXT="v0.0.5" ID="ID_1330604699">
+<node TEXT="Changed &apos;freeplaneVersionFrom&apos; to a lower number, because I realized it worked in v1.9 versions too" ID="ID_989562001"/>
 </node>
 </node>
 <node TEXT="license" FOLDED="true" POSITION="left" ID="ID_1329071946" VGAP_QUANTITY="2 px"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
@@ -241,8 +241,7 @@
       The License text has to be entered as a child of the <i>'license'</i>&nbsp;node, either as plain text or as HTML.
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node TEXT="MIT License&#xa;&#xa;Copyright (c) 2022 Eduardo Frohlich.&#xa;&#xa;Permission is hereby granted, free of charge, to any person obtaining a copy&#xa;of this software and associated documentation files (the &quot;Software&quot;), to deal&#xa;in the Software without restriction, including without limitation the rights&#xa;to use, copy, modify, merge, publish, distribute, sublicense, and/or sell&#xa;copies of the Software, and to permit persons to whom the Software is&#xa;furnished to do so, subject to the following conditions:&#xa;&#xa;The above copyright notice and this permission notice shall be included in all&#xa;copies or substantial portions of the Software.&#xa;&#xa;THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR&#xa;IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,&#xa;FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE&#xa;AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER&#xa;LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,&#xa;OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE&#xa;SOFTWARE." ID="ID_797385026"/>
 </node>
 <node TEXT="preferences.xml" FOLDED="true" POSITION="left" ID="ID_1801404411"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
@@ -351,8 +350,7 @@
       </tr>
     </table>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <attribute_layout NAME_WIDTH="111 pt" VALUE_WIDTH="51.75 pt"/>
 <attribute NAME="attributeForExtensions" VALUE="string"/>
 <attribute NAME="fullScreen" VALUE="boolean"/>
@@ -378,8 +376,7 @@
       </li>
     </ul>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <attribute_layout NAME_WIDTH="148.5 pt" VALUE_WIDTH="49.5 pt"/>
 <attribute NAME="${name}_attributeForExtensions" VALUE="file_ext"/>
 <attribute NAME="${name}_fullScreen" VALUE="true"/>
@@ -416,8 +413,7 @@
       </li>
     </ul>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node TEXT="en" ID="ID_565589743">
 <attribute_layout NAME_WIDTH="228.74999 pt" VALUE_WIDTH="554.24998 pt"/>
 <attribute NAME="OptionPanel.separator.${name}" VALUE="groovyConsole"/>
@@ -443,8 +439,7 @@
       List of files and/or directories to remove on uninstall
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <attribute NAME="delete" VALUE="${installationbase}/addons/${name}.script.xml"/>
 <attribute NAME="delete" VALUE="${installationbase}/addons/${name}/scripts/openWithGroovyConsole.groovy"/>
 <attribute NAME="delete" VALUE="${installationbase}/addons/${name}/lib/groovyConsole.jar"/>
@@ -564,8 +559,7 @@
       &nbsp;&nbsp;- In any case set execute_scripts_without_asking to true unless you want to annoy users.
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node TEXT="openWithGroovyConsole.groovy" ID="ID_313603667">
 <attribute_layout NAME_WIDTH="204.74999 pt" VALUE_WIDTH="188.24999 pt"/>
 <attribute NAME="menuTitleKey" VALUE="addons.${name}.openWithGroovyConsole"/>
@@ -613,8 +607,7 @@
       &nbsp;- The files will be processed in the sequence as seen in the map.
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node TEXT="groovyConsole.jar" ID="ID_2004676"/>
 </node>
 <node TEXT="zips" FOLDED="true" POSITION="right" ID="ID_1220285819" VGAP_QUANTITY="2 px"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
@@ -651,8 +644,7 @@
       &nbsp;- The files will be processed in the sequence as seen in the map.
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node TEXT="doc" ID="ID_779236736"/>
 <node TEXT="icons" ID="ID_424245267"/>
 <node TEXT="templates" ID="ID_1924220664"/>
@@ -687,8 +679,7 @@
       Images can be added automatically by releaseAddOn.groovy or must be uploaded into the map via the script <i>Tools-&gt;Scripts-&gt;Insert Binary</i>&nbsp;since they have to be (base64) encoded as simple strings.
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node TEXT="actions" POSITION="right" ID="ID_1390909797"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
 <html>
@@ -698,8 +689,7 @@
   <body>
     Direct links to menu commands
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node TEXT="Build add-on" ID="ID_1382502819" LINK="menuitem:_addons.devtools.checkAddOn_on_single_node"/>
 <node TEXT="Package add-on for publication" ID="ID_882245033" LINK="menuitem:_addons.devtools.releaseAddOn_on_single_node"/>
 <node TEXT="Export Translations" ID="ID_527611229" LINK="menuitem:_addons.devtools.exportTranslations_on_single_node"/>

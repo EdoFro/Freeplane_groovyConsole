@@ -1,5 +1,9 @@
 # History
 
+## v0.0.5
+
+* Changed 'freeplaneVersionFrom' to a lower number, because I realized it worked in v1.9 versions too
+
 ## v0.0.4
 
 * Added preference's parameters for Option Panel

@@ -7,6 +7,7 @@ import groovy.console.ui.Console
 import groovy.swing.SwingBuilder
 
 import org.freeplane.core.util.MenuUtils            as menuUtils
+import org.freeplane.core.ui.components.UITools     as ui
 import org.freeplane.plugin.script.FreeplaneScriptBaseClass
 import org.freeplane.plugin.script.FreeplaneScriptBaseClass.ConfigProperties
 import org.freeplane.plugin.script.GroovyScript
@@ -265,6 +266,14 @@ class GroovyConsole {
         return source
     }
 
+	def static reLoadScriptFile(console){
+		def file = console.scriptFile
+		if (file){
+			if (ui.showConfirmDialog(null, "Do you want to reload the file?", 'please confirm',1) == 0) {console.loadScriptFile(file)}
+		} else {
+		
+		}
+	}
 //end:
 
 //region: UI
@@ -310,6 +319,12 @@ class GroovyConsole {
                 icon : menuUtils.getMenuItemIcon('IconAction.emoji-1F5A8'),
                 actionPerformed : {e -> console.systemOutInterceptor.start()},
              )
+        def reLoadButton = swing.button(
+                label : showLabels? 'reload from file' : null ,
+                toolTipText : 'reload script from file',
+                icon : menuUtils.getMenuItemIcon('IconAction.emoji-1F4C1'),
+                actionPerformed : {e -> reLoadScriptFile(console)},
+             )
         
         console.toolbar.addSeparator()   
         console.toolbar.add(writeButton)
@@ -317,6 +332,8 @@ class GroovyConsole {
         console.toolbar.addSeparator()   
         console.toolbar.add(refreshCompilerConfiguration)
         console.toolbar.add(startSysOutInterceptor)
+        console.toolbar.addSeparator()   
+        console.toolbar.add(reLoadButton)
     }
 
     // def static updateTitle(console) {

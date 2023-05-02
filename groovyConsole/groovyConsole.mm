@@ -8,7 +8,7 @@
 <font SIZE="24"/>
 <stylenode LOCALIZED_TEXT="styles.predefined" POSITION="bottom_or_right" STYLE="bubble">
 <stylenode LOCALIZED_TEXT="default" ID="ID_506805493" ICON_SIZE="12 pt" FORMAT_AS_HYPERLINK="false" COLOR="#484747" BACKGROUND_COLOR="#efefef" STYLE="bubble" SHAPE_HORIZONTAL_MARGIN="5 px" SHAPE_VERTICAL_MARGIN="2 px" NUMBERED="false" FORMAT="STANDARD_FORMAT" TEXT_ALIGN="DEFAULT" BORDER_WIDTH_LIKE_EDGE="false" BORDER_WIDTH="1.9 px" BORDER_COLOR_LIKE_EDGE="false" BORDER_COLOR="#8fbcbb" BORDER_DASH_LIKE_EDGE="true" BORDER_DASH="SOLID" VGAP_QUANTITY="2 px" MAX_WIDTH="10 cm" MIN_WIDTH="0 cm">
-<arrowlink SHAPE="CUBIC_CURVE" COLOR="#bf5d3f" WIDTH="2" TRANSPARENCY="200" DASH="" FONT_SIZE="9" FONT_FAMILY="SansSerif" DESTINATION="ID_506805493" STARTINCLINATION="45 pt;-2.25 pt;" ENDINCLINATION="57 pt;30 pt;" STARTARROW="NONE" ENDARROW="DEFAULT"/>
+<arrowlink SHAPE="CUBIC_CURVE" COLOR="#bf5d3f" WIDTH="2" TRANSPARENCY="200" DASH="" FONT_SIZE="9" FONT_FAMILY="SansSerif" DESTINATION="ID_506805493" STARTINCLINATION="45 pt;-1.5 pt;" ENDINCLINATION="57 pt;30 pt;" STARTARROW="NONE" ENDARROW="DEFAULT"/>
 <font NAME="Dialog" SIZE="10" BOLD="false" STRIKETHROUGH="false" ITALIC="false"/>
 <edge STYLE="horizontal" COLOR="#2e3440" WIDTH="1" DASH="SOLID"/>
 <richcontent CONTENT-TYPE="plain/auto" TYPE="DETAILS"/>
@@ -78,7 +78,7 @@
 </hook>
 <attribute_layout NAME_WIDTH="99.75 pt" VALUE_WIDTH="228.74999 pt"/>
 <attribute NAME="name" VALUE="groovyConsole"/>
-<attribute NAME="version" VALUE="v0.0.5"/>
+<attribute NAME="version" VALUE="v0.0.6"/>
 <attribute NAME="author" VALUE="EdoFro"/>
 <attribute NAME="freeplaneVersionFrom" VALUE="v1.9.5"/>
 <attribute NAME="freeplaneVersionTo" VALUE=""/>
@@ -224,11 +224,13 @@
 <node TEXT="v0.0.4" FOLDED="true" ID="ID_389069576">
 <node TEXT="Added preference&apos;s parameters for Option Panel&#xa; - show button&apos;s labels&#xa; - default write to destination" ID="ID_685472847"/>
 </node>
-<node TEXT="v0.0.5" ID="ID_1330604699">
+<node TEXT="v0.0.5" FOLDED="true" ID="ID_1330604699">
 <node TEXT="Changed &apos;freeplaneVersionFrom&apos; to a lower number, because I realized it worked in v1.9 versions too" ID="ID_989562001"/>
-<node TEXT="Added a command to call groovyConsole without restrictions" ID="ID_1564405201"/>
-<node TEXT="Added button to reload script from disk." ID="ID_168761023"/>
-<node TEXT="Now it can handle absolute and relative links to script files" ID="ID_1701952121"/>
+</node>
+<node TEXT="v0.0.6" ID="ID_1358044780">
+<node TEXT="Added a command to call groovyConsole without restrictions" POSITION="top_or_left" ID="ID_1564405201"/>
+<node TEXT="Added button to reload script from disk." POSITION="top_or_left" ID="ID_168761023"/>
+<node TEXT="Now it can handle absolute and relative links to script files" POSITION="top_or_left" ID="ID_1701952121"/>
 </node>
 </node>
 <node TEXT="license" FOLDED="true" POSITION="top_or_left" ID="ID_1329071946" VGAP_QUANTITY="2 px"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">

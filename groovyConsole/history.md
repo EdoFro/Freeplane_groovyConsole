@@ -1,11 +1,14 @@
 # History
 
-## v0.0.5
+## v0.0.6
 
-* Changed 'freeplaneVersionFrom' to a lower number, because I realized it worked in v1.9 versions too
 * Added a command to call groovyConsole without restrictions
 * Added button to reload script from disk.
 * Now it can handle absolute and relative links to script files
+
+## v0.0.5
+
+* Changed 'freeplaneVersionFrom' to a lower number, because I realized it worked in v1.9 versions too
 
 ## v0.0.4
 

@@ -160,7 +160,8 @@ class GroovyConsole {
     }
 
     def static extensionFromNodeFile(n){
-        (n.link && n.link.uri && n.link.uri.scheme == 'file')?extensionFromFilePath(n.link.uri.path):null
+		def uri = n.link? n.mindMap.file.toURI().resolve(n.link.uri) : null
+        (uri?.scheme == 'file')? extensionFromFilePath(n.link.uri.path) : null
     }
 
     def static isExtensionNode(n, extension){

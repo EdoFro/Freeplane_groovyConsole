@@ -427,6 +427,7 @@
 <attribute NAME="OptionPanel.${name}_defaultWriteTo" VALUE="Default writing target (see tooltip)"/>
 <attribute NAME="OptionPanel.${name}_attributeForExtensions.tooltip" VALUE="Name of the attribute to indicate the file extension associated with the node"/>
 <attribute NAME="OptionPanel.${name}_defaultWriteTo.tooltip" VALUE="When writing (saving) a script into a node, the default destination for the script&apos;s code is: (0: node&apos;s note, 1:node&apos;s attribute &quot;script1&quot;)"/>
+<attribute NAME="addons.${name}.openWithGroovyConsoleFull" VALUE="Open with groovy console without restrictions (not recomended)"/>
 </node>
 </node>
 <node TEXT="deinstall" POSITION="left" ID="ID_1482851217"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
@@ -571,6 +572,18 @@
 <attribute NAME="execute_scripts_without_write_restriction" VALUE="true"/>
 <attribute NAME="execute_scripts_without_exec_restriction" VALUE="false"/>
 <attribute NAME="execute_scripts_without_network_restriction" VALUE="false"/>
+</node>
+<node TEXT="openWithGroovyConsoleFull.groovy" ID="ID_241081477">
+<attribute_layout NAME_WIDTH="183.74999 pt" VALUE_WIDTH="182.24999 pt"/>
+<attribute NAME="menuTitleKey" VALUE="addons.${name}.openWithGroovyConsoleFull"/>
+<attribute NAME="menuLocation" VALUE="${addonsMenu}/addons.${name}"/>
+<attribute NAME="executionMode" VALUE="on_single_node"/>
+<attribute NAME="keyboardShortcut" VALUE="shift control alt G"/>
+<attribute NAME="execute_scripts_without_asking" VALUE="true"/>
+<attribute NAME="execute_scripts_without_file_restriction" VALUE="true"/>
+<attribute NAME="execute_scripts_without_write_restriction" VALUE="true"/>
+<attribute NAME="execute_scripts_without_exec_restriction" VALUE="true"/>
+<attribute NAME="execute_scripts_without_network_restriction" VALUE="true"/>
 </node>
 </node>
 <node TEXT="lib" FOLDED="true" POSITION="right" ID="ID_991651799"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">

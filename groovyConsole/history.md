@@ -3,6 +3,7 @@
 ## v0.0.5
 
 * Changed 'freeplaneVersionFrom' to a lower number, because I realized it worked in v1.9 versions too
+* Added a command to call groovyConsole without restrictions
 
 ## v0.0.4
 

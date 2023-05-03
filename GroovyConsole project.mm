@@ -762,6 +762,7 @@
     </p>
   </body>
 </html></richcontent>
+<node TEXT="groovyConsole-v0.0.6.addon.mm" ID="ID_129298950" CREATED="1682993472623" MODIFIED="1682993472623" LINK="groovyConsole/groovyConsole-v0.0.6.addon.mm"/>
 <node TEXT="groovyConsole-v0.0.5.addon.mm" ID="ID_1282780823" CREATED="1682722943129" MODIFIED="1682992502630" LINK="groovyConsole/groovyConsole-v0.0.5.addon.mm">
 <attribute NAME="lastModifiedTime" VALUE="01-05-23 21:51" OBJECT="org.freeplane.features.format.FormattedDate|2023-05-01T21:51-0400|datetime"/>
 <attribute NAME="lastAccessTime" VALUE="01-05-23 21:51" OBJECT="org.freeplane.features.format.FormattedDate|2023-05-01T21:51-0400|datetime"/>
@@ -1220,8 +1221,8 @@ It adds access to Freeplane&apos;s and add-ons libraries
 <attribute NAME="modifiedFile" VALUE="true"/>
 </node>
 </node>
-<node TEXT="new imported files" STYLE_REF="newFolderImport" ID="ID_1776199503" CREATED="1650206190070" MODIFIED="1682986702316">
-<attribute NAME="log_MDI" VALUE="2" OBJECT="org.freeplane.features.format.FormattedNumber|2|#0.####"/>
+<node TEXT="new imported files" STYLE_REF="newFolderImport" ID="ID_1776199503" CREATED="1650206190070" MODIFIED="1682993474490">
+<attribute NAME="log_MDI" VALUE="2" OBJECT="org.freeplane.features.format.FormattedObject|org.freeplane.plugin.script.proxy.ConvertibleNumber&amp;#x7c;2|number:decimal:#0.####"/>
 <richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
 <html>
   <head>
@@ -1229,7 +1230,7 @@ It adds access to Freeplane&apos;s and add-ons libraries
   </head>
   <body>
     <p>
-      Inated:&#xa0;&#xa0;&#xa0;2023-05-01&#xa0;&#xa0;20:18:19
+      Inated:&#xa0;&#xa0;&#xa0;2023-05-01&#xa0;&#xa0;22:11:12
     </p>
     <p>
       
@@ -1238,13 +1239,13 @@ It adds access to Freeplane&apos;s and add-ons libraries
       ------- Files: --------&#xa0;
     </p>
     <p>
-      &#xa0;1 node(s) pointing to unexisting/filtered files (marked as 'broken')
+      &#xa0;0 node(s) pointing to unexisting/filtered files (marked as 'broken')
     </p>
     <p>
       &#xa0;0 link(s) corrected in nodes
     </p>
     <p>
-      &#xa0;7 new file(s) imported as node(s)&#xa0;
+      &#xa0;1 new file(s) imported as node(s)&#xa0;
     </p>
     <p>
       &#xa0;0 node(s) moved/renamed in drive
@@ -1268,7 +1269,7 @@ It adds access to Freeplane&apos;s and add-ons libraries
       
     </p>
     <p>
-      0.7 seconds
+      0.5 seconds
     </p>
     <p>
       
@@ -1288,7 +1289,7 @@ It adds access to Freeplane&apos;s and add-ons libraries
   </body>
 </html>
 </richcontent>
-<node TEXT="groovyConsole" ID="ID_845421088" CREATED="1682724826815" MODIFIED="1682986709561" LINK="#ID_634873088"/>
+<node TEXT="groovyConsole" ID="ID_670940487" CREATED="1682993472607" MODIFIED="1682993472623" LINK="groovyConsole/"/>
 </node>
 <node TEXT="versión instalada en AddOns" STYLE_REF="locked" ID="ID_1056009098" CREATED="1616167740215" MODIFIED="1616167740215"/>
 <node TEXT="Tareas varias" STYLE_REF="Organizador" ID="ID_1570336119" CREATED="1641397479073" MODIFIED="1652454874119">

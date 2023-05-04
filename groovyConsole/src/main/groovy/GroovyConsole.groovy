@@ -7,24 +7,24 @@ import groovy.console.ui.Console
 import groovy.swing.SwingBuilder
 
 import org.freeplane.core.util.MenuUtils            as menuUtils
-import org.freeplane.plugin.script.FreeplaneScriptBaseClass
 import org.freeplane.plugin.script.FreeplaneScriptBaseClass.ConfigProperties
 import org.freeplane.plugin.script.GroovyScript
 
 
+
+
 class GroovyConsole {
 
-//region: properties
+//region properties
 
     static final String attributeForExtensions =  new ConfigProperties().getProperty('groovyConsole_attributeForExtensions','file_ext')
     static final Boolean fullScreen = new ConfigProperties().getBooleanProperty('groovyConsole_fullScreen')
     static final Boolean showLabels = new ConfigProperties().getBooleanProperty('groovyConsole_showButtonLabels')
     static final int defaultWriteTo = new ConfigProperties().getIntProperty('groovyConsole_defaultWriteTo',1)
-    static String DEFAULT_WINDOW_TITLE = 'Groovy Console for Freeplane'
 
-//end:
+//endregion
 
-//region: open
+//region open
     def static openGroovyConsole(n, bind){
         def scriptInfo = scriptAndSourceFromNode(n)
         openGroovyConsole(n, bind, scriptInfo[0], scriptInfo[1], fullScreen)
@@ -52,47 +52,46 @@ class GroovyConsole {
         switch(inPut?.class){
             case File:
                 console.loadScriptFile(inPut)
-                break;
+                break
             case String:
                 console.inputArea.setText(inPut + "\n\n\n")
-               break;
+               break
         }
         console.setDirty(false)        
         
-        if (fs) console.getFrame().setExtendedState(JFrame.MAXIMIZED_BOTH);
+        if (fs) console.getFrame().setExtendedState(JFrame.MAXIMIZED_BOTH)
 
         console.systemOutInterceptor.start()
         // updateTitle(console)
-        
-        
+
     }
 
-//end:
+//endregion
 
-//region: updateNode
+//region updateNode
 
 
-    def static GroovyShell updateNode(shell,config){
-        def variables = shell.context.variables;
-        def selected = variables.c.selected;
+    static GroovyShell updateNode(shell, config){
+        def variables = shell.context.variables
+        def selected = variables.c.selected
         if(selected != null && variables.node != selected) {
-            Binding binding = new Binding(new HashMap(variables));
-            binding.variables.node = selected;
-            binding.variables.map  = selected.map;
-            binding.variables.root = selected.map.root;
-            GroovyShell updatedShell = new GroovyShell(null, binding, config);
-            return updatedShell;
+            Binding binding = new Binding(new HashMap(variables))
+            binding.variables.node = selected
+            binding.variables.map  = selected.map
+            binding.variables.root = selected.map.root
+            GroovyShell updatedShell = new GroovyShell(null, binding, config)
+            return updatedShell
         }
         else
-            return shell;
+            return shell
     }
     
-//end:
+//endregion
 
-//region: groovy Node
+//region groovy Node
 
     def static isGroovyNode(n){
-        return (isExtensionNode(n, 'groovy') || n['script1']?true:false)
+        return isExtensionNode(n, 'groovy') || n['script1']
     }
 
     def static scriptFromNode(n){
@@ -121,9 +120,9 @@ class GroovyConsole {
         return [script, source]
     }
     
-//end:
+//endregion
 
-//region: get/set/is extension from selected node
+//region get/set/is extension from selected node
 
     def static extensionFromNode(n){
         extensionFromAttribute(n)?:extensionFromDetails(n)?:extensionFromText(n)?:null
@@ -146,11 +145,11 @@ class GroovyConsole {
     }
 
     def static setExtension(n, ext){
-        // If it's allready defined --> do nothing
+        // If it's already defined --> do nothing
         if(extensionFromAttribute(n)==ext || extensionFromDetails(n)==ext) return
         //I prefer it in this order:
             // only details
-            // if details are beeing Used --> attribute
+            // if details are being Used --> attribute
         if(!n.details){
             n.details = '.' + ext
         } else {
@@ -168,9 +167,9 @@ class GroovyConsole {
         return ext?ext==extension:false
     }
 
-//end:
+//endregion
 
-//region: write in nodes
+//region write in nodes
 
     def static write(console){
         def vars   = console.shell.context
@@ -191,7 +190,7 @@ class GroovyConsole {
     }
 
     def static write(console, nodo, source){
-        if(!nodo || !source) return 'no se pudo guardar'
+        if(!nodo || !source) return 'it couldn\'t be saved'
         def script = console.inputArea.getText().toString().trim()
         def msg
         switch(source){
@@ -233,15 +232,15 @@ class GroovyConsole {
         switch (resp) {
             case 0:
                 nodo = vars['targetNode']
-                break;
+                break
             case 1:
                 nodo = vars['initialNode']
-                break;
+                break
             case 2:
                 nodo = vars['c'].selected
-                break;
+                break
             default:
-               break;
+               break
         }
         return nodo
     }
@@ -255,12 +254,12 @@ class GroovyConsole {
         switch (resp) {
             case 0:
                 source = 'note'
-                break;
+                break
             case 1:
                 source = 'script1'
-                break;
+                break
             default:
-               break;
+               break
         }
         return source
     }
@@ -269,13 +268,11 @@ class GroovyConsole {
 		def file = console.scriptFile
 		if (file){
 			if (JOptionPane.showConfirmDialog(null, "Do you want to reload the file?") == 0) {console.loadScriptFile(file)}
-		} else {
-		
 		}
 	}
-//end:
+//endregion
 
-//region: UI
+//region UI
 
     static int showInputDialogList(String[] options, String title = 'Input dialog',String question = 'Please select an option',int defaultOption = 0){
         String result = (String)JOptionPane.showInputDialog(
@@ -295,31 +292,31 @@ class GroovyConsole {
         SwingBuilder swing      = new SwingBuilder()
          
         def writeButton = swing.button(
-                label : showLabels? 'send to node' : null ,
+                text : showLabels? 'send to node' : null ,
                 toolTipText : 'save script into node',
                 icon : menuUtils.getMenuItemIcon('IconAction.emoji-2B07'),
                 actionPerformed : {e -> write(console)},
              )
         def writeAsButton = swing.button(
-                label : showLabels? 'config + send to node' : null ,
+                text : showLabels? 'config + send to node' : null ,
                 toolTipText : 'select options and save script into node',
                 icon : menuUtils.getMenuItemIcon('IconAction.emoji-2198'),
                 actionPerformed : {e -> writeTo(console)},
              )
         def refreshCompilerConfiguration = swing.button(
-                label : showLabels? 'refresh Compiler Config' : null ,
+                text : showLabels? 'refresh Compiler Config' : null ,
                 toolTipText : "refreshes the Freeplane's GroovyScript Compiler Configuration (libraries included)",
                 icon : menuUtils.getMenuItemIcon('IconAction.emoji-1F4DA'),
                 actionPerformed : {e -> console.shell = updateNode(console.shell, GroovyScript.createCompilerConfiguration())},
              )
         def startSysOutInterceptor = swing.button(
-                label : showLabels? 'starts System.out interceptor' : null ,
+                text : showLabels? 'starts System.out interceptor' : null ,
                 toolTipText : "restarts the systemOutInterceptor so that print() and println() get written in the log file or the console \nuse 'View / Capture Standard Output' to direct the output to the console or to Freeplane's log.0 file",
                 icon : menuUtils.getMenuItemIcon('IconAction.emoji-1F5A8'),
                 actionPerformed : {e -> console.systemOutInterceptor.start()},
              )
         def reLoadButton = swing.button(
-                label : showLabels? 'reload from file' : null ,
+                text : showLabels? 'reload from file' : null ,
                 toolTipText : 'reload script from file',
                 icon : menuUtils.getMenuItemIcon('IconAction.emoji-1F4C1'),
                 actionPerformed : {e -> reLoadScriptFile(console)},
@@ -335,18 +332,6 @@ class GroovyConsole {
         console.toolbar.add(reLoadButton)
     }
 
-    // def static updateTitle(console) {
-        // def frame = console.frame
-        // def vars  = console.shell
-		// if (frame.properties.containsKey('title')) {
-			// if (console.scriptFile != null)
-				// frame.title = "File: ${console.scriptFile.name} ${(console.dirty ? ' * ': '')} - $DEFAULT_WINDOW_TITLE"
-			// else if (vars['targetNode'])
-				// frame.title = "${vars['targetNodeText']} ${(console.dirty ? ' * ': '')} - $DEFAULT_WINDOW_TITLE"
-			// else
-				// frame.title = "${(console.dirty ? ' * ': '')} - $DEFAULT_WINDOW_TITLE"		}
-	// }
-
-//end:
+//endregion
 
 }

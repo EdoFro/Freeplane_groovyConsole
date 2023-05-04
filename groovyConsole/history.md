@@ -2,6 +2,7 @@
 
 ## v0.0.7
 
+* improved reload confirm dialog
 
 ## v0.0.6
 

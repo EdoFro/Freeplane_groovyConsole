@@ -158,8 +158,7 @@
       </li>
     </ul>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <hook NAME="accessories/plugins/AutomaticLayout.properties" VALUE="ALL"/>
 <node TEXT="description" POSITION="top_or_left" ID="ID_522572094"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
 <html>
@@ -177,8 +176,7 @@
       To translate the description you have to define a translation for the key 'addons.${name}.description'.
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node ID="ID_1758279751"><richcontent TYPE="NODE">
 
 <html>
@@ -207,8 +205,7 @@
       Change log of this add-on: append one node for each noteworthy version and put the details for each version into a child node.
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node TEXT="v0.0.1" FOLDED="true" ID="ID_522947734">
 <node TEXT="Initial release" ID="ID_809404112"/>
 </node>
@@ -253,8 +250,7 @@
       The License text has to be entered as a child of the <i>'license'</i>&#xa0;node, either as plain text or as HTML.
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node TEXT="MIT License&#xa;&#xa;Copyright (c) 2022 Eduardo Frohlich.&#xa;&#xa;Permission is hereby granted, free of charge, to any person obtaining a copy&#xa;of this software and associated documentation files (the &quot;Software&quot;), to deal&#xa;in the Software without restriction, including without limitation the rights&#xa;to use, copy, modify, merge, publish, distribute, sublicense, and/or sell&#xa;copies of the Software, and to permit persons to whom the Software is&#xa;furnished to do so, subject to the following conditions:&#xa;&#xa;The above copyright notice and this permission notice shall be included in all&#xa;copies or substantial portions of the Software.&#xa;&#xa;THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR&#xa;IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,&#xa;FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE&#xa;AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER&#xa;LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,&#xa;OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE&#xa;SOFTWARE." ID="ID_797385026"/>
 </node>
 <node TEXT="preferences.xml" FOLDED="true" POSITION="top_or_left" ID="ID_1801404411"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
@@ -363,8 +359,7 @@
       </tr>
     </table>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <attribute_layout NAME_WIDTH="111 pt" VALUE_WIDTH="51.75 pt"/>
 <attribute NAME="attributeForExtensions" VALUE="string"/>
 <attribute NAME="fullScreen" VALUE="boolean"/>
@@ -390,8 +385,7 @@
       </li>
     </ul>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <attribute_layout NAME_WIDTH="134.25 pt" VALUE_WIDTH="45 pt"/>
 <attribute NAME="${name}_attributeForExtensions" VALUE="file_ext"/>
 <attribute NAME="${name}_fullScreen" VALUE="true"/>
@@ -428,8 +422,7 @@
       </li>
     </ul>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node TEXT="en" ID="ID_565589743">
 <attribute_layout NAME_WIDTH="202.49999 pt" VALUE_WIDTH="498.74999 pt"/>
 <attribute NAME="OptionPanel.separator.${name}" VALUE="groovyConsole"/>
@@ -456,8 +449,7 @@
       List of files and/or directories to remove on uninstall
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <attribute NAME="delete" VALUE="${installationbase}/addons/${name}.script.xml"/>
 <attribute NAME="delete" VALUE="${installationbase}/addons/${name}/scripts/openWithGroovyConsole.groovy"/>
 <attribute NAME="delete" VALUE="${installationbase}/addons/${name}/lib/groovyConsole.jar"/>
@@ -578,8 +570,7 @@
       &#xa0;&#xa0;- In any case set execute_scripts_without_asking to true unless you want to annoy users.
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node TEXT="openWithGroovyConsole.groovy" ID="ID_313603667">
 <attribute_layout NAME_WIDTH="183.74999 pt" VALUE_WIDTH="170.24999 pt"/>
 <attribute NAME="menuTitleKey" VALUE="addons.${name}.openWithGroovyConsole"/>
@@ -639,8 +630,7 @@
       &#xa0;- The files will be processed in the sequence as seen in the map.
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node TEXT="groovyConsole.jar" ID="ID_2004676"/>
 </node>
 <node TEXT="zips" POSITION="bottom_or_right" ID="ID_1220285819" VGAP_QUANTITY="2 px"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
@@ -677,8 +667,7 @@
       &#xa0;- The files will be processed in the sequence as seen in the map.
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node TEXT="doc" ID="ID_779236736"/>
 <node TEXT="icons" ID="ID_424245267"/>
 <node TEXT="templates" ID="ID_1924220664"/>
@@ -713,8 +702,7 @@
       Images can be added automatically by releaseAddOn.groovy or must be uploaded into the map via the script <i>Tools-&gt;Scripts-&gt;Insert Binary</i>&#xa0;since they have to be (base64) encoded as simple strings.
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node TEXT="actions" POSITION="bottom_or_right" ID="ID_1390909797"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
 <html>
@@ -724,8 +712,7 @@
   <body>
     Direct links to menu commands
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node TEXT="Build add-on" ID="ID_1382502819" LINK="menuitem:_addons.devtools.checkAddOn_on_single_node"/>
 <node TEXT="Package add-on for publication" ID="ID_882245033" LINK="menuitem:_addons.devtools.releaseAddOn_on_single_node"/>
 <node TEXT="Export Translations" ID="ID_527611229" LINK="menuitem:_addons.devtools.exportTranslations_on_single_node"/>

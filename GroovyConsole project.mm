@@ -1,4 +1,4 @@
-<map version="freeplane 1.11.1">
+<map version="freeplane 1.11.5">
 <!--To view this file, download free mind mapping software Freeplane from https://www.freeplane.org -->
 <attribute_registry SHOW_ATTRIBUTES="selected"/>
 <node TEXT="groovyConsole project" FOLDED="false" ID="ID_581835333" LINK="../../OneDrive/Documentos/Mochila/Freeplane/ScriptsEnComputadorYDesarrollosEdo%20-%20mochila.mm"><hook NAME="MapStyle" background="#f9f9f8" zoom="0.8">
@@ -60,7 +60,7 @@
 <arrowlink SHAPE="CUBIC_CURVE" COLOR="#bf5d3f" WIDTH="2" TRANSPARENCY="200" DASH="" FONT_SIZE="9" FONT_FAMILY="SansSerif" DESTINATION="ID_506805493" STARTINCLINATION="45 pt;0 pt;" ENDINCLINATION="57 pt;30 pt;" STARTARROW="NONE" ENDARROW="DEFAULT"/>
 <font NAME="Dialog" SIZE="10" BOLD="false" STRIKETHROUGH="false" ITALIC="false"/>
 <edge STYLE="horizontal" COLOR="#2e3440" WIDTH="1" DASH="SOLID"/>
-<richcontent CONTENT-TYPE="plain/auto" TYPE="DETAILS"/>
+<richcontent TYPE="DETAILS" CONTENT-TYPE="plain/auto"/>
 <richcontent TYPE="NOTE" CONTENT-TYPE="plain/auto"/>
 </stylenode>
 <stylenode LOCALIZED_TEXT="defaultstyle.details" ID="ID_861824498" COLOR="#006666" BACKGROUND_COLOR="#a5cece" BACKGROUND_ALPHA="204" BORDER_WIDTH_LIKE_EDGE="false" BORDER_WIDTH="1.9 px" BORDER_COLOR_LIKE_EDGE="false" BORDER_COLOR="#f0f0f0" BORDER_DASH_LIKE_EDGE="true">
@@ -210,7 +210,8 @@
 <icon BUILTIN="emoji-1F6A9"/>
 <font BOLD="true"/>
 </stylenode>
-<stylenode TEXT="fullMarkDown" ID="ID_897231475" FORMAT="markdownPatternFormat" BORDER_DASH="SOLID"><richcontent CONTENT-TYPE="plain/markdown" TYPE="DETAILS"/>
+<stylenode TEXT="fullMarkDown" ID="ID_897231475" FORMAT="markdownPatternFormat" BORDER_DASH="SOLID">
+<richcontent TYPE="DETAILS" CONTENT-TYPE="plain/markdown"/>
 <richcontent TYPE="NOTE" CONTENT-TYPE="plain/markdown"/>
 </stylenode>
 <stylenode TEXT="notMovedRenamed" BACKGROUND_COLOR="#f28bb3" BORDER_WIDTH="3 px">
@@ -493,7 +494,7 @@
 <attribute NAME="creationTime" VALUE="24-04-23 15:04" OBJECT="org.freeplane.features.format.FormattedDate|2023-04-24T15:04-0400|dd-MM-yy HH:mm"/>
 <attribute NAME="fileSize" VALUE="68" OBJECT="org.freeplane.features.format.FormattedNumber|68|#,##0"/>
 </node>
-<node TEXT="delete" ID="ID_582073411" LINK="delete/"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
+<node TEXT="delete" ID="ID_582073411" LINK="delete/"><richcontent TYPE="DETAILS">
 <html>
   <head>
     
@@ -505,7 +506,7 @@
   </body>
 </html></richcontent>
 </node>
-<node TEXT="ignoredByGitHub" ID="ID_1103966821" LINK="ignoredByGitHub/"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
+<node TEXT="ignoredByGitHub" ID="ID_1103966821" LINK="ignoredByGitHub/"><richcontent TYPE="DETAILS">
 <html>
   <head>
     
@@ -534,7 +535,7 @@
 <attribute NAME="lastAccessTime" VALUE="25-04-22 18:20" OBJECT="org.freeplane.features.format.FormattedDate|2022-04-25T18:20-0400|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="17-04-22 10:42" OBJECT="org.freeplane.features.format.FormattedDate|2022-04-17T10:42-0400|datetime"/>
 <attribute NAME="fileSize" VALUE="0" OBJECT="org.freeplane.features.format.FormattedNumber|0|#,##0"/>
-<node TEXT="groovy" STYLE_REF="file_folder" ID="ID_339086552" LINK="groovyConsole/src/main/groovy/"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
+<node TEXT="groovy" STYLE_REF="file_folder" ID="ID_339086552" LINK="groovyConsole/src/main/groovy/"><richcontent TYPE="DETAILS">
 <html>
   <head>
     
@@ -561,6 +562,7 @@
 <node TEXT="estilos Freeplane" STYLE_REF="maybeTask" ID="ID_1217856581"/>
 <node TEXT="estilos librerías cargadas" STYLE_REF="maybeTask" ID="ID_1722518463"/>
 </node>
+<node TEXT="Add &quot;reload from disk&quot; button" STYLE_REF="nextTask" ID="ID_1701629338"/>
 </node>
 </node>
 </node>
@@ -571,7 +573,7 @@
 <node TEXT="tmp" STYLE_REF="locked" ID="ID_1646969472" LINK="groovyConsole/build/tmp/"/>
 <node TEXT="generated" STYLE_REF="locked" ID="ID_891392252" LINK="groovyConsole/build/generated/"/>
 </node>
-<node TEXT="lib" ID="ID_402430899" LINK="groovyConsole/lib/"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
+<node TEXT="lib" ID="ID_402430899" LINK="groovyConsole/lib/"><richcontent TYPE="DETAILS">
 <html>
   <head>
     
@@ -598,7 +600,7 @@
 </node>
 </node>
 </node>
-<node TEXT="scripts" STYLE_REF="file_folder" ID="ID_1483533049" LINK="groovyConsole/scripts/"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
+<node TEXT="scripts" STYLE_REF="file_folder" ID="ID_1483533049" LINK="groovyConsole/scripts/"><richcontent TYPE="DETAILS">
 <html>
   <head>
     
@@ -645,7 +647,7 @@
 </node>
 </node>
 <node TEXT="zips" ID="ID_1327243198" LINK="groovyConsole/zips/">
-<node TEXT="icons" ID="ID_815705878" LINK="groovyConsole/zips/icons/"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
+<node TEXT="icons" ID="ID_815705878" LINK="groovyConsole/zips/icons/"><richcontent TYPE="DETAILS">
 <html>
   <head>
     
@@ -656,9 +658,13 @@
     </p>
   </body>
 </html></richcontent>
-<node TEXT="groovyConsole" ID="ID_1988340672" LINK="groovyConsole/zips/icons/groovyConsole/"/>
+<node TEXT="groovyConsole" ID="ID_1988340672" LINK="groovyConsole/zips/icons/groovyConsole/">
+<node TEXT="reloadFile.svg" ID="ID_484815601" LINK="groovyConsole/zips/icons/groovyConsole/reloadFile.svg"/>
+<node TEXT="saveInNode.svg" ID="ID_1702417239" LINK="groovyConsole/zips/icons/groovyConsole/saveInNode.svg"/>
+<node TEXT="saveInNodeAs.svg" ID="ID_1805008099" LINK="groovyConsole/zips/icons/groovyConsole/saveInNodeAs.svg"/>
 </node>
-<node TEXT="doc" ID="ID_982813467" LINK="groovyConsole/zips/doc/"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
+</node>
+<node TEXT="doc" ID="ID_982813467" LINK="groovyConsole/zips/doc/"><richcontent TYPE="DETAILS">
 <html>
   <head>
     
@@ -671,7 +677,7 @@
 </html></richcontent>
 <node TEXT="groovyConsole" ID="ID_1892493719" LINK="groovyConsole/zips/doc/groovyConsole/"/>
 </node>
-<node TEXT="templates" ID="ID_1614760108" LINK="groovyConsole/zips/templates/"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
+<node TEXT="templates" ID="ID_1614760108" LINK="groovyConsole/zips/templates/"><richcontent TYPE="DETAILS">
 <html>
   <head>
     
@@ -686,41 +692,11 @@
 </node>
 </node>
 <node TEXT="images" ID="ID_1489890719" LINK="groovyConsole/images/">
-<node TEXT="gC Future B" STYLE_REF="milestone" ID="ID_401224454">
-<node TEXT="groovyConsole-screenshot-1.png" STYLE_REF="maybeTask" ID="ID_666152749">
-<node TEXT="128x77" ID="ID_551353628">
-<node TEXT="=node.link.node?.text?:&apos;&apos;" ID="ID_668147556" LINK="#ID_551353628"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      =node.link.node?.details?:''
-    </p>
-  </body>
-</html></richcontent>
-<richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      =node.link.node?.note?:''
-    </p>
-  </body>
-</html></richcontent>
+<node TEXT="groovyConsole.svg" ID="ID_1937726588" LINK="groovyConsole/images/groovyConsole.svg">
+<node TEXT="32x32" ID="ID_1455520567"/>
 </node>
-</node>
-</node>
-<node TEXT="groovyConsole.png" STYLE_REF="maybeTask" ID="ID_387007011">
-<node TEXT="53x32" ID="ID_1508000089"/>
-</node>
-<node TEXT="groovyConsole-icon.png" STYLE_REF="maybeTask" ID="ID_249312403">
-<node TEXT="27x16" ID="ID_12688784"/>
-</node>
-</node>
+<node TEXT="groovyConsole-icon.svg" ID="ID_372224366" LINK="groovyConsole/images/groovyConsole-icon.svg"/>
+<node TEXT="groovyConsole-screenshot-1.png" ID="ID_1339405738" LINK="groovyConsole/images/groovyConsole-screenshot-1.png"/>
 </node>
 <node TEXT="translations" ID="ID_5583999" LINK="groovyConsole/translations/">
 <attribute NAME="lastModifiedTime" VALUE="18-04-22 22:00" OBJECT="org.freeplane.features.format.FormattedDate|2022-04-18T22:00-0400|datetime"/>
@@ -749,7 +725,7 @@
 <attribute NAME="projectCode" VALUE="groovyConsole.mm"/>
 <node TEXT="gC v0.0.5" STYLE_REF="milestone" ID="ID_1105191413"/>
 </node>
-<node TEXT="generados automáticamente" STYLE_REF="Organizador" ID="ID_1677527063"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
+<node TEXT="generados automáticamente" STYLE_REF="Organizador" ID="ID_1677527063"><richcontent TYPE="DETAILS">
 <html>
   <head>
     
@@ -763,50 +739,9 @@
     </p>
   </body>
 </html></richcontent>
-<node TEXT="groovyConsole-v0.0.7.addon.mm" ID="ID_705820952" LINK="groovyConsole/groovyConsole-v0.0.7.addon.mm">
-<attribute NAME="lastModifiedTime" VALUE="01-05-23 22:41" OBJECT="org.freeplane.features.format.FormattedDate|2023-05-01T22:41-0400|datetime"/>
-<attribute NAME="lastAccessTime" VALUE="04-05-23 16:18" OBJECT="org.freeplane.features.format.FormattedDate|2023-05-04T16:18-0400|datetime"/>
-<attribute NAME="creationTime" VALUE="01-05-23 22:41" OBJECT="org.freeplane.features.format.FormattedDate|2023-05-01T22:41-0400|datetime"/>
-<attribute NAME="fileSize" VALUE="64.466" OBJECT="org.freeplane.features.format.FormattedNumber|64466|#,##0"/>
-</node>
-<node TEXT="groovyConsole-v0.0.6.addon.mm" ID="ID_129298950" LINK="groovyConsole/groovyConsole-v0.0.6.addon.mm">
-<attribute NAME="lastModifiedTime" VALUE="01-05-23 22:10" OBJECT="org.freeplane.features.format.FormattedDate|2023-05-01T22:10-0400|datetime"/>
-<attribute NAME="lastAccessTime" VALUE="04-05-23 16:18" OBJECT="org.freeplane.features.format.FormattedDate|2023-05-04T16:18-0400|datetime"/>
-<attribute NAME="creationTime" VALUE="01-05-23 22:10" OBJECT="org.freeplane.features.format.FormattedDate|2023-05-01T22:10-0400|datetime"/>
-<attribute NAME="fileSize" VALUE="64.468" OBJECT="org.freeplane.features.format.FormattedNumber|64468|#,##0"/>
-</node>
-<node TEXT="groovyConsole-v0.0.5.addon.mm" ID="ID_1282780823" LINK="groovyConsole/groovyConsole-v0.0.5.addon.mm">
-<attribute NAME="lastModifiedTime" VALUE="01-05-23 21:58" OBJECT="org.freeplane.features.format.FormattedDate|2023-05-01T21:58-0400|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="04-05-23 16:18" OBJECT="org.freeplane.features.format.FormattedDate|2023-05-04T16:18-0400|dd-MM-yy HH:mm"/>
-<attribute NAME="creationTime" VALUE="28-04-23 19:01" OBJECT="org.freeplane.features.format.FormattedDate|2023-04-28T19:01-0400|datetime"/>
-<attribute NAME="fileSize" VALUE="64.282" OBJECT="org.freeplane.features.format.FormattedNumber|64282|#,##0"/>
-</node>
-<node TEXT="groovyConsole-v0.0.4.addon.mm" ID="ID_1924355610" LINK="groovyConsole/groovyConsole-v0.0.4.addon.mm">
-<attribute NAME="lastModifiedTime" VALUE="25-04-22 18:47" OBJECT="org.freeplane.features.format.FormattedDate|2022-04-25T18:47-0400|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="04-05-23 16:18" OBJECT="org.freeplane.features.format.FormattedDate|2023-05-04T16:18-0400|dd-MM-yy HH:mm"/>
-<attribute NAME="creationTime" VALUE="28-04-23 19:01" OBJECT="org.freeplane.features.format.FormattedDate|2023-04-28T19:01-0400|dd-MM-yy HH:mm"/>
-<attribute NAME="fileSize" VALUE="59.599" OBJECT="org.freeplane.features.format.FormattedNumber|59599|#,##0"/>
-</node>
-<node TEXT="groovyConsole-v0.0.3.addon.mm" ID="ID_1462281203" LINK="groovyConsole/groovyConsole-v0.0.3.addon.mm">
-<attribute NAME="lastModifiedTime" VALUE="25-04-22 10:41" OBJECT="org.freeplane.features.format.FormattedDate|2022-04-25T10:41-0400|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="04-05-23 16:18" OBJECT="org.freeplane.features.format.FormattedDate|2023-05-04T16:18-0400|dd-MM-yy HH:mm"/>
-<attribute NAME="creationTime" VALUE="28-04-23 19:01" OBJECT="org.freeplane.features.format.FormattedDate|2023-04-28T19:01-0400|dd-MM-yy HH:mm"/>
-<attribute NAME="fileSize" VALUE="57.737" OBJECT="org.freeplane.features.format.FormattedNumber|57737|#,##0"/>
-</node>
-<node TEXT="groovyConsole-v0.0.2.addon.mm" ID="ID_21920088" LINK="groovyConsole/groovyConsole-v0.0.2.addon.mm">
-<attribute NAME="lastModifiedTime" VALUE="25-04-22 10:03" OBJECT="org.freeplane.features.format.FormattedDate|2022-04-25T10:03-0400|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="04-05-23 16:18" OBJECT="org.freeplane.features.format.FormattedDate|2023-05-04T16:18-0400|dd-MM-yy HH:mm"/>
-<attribute NAME="creationTime" VALUE="28-04-23 19:01" OBJECT="org.freeplane.features.format.FormattedDate|2023-04-28T19:01-0400|dd-MM-yy HH:mm"/>
-<attribute NAME="fileSize" VALUE="54.803" OBJECT="org.freeplane.features.format.FormattedNumber|54803|#,##0"/>
-</node>
-<node TEXT="groovyConsole-v0.0.1.addon.mm" ID="ID_1544430857" LINK="groovyConsole/groovyConsole-v0.0.1.addon.mm">
-<attribute NAME="lastModifiedTime" VALUE="24-04-22 19:58" OBJECT="org.freeplane.features.format.FormattedDate|2022-04-24T19:58-0400|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="04-05-23 16:25" OBJECT="org.freeplane.features.format.FormattedDate|2023-05-04T16:25-0400|dd-MM-yy HH:mm"/>
-<attribute NAME="creationTime" VALUE="28-04-23 19:01" OBJECT="org.freeplane.features.format.FormattedDate|2023-04-28T19:01-0400|dd-MM-yy HH:mm"/>
-<attribute NAME="fileSize" VALUE="54.190" OBJECT="org.freeplane.features.format.FormattedNumber|54190|#,##0"/>
-</node>
+<node TEXT="groovyConsole-v0.0.8.addon.mm" STYLE_REF="freshNew" ID="ID_1451197349" LINK="groovyConsole/groovyConsole-v0.0.8.addon.mm"/>
 <node TEXT="history.md" ID="ID_1213423335" LINK="groovyConsole/history.md"><richcontent TYPE="NOTE" CONTENT-TYPE="plain/markdown">
-    <text># History
+<text># History
 
 ## v0.0.2
 
@@ -817,8 +752,7 @@ It adds access to Freeplane&apos;s and add-ons libraries
 
 ## v0.0.1
 
-* Initial release</text>
-</richcontent>
+* Initial release</text></richcontent>
 <attribute NAME="lastModifiedTime" VALUE="01-05-23 22:41" OBJECT="org.freeplane.features.format.FormattedDate|2023-05-01T22:41-0400|dd-MM-yy HH:mm"/>
 <attribute NAME="lastAccessTime" VALUE="04-05-23 16:18" OBJECT="org.freeplane.features.format.FormattedDate|2023-05-04T16:18-0400|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="24-04-23 15:04" OBJECT="org.freeplane.features.format.FormattedDate|2023-04-24T15:04-0400|dd-MM-yy HH:mm"/>
@@ -829,7 +763,7 @@ It adds access to Freeplane&apos;s and add-ons libraries
 <attribute NAME="lastAccessTime" VALUE="04-05-23 16:18" OBJECT="org.freeplane.features.format.FormattedDate|2023-05-04T16:18-0400|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="24-04-23 15:04" OBJECT="org.freeplane.features.format.FormattedDate|2023-04-24T15:04-0400|dd-MM-yy HH:mm"/>
 <attribute NAME="fileSize" VALUE="259" OBJECT="org.freeplane.features.format.FormattedNumber|259|#,##0"/>
-<richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
+<richcontent TYPE="NOTE">
 <html>
   <head>
     
@@ -856,11 +790,54 @@ It adds access to Freeplane&apos;s and add-ons libraries
 <attribute NAME="creationTime" VALUE="28-04-23 19:01" OBJECT="org.freeplane.features.format.FormattedDate|2023-04-28T19:01-0400|dd-MM-yy HH:mm"/>
 <attribute NAME="fileSize" VALUE="33.522" OBJECT="org.freeplane.features.format.FormattedNumber|33522|#,##0"/>
 </node>
-<node TEXT="versiones anteriores" STYLE_REF="Organizador" ID="ID_542438511"/>
+<node TEXT="versiones anteriores" STYLE_REF="Organizador" FOLDED="true" ID="ID_542438511">
+<node TEXT="groovyConsole-v0.0.7.addon.mm" POSITION="bottom_or_right" ID="ID_705820952" LINK="groovyConsole/groovyConsole-v0.0.7.addon.mm">
+<attribute NAME="lastModifiedTime" VALUE="01-05-23 22:41" OBJECT="org.freeplane.features.format.FormattedDate|2023-05-01T22:41-0400|datetime"/>
+<attribute NAME="lastAccessTime" VALUE="04-05-23 16:18" OBJECT="org.freeplane.features.format.FormattedDate|2023-05-04T16:18-0400|datetime"/>
+<attribute NAME="creationTime" VALUE="01-05-23 22:41" OBJECT="org.freeplane.features.format.FormattedDate|2023-05-01T22:41-0400|datetime"/>
+<attribute NAME="fileSize" VALUE="64.466" OBJECT="org.freeplane.features.format.FormattedNumber|64466|#,##0"/>
+</node>
+<node TEXT="groovyConsole-v0.0.6.addon.mm" POSITION="bottom_or_right" ID="ID_129298950" LINK="groovyConsole/groovyConsole-v0.0.6.addon.mm">
+<attribute NAME="lastModifiedTime" VALUE="01-05-23 22:10" OBJECT="org.freeplane.features.format.FormattedDate|2023-05-01T22:10-0400|datetime"/>
+<attribute NAME="lastAccessTime" VALUE="04-05-23 16:18" OBJECT="org.freeplane.features.format.FormattedDate|2023-05-04T16:18-0400|datetime"/>
+<attribute NAME="creationTime" VALUE="01-05-23 22:10" OBJECT="org.freeplane.features.format.FormattedDate|2023-05-01T22:10-0400|datetime"/>
+<attribute NAME="fileSize" VALUE="64.468" OBJECT="org.freeplane.features.format.FormattedNumber|64468|#,##0"/>
+</node>
+<node TEXT="groovyConsole-v0.0.5.addon.mm" POSITION="bottom_or_right" ID="ID_1282780823" LINK="groovyConsole/groovyConsole-v0.0.5.addon.mm">
+<attribute NAME="lastModifiedTime" VALUE="01-05-23 21:58" OBJECT="org.freeplane.features.format.FormattedDate|2023-05-01T21:58-0400|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="04-05-23 16:18" OBJECT="org.freeplane.features.format.FormattedDate|2023-05-04T16:18-0400|dd-MM-yy HH:mm"/>
+<attribute NAME="creationTime" VALUE="28-04-23 19:01" OBJECT="org.freeplane.features.format.FormattedDate|2023-04-28T19:01-0400|datetime"/>
+<attribute NAME="fileSize" VALUE="64.282" OBJECT="org.freeplane.features.format.FormattedNumber|64282|#,##0"/>
+</node>
+<node TEXT="groovyConsole-v0.0.4.addon.mm" POSITION="bottom_or_right" ID="ID_1924355610" LINK="groovyConsole/groovyConsole-v0.0.4.addon.mm">
+<attribute NAME="lastModifiedTime" VALUE="25-04-22 18:47" OBJECT="org.freeplane.features.format.FormattedDate|2022-04-25T18:47-0400|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="04-05-23 16:18" OBJECT="org.freeplane.features.format.FormattedDate|2023-05-04T16:18-0400|dd-MM-yy HH:mm"/>
+<attribute NAME="creationTime" VALUE="28-04-23 19:01" OBJECT="org.freeplane.features.format.FormattedDate|2023-04-28T19:01-0400|dd-MM-yy HH:mm"/>
+<attribute NAME="fileSize" VALUE="59.599" OBJECT="org.freeplane.features.format.FormattedNumber|59599|#,##0"/>
+</node>
+<node TEXT="groovyConsole-v0.0.3.addon.mm" POSITION="bottom_or_right" ID="ID_1462281203" LINK="groovyConsole/groovyConsole-v0.0.3.addon.mm">
+<attribute NAME="lastModifiedTime" VALUE="25-04-22 10:41" OBJECT="org.freeplane.features.format.FormattedDate|2022-04-25T10:41-0400|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="04-05-23 16:18" OBJECT="org.freeplane.features.format.FormattedDate|2023-05-04T16:18-0400|dd-MM-yy HH:mm"/>
+<attribute NAME="creationTime" VALUE="28-04-23 19:01" OBJECT="org.freeplane.features.format.FormattedDate|2023-04-28T19:01-0400|dd-MM-yy HH:mm"/>
+<attribute NAME="fileSize" VALUE="57.737" OBJECT="org.freeplane.features.format.FormattedNumber|57737|#,##0"/>
+</node>
+<node TEXT="groovyConsole-v0.0.2.addon.mm" POSITION="bottom_or_right" ID="ID_21920088" LINK="groovyConsole/groovyConsole-v0.0.2.addon.mm">
+<attribute NAME="lastModifiedTime" VALUE="25-04-22 10:03" OBJECT="org.freeplane.features.format.FormattedDate|2022-04-25T10:03-0400|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="04-05-23 16:18" OBJECT="org.freeplane.features.format.FormattedDate|2023-05-04T16:18-0400|dd-MM-yy HH:mm"/>
+<attribute NAME="creationTime" VALUE="28-04-23 19:01" OBJECT="org.freeplane.features.format.FormattedDate|2023-04-28T19:01-0400|dd-MM-yy HH:mm"/>
+<attribute NAME="fileSize" VALUE="54.803" OBJECT="org.freeplane.features.format.FormattedNumber|54803|#,##0"/>
+</node>
+<node TEXT="groovyConsole-v0.0.1.addon.mm" POSITION="bottom_or_right" ID="ID_1544430857" LINK="groovyConsole/groovyConsole-v0.0.1.addon.mm">
+<attribute NAME="lastModifiedTime" VALUE="24-04-22 19:58" OBJECT="org.freeplane.features.format.FormattedDate|2022-04-24T19:58-0400|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="04-05-23 16:25" OBJECT="org.freeplane.features.format.FormattedDate|2023-05-04T16:25-0400|dd-MM-yy HH:mm"/>
+<attribute NAME="creationTime" VALUE="28-04-23 19:01" OBJECT="org.freeplane.features.format.FormattedDate|2023-04-28T19:01-0400|dd-MM-yy HH:mm"/>
+<attribute NAME="fileSize" VALUE="54.190" OBJECT="org.freeplane.features.format.FormattedNumber|54190|#,##0"/>
+</node>
+</node>
 </node>
 <node TEXT=".gitignore" ID="ID_1831250227">
 <icon BUILTIN="pencil"/>
-<richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
+<richcontent TYPE="NOTE">
 <html>
   <head>
     
@@ -980,7 +957,7 @@ It adds access to Freeplane&apos;s and add-ons libraries
 </node>
 </node>
 </node>
-<node TEXT="resources" STYLE_REF="file_folder" FOLDED="true" ID="ID_1818290900" LINK="resources/">
+<node TEXT="resources" STYLE_REF="file_folder" ID="ID_1818290900" LINK="resources/">
 <attribute NAME="lastModifiedTime" VALUE="25-04-22 17:44" OBJECT="org.freeplane.features.format.FormattedDate|2022-04-25T17:44-0400|dd-MM-yy HH:mm"/>
 <attribute NAME="lastAccessTime" VALUE="25-04-22 18:20" OBJECT="org.freeplane.features.format.FormattedDate|2022-04-25T18:20-0400|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="17-04-22 10:42" OBJECT="org.freeplane.features.format.FormattedDate|2022-04-17T10:42-0400|datetime"/>
@@ -1043,7 +1020,7 @@ It adds access to Freeplane&apos;s and add-ons libraries
 </node>
 <node TEXT=".gitignore" ID="ID_632522946" LINK=".gitignore">
 <icon BUILTIN="pencil"/>
-<richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
+<richcontent TYPE="NOTE">
 <html>
   <head>
     
@@ -1135,7 +1112,7 @@ It adds access to Freeplane&apos;s and add-ons libraries
     </p>
   </body>
 </html></richcontent>
-<richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
+<richcontent TYPE="DETAILS">
 <html>
   <head>
     
@@ -1151,7 +1128,8 @@ It adds access to Freeplane&apos;s and add-ons libraries
 <attribute NAME="creationTime" VALUE="24-04-23 15:04" OBJECT="org.freeplane.features.format.FormattedDate|2023-04-24T15:04-0400|dd-MM-yy HH:mm"/>
 <attribute NAME="fileSize" VALUE="480" OBJECT="org.freeplane.features.format.FormattedNumber|480|#,##0"/>
 </node>
-<node TEXT="README.MD" ID="ID_181733889" LINK="README.MD"><richcontent TYPE="NOTE" CONTENT-TYPE="plain/markdown"/>
+<node TEXT="README.MD" ID="ID_181733889" LINK="README.MD">
+<richcontent TYPE="NOTE" CONTENT-TYPE="plain/markdown"/>
 <attribute NAME="lastModifiedTime" VALUE="24-04-23 15:04" OBJECT="org.freeplane.features.format.FormattedDate|2023-04-24T15:04-0400|dd-MM-yy HH:mm"/>
 <attribute NAME="lastAccessTime" VALUE="04-05-23 16:18" OBJECT="org.freeplane.features.format.FormattedDate|2023-05-04T16:18-0400|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="24-04-23 15:04" OBJECT="org.freeplane.features.format.FormattedDate|2023-04-24T15:04-0400|dd-MM-yy HH:mm"/>
@@ -1180,7 +1158,7 @@ It adds access to Freeplane&apos;s and add-ons libraries
 </node>
 </node>
 </node>
-<node TEXT="LICENSE.md" ID="ID_1060696446" LINK="LICENSE.md"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
+<node TEXT="LICENSE.md" ID="ID_1060696446" LINK="LICENSE.md"><richcontent TYPE="NOTE">
 <html>
   <head>
     
@@ -1264,15 +1242,15 @@ It adds access to Freeplane&apos;s and add-ons libraries
 </node>
 </node>
 <node TEXT="new imported files" STYLE_REF="newFolderImport" ID="ID_1776199503">
-<attribute NAME="log_MDI" VALUE="org.freeplane.plugin.script.proxy.ConvertibleText|2" OBJECT="org.freeplane.features.format.FormattedObject|java.lang.String&amp;#x7c;org.freeplane.plugin.script.proxy.ConvertibleText&amp;#x7c;2|number:decimal:#0.####"/>
-<richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
+<attribute NAME="log_MDI" VALUE="2" OBJECT="org.freeplane.features.format.FormattedObject|org.freeplane.plugin.script.proxy.ConvertibleText&amp;#x7c;2|number:decimal:#0.####"/>
+<richcontent TYPE="NOTE">
 <html>
   <head>
     
   </head>
   <body>
     <p>
-      Inated:&#xa0;&#xa0;&#xa0;2023-05-04&#xa0;&#xa0;17:12:11
+      Inated:&#xa0;&#xa0;&#xa0;2023-06-30&#xa0;&#xa0;21:36:26
     </p>
     <p>
       
@@ -1290,7 +1268,7 @@ It adds access to Freeplane&apos;s and add-ons libraries
       &#xa0;0 new file(s) imported as node(s)&#xa0;
     </p>
     <p>
-      &#xa0;0 node(s) moved/renamed in drive
+      &#xa0;1 node(s) moved/renamed in drive
     </p>
     <p>
       &#xa0;0 node(s) couldn't be moved/renamed in drive (marked as 'notMovedRenamed')
@@ -1302,7 +1280,7 @@ It adds access to Freeplane&apos;s and add-ons libraries
       ------- Folders: --------&#xa0;
     </p>
     <p>
-      26 folders didn't need to be moved&#xa0;
+      24 folders didn't need to be moved&#xa0;
     </p>
     <p>
       
@@ -1311,7 +1289,7 @@ It adds access to Freeplane&apos;s and add-ons libraries
       
     </p>
     <p>
-      0.1 seconds
+      0.3 seconds
     </p>
     <p>
       
@@ -1329,16 +1307,14 @@ It adds access to Freeplane&apos;s and add-ons libraries
       No failed operation in drive
     </p>
   </body>
-</html></richcontent>
-<node TEXT="groovyConsole" ID="ID_670940487" LINK="groovyConsole/">
-<node TEXT="gradle" ID="ID_752070918" LINK="groovyConsole/gradle/"/>
-</node>
+</html>
+</richcontent>
 </node>
 <node TEXT="versión instalada en AddOns" STYLE_REF="locked" ID="ID_1056009098"/>
 <node TEXT="Tareas varias" STYLE_REF="Organizador" ID="ID_1570336119">
 <attribute NAME="projectCode" VALUE="Tareas"/>
 <node TEXT="otras idea pendientes&#xa;Asignar" ID="ID_214809729">
-<node TEXT="botón para recargar script desde file" STYLE_REF="completedTask" ID="ID_1916463815"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
+<node TEXT="botón para recargar script desde file" STYLE_REF="completedTask" ID="ID_1916463815"><richcontent TYPE="NOTE">
 <html>
   <head>
     
@@ -1350,7 +1326,7 @@ It adds access to Freeplane&apos;s and add-ons libraries
   </body>
 </html></richcontent>
 </node>
-<node TEXT="boton para ejecutar el script desde freeplane" STYLE_REF="pendingTask" ID="ID_655464826"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
+<node TEXT="boton para ejecutar el script desde freeplane" STYLE_REF="pendingTask" ID="ID_655464826"><richcontent TYPE="NOTE">
 <html>
   <head>
     
@@ -1400,7 +1376,7 @@ It adds access to Freeplane&apos;s and add-ons libraries
 <attribute NAME="lastAccessTime" VALUE="24-04-22 21:59" OBJECT="org.freeplane.features.format.FormattedDate|2022-04-24T21:59-0400|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="17-04-22 22:49" OBJECT="org.freeplane.features.format.FormattedDate|2022-04-17T22:49-0400|datetime"/>
 <attribute NAME="fileSize" VALUE="96" OBJECT="org.freeplane.features.format.FormattedNumber|96|#,##0"/>
-<richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
+<richcontent TYPE="DETAILS">
 <html>
   <head>
     
@@ -1411,7 +1387,7 @@ It adds access to Freeplane&apos;s and add-ons libraries
     </p>
   </body>
 </html></richcontent>
-<richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
+<richcontent TYPE="NOTE">
 <html>
   <head>
     
@@ -1425,7 +1401,7 @@ It adds access to Freeplane&apos;s and add-ons libraries
 </node>
 <node TEXT="prueba" ID="ID_507966943">
 <attribute NAME="script1" VALUE="node.text = node.text.reverse()"/>
-<richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
+<richcontent TYPE="DETAILS">
 <html>
   <head>
     
@@ -1440,7 +1416,7 @@ It adds access to Freeplane&apos;s and add-ons libraries
 <node TEXT="prueba" ID="ID_1729615805">
 <attribute NAME="script1" VALUE="node.text = node.text.reverse()"/>
 </node>
-<node TEXT="prueba" ID="ID_1256061346"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
+<node TEXT="prueba" ID="ID_1256061346"><richcontent TYPE="DETAILS">
 <html>
   <head>
     
@@ -1451,7 +1427,7 @@ It adds access to Freeplane&apos;s and add-ons libraries
     </p>
   </body>
 </html></richcontent>
-<richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
+<richcontent TYPE="NOTE">
 <html>
   <head>
     
@@ -1463,7 +1439,7 @@ It adds access to Freeplane&apos;s and add-ons libraries
   </body>
 </html></richcontent>
 </node>
-<node TEXT="prueba" ID="ID_1523202208"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
+<node TEXT="prueba" ID="ID_1523202208"><richcontent TYPE="NOTE">
 <html>
   <head>
     
@@ -1475,7 +1451,7 @@ It adds access to Freeplane&apos;s and add-ons libraries
   </body>
 </html></richcontent>
 </node>
-<node TEXT="prueba" ID="ID_311000715" LINK="file:/C:/Users/Edo/Documents/GitHub/Freeplane_groovy_console_2/groovyConsole/scripts/openWithGroovyConsole.groovy"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
+<node TEXT="prueba" ID="ID_311000715" LINK="file:/C:/Users/Edo/Documents/GitHub/Freeplane_groovy_console_2/groovyConsole/scripts/openWithGroovyConsole.groovy"><richcontent TYPE="DETAILS">
 <html>
   <head>
     
@@ -1501,7 +1477,7 @@ It adds access to Freeplane&apos;s and add-ons libraries
 <attribute NAME="script2" VALUE="println &apos;hola&apos;&#xd;&#xa;"/>
 </node>
 <node TEXT="groovy.console.ui.Console" ID="ID_638918291">
-<node TEXT="r" FOLDED="true" ID="ID_247641866"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
+<node TEXT="r" FOLDED="true" ID="ID_247641866"><richcontent TYPE="NOTE">
 <html>
   <head>
     
@@ -1800,7 +1776,7 @@ It adds access to Freeplane&apos;s and add-ons libraries
     </p>
   </body>
 </html></richcontent>
-<richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
+<richcontent TYPE="DETAILS">
 <html>
   <head>
     
@@ -1829,7 +1805,7 @@ It adds access to Freeplane&apos;s and add-ons libraries
 <node TEXT="outputArea=null" ID="ID_810920230"/>
 </node>
 </node>
-<node TEXT="r" ID="ID_1049832233"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
+<node TEXT="r" ID="ID_1049832233"><richcontent TYPE="NOTE">
 <html>
   <head>
     
@@ -2131,7 +2107,7 @@ It adds access to Freeplane&apos;s and add-ons libraries
     </p>
   </body>
 </html></richcontent>
-<richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
+<richcontent TYPE="DETAILS">
 <html>
   <head>
     
@@ -2146,7 +2122,7 @@ It adds access to Freeplane&apos;s and add-ons libraries
 </node>
 </node>
 </node>
-<node TEXT="Pendientes" STYLE_REF="tasksBucket" FOLDED="true" ID="ID_1627165533"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
+<node TEXT="Pendientes" STYLE_REF="tasksBucket" ID="ID_1627165533"><richcontent TYPE="DETAILS">
 <html>
   <head>
     
@@ -2190,11 +2166,6 @@ It adds access to Freeplane&apos;s and add-ons libraries
 </node>
 </node>
 <node TEXT="gC Future B" ID="ID_501920178">
-<node TEXT="images" STYLE_REF="project" ID="ID_1363999779">
-<node ID="ID_1189576940" CONTENT_ID="ID_666152749"/>
-<node ID="ID_728212058" CONTENT_ID="ID_387007011"/>
-<node ID="ID_1399684711" CONTENT_ID="ID_249312403"/>
-</node>
 <node TEXT="Tareas" STYLE_REF="project" ID="ID_472245500">
 <node ID="ID_850023409" CONTENT_ID="ID_1916577991"/>
 <node TEXT="my.Temp.Scripts" STYLE_REF="project" ID="ID_373429985">

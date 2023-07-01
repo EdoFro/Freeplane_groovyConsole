@@ -1,8 +1,14 @@
 # History
 
+## v0.0.8
+
+* added 'ReloadFromFile' icon
+* added addon's images
+
 ## v0.0.7
 
 * improved reload confirm dialog
+* minor changes to work project in Intellij Idea
 
 ## v0.0.6
 

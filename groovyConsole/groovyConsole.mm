@@ -1,4 +1,4 @@
-<map version="freeplane 1.11.1">
+<map version="freeplane 1.11.5">
 <!--To view this file, download free mind mapping software Freeplane from https://www.freeplane.org -->
 <node TEXT="groovyConsole" LOCALIZED_STYLE_REF="AutomaticLayout.level.root" FOLDED="false" ID="ID_1090958577" LINK="https://github.com/EdoFro/Freeplane_groovyConsole" STYLE="bubble" SHAPE_HORIZONTAL_MARGIN="10 pt" SHAPE_VERTICAL_MARGIN="15 pt" MAX_WIDTH="15 cm"><hook NAME="MapStyle" background="#f9f9f8">
     <properties show_icon_for_attributes="true" edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff" mapUsesOwnSaveOptions="true" save_modification_times="false" save_last_visited_node="default" show_note_icons="true" associatedTemplateLocation="template:/vis01%20light_nord_template%20vEdo.mm" save_folding="save_folding_if_map_is_changed" fit_to_viewport="false"/>
@@ -11,7 +11,7 @@
 <arrowlink SHAPE="CUBIC_CURVE" COLOR="#bf5d3f" WIDTH="2" TRANSPARENCY="200" DASH="" FONT_SIZE="9" FONT_FAMILY="SansSerif" DESTINATION="ID_506805493" STARTINCLINATION="45 pt;0 pt;" ENDINCLINATION="57 pt;30 pt;" STARTARROW="NONE" ENDARROW="DEFAULT"/>
 <font NAME="Dialog" SIZE="10" BOLD="false" STRIKETHROUGH="false" ITALIC="false"/>
 <edge STYLE="horizontal" COLOR="#2e3440" WIDTH="1" DASH="SOLID"/>
-<richcontent CONTENT-TYPE="plain/auto" TYPE="DETAILS"/>
+<richcontent TYPE="DETAILS" CONTENT-TYPE="plain/auto"/>
 <richcontent TYPE="NOTE" CONTENT-TYPE="plain/auto"/>
 </stylenode>
 <stylenode LOCALIZED_TEXT="defaultstyle.details" ID="ID_861824498" COLOR="#006666" BACKGROUND_COLOR="#a5cece" BACKGROUND_ALPHA="204" BORDER_WIDTH_LIKE_EDGE="false" BORDER_WIDTH="1.9 px" BORDER_COLOR_LIKE_EDGE="false" BORDER_COLOR="#f0f0f0" BORDER_DASH_LIKE_EDGE="true">
@@ -78,7 +78,7 @@
 </hook>
 <attribute_layout NAME_WIDTH="99.75 pt" VALUE_WIDTH="228.74999 pt"/>
 <attribute NAME="name" VALUE="groovyConsole"/>
-<attribute NAME="version" VALUE="v0.0.7"/>
+<attribute NAME="version" VALUE="v0.0.8"/>
 <attribute NAME="author" VALUE="EdoFro"/>
 <attribute NAME="freeplaneVersionFrom" VALUE="v1.9.5"/>
 <attribute NAME="freeplaneVersionTo" VALUE=""/>
@@ -86,7 +86,7 @@
 <attribute NAME="downloadUrl" VALUE="${homepage}/releases/download/${version}/"/>
 <attribute NAME="changelogUrl" VALUE="${homepage}/releases/latest/download/history.md"/>
 <attribute NAME="addonsMenu" VALUE="/menu_bar/edoTools"/>
-<richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
+<richcontent TYPE="NOTE">
 <html>
   <head>
     
@@ -158,9 +158,10 @@
       </li>
     </ul>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
 <hook NAME="accessories/plugins/AutomaticLayout.properties" VALUE="ALL"/>
-<node TEXT="description" POSITION="top_or_left" ID="ID_522572094"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
+<node TEXT="description" POSITION="top_or_left" ID="ID_522572094"><richcontent TYPE="NOTE">
 <html>
   <head>
     
@@ -176,7 +177,8 @@
       To translate the description you have to define a translation for the key 'addons.${name}.description'.
     </p>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
 <node ID="ID_1758279751"><richcontent TYPE="NODE">
 
 <html>
@@ -195,7 +197,7 @@
 </richcontent>
 </node>
 </node>
-<node TEXT="changes" POSITION="top_or_left" ID="ID_1212993495"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
+<node TEXT="changes" POSITION="top_or_left" ID="ID_1212993495"><richcontent TYPE="NOTE">
 <html>
   <head>
     
@@ -205,7 +207,8 @@
       Change log of this add-on: append one node for each noteworthy version and put the details for each version into a child node.
     </p>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
 <node TEXT="v0.0.1" FOLDED="true" ID="ID_522947734">
 <node TEXT="Initial release" ID="ID_809404112"/>
 </node>
@@ -229,12 +232,16 @@
 <node TEXT="Added button to reload script from disk." POSITION="top_or_left" ID="ID_168761023"/>
 <node TEXT="Now it can handle absolute and relative links to script files" POSITION="top_or_left" ID="ID_1701952121"/>
 </node>
-<node TEXT="v0.0.7" ID="ID_824498760">
+<node TEXT="v0.0.7" FOLDED="true" ID="ID_824498760">
 <node TEXT="improved reload confirm dialog" ID="ID_812886248"/>
 <node TEXT="minor changes to work project in Intellij Idea" ID="ID_1326536389"/>
 </node>
+<node TEXT="v0.0.8" ID="ID_444438401">
+<node TEXT="added &apos;ReloadFromFile&apos; icon" ID="ID_688075997"/>
+<node TEXT="added addon&apos;s images" ID="ID_1715708800"/>
 </node>
-<node TEXT="license" FOLDED="true" POSITION="top_or_left" ID="ID_1329071946" VGAP_QUANTITY="2 px"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
+</node>
+<node TEXT="license" FOLDED="true" POSITION="top_or_left" ID="ID_1329071946" VGAP_QUANTITY="2 px"><richcontent TYPE="NOTE">
 <html>
   <head>
     
@@ -250,10 +257,11 @@
       The License text has to be entered as a child of the <i>'license'</i>&#xa0;node, either as plain text or as HTML.
     </p>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
 <node TEXT="MIT License&#xa;&#xa;Copyright (c) 2022 Eduardo Frohlich.&#xa;&#xa;Permission is hereby granted, free of charge, to any person obtaining a copy&#xa;of this software and associated documentation files (the &quot;Software&quot;), to deal&#xa;in the Software without restriction, including without limitation the rights&#xa;to use, copy, modify, merge, publish, distribute, sublicense, and/or sell&#xa;copies of the Software, and to permit persons to whom the Software is&#xa;furnished to do so, subject to the following conditions:&#xa;&#xa;The above copyright notice and this permission notice shall be included in all&#xa;copies or substantial portions of the Software.&#xa;&#xa;THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR&#xa;IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,&#xa;FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE&#xa;AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER&#xa;LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,&#xa;OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE&#xa;SOFTWARE." ID="ID_797385026"/>
 </node>
-<node TEXT="preferences.xml" FOLDED="true" POSITION="top_or_left" ID="ID_1801404411"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
+<node TEXT="preferences.xml" FOLDED="true" POSITION="top_or_left" ID="ID_1801404411"><richcontent TYPE="NOTE">
 <html>
   <head>
     
@@ -359,7 +367,8 @@
       </tr>
     </table>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
 <attribute_layout NAME_WIDTH="111 pt" VALUE_WIDTH="51.75 pt"/>
 <attribute NAME="attributeForExtensions" VALUE="string"/>
 <attribute NAME="fullScreen" VALUE="boolean"/>
@@ -367,7 +376,7 @@
 <attribute NAME="defaultWriteTo" VALUE="number,0,1"/>
 <node TEXT="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#xa;&lt;preferences_structure&gt;&#xa;         &lt;tabbed_pane&gt;&#xa;                  &lt;tab name=&quot;plugins&quot;&gt;&#xa;                            &lt;separator name = &quot;${name}&quot;&gt;&#xa;                                    &lt;string name = &quot;${name}_attributeForExtensions&quot;/&gt;&#xa;                                    &lt;boolean name = &quot;${name}_fullScreen&quot;/&gt;&#xa;                                    &lt;boolean name = &quot;${name}_showButtonLabels&quot;/&gt;&#xa;                                    &lt;number name  = &quot;${name}_defaultWriteTo&quot; min=&quot;0&quot; max=&quot;1&quot;/&gt;&#xa;                           &lt;/separator&gt;&#xa;                  &lt;/tab&gt;&#xa;         &lt;/tabbed_pane&gt;&#xa;&lt;/preferences_structure&gt;" ID="ID_486925025" MAX_WIDTH="20 cm"/>
 </node>
-<node TEXT="default.properties" POSITION="top_or_left" ID="ID_250057726"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
+<node TEXT="default.properties" POSITION="top_or_left" ID="ID_250057726"><richcontent TYPE="NOTE">
 <html>
   <head>
     
@@ -385,14 +394,16 @@
       </li>
     </ul>
   </body>
-</html></richcontent>
-<attribute_layout NAME_WIDTH="134.25 pt" VALUE_WIDTH="45 pt"/>
+</html>
+</richcontent>
+<attribute_layout NAME_WIDTH="134.25 pt" VALUE_WIDTH="110.25 pt"/>
 <attribute NAME="${name}_attributeForExtensions" VALUE="file_ext"/>
 <attribute NAME="${name}_fullScreen" VALUE="true"/>
 <attribute NAME="${name}_showButtonLabels" VALUE="true"/>
 <attribute NAME="${name}_defaultWriteTo" VALUE="1" OBJECT="org.freeplane.features.format.FormattedNumber|1|#0.####"/>
+<attribute NAME="${name}.icon" VALUE="images/${name}-icon.svg"/>
 </node>
-<node TEXT="translations" POSITION="top_or_left" ID="ID_1204579435"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
+<node TEXT="translations" POSITION="top_or_left" ID="ID_1204579435"><richcontent TYPE="NOTE">
 <html>
   <head>
     
@@ -422,7 +433,8 @@
       </li>
     </ul>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
 <node TEXT="en" ID="ID_565589743">
 <attribute_layout NAME_WIDTH="202.49999 pt" VALUE_WIDTH="498.74999 pt"/>
 <attribute NAME="OptionPanel.separator.${name}" VALUE="groovyConsole"/>
@@ -439,7 +451,7 @@
 <attribute NAME="addons.${name}.openWithGroovyConsoleFull" VALUE="Open with groovy console without restrictions"/>
 </node>
 </node>
-<node TEXT="deinstall" POSITION="top_or_left" ID="ID_1482851217"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
+<node TEXT="deinstall" POSITION="top_or_left" ID="ID_1482851217"><richcontent TYPE="NOTE">
 <html>
   <head>
     
@@ -449,13 +461,21 @@
       List of files and/or directories to remove on uninstall
     </p>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
+<attribute_layout VALUE_WIDTH="357.74999 pt"/>
 <attribute NAME="delete" VALUE="${installationbase}/addons/${name}.script.xml"/>
 <attribute NAME="delete" VALUE="${installationbase}/addons/${name}/scripts/openWithGroovyConsole.groovy"/>
 <attribute NAME="delete" VALUE="${installationbase}/addons/${name}/lib/groovyConsole.jar"/>
 <attribute NAME="delete" VALUE="${installationbase}/addons/${name}/scripts/openWithGroovyConsoleFull.groovy"/>
+<attribute NAME="delete" VALUE="${installationbase}/icons/groovyConsole/reloadFile.svg"/>
+<attribute NAME="delete" VALUE="${installationbase}/resources/images/groovyConsole.svg"/>
+<attribute NAME="delete" VALUE="${installationbase}/resources/images/groovyConsole-icon.svg"/>
+<attribute NAME="delete" VALUE="${installationbase}/resources/images/groovyConsole-screenshot-1.png"/>
+<attribute NAME="delete" VALUE="${installationbase}/icons/groovyConsole/saveInNode.svg"/>
+<attribute NAME="delete" VALUE="${installationbase}/icons/groovyConsole/saveInNodeAs.svg"/>
 </node>
-<node TEXT="scripts" FOLDED="true" POSITION="bottom_or_right" ID="ID_550261175"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
+<node TEXT="scripts" POSITION="bottom_or_right" ID="ID_550261175"><richcontent TYPE="NOTE">
 <html>
   <head>
     
@@ -570,7 +590,8 @@
       &#xa0;&#xa0;- In any case set execute_scripts_without_asking to true unless you want to annoy users.
     </p>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
 <node TEXT="openWithGroovyConsole.groovy" ID="ID_313603667">
 <attribute_layout NAME_WIDTH="183.74999 pt" VALUE_WIDTH="170.24999 pt"/>
 <attribute NAME="menuTitleKey" VALUE="addons.${name}.openWithGroovyConsole"/>
@@ -596,7 +617,7 @@
 <attribute NAME="execute_scripts_without_network_restriction" VALUE="true"/>
 </node>
 </node>
-<node TEXT="lib" POSITION="bottom_or_right" ID="ID_991651799"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
+<node TEXT="lib" POSITION="bottom_or_right" ID="ID_991651799"><richcontent TYPE="NOTE">
 <html>
   <head>
     
@@ -630,10 +651,11 @@
       &#xa0;- The files will be processed in the sequence as seen in the map.
     </p>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
 <node TEXT="groovyConsole.jar" ID="ID_2004676"/>
 </node>
-<node TEXT="zips" POSITION="bottom_or_right" ID="ID_1220285819" VGAP_QUANTITY="2 px"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
+<node TEXT="zips" POSITION="bottom_or_right" ID="ID_1220285819" VGAP_QUANTITY="2 px"><richcontent TYPE="NOTE">
 <html>
   <head>
     
@@ -667,12 +689,13 @@
       &#xa0;- The files will be processed in the sequence as seen in the map.
     </p>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
 <node TEXT="doc" ID="ID_779236736"/>
 <node TEXT="icons" ID="ID_424245267"/>
 <node TEXT="templates" ID="ID_1924220664"/>
 </node>
-<node TEXT="images" POSITION="bottom_or_right" ID="ID_739365883"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
+<node TEXT="images" POSITION="bottom_or_right" ID="ID_739365883"><richcontent TYPE="NOTE">
 <html>
   <head>
     
@@ -702,9 +725,13 @@
       Images can be added automatically by releaseAddOn.groovy or must be uploaded into the map via the script <i>Tools-&gt;Scripts-&gt;Insert Binary</i>&#xa0;since they have to be (base64) encoded as simple strings.
     </p>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
+<node TEXT="groovyConsole.svg" ID="ID_1937726588"/>
+<node TEXT="groovyConsole-icon.svg" ID="ID_372224366"/>
+<node TEXT="groovyConsole-screenshot-1.png" ID="ID_1339405738"/>
 </node>
-<node TEXT="actions" POSITION="bottom_or_right" ID="ID_1390909797"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
+<node TEXT="actions" POSITION="bottom_or_right" ID="ID_1390909797"><richcontent TYPE="NOTE">
 <html>
   <head>
     
@@ -712,7 +739,8 @@
   <body>
     Direct links to menu commands
   </body>
-</html></richcontent>
+</html>
+</richcontent>
 <node TEXT="Build add-on" ID="ID_1382502819" LINK="menuitem:_addons.devtools.checkAddOn_on_single_node"/>
 <node TEXT="Package add-on for publication" ID="ID_882245033" LINK="menuitem:_addons.devtools.releaseAddOn_on_single_node"/>
 <node TEXT="Export Translations" ID="ID_527611229" LINK="menuitem:_addons.devtools.exportTranslations_on_single_node"/>

@@ -9,12 +9,13 @@ targetCompatibility='1.8'
 // 1. I have to define which freeplane version is going to be used to look at the libreries (freeplane and groovy)
 def FPversion = 'instaled'
 
-	def freeplaneDirs = [
-			instaled     : "C:/Program Files/Freeplane",
-			protableApps : "C:/PortableApps/FreeplanePortable/App/Freeplane",
-			v9_15         : "C:/Freeplane/freeplane-1.9.15-pre01",
-			v10_1         : "C:/Freeplane/freeplane-1.10.1-pre05"
-		]
+    def freeplaneDirs = [
+        instaled     : "C:/Program Files/Freeplane",
+        protableApps : "C:/PortableApps/FreeplanePortable/App/Freeplane",
+        v9_15         : "C:/Freeplane/freeplane-1.9.15-pre01",
+        v10_1         : "C:/Freeplane/freeplane-1.10.2",
+        v10_USS       : "C:/Users/eduardo.frohlich/PortableApps/FreeplanePortable/App/Freeplane"
+    ]
 	def freeplaneDir = freeplaneDirs[FPversion]
 
 def groovyVersion = '4.0.1'
@@ -45,11 +46,12 @@ repositories {
 // answer:
     // https://stackoverflow.com/questions/69733508/couldnt-find-compile-for-arguments-directory-libs-on-object-of-type-org-g
     
+
 dependencies {
     implementation name : 'freeplanelauncher'
     implementation name : 'freeplaneviewer'
     implementation group: 'org.freeplane.core',   name: 'freeplaneeditor', version:"+"
-    implementation group: 'org.freeplane.script', name: 'plugin', version: '+' 
+    implementation group: 'org.freeplane.script', name: 'plugin', version: '+'
     if(isNewerGroovy){
         implementation platform ("${groovyGroupId}:groovy-all:${groovyVersion}".toString()) {
             exclude group:groovyGroupId, module:'groovy-test'

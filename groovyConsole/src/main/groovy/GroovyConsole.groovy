@@ -1,5 +1,7 @@
 package edofro.groovyconsole
 
+import java.awt.Color
+
 import javax.swing.JFrame
 import javax.swing.JOptionPane
 
@@ -48,6 +50,15 @@ class GroovyConsole {
         console.setVariable('console',console)
 
         addButtonsTo(console)
+
+        console.inputArea.with{
+            background        = Color.WHITE
+            caretColor        = Color.BLUE
+            disabledTextColor = new Color(145,145,145)
+            foreground        = Color.BLACK
+            selectedTextColor = new Color(245,245,245)
+            selectionColor    = new Color( 38,117,191)
+      }
 
         switch(inPut?.class){
             case File:
@@ -267,7 +278,9 @@ class GroovyConsole {
 	def static reLoadScriptFile(console){
 		def file = console.scriptFile
 		if (file){
-			if (JOptionPane.showConfirmDialog(null, "Do you want to reload the file?") == 0) {console.loadScriptFile(file)}
+			if (JOptionPane.showConfirmDialog(null, "Do you want to reload the file?") == 0) {
+                console.loadScriptFile(file)
+            }
 		}
 	}
 //endregion
@@ -294,13 +307,13 @@ class GroovyConsole {
         def writeButton = swing.button(
                 text : showLabels? 'send to node' : null ,
                 toolTipText : 'save script into node',
-                icon : menuUtils.getMenuItemIcon('IconAction.emoji-2B07'),
+                icon : menuUtils.getMenuItemIcon('IconAction.groovyConsole/saveInNode'),
                 actionPerformed : {e -> write(console)},
              )
         def writeAsButton = swing.button(
                 text : showLabels? 'config + send to node' : null ,
                 toolTipText : 'select options and save script into node',
-                icon : menuUtils.getMenuItemIcon('IconAction.emoji-2198'),
+                icon : menuUtils.getMenuItemIcon('IconAction.groovyConsole/saveInNodeAs'),
                 actionPerformed : {e -> writeTo(console)},
              )
         def refreshCompilerConfiguration = swing.button(
@@ -318,7 +331,7 @@ class GroovyConsole {
         def reLoadButton = swing.button(
                 text : showLabels? 'reload from file' : null ,
                 toolTipText : 'reload script from file',
-                icon : menuUtils.getMenuItemIcon('IconAction.emoji-1F4C1'),
+                icon : menuUtils.getMenuItemIcon('IconAction.groovyConsole/reloadFile'),
                 actionPerformed : {e -> reLoadScriptFile(console)},
              )
         

@@ -1,0 +1,28 @@
+<svg version="1.1" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <marker id="RoundedArrow" style="overflow:visible" markerHeight="10" markerUnits="userSpaceOnUse" markerWidth="6" orient="auto-start-reverse" preserveAspectRatio="none" viewBox="0 0 6.1347524 5.9304951">
+            <path transform="scale(.7)" d="m-0.21115-4.1056 6.4223 3.2111a1 1 90 0 1 0 1.7889l-6.4223 3.2111a1.2361 1.2361 31.717 0 1-1.7889-1.1056v-6a1.2361 1.2361 148.28 0 1 1.7889-1.1056z" style="fill-rule:evenodd;fill:context-stroke"/>
+        </marker>
+        <marker id="CapButt" style="overflow:visible" markerHeight="0.99999994" markerWidth="0.63628411" orient="auto-start-reverse" preserveAspectRatio="xMidYMid" viewBox="0 0 0.63628413 1">
+            <path transform="scale(.5)" d="m0-1h0.585c0.522 0 0.784 0.631 0.415 1 0.369 0.369 0.107 1-0.415 1h-0.585l-0.1-1z" style="fill:context-stroke"/>
+        </marker>
+        <marker id="CapTriangle" style="overflow:visible" markerHeight="0.99999994" markerWidth="0.52499998" orient="auto-start-reverse" preserveAspectRatio="xMidYMid" viewBox="0 0 0.525 1">
+            <path transform="scale(.5)" d="m0-1 1 1-1 1-0.05-1z" style="fill:context-stroke"/>
+        </marker>
+        <marker id="CapButt-1" style="overflow:visible" markerHeight="0.99999994" markerWidth="0.63628411" orient="auto-start-reverse" preserveAspectRatio="xMidYMid" viewBox="0 0 0.63628413 1">
+            <path transform="scale(.5)" d="m0-1h0.585c0.522 0 0.784 0.631 0.415 1 0.369 0.369 0.107 1-0.415 1h-0.585l-0.1-1z" style="fill:context-stroke"/>
+        </marker>
+        <marker id="CapTriangle-9" style="overflow:visible" markerHeight="0.99999994" markerWidth="0.52499998" orient="auto-start-reverse" preserveAspectRatio="xMidYMid" viewBox="0 0 0.525 1">
+            <path transform="scale(.5)" d="m0-1 1 1-1 1-0.05-1z" style="fill:context-stroke"/>
+        </marker>
+    </defs>
+    <path d="m20.196 21.525c0 1.4134-1.146 2.5594-2.5594 2.5594h-14.077c-1.4134 0-2.5594-1.146-2.5594-2.5594v-17.916c0-1.4134 1.146-2.5594 2.5594-2.5594h14.077c1.4134 0 2.5594 1.146 2.5594 2.5594z" fill="#CCD6DD" style="fill:#fff;stroke:#000"/>
+    <path d="m17.636 15.356c0 0.35384-0.28601 0.63985-0.63985 0.63985h-12.797c-0.3532 0-0.63985-0.28601-0.63985-0.63985s0.28665-0.63985 0.63985-0.63985h12.797c0.35384 0 0.63985 0.28601 0.63985 0.63985zm-10.238 2.5594c0 0.35384-0.28665 0.63985-0.63985 0.63985h-2.5594c-0.3532 0-0.63985-0.28601-0.63985-0.63985s0.28665-0.63985 0.63985-0.63985h2.5594c0.3532 0 0.63985 0.28601 0.63985 0.63985zm10.238-12.797c0 0.3532-0.28601 0.63985-0.63985 0.63985h-12.797c-0.3532 0-0.63985-0.28665-0.63985-0.63985s0.28665-0.63985 0.63985-0.63985h12.797c0.35384 0 0.63985 0.28665 0.63985 0.63985zm0 2.5594c0 0.35384-0.28601 0.63985-0.63985 0.63985h-12.797c-0.3532 0-0.63985-0.28601-0.63985-0.63985s0.28665-0.63985 0.63985-0.63985h12.797c0.35384 0 0.63985 0.28601 0.63985 0.63985zm0 2.5594c0 0.35384-0.28601 0.63985-0.63985 0.63985h-12.797c-0.3532 0-0.63985-0.28601-0.63985-0.63985s0.28665-0.63985 0.63985-0.63985h12.797c0.35384 0 0.63985 0.28601 0.63985 0.63985zm0 2.5594c0 0.35384-0.28601 0.63985-0.63985 0.63985h-12.797c-0.3532 0-0.63985-0.28601-0.63985-0.63985s0.28665-0.63985 0.63985-0.63985h12.797c0.35384 0 0.63985 0.28601 0.63985 0.63985z" fill="#99aab5" style="stroke-width:1.5628"/>
+    <rect x="17.497" y="25.283" width="15.878" height="7.7424" ry="1.1723" style="fill:none;stroke-opacity:0"/>
+    <rect x="19.115" y="27.295" width="14.829" height="6.5614" ry=".88813" style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:3;stroke:#3c83c5"/>
+    <path d="m8.7922 15.747c-3.5006 5.0797-4.7097 13.679 2.9745 14.348" style="fill:none;marker-end:url(#RoundedArrow);marker-start:;paint-order:stroke fill markers;stroke-linecap:round;stroke-linejoin:round;stroke-width:2.8;stroke:#f00"/>
+    <path d="m32.594 5.8507-6.0566 16.782" style="fill:none;marker-end:url(#CapTriangle);marker-start:url(#CapButt);opacity:.4;paint-order:normal;stroke-width:6;stroke:#000"/>
+    <path d="m31.624 4.0062-6.0566 16.782" style="fill:none;marker-end:url(#CapTriangle-9);marker-start:url(#CapButt-1);paint-order:normal;stroke-width:6;stroke:#dcd01b"/>
+    <path d="m26.843 22.371-2.2326 1.1026-0.85677-1.7323z" style="fill-rule:evenodd;fill:#cd6c7e;paint-order:normal;stroke-width:1.322"/>
+    <path d="m33.87 2.7798-7.3134 19.905" style="fill:none;opacity:.26744;stroke-linecap:round;stroke-width:3;stroke:#000"/>
+</svg>

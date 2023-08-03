@@ -1,5 +1,7 @@
 package edofro.groovyconsole
 
+import java.awt.Color
+
 import javax.swing.JFrame
 import javax.swing.JOptionPane
 
@@ -48,6 +50,15 @@ class GroovyConsole {
         console.setVariable('console',console)
 
         addButtonsTo(console)
+
+        console.inputArea.with{
+            background        = Color.WHITE
+            caretColor        = Color.BLUE
+            disabledTextColor = new Color(145,145,145)
+            foreground        = Color.BLACK
+            selectedTextColor = new Color(245,245,245)
+            selectionColor    = new Color( 38,117,191)
+      }
 
         switch(inPut?.class){
             case File:
@@ -267,7 +278,9 @@ class GroovyConsole {
 	def static reLoadScriptFile(console){
 		def file = console.scriptFile
 		if (file){
-			if (JOptionPane.showConfirmDialog(null, "Do you want to reload the file?") == 0) {console.loadScriptFile(file)}
+			if (JOptionPane.showConfirmDialog(null, "Do you want to reload the file?") == 0) {
+                console.loadScriptFile(file)
+            }
 		}
 	}
 //endregion

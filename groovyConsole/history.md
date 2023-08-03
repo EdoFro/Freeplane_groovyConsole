@@ -4,6 +4,7 @@
 
 * added 'ReloadFromFile' icon
 * added addon's images
+* retain white inputArea also for Dark themes
 
 ## v0.0.7
 

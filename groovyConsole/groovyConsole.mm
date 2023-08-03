@@ -76,7 +76,7 @@
 </stylenode>
 </map_styles>
 </hook>
-<attribute_layout NAME_WIDTH="99.75 pt" VALUE_WIDTH="228.74999 pt"/>
+<attribute_layout NAME_WIDTH="104.25 pt" VALUE_WIDTH="233.24999 pt"/>
 <attribute NAME="name" VALUE="groovyConsole"/>
 <attribute NAME="version" VALUE="v0.0.8"/>
 <attribute NAME="author" VALUE="EdoFro"/>
@@ -239,6 +239,7 @@
 <node TEXT="v0.0.8" ID="ID_444438401">
 <node TEXT="added &apos;ReloadFromFile&apos; icon" ID="ID_688075997"/>
 <node TEXT="added addon&apos;s images" ID="ID_1715708800"/>
+<node TEXT="retain white inputArea also for Dark themes" ID="ID_1145769937"/>
 </node>
 </node>
 <node TEXT="license" FOLDED="true" POSITION="top_or_left" ID="ID_1329071946" VGAP_QUANTITY="2 px"><richcontent TYPE="NOTE">
@@ -268,13 +269,13 @@
   </head>
   <body>
     <p>
-      <font color="#000000" face="SansSerif, sans-serif">The child node contains the add-on configuration as an extension to mindmapmodemenu.xml (in Tools-&gt;Preferences-&gt;Add-ons). </font>
+      <font color="#000000" face="SansSerif, sans-serif"><span style="color: #000000; font-family: SansSerif, sans-serif;">The child node contains the add-on configuration as an extension to mindmapmodemenu.xml (in Tools-&gt;Preferences-&gt;Add-ons). </span></font>
     </p>
     <p>
-      <font color="#000000" face="SansSerif, sans-serif">&#xa0;</font>
+      <font color="#000000" face="SansSerif, sans-serif"><span style="color: #000000; font-family: SansSerif, sans-serif;">&#xa0;</span></font>
     </p>
     <p>
-      <font color="#000000" face="SansSerif, sans-serif">Every property in the configuration should receive a default value in <i>default.properties</i>&#xa0;node. </font>
+      <font color="#000000" face="SansSerif, sans-serif"><span style="color: #000000; font-family: SansSerif, sans-serif;">Every property in the configuration should receive a default value in <i>default.properties</i>&#xa0;node. </span></font>
     </p>
     <p>
       
@@ -287,13 +288,13 @@
     </p>
     <ul>
       <li>
-        create the child node containing <font color="#000000" face="SansSerif, sans-serif">the add-on configuration as an extension to mindmapmodemenu.xml</font>
+        create the child node containing <font color="#000000" face="SansSerif, sans-serif"><span style="color: #000000; font-family: SansSerif, sans-serif;">the add-on configuration as an extension to mindmapmodemenu.xml</span></font>
       </li>
       <li>
-        add the properties to the <font color="#000000" face="SansSerif, sans-serif"><i>default.properties</i>&#xa0;node</font>
+        add the properties to the <font color="#000000" face="SansSerif, sans-serif"><i><span style="color: #000000; font-family: SansSerif, sans-serif;">default.properties</span></i><span style="color: #000000; font-family: SansSerif, sans-serif;">&#xa0;node</span></font>
       </li>
       <li>
-        add the properties to the <i>translations</i><font color="#000000" face="SansSerif, sans-serif">&#xa0;node</font>
+        add the properties to the <i>translations</i><font color="#000000" face="SansSerif, sans-serif"><span style="color: #000000; font-family: SansSerif, sans-serif;">&#xa0;node</span></font>
       </li>
     </ul>
     <p>
@@ -396,7 +397,7 @@
   </body>
 </html>
 </richcontent>
-<attribute_layout NAME_WIDTH="134.25 pt" VALUE_WIDTH="110.25 pt"/>
+<attribute_layout NAME_WIDTH="138.75 pt" VALUE_WIDTH="114.75 pt"/>
 <attribute NAME="${name}_attributeForExtensions" VALUE="file_ext"/>
 <attribute NAME="${name}_fullScreen" VALUE="true"/>
 <attribute NAME="${name}_showButtonLabels" VALUE="true"/>
@@ -436,7 +437,7 @@
 </html>
 </richcontent>
 <node TEXT="en" ID="ID_565589743">
-<attribute_layout NAME_WIDTH="202.49999 pt" VALUE_WIDTH="498.74999 pt"/>
+<attribute_layout NAME_WIDTH="206.99999 pt" VALUE_WIDTH="503.24999 pt"/>
 <attribute NAME="OptionPanel.separator.${name}" VALUE="groovyConsole"/>
 <attribute NAME="OptionPanel.${name}_fullScreen" VALUE="Open in full Screen mode?"/>
 <attribute NAME="addons.${name}" VALUE="groovyConsole"/>
@@ -593,7 +594,7 @@
 </html>
 </richcontent>
 <node TEXT="openWithGroovyConsole.groovy" ID="ID_313603667">
-<attribute_layout NAME_WIDTH="183.74999 pt" VALUE_WIDTH="170.24999 pt"/>
+<attribute_layout NAME_WIDTH="188.24999 pt" VALUE_WIDTH="174.74999 pt"/>
 <attribute NAME="menuTitleKey" VALUE="addons.${name}.openWithGroovyConsole"/>
 <attribute NAME="menuLocation" VALUE="${addonsMenu}/addons.${name}"/>
 <attribute NAME="executionMode" VALUE="on_single_node"/>
@@ -605,7 +606,7 @@
 <attribute NAME="execute_scripts_without_network_restriction" VALUE="false"/>
 </node>
 <node TEXT="openWithGroovyConsoleFull.groovy" ID="ID_241081477">
-<attribute_layout NAME_WIDTH="183.74999 pt" VALUE_WIDTH="182.24999 pt"/>
+<attribute_layout NAME_WIDTH="188.24999 pt" VALUE_WIDTH="186.74999 pt"/>
 <attribute NAME="menuTitleKey" VALUE="addons.${name}.openWithGroovyConsoleFull"/>
 <attribute NAME="menuLocation" VALUE="${addonsMenu}/addons.${name}"/>
 <attribute NAME="executionMode" VALUE="on_single_node"/>

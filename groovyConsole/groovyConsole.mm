@@ -1,7 +1,9 @@
-<map version="freeplane 1.11.5">
+<map version="freeplane 1.12.15">
 <!--To view this file, download free mind mapping software Freeplane from https://www.freeplane.org -->
-<node TEXT="groovyConsole" LOCALIZED_STYLE_REF="AutomaticLayout.level.root" FOLDED="false" ID="ID_1090958577" LINK="https://github.com/EdoFro/Freeplane_groovyConsole" STYLE="bubble" SHAPE_HORIZONTAL_MARGIN="10 pt" SHAPE_VERTICAL_MARGIN="15 pt" MAX_WIDTH="15 cm"><hook NAME="MapStyle" background="#f9f9f8">
-    <properties show_icon_for_attributes="true" edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff" mapUsesOwnSaveOptions="true" save_modification_times="false" save_last_visited_node="default" show_note_icons="true" associatedTemplateLocation="template:/vis01%20light_nord_template%20vEdo.mm" save_folding="save_folding_if_map_is_changed" fit_to_viewport="false"/>
+<bookmarks/>
+<node TEXT="groovyConsole" LOCALIZED_STYLE_REF="AutomaticLayout.level.root" FOLDED="false" ID="ID_1090958577" CREATED="1793746894960" MODIFIED="1793839242145" LINK="https://github.com/EdoFro/Freeplane_groovyConsole" STYLE="bubble" SHAPE_HORIZONTAL_MARGIN="10 pt" SHAPE_VERTICAL_MARGIN="15 pt" MAX_WIDTH="15 cm" AI_EDITS="true"><hook NAME="MapStyle" background="#f9f9f8ff" zoom="0.9090909">
+    <properties edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff" mapUsesOwnSaveOptions="true" associatedTemplateLocation="template:/vis01%20light_nord_template%20vEdo.mm" showTagCategories="false" show_icon_for_attributes="true" save_modification_times="false" show_tags="UNDER_NODES" save_last_visited_node="default" show_note_icons="true" save_folding="save_folding_if_map_is_changed" fit_to_viewport="false" show_icons="BESIDE_NODES"/>
+    <tags category_separator="::"/>
 
 <map_styles>
 <stylenode LOCALIZED_TEXT="styles.root_node" ID="ID_118736178" STYLE="oval" UNIFORM_SHAPE="true" VGAP_QUANTITY="24 pt">
@@ -16,6 +18,9 @@
 </stylenode>
 <stylenode LOCALIZED_TEXT="defaultstyle.details" ID="ID_861824498" COLOR="#006666" BACKGROUND_COLOR="#a5cece" BACKGROUND_ALPHA="204" BORDER_WIDTH_LIKE_EDGE="false" BORDER_WIDTH="1.9 px" BORDER_COLOR_LIKE_EDGE="false" BORDER_COLOR="#f0f0f0" BORDER_DASH_LIKE_EDGE="true">
 <font NAME="Lucida Sans" SIZE="8"/>
+</stylenode>
+<stylenode LOCALIZED_TEXT="defaultstyle.tags">
+<font SIZE="10"/>
 </stylenode>
 <stylenode LOCALIZED_TEXT="defaultstyle.attributes" ID="ID_199621123">
 <font NAME="Lucida Sans" SIZE="8"/>
@@ -76,11 +81,11 @@
 </stylenode>
 </map_styles>
 </hook>
-<attribute_layout NAME_WIDTH="104.25 pt" VALUE_WIDTH="233.24999 pt"/>
+<attribute_layout NAME_WIDTH="103.5 pt" VALUE_WIDTH="241.49999 pt"/>
 <attribute NAME="name" VALUE="groovyConsole"/>
-<attribute NAME="version" VALUE="v0.0.8"/>
+<attribute NAME="version" VALUE="v0.0.9"/>
 <attribute NAME="author" VALUE="EdoFro"/>
-<attribute NAME="freeplaneVersionFrom" VALUE="v1.9.5"/>
+<attribute NAME="freeplaneVersionFrom" VALUE="v1.13.3"/>
 <attribute NAME="freeplaneVersionTo" VALUE=""/>
 <attribute NAME="updateUrl" VALUE="${homepage}/releases/latest/download/version.properties"/>
 <attribute NAME="downloadUrl" VALUE="${homepage}/releases/download/${version}/"/>
@@ -158,10 +163,9 @@
       </li>
     </ul>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <hook NAME="accessories/plugins/AutomaticLayout.properties" VALUE="ALL"/>
-<node TEXT="description" POSITION="top_or_left" ID="ID_522572094"><richcontent TYPE="NOTE">
+<node TEXT="description" POSITION="top_or_left" ID="ID_522572094" CREATED="1793746894960" MODIFIED="1793746894960"><richcontent TYPE="NOTE">
 <html>
   <head>
     
@@ -177,27 +181,10 @@
       To translate the description you have to define a translation for the key 'addons.${name}.description'.
     </p>
   </body>
-</html>
-</richcontent>
-<node ID="ID_1758279751"><richcontent TYPE="NODE">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <h2>
-      <b>New <u>groovy console</u>&nbsp;for Freeplane:</b>
-    </h2>
-    <p>
-      A <b>groovy console</b>&nbsp;that runs on groovy 4 and java 17 to replace <b>wikdshell</b>&nbsp;&nbsp;add-on
-    </p>
-  </body>
-</html>
-</richcontent>
+</html></richcontent>
+<node TEXT="New groovy console for Freeplane:&#xa;A groovy console that runs on groovy 4 and java 17 to replace wikdshell  add-on" ID="ID_1758279751" CREATED="1793746894960" MODIFIED="1793751124261"/>
 </node>
-</node>
-<node TEXT="changes" POSITION="top_or_left" ID="ID_1212993495"><richcontent TYPE="NOTE">
+<node TEXT="changes" POSITION="top_or_left" ID="ID_1212993495" CREATED="1793746894960" MODIFIED="1793746894960"><richcontent TYPE="NOTE">
 <html>
   <head>
     
@@ -207,42 +194,57 @@
       Change log of this add-on: append one node for each noteworthy version and put the details for each version into a child node.
     </p>
   </body>
-</html>
-</richcontent>
-<node TEXT="v0.0.1" FOLDED="true" ID="ID_522947734">
-<node TEXT="Initial release" ID="ID_809404112"/>
+</html></richcontent>
+<node TEXT="v0.0.1" FOLDED="true" ID="ID_522947734" CREATED="1793746894960" MODIFIED="1793746894960">
+<node TEXT="Initial release" ID="ID_809404112" CREATED="1793746894960" MODIFIED="1793746894960"/>
 </node>
-<node TEXT="v0.0.2" FOLDED="true" ID="ID_1912966277">
-<node TEXT="Added &quot;GroovyScript plugin&quot; &apos;s compiler configuration:&#xa;It adds access to Freeplane&apos;s and add-ons libraries" ID="ID_1508478809"/>
-<node TEXT="Added button to refresh Compiler Configuration" ID="ID_979188845"/>
-<node TEXT="Added console.systemOutInterceptor.start() to capture print() and println() in the output console or the log.0 file" ID="ID_1465596146"/>
+<node TEXT="v0.0.2" FOLDED="true" ID="ID_1912966277" CREATED="1793746894960" MODIFIED="1793746894960">
+<node TEXT="Added &quot;GroovyScript plugin&quot; &apos;s compiler configuration:&#xa;It adds access to Freeplane&apos;s and add-ons libraries" ID="ID_1508478809" CREATED="1793746894960" MODIFIED="1793746894960"/>
+<node TEXT="Added button to refresh Compiler Configuration" ID="ID_979188845" CREATED="1793746894960" MODIFIED="1793746894960"/>
+<node TEXT="Added console.systemOutInterceptor.start() to capture print() and println() in the output console or the log.0 file" ID="ID_1465596146" CREATED="1793746894960" MODIFIED="1793746894960"/>
 </node>
-<node TEXT="v0.0.3" FOLDED="true" ID="ID_1793390525">
-<node TEXT="bug corrections" ID="ID_52993962"/>
-<node TEXT="Added button &apos;starts System.out interceptor&apos;:&#xa;it restarts the systemOutInterceptor so that print() and println() get written in the log file or the console" ID="ID_500698045"/>
+<node TEXT="v0.0.3" FOLDED="true" ID="ID_1793390525" CREATED="1793746894960" MODIFIED="1793746894960">
+<node TEXT="bug corrections" ID="ID_52993962" CREATED="1793746894960" MODIFIED="1793746894960"/>
+<node TEXT="Added button &apos;starts System.out interceptor&apos;:&#xa;it restarts the systemOutInterceptor so that print() and println() get written in the log file or the console" ID="ID_500698045" CREATED="1793746894960" MODIFIED="1793746894960"/>
 </node>
-<node TEXT="v0.0.4" FOLDED="true" ID="ID_389069576">
-<node TEXT="Added preference&apos;s parameters for Option Panel&#xa; - show button&apos;s labels&#xa; - default write to destination" ID="ID_685472847"/>
+<node TEXT="v0.0.4" FOLDED="true" ID="ID_389069576" CREATED="1793746894960" MODIFIED="1793746894960">
+<node TEXT="Added preference&apos;s parameters for Option Panel&#xa; - show button&apos;s labels&#xa; - default write to destination" ID="ID_685472847" CREATED="1793746894960" MODIFIED="1793746894960"/>
 </node>
-<node TEXT="v0.0.5" FOLDED="true" ID="ID_1330604699">
-<node TEXT="Changed &apos;freeplaneVersionFrom&apos; to a lower number, because I realized it worked in v1.9 versions too" ID="ID_989562001"/>
+<node TEXT="v0.0.5" FOLDED="true" ID="ID_1330604699" CREATED="1793746894960" MODIFIED="1793746894960">
+<node TEXT="Changed &apos;freeplaneVersionFrom&apos; to a lower number, because I realized it worked in v1.9 versions too" ID="ID_989562001" CREATED="1793746894960" MODIFIED="1793746894960"/>
 </node>
-<node TEXT="v0.0.6" FOLDED="true" ID="ID_1358044780">
-<node TEXT="Added a command to call groovyConsole without restrictions" POSITION="top_or_left" ID="ID_1564405201"/>
-<node TEXT="Added button to reload script from disk." POSITION="top_or_left" ID="ID_168761023"/>
-<node TEXT="Now it can handle absolute and relative links to script files" POSITION="top_or_left" ID="ID_1701952121"/>
+<node TEXT="v0.0.6" FOLDED="true" ID="ID_1358044780" CREATED="1793746894960" MODIFIED="1793746894960">
+<node TEXT="Added a command to call groovyConsole without restrictions" POSITION="top_or_left" ID="ID_1564405201" CREATED="1793746894960" MODIFIED="1793746894960"/>
+<node TEXT="Added button to reload script from disk." POSITION="top_or_left" ID="ID_168761023" CREATED="1793746894960" MODIFIED="1793746894960"/>
+<node TEXT="Now it can handle absolute and relative links to script files" POSITION="top_or_left" ID="ID_1701952121" CREATED="1793746894960" MODIFIED="1793746894960"/>
 </node>
-<node TEXT="v0.0.7" FOLDED="true" ID="ID_824498760">
-<node TEXT="improved reload confirm dialog" ID="ID_812886248"/>
-<node TEXT="minor changes to work project in Intellij Idea" ID="ID_1326536389"/>
+<node TEXT="v0.0.7" FOLDED="true" ID="ID_824498760" CREATED="1793746894960" MODIFIED="1793746894960">
+<node TEXT="improved reload confirm dialog" ID="ID_812886248" CREATED="1793746894960" MODIFIED="1793746894960"/>
+<node TEXT="minor changes to work project in Intellij Idea" ID="ID_1326536389" CREATED="1793746894960" MODIFIED="1793746894960"/>
 </node>
-<node TEXT="v0.0.8" ID="ID_444438401">
-<node TEXT="added &apos;ReloadFromFile&apos; icon" ID="ID_688075997"/>
-<node TEXT="added addon&apos;s images" ID="ID_1715708800"/>
-<node TEXT="retain white inputArea also for Dark themes" ID="ID_1145769937"/>
+<node TEXT="v0.0.8" FOLDED="true" ID="ID_444438401" CREATED="1793746894960" MODIFIED="1793746894960">
+<node TEXT="added &apos;ReloadFromFile&apos; icon" ID="ID_688075997" CREATED="1793746894960" MODIFIED="1793746894960"/>
+<node TEXT="added addon&apos;s images" ID="ID_1715708800" CREATED="1793746894960" MODIFIED="1793746894960"/>
+<node TEXT="retain white inputArea also for Dark themes" ID="ID_1145769937" CREATED="1793746894960" MODIFIED="1793746894960"/>
+</node>
+<node TEXT="v0.0.9" ID="ID_604876097" CREATED="1793746904803" MODIFIED="1793746914138">
+<node TEXT="Added temporary .groovy files for editing scripts in IntelliJ, with a configurable folder, UTF-8 encoding and unique names based on the original node." ID="ID_1524403428" CREATED="1793746915622" MODIFIED="1793836509876" AI_EDITS="true"/>
+<node TEXT="After creating a temporary, the toolbar button and normal Save update the associated file instead of creating another copy; sending to the original node remains available." ID="ID_1672722494" CREATED="1793836513428" MODIFIED="1793836513428" AI_EDITS="true"/>
+<node TEXT="Track node changes, file changes and pending temporary review independently, with warnings for unsaved node/file changes and external file modifications." ID="ID_1213612954" CREATED="1793836513428" MODIFIED="1793836513428" AI_EDITS="true"/>
+<node TEXT="Added an embedded SVG toolbar icon and an origin comment containing the source map, node and creation details; generated metadata is excluded when sending the script to a node." ID="ID_1003161189" CREATED="1793836513428" MODIFIED="1793836513428" AI_EDITS="true"/>
+<node TEXT="Automatically schedule eligible temporary files for deferred cleanup using sidecar metadata in the same folder. Retention defaults to 7 days and is configurable." ID="ID_1676812677" CREATED="1793836513428" MODIFIED="1793836513428" AI_EDITS="true"/>
+<node TEXT="Added a non-modal review window for expired files when opening a console: checked files are postponed by the configured period, unchecked files are deleted only on Apply, and closing without applying keeps every file." ID="ID_347591114" CREATED="1793836513428" MODIFIED="1793836513428" AI_EDITS="true"/>
+<node TEXT="Cancel pending cleanup on reuse or detected external changes; preserve files in use, changed since review, or lacking valid ownership metadata." ID="ID_226488989" CREATED="1793836513428" MODIFIED="1793836513428" AI_EDITS="true"/>
+<node TEXT="Fixed temporary metadata creation in Freeplane when Groovy&apos;s FastStringService is unavailable; retained compatibility with existing JSON sidecars." ID="ID_584347940" CREATED="1793836513428" MODIFIED="1793836513428" AI_EDITS="true"/>
+<node TEXT="Updated the build to Groovy 4.0.27 and an isolated Freeplane 1.13.3 dependency distribution; added automated lifecycle and cleanup-window checks." ID="ID_1884285573" CREATED="1793836513428" MODIFIED="1793836513428" AI_EDITS="true"/>
+<node TEXT="Fixed new scripts without a node copy being treated as saved and scheduled for cleanup; they now remain pending until saved to a node." ID="ID_346502123" CREATED="1793838612948" MODIFIED="1793838612948" AI_EDITS="true"/>
+<node TEXT="Refresh an existing expired-files review window when opening another console, including after Apply; preserve checked choices for unchanged candidates." ID="ID_542733820" CREATED="1793838612951" MODIFIED="1793838612951" AI_EDITS="true"/>
+<node TEXT="Keep the Gradle Wrapper bootstrap JAR available for version control while continuing to ignore generated JARs. Added regression coverage; 94 checks pass." ID="ID_1120756604" CREATED="1793838612951" MODIFIED="1793838612951" AI_EDITS="true"/>
+<node TEXT="Set the selected minimum Freeplane version to 1.13.3; installed-package smoke validation on that minimum is pending before publication." ID="ID_117009296" CREATED="1793839313713" MODIFIED="1793839313713" AI_EDITS="true"/>
+<node TEXT="Configure the Freeplane library folder through freeplaneDir in an ignored local gradle.properties or a command-line -P override. Include a settings example, validate required libraries early, and use exact Freeplane 1.13.3 library files instead of dynamic dependencies." ID="ID_1879309470" CREATED="1793839313714" MODIFIED="1793839313714" AI_EDITS="true"/>
 </node>
 </node>
-<node TEXT="license" FOLDED="true" POSITION="top_or_left" ID="ID_1329071946" VGAP_QUANTITY="2 px"><richcontent TYPE="NOTE">
+<node TEXT="license" FOLDED="true" POSITION="top_or_left" ID="ID_1329071946" CREATED="1793746894960" MODIFIED="1793746894960" VGAP_QUANTITY="2 px"><richcontent TYPE="NOTE">
 <html>
   <head>
     
@@ -258,24 +260,23 @@
       The License text has to be entered as a child of the <i>'license'</i>&#xa0;node, either as plain text or as HTML.
     </p>
   </body>
-</html>
-</richcontent>
-<node TEXT="MIT License&#xa;&#xa;Copyright (c) 2022 Eduardo Frohlich.&#xa;&#xa;Permission is hereby granted, free of charge, to any person obtaining a copy&#xa;of this software and associated documentation files (the &quot;Software&quot;), to deal&#xa;in the Software without restriction, including without limitation the rights&#xa;to use, copy, modify, merge, publish, distribute, sublicense, and/or sell&#xa;copies of the Software, and to permit persons to whom the Software is&#xa;furnished to do so, subject to the following conditions:&#xa;&#xa;The above copyright notice and this permission notice shall be included in all&#xa;copies or substantial portions of the Software.&#xa;&#xa;THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR&#xa;IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,&#xa;FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE&#xa;AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER&#xa;LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,&#xa;OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE&#xa;SOFTWARE." ID="ID_797385026"/>
+</html></richcontent>
+<node TEXT="MIT License&#xa;&#xa;Copyright (c) 2022 Eduardo Frohlich.&#xa;&#xa;Permission is hereby granted, free of charge, to any person obtaining a copy&#xa;of this software and associated documentation files (the &quot;Software&quot;), to deal&#xa;in the Software without restriction, including without limitation the rights&#xa;to use, copy, modify, merge, publish, distribute, sublicense, and/or sell&#xa;copies of the Software, and to permit persons to whom the Software is&#xa;furnished to do so, subject to the following conditions:&#xa;&#xa;The above copyright notice and this permission notice shall be included in all&#xa;copies or substantial portions of the Software.&#xa;&#xa;THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR&#xa;IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,&#xa;FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE&#xa;AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER&#xa;LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,&#xa;OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE&#xa;SOFTWARE." ID="ID_797385026" CREATED="1793746894960" MODIFIED="1793746894960"/>
 </node>
-<node TEXT="preferences.xml" FOLDED="true" POSITION="top_or_left" ID="ID_1801404411"><richcontent TYPE="NOTE">
+<node TEXT="preferences.xml" FOLDED="true" POSITION="top_or_left" ID="ID_1801404411" CREATED="1793746894960" MODIFIED="1793825151873" AI_EDITS="true"><richcontent TYPE="NOTE">
 <html>
   <head>
     
   </head>
   <body>
     <p>
-      <font color="#000000" face="SansSerif, sans-serif"><span style="color: #000000; font-family: SansSerif, sans-serif;">The child node contains the add-on configuration as an extension to mindmapmodemenu.xml (in Tools-&gt;Preferences-&gt;Add-ons). </span></font>
+      <span style="color: #000000; font-family: SansSerif, sans-serif;">The child node contains the add-on configuration as an extension to mindmapmodemenu.xml (in Tools-&gt;Preferences-&gt;Add-ons). </span>
     </p>
     <p>
-      <font color="#000000" face="SansSerif, sans-serif"><span style="color: #000000; font-family: SansSerif, sans-serif;">&#xa0;</span></font>
+      <span style="color: #000000; font-family: SansSerif, sans-serif;">&#xa0;</span>
     </p>
     <p>
-      <font color="#000000" face="SansSerif, sans-serif"><span style="color: #000000; font-family: SansSerif, sans-serif;">Every property in the configuration should receive a default value in <i>default.properties</i>&#xa0;node. </span></font>
+      <span style="color: #000000; font-family: SansSerif, sans-serif;">Every property in the configuration should receive a default value in <i>default.properties</i>&#xa0;node. </span>
     </p>
     <p>
       
@@ -288,13 +289,13 @@
     </p>
     <ul>
       <li>
-        create the child node containing <font color="#000000" face="SansSerif, sans-serif"><span style="color: #000000; font-family: SansSerif, sans-serif;">the add-on configuration as an extension to mindmapmodemenu.xml</span></font>
+        create the child node containing <span style="color: #000000; font-family: SansSerif, sans-serif;">the add-on configuration as an extension to mindmapmodemenu.xml</span>
       </li>
       <li>
-        add the properties to the <font color="#000000" face="SansSerif, sans-serif"><i><span style="color: #000000; font-family: SansSerif, sans-serif;">default.properties</span></i><span style="color: #000000; font-family: SansSerif, sans-serif;">&#xa0;node</span></font>
+        add the properties to the <i><span style="color: #000000; font-family: SansSerif, sans-serif;">default.properties</span></i><span style="color: #000000; font-family: SansSerif, sans-serif;">&#xa0;node</span>
       </li>
       <li>
-        add the properties to the <i>translations</i><font color="#000000" face="SansSerif, sans-serif"><span style="color: #000000; font-family: SansSerif, sans-serif;">&#xa0;node</span></font>
+        add the properties to the <i>translations</i><span style="color: #000000; font-family: SansSerif, sans-serif;">&#xa0;node</span>
       </li>
     </ul>
     <p>
@@ -368,16 +369,17 @@
       </tr>
     </table>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <attribute_layout NAME_WIDTH="111 pt" VALUE_WIDTH="51.75 pt"/>
 <attribute NAME="attributeForExtensions" VALUE="string"/>
 <attribute NAME="fullScreen" VALUE="boolean"/>
 <attribute NAME="showButtonLabels" VALUE="boolean"/>
 <attribute NAME="defaultWriteTo" VALUE="number,0,1"/>
-<node TEXT="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#xa;&lt;preferences_structure&gt;&#xa;         &lt;tabbed_pane&gt;&#xa;                  &lt;tab name=&quot;plugins&quot;&gt;&#xa;                            &lt;separator name = &quot;${name}&quot;&gt;&#xa;                                    &lt;string name = &quot;${name}_attributeForExtensions&quot;/&gt;&#xa;                                    &lt;boolean name = &quot;${name}_fullScreen&quot;/&gt;&#xa;                                    &lt;boolean name = &quot;${name}_showButtonLabels&quot;/&gt;&#xa;                                    &lt;number name  = &quot;${name}_defaultWriteTo&quot; min=&quot;0&quot; max=&quot;1&quot;/&gt;&#xa;                           &lt;/separator&gt;&#xa;                  &lt;/tab&gt;&#xa;         &lt;/tabbed_pane&gt;&#xa;&lt;/preferences_structure&gt;" ID="ID_486925025" MAX_WIDTH="20 cm"/>
+<attribute NAME="temporaryDirectory" VALUE="string"/>
+<attribute NAME="temporaryRetentionDays" VALUE="number,1,3650"/>
+<node TEXT="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#xa;&lt;preferences_structure&gt;&#xa;         &lt;tabbed_pane&gt;&#xa;                  &lt;tab name=&quot;plugins&quot;&gt;&#xa;                            &lt;separator name = &quot;${name}&quot;&gt;&#xa;                                    &lt;string name = &quot;${name}_attributeForExtensions&quot;/&gt;&#xa;                                    &lt;boolean name = &quot;${name}_fullScreen&quot;/&gt;&#xa;                                    &lt;boolean name = &quot;${name}_showButtonLabels&quot;/&gt;&#xa;                                    &lt;number name  = &quot;${name}_defaultWriteTo&quot; min=&quot;0&quot; max=&quot;1&quot;/&gt;&#xa;                                    &lt;string name = &quot;${name}_temporaryDirectory&quot;/&gt;&#xa;                                    &lt;number name  = &quot;${name}_temporaryRetentionDays&quot; min=&quot;1&quot; max=&quot;3650&quot;/&gt;&#xa;                           &lt;/separator&gt;&#xa;                  &lt;/tab&gt;&#xa;         &lt;/tabbed_pane&gt;&#xa;&lt;/preferences_structure&gt;" ID="ID_486925025" CREATED="1793746894960" MODIFIED="1793825520346" MAX_WIDTH="20 cm" AI_EDITS="true"/>
 </node>
-<node TEXT="default.properties" POSITION="top_or_left" ID="ID_250057726"><richcontent TYPE="NOTE">
+<node TEXT="default.properties" POSITION="top_or_left" ID="ID_250057726" CREATED="1793746894960" MODIFIED="1793831478956" AI_EDITS="true"><richcontent TYPE="NOTE">
 <html>
   <head>
     
@@ -395,16 +397,17 @@
       </li>
     </ul>
   </body>
-</html>
-</richcontent>
-<attribute_layout NAME_WIDTH="138.75 pt" VALUE_WIDTH="114.75 pt"/>
+</html></richcontent>
+<attribute_layout NAME_WIDTH="150 pt" VALUE_WIDTH="116.25 pt"/>
 <attribute NAME="${name}_attributeForExtensions" VALUE="file_ext"/>
 <attribute NAME="${name}_fullScreen" VALUE="true"/>
 <attribute NAME="${name}_showButtonLabels" VALUE="true"/>
 <attribute NAME="${name}_defaultWriteTo" VALUE="1" OBJECT="org.freeplane.features.format.FormattedNumber|1|#0.####"/>
 <attribute NAME="${name}.icon" VALUE="images/${name}-icon.svg"/>
+<attribute NAME="${name}_temporaryDirectory" VALUE=""/>
+<attribute NAME="${name}_temporaryRetentionDays" VALUE="7"/>
 </node>
-<node TEXT="translations" POSITION="top_or_left" ID="ID_1204579435"><richcontent TYPE="NOTE">
+<node TEXT="translations" POSITION="top_or_left" ID="ID_1204579435" CREATED="1793746894960" MODIFIED="1793746894960"><richcontent TYPE="NOTE">
 <html>
   <head>
     
@@ -434,25 +437,28 @@
       </li>
     </ul>
   </body>
-</html>
-</richcontent>
-<node TEXT="en" ID="ID_565589743">
-<attribute_layout NAME_WIDTH="206.99999 pt" VALUE_WIDTH="503.24999 pt"/>
-<attribute NAME="OptionPanel.separator.${name}" VALUE="groovyConsole"/>
-<attribute NAME="OptionPanel.${name}_fullScreen" VALUE="Open in full Screen mode?"/>
+</html></richcontent>
+<node TEXT="en" ID="ID_1298070476" CREATED="1793754908020" MODIFIED="1793831478956" AI_EDITS="true">
+<attribute_layout NAME_WIDTH="222.74999 pt" VALUE_WIDTH="508.49998 pt"/>
+<attribute NAME="OptionPanel.${name}_temporaryDirectory" VALUE="Temporary Groovy scripts folder"/>
+<attribute NAME="addons.${name}.openWithGroovyConsoleFull" VALUE="Open with groovy console without restrictions"/>
 <attribute NAME="addons.${name}" VALUE="groovyConsole"/>
-<attribute NAME="OptionPanel.${name}_showButtonLabels" VALUE="Show console button labels"/>
-<attribute NAME="OptionPanel.${name}_showButtonLabels.tooltip" VALUE="Shows the labels of the buttons added to thr Groovey Console&apos;s toolbar"/>
+<attribute NAME="OptionPanel.${name}_temporaryDirectory.tooltip" VALUE="Folder for temporary .groovy files edited with IntelliJ. Leave empty to choose on first use."/>
 <attribute NAME="addons.${name}.openWithGroovyConsole" VALUE="Open with groovy console"/>
 <attribute NAME="OptionPanel.${name}_attributeForExtensions" VALUE="Attribute for file extensions"/>
 <attribute NAME="OptionPanel.${name}_fullScreen.tooltip" VALUE="Groovy Console must open in full screen mode?"/>
 <attribute NAME="OptionPanel.${name}_defaultWriteTo" VALUE="Default writing target (see tooltip)"/>
-<attribute NAME="OptionPanel.${name}_attributeForExtensions.tooltip" VALUE="Name of the attribute to indicate the file extension associated with the node"/>
 <attribute NAME="OptionPanel.${name}_defaultWriteTo.tooltip" VALUE="When writing (saving) a script into a node, the default destination for the script&apos;s code is: (0: node&apos;s note, 1:node&apos;s attribute &quot;script1&quot;)"/>
-<attribute NAME="addons.${name}.openWithGroovyConsoleFull" VALUE="Open with groovy console without restrictions"/>
+<attribute NAME="OptionPanel.separator.${name}" VALUE="groovyConsole"/>
+<attribute NAME="OptionPanel.${name}_fullScreen" VALUE="Open in full Screen mode?"/>
+<attribute NAME="OptionPanel.${name}_showButtonLabels" VALUE="Show console button labels"/>
+<attribute NAME="OptionPanel.${name}_showButtonLabels.tooltip" VALUE="Shows the labels of the buttons added to thr Groovey Console&apos;s toolbar"/>
+<attribute NAME="OptionPanel.${name}_attributeForExtensions.tooltip" VALUE="Name of the attribute to indicate the file extension associated with the node"/>
+<attribute NAME="OptionPanel.${name}_temporaryRetentionDays" VALUE="Temporary scripts retention (days)"/>
+<attribute NAME="OptionPanel.${name}_temporaryRetentionDays.tooltip" VALUE="Days before cleanup review and days added when postponing a temporary script. Default: 7."/>
 </node>
 </node>
-<node TEXT="deinstall" POSITION="top_or_left" ID="ID_1482851217"><richcontent TYPE="NOTE">
+<node TEXT="deinstall" POSITION="top_or_left" ID="ID_1482851217" CREATED="1793746894960" MODIFIED="1793756551847"><richcontent TYPE="NOTE">
 <html>
   <head>
     
@@ -462,8 +468,7 @@
       List of files and/or directories to remove on uninstall
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <attribute_layout VALUE_WIDTH="357.74999 pt"/>
 <attribute NAME="delete" VALUE="${installationbase}/addons/${name}.script.xml"/>
 <attribute NAME="delete" VALUE="${installationbase}/addons/${name}/scripts/openWithGroovyConsole.groovy"/>
@@ -475,8 +480,9 @@
 <attribute NAME="delete" VALUE="${installationbase}/resources/images/groovyConsole-screenshot-1.png"/>
 <attribute NAME="delete" VALUE="${installationbase}/icons/groovyConsole/saveInNode.svg"/>
 <attribute NAME="delete" VALUE="${installationbase}/icons/groovyConsole/saveInNodeAs.svg"/>
+<attribute NAME="delete" VALUE="${installationbase}/icons/groovyConsole/temporaryScript.svg"/>
 </node>
-<node TEXT="scripts" POSITION="bottom_or_right" ID="ID_550261175"><richcontent TYPE="NOTE">
+<node TEXT="scripts" POSITION="bottom_or_right" ID="ID_550261175" CREATED="1793746894960" MODIFIED="1793746894960"><richcontent TYPE="NOTE">
 <html>
   <head>
     
@@ -591,10 +597,9 @@
       &#xa0;&#xa0;- In any case set execute_scripts_without_asking to true unless you want to annoy users.
     </p>
   </body>
-</html>
-</richcontent>
-<node TEXT="openWithGroovyConsole.groovy" ID="ID_313603667">
-<attribute_layout NAME_WIDTH="188.24999 pt" VALUE_WIDTH="174.74999 pt"/>
+</html></richcontent>
+<node TEXT="openWithGroovyConsole.groovy" ID="ID_313603667" CREATED="1793746894960" MODIFIED="1793831478974">
+<attribute_layout NAME_WIDTH="187.49999 pt" VALUE_WIDTH="175.49999 pt"/>
 <attribute NAME="menuTitleKey" VALUE="addons.${name}.openWithGroovyConsole"/>
 <attribute NAME="menuLocation" VALUE="${addonsMenu}/addons.${name}"/>
 <attribute NAME="executionMode" VALUE="on_single_node"/>
@@ -605,8 +610,8 @@
 <attribute NAME="execute_scripts_without_exec_restriction" VALUE="false"/>
 <attribute NAME="execute_scripts_without_network_restriction" VALUE="false"/>
 </node>
-<node TEXT="openWithGroovyConsoleFull.groovy" ID="ID_241081477">
-<attribute_layout NAME_WIDTH="188.24999 pt" VALUE_WIDTH="186.74999 pt"/>
+<node TEXT="openWithGroovyConsoleFull.groovy" ID="ID_241081477" CREATED="1793746894960" MODIFIED="1793831478978">
+<attribute_layout NAME_WIDTH="187.49999 pt" VALUE_WIDTH="188.24999 pt"/>
 <attribute NAME="menuTitleKey" VALUE="addons.${name}.openWithGroovyConsoleFull"/>
 <attribute NAME="menuLocation" VALUE="${addonsMenu}/addons.${name}"/>
 <attribute NAME="executionMode" VALUE="on_single_node"/>
@@ -618,7 +623,7 @@
 <attribute NAME="execute_scripts_without_network_restriction" VALUE="true"/>
 </node>
 </node>
-<node TEXT="lib" POSITION="bottom_or_right" ID="ID_991651799"><richcontent TYPE="NOTE">
+<node TEXT="lib" POSITION="bottom_or_right" ID="ID_991651799" CREATED="1793746894960" MODIFIED="1793746894960"><richcontent TYPE="NOTE">
 <html>
   <head>
     
@@ -652,11 +657,10 @@
       &#xa0;- The files will be processed in the sequence as seen in the map.
     </p>
   </body>
-</html>
-</richcontent>
-<node TEXT="groovyConsole.jar" ID="ID_2004676"/>
+</html></richcontent>
+<node TEXT="groovyConsole.jar" ID="ID_2004676" CREATED="1793746894960" MODIFIED="1793746894960"/>
 </node>
-<node TEXT="zips" POSITION="bottom_or_right" ID="ID_1220285819" VGAP_QUANTITY="2 px"><richcontent TYPE="NOTE">
+<node TEXT="zips" POSITION="bottom_or_right" ID="ID_1220285819" CREATED="1793746894960" MODIFIED="1793746894960" VGAP_QUANTITY="2 px"><richcontent TYPE="NOTE">
 <html>
   <head>
     
@@ -690,13 +694,12 @@
       &#xa0;- The files will be processed in the sequence as seen in the map.
     </p>
   </body>
-</html>
-</richcontent>
-<node TEXT="doc" ID="ID_779236736"/>
-<node TEXT="icons" ID="ID_424245267"/>
-<node TEXT="templates" ID="ID_1924220664"/>
+</html></richcontent>
+<node TEXT="doc" ID="ID_779236736" CREATED="1793746894960" MODIFIED="1793746894960"/>
+<node TEXT="icons" ID="ID_424245267" CREATED="1793746894960" MODIFIED="1793746894960"/>
+<node TEXT="templates" ID="ID_1924220664" CREATED="1793746894960" MODIFIED="1793746894960"/>
 </node>
-<node TEXT="images" POSITION="bottom_or_right" ID="ID_739365883"><richcontent TYPE="NOTE">
+<node TEXT="images" POSITION="bottom_or_right" ID="ID_739365883" CREATED="1793746894960" MODIFIED="1793746894960"><richcontent TYPE="NOTE">
 <html>
   <head>
     
@@ -726,13 +729,12 @@
       Images can be added automatically by releaseAddOn.groovy or must be uploaded into the map via the script <i>Tools-&gt;Scripts-&gt;Insert Binary</i>&#xa0;since they have to be (base64) encoded as simple strings.
     </p>
   </body>
-</html>
-</richcontent>
-<node TEXT="groovyConsole.svg" ID="ID_1937726588"/>
-<node TEXT="groovyConsole-icon.svg" ID="ID_372224366"/>
-<node TEXT="groovyConsole-screenshot-1.png" ID="ID_1339405738"/>
+</html></richcontent>
+<node TEXT="groovyConsole.svg" ID="ID_1937726588" CREATED="1793746894960" MODIFIED="1793746894960"/>
+<node TEXT="groovyConsole-icon.svg" ID="ID_372224366" CREATED="1793746894960" MODIFIED="1793746894960"/>
+<node TEXT="groovyConsole-screenshot-1.png" ID="ID_1339405738" CREATED="1793746894960" MODIFIED="1793746894960"/>
 </node>
-<node TEXT="actions" POSITION="bottom_or_right" ID="ID_1390909797"><richcontent TYPE="NOTE">
+<node TEXT="actions" POSITION="bottom_or_right" ID="ID_1390909797" CREATED="1793746894960" MODIFIED="1793746894960"><richcontent TYPE="NOTE">
 <html>
   <head>
     
@@ -740,12 +742,11 @@
   <body>
     Direct links to menu commands
   </body>
-</html>
-</richcontent>
-<node TEXT="Build add-on" ID="ID_1382502819" LINK="menuitem:_addons.devtools.checkAddOn_on_single_node"/>
-<node TEXT="Package add-on for publication" ID="ID_882245033" LINK="menuitem:_addons.devtools.releaseAddOn_on_single_node"/>
-<node TEXT="Export Translations" ID="ID_527611229" LINK="menuitem:_addons.devtools.exportTranslations_on_single_node"/>
-<node TEXT="Import Translations" ID="ID_271791461" LINK="menuitem:_addons.devtools.importTranslations_on_single_node"/>
+</html></richcontent>
+<node TEXT="Build add-on" ID="ID_1382502819" CREATED="1793746894960" MODIFIED="1793746894960" LINK="menuitem:_addons.devtools.checkAddOn_on_single_node"/>
+<node TEXT="Package add-on for publication" ID="ID_882245033" CREATED="1793746894960" MODIFIED="1793746894960" LINK="menuitem:_addons.devtools.releaseAddOn_on_single_node"/>
+<node TEXT="Export Translations" ID="ID_527611229" CREATED="1793746894960" MODIFIED="1793746894960" LINK="menuitem:_addons.devtools.exportTranslations_on_single_node"/>
+<node TEXT="Import Translations" ID="ID_271791461" CREATED="1793746894960" MODIFIED="1793746894960" LINK="menuitem:_addons.devtools.importTranslations_on_single_node"/>
 </node>
 </node>
 </map>

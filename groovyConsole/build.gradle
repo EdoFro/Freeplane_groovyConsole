@@ -6,19 +6,25 @@ apply plugin: 'groovy'
 
 targetCompatibility='1.8'
 
-// 1. I have to define which freeplane version is going to be used to look at the libreries (freeplane and groovy)
-def FPversion = 'instaled'
+def freeplaneVersion = '1.13.3'
+def configuredFreeplaneDir = providers.gradleProperty('freeplaneDir').orNull?.trim()
+if (!configuredFreeplaneDir) {
+    throw new GradleException('Set freeplaneDir in groovyConsole/gradle.properties (copy gradle.properties.example), or pass -PfreeplaneDir=C:/path/to/freeplane-1.13.3.')
+}
+// Relative paths are resolved against this Gradle project (groovyConsole).
+def freeplaneDir = file(configuredFreeplaneDir)
+def freeplaneLibraries = [
+    new File(freeplaneDir, 'freeplanelauncher.jar'),
+    new File(freeplaneDir, 'core/org.freeplane.core/lib/freeplaneviewer.jar'),
+    new File(freeplaneDir, "core/org.freeplane.core/lib/freeplaneeditor-${freeplaneVersion}.jar"),
+    new File(freeplaneDir, "plugins/org.freeplane.plugin.script/lib/plugin-${freeplaneVersion}.jar")
+]
+def missingLibraries = freeplaneLibraries.findAll { !it.isFile() }
+if (missingLibraries) {
+    throw new GradleException("freeplaneDir must point to an extracted Freeplane ${freeplaneVersion} distribution. Missing libraries:\n" + missingLibraries.join('\n'))
+}
 
-    def freeplaneDirs = [
-        instaled     : "C:/Program Files/Freeplane",
-        protableApps : "C:/PortableApps/FreeplanePortable/App/Freeplane",
-        v9_15         : "C:/Freeplane/freeplane-1.9.15-pre01",
-        v10_1         : "C:/Freeplane/freeplane-1.10.2",
-        v10_USS       : "C:/Users/eduardo.frohlich/PortableApps/FreeplanePortable/App/Freeplane"
-    ]
-	def freeplaneDir = freeplaneDirs[FPversion]
-
-def groovyVersion = '4.0.1'
+def groovyVersion = '4.0.27'
 
 	def isNewerGroovy = groovyVersion.startsWith('4.')
 	def groovyGroupId = isNewerGroovy?'org.apache.groovy':'org.codehaus.groovy'
@@ -30,14 +36,6 @@ clean.doFirst { delete "${rootDir}/lib" } // para eliminar todas las .jar
 
 repositories {
     mavenCentral()
-    flatDir name: 'localGitDepsRepository',
-    dirs: [
-        "${freeplaneDir}",
-        "${freeplaneDir}/core/org.freeplane.core/lib",
-        "${freeplaneDir}/plugins/org.freeplane.plugin.script/lib",
-        // "${freeplaneDir}/plugins/org.freeplane.plugin.markdown/lib", // para incluir markedj.jar
-        // "${rootDir}/lib" //ahí puse markedj y jsoup
-    ]
 }
 
 
@@ -48,12 +46,10 @@ repositories {
     
 
 dependencies {
-    implementation name : 'freeplanelauncher'
-    implementation name : 'freeplaneviewer'
-    implementation group: 'org.freeplane.core',   name: 'freeplaneeditor', version:"+"
-    implementation group: 'org.freeplane.script', name: 'plugin', version: '+'
+    // Exact files from the chosen 1.13.3 distribution; no dynamic version or remote fallback.
+    implementation files(freeplaneLibraries)
     if(isNewerGroovy){
-        implementation platform ("${groovyGroupId}:groovy-all:${groovyVersion}".toString()) {
+        implementation ("${groovyGroupId}:groovy-all:${groovyVersion}".toString()) {
             exclude group:groovyGroupId, module:'groovy-test'
             exclude group:groovyGroupId, module:'groovy-test-junit5'
             exclude group:groovyGroupId, module:'groovy-testng'
@@ -76,4 +72,19 @@ dependencies {
         }    
     }
     implementation "${groovyGroupId}:groovy-dateutil:${groovyVersion}".toString()
+}
+
+tasks.register('verifyTemporaryScripts', JavaExec) {
+    dependsOn classes
+    classpath = sourceSets.main.runtimeClasspath
+    mainClass = 'groovy.ui.GroovyMain'
+    args file('src/test/scripts/TemporaryScriptChecks.groovy').absolutePath, layout.buildDirectory.get().asFile.absolutePath
+}
+
+tasks.named('check') { dependsOn 'verifyTemporaryScripts' }
+
+tasks.named('processResources') {
+    from('zips/icons/groovyConsole/temporaryScript.svg') {
+        into 'icons/groovyConsole'
+    }
 }

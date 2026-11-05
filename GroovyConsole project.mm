@@ -1,7 +1,8 @@
-<map version="freeplane 1.11.5">
+<map version="freeplane 1.12.15">
 <!--To view this file, download free mind mapping software Freeplane from https://www.freeplane.org -->
 <attribute_registry SHOW_ATTRIBUTES="selected"/>
-<node TEXT="groovyConsole project" FOLDED="false" ID="ID_581835333" LINK="../../OneDrive/Documentos/Mochila/Freeplane/ScriptsEnComputadorYDesarrollosEdo%20-%20mochila.mm"><hook NAME="MapStyle" background="#f9f9f8" zoom="0.8">
+<bookmarks/>
+<node TEXT="groovyConsole project" FOLDED="false" ID="ID_581835333" CREATED="1793739878272" MODIFIED="1793739878272" LINK="../../OneDrive/Documentos/Mochila/Freeplane/ScriptsEnComputadorYDesarrollosEdo%20-%20mochila.mm"><hook NAME="MapStyle" background="#f9f9f8ff" zoom="0.8">
     <conditional_styles>
         <conditional_style ACTIVE="true" STYLE_REF="customMenuPackage" LAST="false">
             <attribute_exists_condition ATTRIBUTE="tbActions"/>
@@ -50,7 +51,8 @@
             <attribute_contains_condition ATTRIBUTE="modifiedFile" VALUE="true"/>
         </conditional_style>
     </conditional_styles>
-    <properties edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff" mapUsesOwnSaveOptions="true" BookmarksKeys="{}" followedTemplateLocation="template:/DFGHI%20Proyecto-Groovy-Tareas-MDI-menuButton%20(vis01).mm" pruebaDiccionario="ID_311366985|:|idDictionary|-|ID_323296041|:|ToM Actions|-|" show_icon_for_attributes="true" show_notes_in_map="false" save_modification_times="false" save_last_visited_node="default" show_note_icons="true" MDI_template="v0.0.13" mdhFreeMindmapPath="hhgf" save_folding="save_folding_if_map_is_changed" followedMapLastTime="1661362125221" fit_to_viewport="false"/>
+    <properties edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff" mapUsesOwnSaveOptions="true" BookmarksKeys="{}" followedTemplateLocation="template:/DFGHI%20Proyecto-Groovy-Tareas-MDI-menuButton%20(vis01).mm" pruebaDiccionario="ID_311366985|:|idDictionary|-|ID_323296041|:|ToM Actions|-|" showTagCategories="false" show_icon_for_attributes="true" show_notes_in_map="false" save_modification_times="false" show_tags="UNDER_NODES" save_last_visited_node="default" show_note_icons="true" MDI_template="v0.0.13" mdhFreeMindmapPath="hhgf" save_folding="save_folding_if_map_is_changed" followedMapLastTime="1661362125221" fit_to_viewport="false" show_icons="BESIDE_NODES"/>
+    <tags category_separator="::"/>
 
 <map_styles>
 <stylenode LOCALIZED_TEXT="styles.root_node" ID="ID_118736178" STYLE="oval" UNIFORM_SHAPE="true" VGAP_QUANTITY="24 pt">
@@ -65,6 +67,9 @@
 </stylenode>
 <stylenode LOCALIZED_TEXT="defaultstyle.details" ID="ID_861824498" COLOR="#006666" BACKGROUND_COLOR="#a5cece" BACKGROUND_ALPHA="204" BORDER_WIDTH_LIKE_EDGE="false" BORDER_WIDTH="1.9 px" BORDER_COLOR_LIKE_EDGE="false" BORDER_COLOR="#f0f0f0" BORDER_DASH_LIKE_EDGE="true">
 <font NAME="MS UI Gothic" SIZE="10"/>
+</stylenode>
+<stylenode LOCALIZED_TEXT="defaultstyle.tags">
+<font SIZE="10"/>
 </stylenode>
 <stylenode LOCALIZED_TEXT="defaultstyle.attributes" ID="ID_199621123">
 <font NAME="Lucida Sans" SIZE="8"/>
@@ -256,7 +261,7 @@
 </stylenode>
 </map_styles>
 </hook>
-<node TEXT="Freeplane_groovyConsole" STYLE_REF="baseFolder" ID="ID_108058596" LINK=".">
+<node TEXT="Freeplane_groovyConsole" STYLE_REF="baseFolder" ID="ID_108058596" CREATED="1793739878276" MODIFIED="1793739878276" LINK=".">
 <attribute NAME="nameFilter" VALUE=""/>
 <attribute NAME="maxDepth" VALUE="-1" OBJECT="org.freeplane.features.format.FormattedNumber|-1|#0.####"/>
 <attribute NAME="markWhenMoved" VALUE="0" OBJECT="org.freeplane.features.format.FormattedNumber|0|#0.####"/>
@@ -485,16 +490,16 @@
     </p>
   </body>
 </html></richcontent>
-<node TEXT="files" ID="ID_319055208">
-<node TEXT=".git" STYLE_REF="freshNew" ID="ID_188061025" LINK=".git/"/>
-<node TEXT=".idea" STYLE_REF="freshNew" ID="ID_1092617171" LINK=".idea/"/>
-<node TEXT=".gitattributes" ID="ID_674537230" LINK=".gitattributes">
+<node TEXT="files" ID="ID_319055208" CREATED="1793739878281" MODIFIED="1793739878281">
+<node TEXT=".git" ID="ID_188061025" CREATED="1793739878281" MODIFIED="1793741309830" LINK=".git/"/>
+<node TEXT=".idea" ID="ID_1092617171" CREATED="1793739878281" MODIFIED="1793741312632" LINK=".idea/"/>
+<node TEXT=".gitattributes" ID="ID_674537230" CREATED="1793739878281" MODIFIED="1793739878281" LINK=".gitattributes">
 <attribute NAME="lastModifiedTime" VALUE="24-04-23 15:04" OBJECT="org.freeplane.features.format.FormattedDate|2023-04-24T15:04-0400|dd-MM-yy HH:mm"/>
 <attribute NAME="lastAccessTime" VALUE="03-08-23 15:52" OBJECT="org.freeplane.features.format.FormattedDate|2023-08-03T15:52-0400|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="24-04-23 15:04" OBJECT="org.freeplane.features.format.FormattedDate|2023-04-24T15:04-0400|dd-MM-yy HH:mm"/>
 <attribute NAME="fileSize" VALUE="68" OBJECT="org.freeplane.features.format.FormattedNumber|68|#,##0"/>
 </node>
-<node TEXT="delete" ID="ID_582073411" LINK="delete/"><richcontent TYPE="DETAILS">
+<node TEXT="delete" ID="ID_582073411" CREATED="1793739878285" MODIFIED="1793739878285" LINK="delete/"><richcontent TYPE="DETAILS">
 <html>
   <head>
     
@@ -506,7 +511,7 @@
   </body>
 </html></richcontent>
 </node>
-<node TEXT="ignoredByGitHub" ID="ID_1103966821" LINK="ignoredByGitHub/"><richcontent TYPE="DETAILS">
+<node TEXT="ignoredByGitHub" FOLDED="true" ID="ID_1103966821" CREATED="1793739878285" MODIFIED="1793739878285" LINK="ignoredByGitHub/"><richcontent TYPE="DETAILS">
 <html>
   <head>
     
@@ -517,25 +522,90 @@
     </p>
   </body>
 </html></richcontent>
+<node TEXT="console-ui-test-1793746390093" ID="ID_120968060" CREATED="1793747080088" MODIFIED="1793747199422" LINK="ignoredByGitHub/console-ui-test-1793746390093/">
+<node TEXT="Pruebas GroovyConsole.mm" ID="ID_430159009" CREATED="1793747080094" MODIFIED="1793747202042" LINK="ignoredByGitHub/console-ui-test-1793746390093/Pruebas%20GroovyConsole.mm">
+<attribute NAME="lastModifiedTime" VALUE="03-11-26 19:53" OBJECT="org.freeplane.features.format.FormattedDate|2026-11-03T19:53-0300|datetime"/>
+<attribute NAME="lastAccessTime" VALUE="03-11-26 19:53" OBJECT="org.freeplane.features.format.FormattedDate|2026-11-03T19:53-0300|datetime"/>
+<attribute NAME="creationTime" VALUE="03-11-26 19:53" OBJECT="org.freeplane.features.format.FormattedDate|2026-11-03T19:53-0300|datetime"/>
+<attribute NAME="fileSize" VALUE="112" OBJECT="org.freeplane.features.format.FormattedNumber|112|#,##0"/>
 </node>
-<node TEXT="groovyConsole" STYLE_REF="file_folder" ID="ID_634873088" LINK="groovyConsole/">
+<node TEXT="prueba-carga.groovy" ID="ID_189748827" CREATED="1793747080094" MODIFIED="1793747202042" LINK="ignoredByGitHub/console-ui-test-1793746390093/prueba-carga.groovy">
+<attribute NAME="lastModifiedTime" VALUE="03-11-26 19:56" OBJECT="org.freeplane.features.format.FormattedDate|2026-11-03T19:56-0300|datetime"/>
+<attribute NAME="lastAccessTime" VALUE="03-11-26 19:56" OBJECT="org.freeplane.features.format.FormattedDate|2026-11-03T19:56-0300|datetime"/>
+<attribute NAME="creationTime" VALUE="03-11-26 19:56" OBJECT="org.freeplane.features.format.FormattedDate|2026-11-03T19:56-0300|datetime"/>
+<attribute NAME="fileSize" VALUE="87" OBJECT="org.freeplane.features.format.FormattedNumber|87|#,##0"/>
+</node>
+</node>
+<node TEXT="freeplane-check" ID="ID_1902695002" CREATED="1793747080101" MODIFIED="1793747199424" LINK="ignoredByGitHub/freeplane-check/">
+<node TEXT="freeplane_bin-1.13.1.zip" ID="ID_199654901" CREATED="1793747081923" MODIFIED="1793747202042" LINK="ignoredByGitHub/freeplane-check/freeplane_bin-1.13.1.zip">
+<attribute NAME="lastModifiedTime" VALUE="03-11-26 19:16" OBJECT="org.freeplane.features.format.FormattedDate|2026-11-03T19:16-0300|datetime"/>
+<attribute NAME="lastAccessTime" VALUE="03-11-26 19:16" OBJECT="org.freeplane.features.format.FormattedDate|2026-11-03T19:16-0300|datetime"/>
+<attribute NAME="creationTime" VALUE="03-11-26 19:15" OBJECT="org.freeplane.features.format.FormattedDate|2026-11-03T19:15-0300|datetime"/>
+<attribute NAME="fileSize" VALUE="70.632.735" OBJECT="org.freeplane.features.format.FormattedNumber|70632735|#,##0"/>
+</node>
+<node TEXT="freeplane_bin-1.13.3.zip" ID="ID_259543106" CREATED="1793747081930" MODIFIED="1793747202042" LINK="ignoredByGitHub/freeplane-check/freeplane_bin-1.13.3.zip">
+<attribute NAME="lastModifiedTime" VALUE="03-11-26 19:19" OBJECT="org.freeplane.features.format.FormattedDate|2026-11-03T19:19-0300|datetime"/>
+<attribute NAME="lastAccessTime" VALUE="03-11-26 19:20" OBJECT="org.freeplane.features.format.FormattedDate|2026-11-03T19:20-0300|datetime"/>
+<attribute NAME="creationTime" VALUE="03-11-26 19:18" OBJECT="org.freeplane.features.format.FormattedDate|2026-11-03T19:18-0300|datetime"/>
+<attribute NAME="fileSize" VALUE="71.889.782" OBJECT="org.freeplane.features.format.FormattedNumber|71889782|#,##0"/>
+</node>
+<node TEXT="freeplane_bin-1.13.4.zip" ID="ID_1552633040" CREATED="1793747081933" MODIFIED="1793747202042" LINK="ignoredByGitHub/freeplane-check/freeplane_bin-1.13.4.zip">
+<attribute NAME="lastModifiedTime" VALUE="03-11-26 19:07" OBJECT="org.freeplane.features.format.FormattedDate|2026-11-03T19:07-0300|datetime"/>
+<attribute NAME="lastAccessTime" VALUE="03-11-26 19:08" OBJECT="org.freeplane.features.format.FormattedDate|2026-11-03T19:08-0300|datetime"/>
+<attribute NAME="creationTime" VALUE="03-11-26 19:06" OBJECT="org.freeplane.features.format.FormattedDate|2026-11-03T19:06-0300|datetime"/>
+<attribute NAME="fileSize" VALUE="75.216.012" OBJECT="org.freeplane.features.format.FormattedNumber|75216012|#,##0"/>
+</node>
+<node TEXT="freeplaneviewer-1.13.1-official.jar" ID="ID_1352089808" CREATED="1793747081936" MODIFIED="1793747202042" LINK="ignoredByGitHub/freeplane-check/freeplaneviewer-1.13.1-official.jar">
+<attribute NAME="lastModifiedTime" VALUE="01-02-80 00:00" OBJECT="org.freeplane.features.format.FormattedDate|1980-02-01T00:00-0300|datetime"/>
+<attribute NAME="lastAccessTime" VALUE="03-11-26 19:16" OBJECT="org.freeplane.features.format.FormattedDate|2026-11-03T19:16-0300|datetime"/>
+<attribute NAME="creationTime" VALUE="03-11-26 19:16" OBJECT="org.freeplane.features.format.FormattedDate|2026-11-03T19:16-0300|datetime"/>
+<attribute NAME="fileSize" VALUE="4.294.992" OBJECT="org.freeplane.features.format.FormattedNumber|4294992|#,##0"/>
+</node>
+<node TEXT="freeplaneviewer-1.13.3-official.jar" ID="ID_904650839" CREATED="1793747081939" MODIFIED="1793747202042" LINK="ignoredByGitHub/freeplane-check/freeplaneviewer-1.13.3-official.jar">
+<attribute NAME="lastModifiedTime" VALUE="01-02-80 00:00" OBJECT="org.freeplane.features.format.FormattedDate|1980-02-01T00:00-0300|datetime"/>
+<attribute NAME="lastAccessTime" VALUE="03-11-26 19:52" OBJECT="org.freeplane.features.format.FormattedDate|2026-11-03T19:52-0300|datetime"/>
+<attribute NAME="creationTime" VALUE="03-11-26 19:19" OBJECT="org.freeplane.features.format.FormattedDate|2026-11-03T19:19-0300|datetime"/>
+<attribute NAME="fileSize" VALUE="4.394.656" OBJECT="org.freeplane.features.format.FormattedNumber|4394656|#,##0"/>
+</node>
+<node TEXT="freeplaneviewer-official.jar" ID="ID_1116275886" CREATED="1793747081942" MODIFIED="1793747202058" LINK="ignoredByGitHub/freeplane-check/freeplaneviewer-official.jar">
+<attribute NAME="lastModifiedTime" VALUE="01-02-80 00:00" OBJECT="org.freeplane.features.format.FormattedDate|1980-02-01T00:00-0300|datetime"/>
+<attribute NAME="lastAccessTime" VALUE="03-11-26 19:11" OBJECT="org.freeplane.features.format.FormattedDate|2026-11-03T19:11-0300|datetime"/>
+<attribute NAME="creationTime" VALUE="03-11-26 19:08" OBJECT="org.freeplane.features.format.FormattedDate|2026-11-03T19:08-0300|datetime"/>
+<attribute NAME="fileSize" VALUE="4.422.752" OBJECT="org.freeplane.features.format.FormattedNumber|4422752|#,##0"/>
+</node>
+<node TEXT="1.13.3" STYLE_REF="locked" POSITION="bottom_or_right" ID="ID_550920063" CREATED="1793752045136" MODIFIED="1793752074152" LINK="ignoredByGitHub/freeplane-check/1.13.3/"/>
+</node>
+<node TEXT="install-test-1.13.3" STYLE_REF="locked" ID="ID_404479903" CREATED="1793752047108" MODIFIED="1793752103167" LINK="ignoredByGitHub/install-test-1.13.3/"/>
+</node>
+<node TEXT="groovyConsole" STYLE_REF="file_folder" ID="ID_634873088" CREATED="1793739878285" MODIFIED="1793741385124" LINK="groovyConsole/">
 <attribute NAME="lastModifiedTime" VALUE="25-04-22 15:57" OBJECT="org.freeplane.features.format.FormattedDate|2022-04-25T15:57-0400|dd-MM-yy HH:mm"/>
 <attribute NAME="lastAccessTime" VALUE="25-04-22 18:20" OBJECT="org.freeplane.features.format.FormattedDate|2022-04-25T18:20-0400|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="17-04-22 10:42" OBJECT="org.freeplane.features.format.FormattedDate|2022-04-17T10:42-0400|datetime"/>
 <attribute NAME="fileSize" VALUE="4.096" OBJECT="org.freeplane.features.format.FormattedNumber|4096|#,##0"/>
-<node TEXT="lib" STYLE_REF="Organizador" ID="ID_1832614409">
+<richcontent TYPE="DETAILS">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      folder con los archivos para compilar el Add-On
+    </p>
+  </body>
+</html></richcontent>
+<node TEXT="lib" STYLE_REF="Organizador" ID="ID_1832614409" CREATED="1793739878285" MODIFIED="1793739878285">
 <attribute NAME="projectCode" VALUE="lib"/>
-<node TEXT="src" STYLE_REF="file_folder" ID="ID_1154616461" LINK="groovyConsole/src/">
+<node TEXT="src" STYLE_REF="file_folder" ID="ID_1154616461" CREATED="1793739878285" MODIFIED="1793739878285" LINK="groovyConsole/src/">
 <attribute NAME="lastModifiedTime" VALUE="17-04-22 10:42" OBJECT="org.freeplane.features.format.FormattedDate|2022-04-17T10:42-0400|datetime"/>
 <attribute NAME="lastAccessTime" VALUE="25-04-22 18:20" OBJECT="org.freeplane.features.format.FormattedDate|2022-04-25T18:20-0400|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="17-04-22 10:42" OBJECT="org.freeplane.features.format.FormattedDate|2022-04-17T10:42-0400|datetime"/>
 <attribute NAME="fileSize" VALUE="0" OBJECT="org.freeplane.features.format.FormattedNumber|0|#,##0"/>
-<node TEXT="main" STYLE_REF="file_folder" ID="ID_233497056" LINK="groovyConsole/src/main/">
+<node TEXT="main" STYLE_REF="file_folder" ID="ID_233497056" CREATED="1793739878285" MODIFIED="1793739878285" LINK="groovyConsole/src/main/">
 <attribute NAME="lastModifiedTime" VALUE="17-04-22 10:42" OBJECT="org.freeplane.features.format.FormattedDate|2022-04-17T10:42-0400|datetime"/>
 <attribute NAME="lastAccessTime" VALUE="25-04-22 18:20" OBJECT="org.freeplane.features.format.FormattedDate|2022-04-25T18:20-0400|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="17-04-22 10:42" OBJECT="org.freeplane.features.format.FormattedDate|2022-04-17T10:42-0400|datetime"/>
 <attribute NAME="fileSize" VALUE="0" OBJECT="org.freeplane.features.format.FormattedNumber|0|#,##0"/>
-<node TEXT="groovy" STYLE_REF="file_folder" ID="ID_339086552" LINK="groovyConsole/src/main/groovy/"><richcontent TYPE="DETAILS">
+<node TEXT="groovy" STYLE_REF="file_folder" ID="ID_339086552" CREATED="1793739878285" MODIFIED="1793739878285" LINK="groovyConsole/src/main/groovy/"><richcontent TYPE="DETAILS">
 <html>
   <head>
     
@@ -550,31 +620,90 @@
 <attribute NAME="lastAccessTime" VALUE="25-04-22 18:20" OBJECT="org.freeplane.features.format.FormattedDate|2022-04-25T18:20-0400|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="17-04-22 10:42" OBJECT="org.freeplane.features.format.FormattedDate|2022-04-17T10:42-0400|datetime"/>
 <attribute NAME="fileSize" VALUE="0" OBJECT="org.freeplane.features.format.FormattedNumber|0|#,##0"/>
-<node TEXT="GroovyConsole.groovy" ID="ID_470123237" LINK="groovyConsole/src/main/groovy/GroovyConsole.groovy">
-<attribute NAME="lastModifiedTime" VALUE="03-08-23 16:02" OBJECT="org.freeplane.features.format.FormattedDate|2023-08-03T16:02-0400|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="03-08-23 16:02" OBJECT="org.freeplane.features.format.FormattedDate|2023-08-03T16:02-0400|dd-MM-yy HH:mm"/>
+<node TEXT="GroovyConsole.groovy" ID="ID_470123237" CREATED="1793739878287" MODIFIED="1793837140700" LINK="groovyConsole/src/main/groovy/GroovyConsole.groovy">
+<attribute NAME="lastModifiedTime" VALUE="04-11-26 17:43" OBJECT="org.freeplane.features.format.FormattedDate|2026-11-04T17:43-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="04-11-26 21:03" OBJECT="org.freeplane.features.format.FormattedDate|2026-11-04T21:03-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="24-04-23 15:04" OBJECT="org.freeplane.features.format.FormattedDate|2023-04-24T15:04-0400|dd-MM-yy HH:mm"/>
-<attribute NAME="fileSize" VALUE="12.201" OBJECT="org.freeplane.features.format.FormattedNumber|12201|#,##0"/>
-<attribute NAME="modifiedFile" VALUE="true"/>
-<node TEXT="gC Future A" STYLE_REF="milestone" ID="ID_1196256500">
-<node TEXT="Agregar que pinte estilos del código en el editor" ID="ID_1939736014">
+<attribute NAME="fileSize" VALUE="13.113" OBJECT="org.freeplane.features.format.FormattedNumber|13113|#,##0"/>
+<node TEXT="gC Future A" STYLE_REF="milestone" ID="ID_1196256500" CREATED="1793739878287" MODIFIED="1793739878287">
+<node TEXT="Agregar que pinte estilos del código en el editor" ID="ID_1939736014" CREATED="1793739878287" MODIFIED="1793739878287">
 <attribute NAME="projectCode" VALUE="estilos.código.en.editor"/>
-<node TEXT="estilos groovy" STYLE_REF="completedTask" ID="ID_1563279741"/>
-<node TEXT="estilos Freeplane" STYLE_REF="maybeTask" ID="ID_1217856581"/>
-<node TEXT="estilos librerías cargadas" STYLE_REF="maybeTask" ID="ID_1722518463"/>
+<node TEXT="estilos groovy" STYLE_REF="completedTask" ID="ID_1563279741" CREATED="1793739878287" MODIFIED="1793739878287"/>
+<node TEXT="estilos Freeplane" STYLE_REF="maybeTask" ID="ID_1217856581" CREATED="1793739878287" MODIFIED="1793739878287"/>
+<node TEXT="estilos librerías cargadas" STYLE_REF="maybeTask" ID="ID_1722518463" CREATED="1793739878287" MODIFIED="1793739878287"/>
 </node>
-<node TEXT="Add &quot;reload from disk&quot; button" STYLE_REF="completedTask" ID="ID_1701629338"/>
-</node>
-</node>
+<node TEXT="Add &quot;reload from disk&quot; button" STYLE_REF="completedTask" ID="ID_1701629338" CREATED="1793739878287" MODIFIED="1793739878287"/>
 </node>
 </node>
+<node TEXT="TemporaryScript.groovy" ID="ID_1462978593" CREATED="1793837069189" MODIFIED="1793837141356" LINK="groovyConsole/src/main/groovy/TemporaryScript.groovy">
+<attribute NAME="lastModifiedTime" VALUE="04-11-26 17:43" OBJECT="org.freeplane.features.format.FormattedDate|2026-11-04T17:43-0300|datetime"/>
+<attribute NAME="lastAccessTime" VALUE="04-11-26 21:03" OBJECT="org.freeplane.features.format.FormattedDate|2026-11-04T21:03-0300|datetime"/>
+<attribute NAME="creationTime" VALUE="03-11-26 22:01" OBJECT="org.freeplane.features.format.FormattedDate|2026-11-03T22:01-0300|datetime"/>
+<attribute NAME="fileSize" VALUE="3.524" OBJECT="org.freeplane.features.format.FormattedNumber|3524|#,##0"/>
 </node>
-<node TEXT="build" ID="ID_874700936" LINK="groovyConsole/build/">
-<node TEXT="classes" STYLE_REF="locked" ID="ID_202694924" LINK="groovyConsole/build/classes/"/>
-<node TEXT="tmp" STYLE_REF="locked" ID="ID_1646969472" LINK="groovyConsole/build/tmp/"/>
-<node TEXT="generated" STYLE_REF="locked" ID="ID_891392252" LINK="groovyConsole/build/generated/"/>
+<node TEXT="TemporaryScriptCleanupWindow.groovy" ID="ID_877761131" CREATED="1793837069192" MODIFIED="1793837141356" LINK="groovyConsole/src/main/groovy/TemporaryScriptCleanupWindow.groovy">
+<attribute NAME="lastModifiedTime" VALUE="04-11-26 17:49" OBJECT="org.freeplane.features.format.FormattedDate|2026-11-04T17:49-0300|datetime"/>
+<attribute NAME="lastAccessTime" VALUE="04-11-26 21:03" OBJECT="org.freeplane.features.format.FormattedDate|2026-11-04T21:03-0300|datetime"/>
+<attribute NAME="creationTime" VALUE="04-11-26 17:42" OBJECT="org.freeplane.features.format.FormattedDate|2026-11-04T17:42-0300|datetime"/>
+<attribute NAME="fileSize" VALUE="3.594" OBJECT="org.freeplane.features.format.FormattedNumber|3594|#,##0"/>
 </node>
-<node TEXT="lib" ID="ID_402430899" LINK="groovyConsole/lib/"><richcontent TYPE="DETAILS">
+<node TEXT="TemporaryScriptConsole.groovy" ID="ID_1602419617" CREATED="1793837069195" MODIFIED="1793837141358" LINK="groovyConsole/src/main/groovy/TemporaryScriptConsole.groovy">
+<attribute NAME="lastModifiedTime" VALUE="04-11-26 17:43" OBJECT="org.freeplane.features.format.FormattedDate|2026-11-04T17:43-0300|datetime"/>
+<attribute NAME="lastAccessTime" VALUE="04-11-26 21:03" OBJECT="org.freeplane.features.format.FormattedDate|2026-11-04T21:03-0300|datetime"/>
+<attribute NAME="creationTime" VALUE="03-11-26 22:01" OBJECT="org.freeplane.features.format.FormattedDate|2026-11-03T22:01-0300|datetime"/>
+<attribute NAME="fileSize" VALUE="10.962" OBJECT="org.freeplane.features.format.FormattedNumber|10962|#,##0"/>
+</node>
+<node TEXT="TemporaryScriptJson.groovy" ID="ID_1226437680" CREATED="1793837069198" MODIFIED="1793837141358" LINK="groovyConsole/src/main/groovy/TemporaryScriptJson.groovy">
+<attribute NAME="lastModifiedTime" VALUE="04-11-26 19:20" OBJECT="org.freeplane.features.format.FormattedDate|2026-11-04T19:20-0300|datetime"/>
+<attribute NAME="lastAccessTime" VALUE="04-11-26 21:03" OBJECT="org.freeplane.features.format.FormattedDate|2026-11-04T21:03-0300|datetime"/>
+<attribute NAME="creationTime" VALUE="04-11-26 19:20" OBJECT="org.freeplane.features.format.FormattedDate|2026-11-04T19:20-0300|datetime"/>
+<attribute NAME="fileSize" VALUE="1.418" OBJECT="org.freeplane.features.format.FormattedNumber|1418|#,##0"/>
+</node>
+<node TEXT="TemporaryScriptStore.groovy" ID="ID_1297222785" CREATED="1793837069202" MODIFIED="1793837141358" LINK="groovyConsole/src/main/groovy/TemporaryScriptStore.groovy">
+<attribute NAME="lastModifiedTime" VALUE="04-11-26 19:20" OBJECT="org.freeplane.features.format.FormattedDate|2026-11-04T19:20-0300|datetime"/>
+<attribute NAME="lastAccessTime" VALUE="04-11-26 21:03" OBJECT="org.freeplane.features.format.FormattedDate|2026-11-04T21:03-0300|datetime"/>
+<attribute NAME="creationTime" VALUE="04-11-26 17:42" OBJECT="org.freeplane.features.format.FormattedDate|2026-11-04T17:42-0300|datetime"/>
+<attribute NAME="fileSize" VALUE="5.652" OBJECT="org.freeplane.features.format.FormattedNumber|5652|#,##0"/>
+</node>
+</node>
+</node>
+<node TEXT="test" ID="ID_1994653939" CREATED="1793837069207" MODIFIED="1793837141358" LINK="groovyConsole/src/test/">
+<node TEXT="scripts" ID="ID_345477655" CREATED="1793837069210" MODIFIED="1793837141360" LINK="groovyConsole/src/test/scripts/">
+<node TEXT="TemporaryScriptChecks.groovy" ID="ID_1272092511" CREATED="1793837069213" MODIFIED="1793837141360" LINK="groovyConsole/src/test/scripts/TemporaryScriptChecks.groovy">
+<attribute NAME="lastModifiedTime" VALUE="04-11-26 19:20" OBJECT="org.freeplane.features.format.FormattedDate|2026-11-04T19:20-0300|datetime"/>
+<attribute NAME="lastAccessTime" VALUE="04-11-26 21:03" OBJECT="org.freeplane.features.format.FormattedDate|2026-11-04T21:03-0300|datetime"/>
+<attribute NAME="creationTime" VALUE="03-11-26 22:03" OBJECT="org.freeplane.features.format.FormattedDate|2026-11-03T22:03-0300|datetime"/>
+<attribute NAME="fileSize" VALUE="15.338" OBJECT="org.freeplane.features.format.FormattedNumber|15338|#,##0"/>
+</node>
+</node>
+</node>
+</node>
+<node TEXT="build" ID="ID_874700936" CREATED="1793739878287" MODIFIED="1793739878287" LINK="groovyConsole/build/">
+<node TEXT="classes" STYLE_REF="locked" ID="ID_202694924" CREATED="1793739878287" MODIFIED="1793739878287" LINK="groovyConsole/build/classes/"/>
+<node TEXT="tmp" STYLE_REF="locked" ID="ID_1646969472" CREATED="1793739878287" MODIFIED="1793739878287" LINK="groovyConsole/build/tmp/"/>
+<node TEXT="generated" STYLE_REF="locked" ID="ID_891392252" CREATED="1793739878287" MODIFIED="1793739878287" LINK="groovyConsole/build/generated/"/>
+<node TEXT="resources" ID="ID_82608706" CREATED="1793837069150" MODIFIED="1793837146765" LINK="groovyConsole/build/resources/">
+<node TEXT="main" ID="ID_1061965514" CREATED="1793837069154" MODIFIED="1793837146773" LINK="groovyConsole/build/resources/main/">
+<node TEXT="icons" ID="ID_469612133" CREATED="1793837069158" MODIFIED="1793837146773" LINK="groovyConsole/build/resources/main/icons/">
+<node TEXT="groovyConsole" ID="ID_1573913078" CREATED="1793837069162" MODIFIED="1793837146773" LINK="groovyConsole/build/resources/main/icons/groovyConsole/">
+<node TEXT="temporaryScript.svg" ID="ID_1151171954" CREATED="1793837069167" MODIFIED="1793837150927" LINK="groovyConsole/build/resources/main/icons/groovyConsole/temporaryScript.svg">
+<attribute NAME="lastModifiedTime" VALUE="03-11-26 23:00" OBJECT="org.freeplane.features.format.FormattedDate|2026-11-03T23:00-0300|datetime"/>
+<attribute NAME="lastAccessTime" VALUE="04-11-26 19:20" OBJECT="org.freeplane.features.format.FormattedDate|2026-11-04T19:20-0300|datetime"/>
+<attribute NAME="creationTime" VALUE="03-11-26 23:00" OBJECT="org.freeplane.features.format.FormattedDate|2026-11-03T23:00-0300|datetime"/>
+<attribute NAME="fileSize" VALUE="459" OBJECT="org.freeplane.features.format.FormattedNumber|459|#,##0"/>
+</node>
+</node>
+</node>
+</node>
+</node>
+<node TEXT="temporary-cleanup-review.png" ID="ID_1486023138" CREATED="1793837069170" MODIFIED="1793837150927" LINK="groovyConsole/build/temporary-cleanup-review.png">
+<attribute NAME="lastModifiedTime" VALUE="04-11-26 19:20" OBJECT="org.freeplane.features.format.FormattedDate|2026-11-04T19:20-0300|datetime"/>
+<attribute NAME="lastAccessTime" VALUE="04-11-26 19:20" OBJECT="org.freeplane.features.format.FormattedDate|2026-11-04T19:20-0300|datetime"/>
+<attribute NAME="creationTime" VALUE="04-11-26 17:48" OBJECT="org.freeplane.features.format.FormattedDate|2026-11-04T17:48-0300|datetime"/>
+<attribute NAME="fileSize" VALUE="10.326" OBJECT="org.freeplane.features.format.FormattedNumber|10326|#,##0"/>
+</node>
+</node>
+<node TEXT="lib" ID="ID_402430899" CREATED="1793739878287" MODIFIED="1793739878287" LINK="groovyConsole/lib/"><richcontent TYPE="DETAILS">
 <html>
   <head>
     
@@ -592,7 +721,7 @@
 <attribute NAME="lastAccessTime" VALUE="25-04-22 18:20" OBJECT="org.freeplane.features.format.FormattedDate|2022-04-25T18:20-0400|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="17-04-22 10:42" OBJECT="org.freeplane.features.format.FormattedDate|2022-04-17T10:42-0400|datetime"/>
 <attribute NAME="fileSize" VALUE="0" OBJECT="org.freeplane.features.format.FormattedNumber|0|#,##0"/>
-<node TEXT="groovyConsole.jar" POSITION="bottom_or_right" ID="ID_1013604347" LINK="groovyConsole/lib/groovyConsole.jar">
+<node TEXT="groovyConsole.jar" POSITION="bottom_or_right" ID="ID_1013604347" CREATED="1793739878287" MODIFIED="1793739878287" LINK="groovyConsole/lib/groovyConsole.jar">
 <attribute NAME="lastModifiedTime" VALUE="03-08-23 16:02" OBJECT="org.freeplane.features.format.FormattedDate|2023-08-03T16:02-0400|dd-MM-yy HH:mm"/>
 <attribute NAME="lastAccessTime" VALUE="03-08-23 16:04" OBJECT="org.freeplane.features.format.FormattedDate|2023-08-03T16:04-0400|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="28-04-23 19:01" OBJECT="org.freeplane.features.format.FormattedDate|2023-04-28T19:01-0400|datetime"/>
@@ -600,7 +729,7 @@
 </node>
 </node>
 </node>
-<node TEXT="scripts" STYLE_REF="file_folder" ID="ID_1483533049" LINK="groovyConsole/scripts/"><richcontent TYPE="DETAILS">
+<node TEXT="scripts" STYLE_REF="file_folder" ID="ID_1483533049" CREATED="1793739878287" MODIFIED="1793739878287" LINK="groovyConsole/scripts/"><richcontent TYPE="DETAILS">
 <html>
   <head>
     
@@ -616,38 +745,38 @@
 <attribute NAME="creationTime" VALUE="17-04-22 10:42" OBJECT="org.freeplane.features.format.FormattedDate|2022-04-17T10:42-0400|datetime"/>
 <attribute NAME="fileSize" VALUE="0" OBJECT="org.freeplane.features.format.FormattedNumber|0|#,##0"/>
 <attribute NAME="projectCode" VALUE="scripts"/>
-<node TEXT="openWithGroovyConsole.groovy" ID="ID_88720437" LINK="groovyConsole/scripts/openWithGroovyConsole.groovy">
+<node TEXT="openWithGroovyConsole.groovy" ID="ID_88720437" CREATED="1793739878287" MODIFIED="1793739878287" LINK="groovyConsole/scripts/openWithGroovyConsole.groovy">
 <attribute NAME="lastModifiedTime" VALUE="24-04-23 15:04" OBJECT="org.freeplane.features.format.FormattedDate|2023-04-24T15:04-0400|dd-MM-yy HH:mm"/>
 <attribute NAME="lastAccessTime" VALUE="03-08-23 16:04" OBJECT="org.freeplane.features.format.FormattedDate|2023-08-03T16:04-0400|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="24-04-23 15:04" OBJECT="org.freeplane.features.format.FormattedDate|2023-04-24T15:04-0400|dd-MM-yy HH:mm"/>
 <attribute NAME="fileSize" VALUE="96" OBJECT="org.freeplane.features.format.FormattedNumber|96|#,##0"/>
 </node>
-<node TEXT="gC Future A" STYLE_REF="milestone" ID="ID_783822739">
-<node TEXT="Agregar comado que abra console con script en texto pero sin asociar nodo y que fuente sea opcional" STYLE_REF="pendingTask" FOLDED="true" ID="ID_534212207">
-<node TEXT="Al parecer basta con los métodos que ya existen" ID="ID_156564394"/>
-<node TEXT="para poder llamarlo desde tutorial-o-matic" ID="ID_1527048435">
-<node TEXT="desde groovyPane" ID="ID_428599852"/>
+<node TEXT="gC Future A" STYLE_REF="milestone" ID="ID_783822739" CREATED="1793739878287" MODIFIED="1793739878287">
+<node TEXT="Agregar comado que abra console con script en texto pero sin asociar nodo y que fuente sea opcional" STYLE_REF="pendingTask" FOLDED="true" ID="ID_534212207" CREATED="1793739878287" MODIFIED="1793739878287">
+<node TEXT="Al parecer basta con los métodos que ya existen" ID="ID_156564394" CREATED="1793739878287" MODIFIED="1793739878287"/>
+<node TEXT="para poder llamarlo desde tutorial-o-matic" ID="ID_1527048435" CREATED="1793739878287" MODIFIED="1793739878287">
+<node TEXT="desde groovyPane" ID="ID_428599852" CREATED="1793739878287" MODIFIED="1793739878287"/>
 </node>
-<node TEXT="opciones:" ID="ID_1597773312">
-<node TEXT="hacer que esta funcionalidad esté 100% en tutorial-o-matic" ID="ID_1965125311"/>
-<node TEXT="hacer que esté en groovyConsole add-on y que deba estar instalado para que funcione" FOLDED="true" ID="ID_47677833">
-<node TEXT="ToM debería habilitar botón sólo si groovyConsole está presente" ID="ID_1700396366"/>
+<node TEXT="opciones:" ID="ID_1597773312" CREATED="1793739878287" MODIFIED="1793739878287">
+<node TEXT="hacer que esta funcionalidad esté 100% en tutorial-o-matic" ID="ID_1965125311" CREATED="1793739878287" MODIFIED="1793739878287"/>
+<node TEXT="hacer que esté en groovyConsole add-on y que deba estar instalado para que funcione" FOLDED="true" ID="ID_47677833" CREATED="1793739878287" MODIFIED="1793739878287">
+<node TEXT="ToM debería habilitar botón sólo si groovyConsole está presente" ID="ID_1700396366" CREATED="1793739878287" MODIFIED="1793739878287"/>
 </node>
-<node TEXT="hacer que gradle cargue librería groovyConsole al construir ToM" ID="ID_769340774">
+<node TEXT="hacer que gradle cargue librería groovyConsole al construir ToM" ID="ID_769340774" CREATED="1793739878287" MODIFIED="1793739878287">
 <icon BUILTIN="forward"/>
 </node>
 </node>
 </node>
 </node>
-<node TEXT="openWithGroovyConsoleFull.groovy" ID="ID_1251973431" LINK="groovyConsole/scripts/openWithGroovyConsoleFull.groovy">
+<node TEXT="openWithGroovyConsoleFull.groovy" ID="ID_1251973431" CREATED="1793739878287" MODIFIED="1793739878287" LINK="groovyConsole/scripts/openWithGroovyConsoleFull.groovy">
 <attribute NAME="lastModifiedTime" VALUE="28-04-23 19:33" OBJECT="org.freeplane.features.format.FormattedDate|2023-04-28T19:33-0400|datetime"/>
 <attribute NAME="lastAccessTime" VALUE="03-08-23 16:04" OBJECT="org.freeplane.features.format.FormattedDate|2023-08-03T16:04-0400|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="28-04-23 19:33" OBJECT="org.freeplane.features.format.FormattedDate|2023-04-28T19:33-0400|datetime"/>
 <attribute NAME="fileSize" VALUE="96" OBJECT="org.freeplane.features.format.FormattedNumber|96|#,##0"/>
 </node>
 </node>
-<node TEXT="zips" ID="ID_1327243198" LINK="groovyConsole/zips/">
-<node TEXT="icons" ID="ID_815705878" LINK="groovyConsole/zips/icons/"><richcontent TYPE="DETAILS">
+<node TEXT="zips" FOLDED="true" ID="ID_1327243198" CREATED="1793739878287" MODIFIED="1793739878287" LINK="groovyConsole/zips/">
+<node TEXT="icons" FOLDED="true" ID="ID_815705878" CREATED="1793739878287" MODIFIED="1793739878287" LINK="groovyConsole/zips/icons/"><richcontent TYPE="DETAILS">
 <html>
   <head>
     
@@ -658,28 +787,34 @@
     </p>
   </body>
 </html></richcontent>
-<node TEXT="groovyConsole" ID="ID_1988340672" LINK="groovyConsole/zips/icons/groovyConsole/">
-<node TEXT="reloadFile.svg" ID="ID_484815601" LINK="groovyConsole/zips/icons/groovyConsole/reloadFile.svg">
+<node TEXT="groovyConsole" ID="ID_1988340672" CREATED="1793739878287" MODIFIED="1793739878287" LINK="groovyConsole/zips/icons/groovyConsole/">
+<node TEXT="reloadFile.svg" ID="ID_484815601" CREATED="1793739878287" MODIFIED="1793837179351" LINK="groovyConsole/zips/icons/groovyConsole/reloadFile.svg">
 <attribute NAME="lastModifiedTime" VALUE="30-06-23 22:28" OBJECT="org.freeplane.features.format.FormattedDate|2023-06-30T22:28-0400|datetime"/>
-<attribute NAME="lastAccessTime" VALUE="03-08-23 16:04" OBJECT="org.freeplane.features.format.FormattedDate|2023-08-03T16:04-0400|datetime"/>
+<attribute NAME="lastAccessTime" VALUE="04-11-26 21:02" OBJECT="org.freeplane.features.format.FormattedDate|2026-11-04T21:02-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="29-06-23 21:38" OBJECT="org.freeplane.features.format.FormattedDate|2023-06-29T21:38-0400|datetime"/>
 <attribute NAME="fileSize" VALUE="1.327" OBJECT="org.freeplane.features.format.FormattedNumber|1327|#,##0"/>
 </node>
-<node TEXT="saveInNode.svg" ID="ID_1702417239" LINK="groovyConsole/zips/icons/groovyConsole/saveInNode.svg">
+<node TEXT="saveInNode.svg" ID="ID_1702417239" CREATED="1793739878287" MODIFIED="1793837179351" LINK="groovyConsole/zips/icons/groovyConsole/saveInNode.svg">
 <attribute NAME="lastModifiedTime" VALUE="30-06-23 22:09" OBJECT="org.freeplane.features.format.FormattedDate|2023-06-30T22:09-0400|datetime"/>
-<attribute NAME="lastAccessTime" VALUE="03-08-23 16:04" OBJECT="org.freeplane.features.format.FormattedDate|2023-08-03T16:04-0400|datetime"/>
+<attribute NAME="lastAccessTime" VALUE="04-11-26 21:02" OBJECT="org.freeplane.features.format.FormattedDate|2026-11-04T21:02-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="30-06-23 21:14" OBJECT="org.freeplane.features.format.FormattedDate|2023-06-30T21:14-0400|datetime"/>
 <attribute NAME="fileSize" VALUE="2.648" OBJECT="org.freeplane.features.format.FormattedNumber|2648|#,##0"/>
 </node>
-<node TEXT="saveInNodeAs.svg" ID="ID_1805008099" LINK="groovyConsole/zips/icons/groovyConsole/saveInNodeAs.svg">
+<node TEXT="saveInNodeAs.svg" ID="ID_1805008099" CREATED="1793739878287" MODIFIED="1793837179358" LINK="groovyConsole/zips/icons/groovyConsole/saveInNodeAs.svg">
 <attribute NAME="lastModifiedTime" VALUE="30-06-23 22:21" OBJECT="org.freeplane.features.format.FormattedDate|2023-06-30T22:21-0400|datetime"/>
-<attribute NAME="lastAccessTime" VALUE="03-08-23 16:04" OBJECT="org.freeplane.features.format.FormattedDate|2023-08-03T16:04-0400|datetime"/>
+<attribute NAME="lastAccessTime" VALUE="04-11-26 21:02" OBJECT="org.freeplane.features.format.FormattedDate|2026-11-04T21:02-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="30-06-23 21:33" OBJECT="org.freeplane.features.format.FormattedDate|2023-06-30T21:33-0400|datetime"/>
 <attribute NAME="fileSize" VALUE="3.334" OBJECT="org.freeplane.features.format.FormattedNumber|3334|#,##0"/>
 </node>
+<node TEXT="temporaryScript.svg" ID="ID_426865783" CREATED="1793837069229" MODIFIED="1793837181744" LINK="groovyConsole/zips/icons/groovyConsole/temporaryScript.svg">
+<attribute NAME="lastModifiedTime" VALUE="03-11-26 23:00" OBJECT="org.freeplane.features.format.FormattedDate|2026-11-03T23:00-0300|datetime"/>
+<attribute NAME="lastAccessTime" VALUE="04-11-26 21:03" OBJECT="org.freeplane.features.format.FormattedDate|2026-11-04T21:03-0300|datetime"/>
+<attribute NAME="creationTime" VALUE="03-11-26 22:40" OBJECT="org.freeplane.features.format.FormattedDate|2026-11-03T22:40-0300|datetime"/>
+<attribute NAME="fileSize" VALUE="459" OBJECT="org.freeplane.features.format.FormattedNumber|459|#,##0"/>
 </node>
 </node>
-<node TEXT="doc" ID="ID_982813467" LINK="groovyConsole/zips/doc/"><richcontent TYPE="DETAILS">
+</node>
+<node TEXT="doc" FOLDED="true" ID="ID_982813467" CREATED="1793739878287" MODIFIED="1793739878287" LINK="groovyConsole/zips/doc/"><richcontent TYPE="DETAILS">
 <html>
   <head>
     
@@ -690,9 +825,9 @@
     </p>
   </body>
 </html></richcontent>
-<node TEXT="groovyConsole" ID="ID_1892493719" LINK="groovyConsole/zips/doc/groovyConsole/"/>
+<node TEXT="groovyConsole" ID="ID_1892493719" CREATED="1793739878287" MODIFIED="1793739878287" LINK="groovyConsole/zips/doc/groovyConsole/"/>
 </node>
-<node TEXT="templates" ID="ID_1614760108" LINK="groovyConsole/zips/templates/"><richcontent TYPE="DETAILS">
+<node TEXT="templates" FOLDED="true" ID="ID_1614760108" CREATED="1793739878287" MODIFIED="1793739878287" LINK="groovyConsole/zips/templates/"><richcontent TYPE="DETAILS">
 <html>
   <head>
     
@@ -703,58 +838,58 @@
     </p>
   </body>
 </html></richcontent>
-<node TEXT="groovyConsole" ID="ID_657261510" LINK="groovyConsole/zips/templates/groovyConsole/"/>
+<node TEXT="groovyConsole" ID="ID_657261510" CREATED="1793739878287" MODIFIED="1793739878287" LINK="groovyConsole/zips/templates/groovyConsole/"/>
 </node>
 </node>
-<node TEXT="images" ID="ID_1489890719" LINK="groovyConsole/images/">
-<node TEXT="groovyConsole.svg" ID="ID_1937726588" LINK="groovyConsole/images/groovyConsole.svg">
+<node TEXT="images" FOLDED="true" ID="ID_1489890719" CREATED="1793739878287" MODIFIED="1793739878287" LINK="groovyConsole/images/">
+<node TEXT="groovyConsole.svg" ID="ID_1937726588" CREATED="1793739878287" MODIFIED="1793739878287" LINK="groovyConsole/images/groovyConsole.svg">
 <attribute NAME="lastModifiedTime" VALUE="30-06-23 17:57" OBJECT="org.freeplane.features.format.FormattedDate|2023-06-30T17:57-0400|datetime"/>
 <attribute NAME="lastAccessTime" VALUE="03-08-23 16:04" OBJECT="org.freeplane.features.format.FormattedDate|2023-08-03T16:04-0400|datetime"/>
 <attribute NAME="creationTime" VALUE="30-06-23 18:02" OBJECT="org.freeplane.features.format.FormattedDate|2023-06-30T18:02-0400|datetime"/>
 <attribute NAME="fileSize" VALUE="2.610" OBJECT="org.freeplane.features.format.FormattedNumber|2610|#,##0"/>
-<node TEXT="32x32" ID="ID_1455520567"/>
+<node TEXT="32x32" ID="ID_1455520567" CREATED="1793739878287" MODIFIED="1793739878287"/>
 </node>
-<node TEXT="groovyConsole-icon.svg" ID="ID_372224366" LINK="groovyConsole/images/groovyConsole-icon.svg">
+<node TEXT="groovyConsole-icon.svg" ID="ID_372224366" CREATED="1793739878287" MODIFIED="1793739878287" LINK="groovyConsole/images/groovyConsole-icon.svg">
 <attribute NAME="lastModifiedTime" VALUE="30-06-23 18:13" OBJECT="org.freeplane.features.format.FormattedDate|2023-06-30T18:13-0400|datetime"/>
 <attribute NAME="lastAccessTime" VALUE="03-08-23 16:04" OBJECT="org.freeplane.features.format.FormattedDate|2023-08-03T16:04-0400|datetime"/>
 <attribute NAME="creationTime" VALUE="30-06-23 17:43" OBJECT="org.freeplane.features.format.FormattedDate|2023-06-30T17:43-0400|datetime"/>
 <attribute NAME="fileSize" VALUE="2.608" OBJECT="org.freeplane.features.format.FormattedNumber|2608|#,##0"/>
 </node>
-<node TEXT="groovyConsole-screenshot-1.png" ID="ID_1339405738" LINK="groovyConsole/images/groovyConsole-screenshot-1.png">
+<node TEXT="groovyConsole-screenshot-1.png" ID="ID_1339405738" CREATED="1793739878287" MODIFIED="1793739878287" LINK="groovyConsole/images/groovyConsole-screenshot-1.png">
 <attribute NAME="lastModifiedTime" VALUE="30-06-23 19:13" OBJECT="org.freeplane.features.format.FormattedDate|2023-06-30T19:13-0400|datetime"/>
 <attribute NAME="lastAccessTime" VALUE="03-08-23 16:04" OBJECT="org.freeplane.features.format.FormattedDate|2023-08-03T16:04-0400|datetime"/>
 <attribute NAME="creationTime" VALUE="30-06-23 18:35" OBJECT="org.freeplane.features.format.FormattedDate|2023-06-30T18:35-0400|datetime"/>
 <attribute NAME="fileSize" VALUE="42.084" OBJECT="org.freeplane.features.format.FormattedNumber|42084|#,##0"/>
 </node>
 </node>
-<node TEXT="translations" ID="ID_5583999" LINK="groovyConsole/translations/">
+<node TEXT="translations" FOLDED="true" ID="ID_5583999" CREATED="1793739878287" MODIFIED="1793739878287" LINK="groovyConsole/translations/">
 <attribute NAME="lastModifiedTime" VALUE="18-04-22 22:00" OBJECT="org.freeplane.features.format.FormattedDate|2022-04-18T22:00-0400|datetime"/>
 <attribute NAME="lastAccessTime" VALUE="25-04-22 18:20" OBJECT="org.freeplane.features.format.FormattedDate|2022-04-25T18:20-0400|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="18-04-22 22:00" OBJECT="org.freeplane.features.format.FormattedDate|2022-04-18T22:00-0400|datetime"/>
 <attribute NAME="fileSize" VALUE="0" OBJECT="org.freeplane.features.format.FormattedNumber|0|#,##0"/>
 <attribute NAME="projectCode" VALUE="translations"/>
-<node TEXT="en.properties" ID="ID_653767157" LINK="groovyConsole/translations/en.properties">
+<node TEXT="en.properties" ID="ID_653767157" CREATED="1793739878287" MODIFIED="1793739878287" LINK="groovyConsole/translations/en.properties">
 <attribute NAME="lastModifiedTime" VALUE="01-05-23 22:30" OBJECT="org.freeplane.features.format.FormattedDate|2023-05-01T22:30-0400|dd-MM-yy HH:mm"/>
 <attribute NAME="lastAccessTime" VALUE="03-08-23 16:04" OBJECT="org.freeplane.features.format.FormattedDate|2023-08-03T16:04-0400|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="24-04-23 15:04" OBJECT="org.freeplane.features.format.FormattedDate|2023-04-24T15:04-0400|dd-MM-yy HH:mm"/>
 <attribute NAME="fileSize" VALUE="1.048" OBJECT="org.freeplane.features.format.FormattedNumber|1048|#,##0"/>
 </node>
-<node TEXT="gC Future C" STYLE_REF="milestone" ID="ID_371875959">
-<node TEXT="traducciones" ID="ID_1153124047">
-<node TEXT="alemán" STYLE_REF="maybeTask" ID="ID_477855566"/>
-<node TEXT="español" STYLE_REF="maybeTask" ID="ID_1029836271"/>
+<node TEXT="gC Future C" STYLE_REF="milestone" ID="ID_371875959" CREATED="1793739878287" MODIFIED="1793739878287">
+<node TEXT="traducciones" ID="ID_1153124047" CREATED="1793739878287" MODIFIED="1793739878287">
+<node TEXT="alemán" STYLE_REF="maybeTask" ID="ID_477855566" CREATED="1793739878287" MODIFIED="1793739878287"/>
+<node TEXT="español" STYLE_REF="maybeTask" ID="ID_1029836271" CREATED="1793739878287" MODIFIED="1793739878287"/>
 </node>
 </node>
 </node>
-<node TEXT="groovyConsole.mm" ID="ID_1406088487" LINK="groovyConsole/groovyConsole.mm">
+<node TEXT="groovyConsole.mm" ID="ID_1406088487" CREATED="1793739878287" MODIFIED="1793739878287" LINK="groovyConsole/groovyConsole.mm">
 <attribute NAME="lastModifiedTime" VALUE="03-08-23 16:03" OBJECT="org.freeplane.features.format.FormattedDate|2023-08-03T16:03-0400|dd-MM-yy HH:mm"/>
 <attribute NAME="lastAccessTime" VALUE="03-08-23 16:04" OBJECT="org.freeplane.features.format.FormattedDate|2023-08-03T16:04-0400|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="24-04-23 15:04" OBJECT="org.freeplane.features.format.FormattedDate|2023-04-24T15:04-0400|dd-MM-yy HH:mm"/>
 <attribute NAME="fileSize" VALUE="35.061" OBJECT="org.freeplane.features.format.FormattedNumber|35061|#,##0"/>
 <attribute NAME="projectCode" VALUE="groovyConsole.mm"/>
-<node TEXT="gC v0.0.5" STYLE_REF="milestone" ID="ID_1105191413"/>
+<node TEXT="gC v0.0.5" STYLE_REF="milestone" ID="ID_1105191413" CREATED="1793739878287" MODIFIED="1793739878287"/>
 </node>
-<node TEXT="generados automáticamente" STYLE_REF="Organizador" FOLDED="true" ID="ID_1677527063"><richcontent TYPE="DETAILS">
+<node TEXT="generados automáticamente" STYLE_REF="Organizador" ID="ID_1677527063" CREATED="1793739878287" MODIFIED="1793739878287"><richcontent TYPE="DETAILS">
 <html>
   <head>
     
@@ -768,13 +903,13 @@
     </p>
   </body>
 </html></richcontent>
-<node TEXT="groovyConsole-v0.0.8.addon.mm" ID="ID_1451197349" LINK="groovyConsole/groovyConsole-v0.0.8.addon.mm">
-<attribute NAME="lastModifiedTime" VALUE="03-08-23 16:04" OBJECT="org.freeplane.features.format.FormattedDate|2023-08-03T16:04-0400|datetime"/>
-<attribute NAME="lastAccessTime" VALUE="03-08-23 16:04" OBJECT="org.freeplane.features.format.FormattedDate|2023-08-03T16:04-0400|datetime"/>
-<attribute NAME="creationTime" VALUE="29-06-23 22:05" OBJECT="org.freeplane.features.format.FormattedDate|2023-06-29T22:05-0400|datetime"/>
-<attribute NAME="fileSize" VALUE="140.944" OBJECT="org.freeplane.features.format.FormattedNumber|140944|#,##0"/>
+<node TEXT="groovyConsole-v0.0.9.addon.mm" ID="ID_135886603" CREATED="1793747080079" MODIFIED="1793747290951" LINK="groovyConsole/groovyConsole-v0.0.9.addon.mm">
+<attribute NAME="lastModifiedTime" VALUE="03-11-26 20:04" OBJECT="org.freeplane.features.format.FormattedDate|2026-11-03T20:04-0300|datetime"/>
+<attribute NAME="lastAccessTime" VALUE="03-11-26 20:04" OBJECT="org.freeplane.features.format.FormattedDate|2026-11-03T20:04-0300|datetime"/>
+<attribute NAME="creationTime" VALUE="03-11-26 20:04" OBJECT="org.freeplane.features.format.FormattedDate|2026-11-03T20:04-0300|datetime"/>
+<attribute NAME="fileSize" VALUE="135.937" OBJECT="org.freeplane.features.format.FormattedNumber|135937|#,##0"/>
 </node>
-<node TEXT="history.md" ID="ID_1213423335" LINK="groovyConsole/history.md"><richcontent TYPE="NOTE" CONTENT-TYPE="plain/markdown">
+<node TEXT="history.md" ID="ID_1213423335" CREATED="1793739878292" MODIFIED="1793747275104" LINK="groovyConsole/history.md"><richcontent TYPE="NOTE" CONTENT-TYPE="plain/markdown">
 <text># History
 
 ## v0.0.2
@@ -787,14 +922,14 @@ It adds access to Freeplane&apos;s and add-ons libraries
 ## v0.0.1
 
 * Initial release</text></richcontent>
-<attribute NAME="lastModifiedTime" VALUE="03-08-23 16:04" OBJECT="org.freeplane.features.format.FormattedDate|2023-08-03T16:04-0400|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="03-08-23 16:04" OBJECT="org.freeplane.features.format.FormattedDate|2023-08-03T16:04-0400|dd-MM-yy HH:mm"/>
+<attribute NAME="lastModifiedTime" VALUE="03-11-26 20:04" OBJECT="org.freeplane.features.format.FormattedDate|2026-11-03T20:04-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="03-11-26 20:04" OBJECT="org.freeplane.features.format.FormattedDate|2026-11-03T20:04-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="24-04-23 15:04" OBJECT="org.freeplane.features.format.FormattedDate|2023-04-24T15:04-0400|dd-MM-yy HH:mm"/>
-<attribute NAME="fileSize" VALUE="1.132" OBJECT="org.freeplane.features.format.FormattedNumber|1132|#,##0"/>
+<attribute NAME="fileSize" VALUE="1.150" OBJECT="org.freeplane.features.format.FormattedNumber|1150|#,##0"/>
 </node>
-<node TEXT="version.properties" ID="ID_781482061" LINK="groovyConsole/version.properties">
-<attribute NAME="lastModifiedTime" VALUE="03-08-23 16:04" OBJECT="org.freeplane.features.format.FormattedDate|2023-08-03T16:04-0400|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="03-08-23 16:04" OBJECT="org.freeplane.features.format.FormattedDate|2023-08-03T16:04-0400|dd-MM-yy HH:mm"/>
+<node TEXT="version.properties" ID="ID_781482061" CREATED="1793739878292" MODIFIED="1793747275104" LINK="groovyConsole/version.properties">
+<attribute NAME="lastModifiedTime" VALUE="03-11-26 20:04" OBJECT="org.freeplane.features.format.FormattedDate|2026-11-03T20:04-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="03-11-26 20:04" OBJECT="org.freeplane.features.format.FormattedDate|2026-11-03T20:04-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="24-04-23 15:04" OBJECT="org.freeplane.features.format.FormattedDate|2023-04-24T15:04-0400|dd-MM-yy HH:mm"/>
 <attribute NAME="fileSize" VALUE="259" OBJECT="org.freeplane.features.format.FormattedNumber|259|#,##0"/>
 <richcontent TYPE="NOTE">
@@ -818,79 +953,85 @@ It adds access to Freeplane&apos;s and add-ons libraries
   </body>
 </html></richcontent>
 </node>
-<node TEXT="versiones anteriores" STYLE_REF="Organizador" ID="ID_542438511">
-<node TEXT="groovyConsole-v0.0.7.addon.mm" POSITION="bottom_or_right" ID="ID_705820952" LINK="groovyConsole/groovyConsole-v0.0.7.addon.mm">
+<node TEXT="versiones anteriores" STYLE_REF="Organizador" ID="ID_542438511" CREATED="1793739878292" MODIFIED="1793739878292">
+<node TEXT="groovyConsole-v0.0.8.addon.mm" POSITION="bottom_or_right" ID="ID_1451197349" CREATED="1793739878287" MODIFIED="1793747275104" LINK="groovyConsole/groovyConsole-v0.0.8.addon.mm">
+<attribute NAME="lastModifiedTime" VALUE="03-11-26 20:03" OBJECT="org.freeplane.features.format.FormattedDate|2026-11-03T20:03-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="03-11-26 20:03" OBJECT="org.freeplane.features.format.FormattedDate|2026-11-03T20:03-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="creationTime" VALUE="29-06-23 22:05" OBJECT="org.freeplane.features.format.FormattedDate|2023-06-29T22:05-0400|datetime"/>
+<attribute NAME="fileSize" VALUE="135.943" OBJECT="org.freeplane.features.format.FormattedNumber|135943|#,##0"/>
+</node>
+<node TEXT="groovyConsole-v0.0.7.addon.mm" POSITION="bottom_or_right" ID="ID_705820952" CREATED="1793739878292" MODIFIED="1793747251365" LINK="groovyConsole/groovyConsole-v0.0.7.addon.mm">
 <attribute NAME="lastModifiedTime" VALUE="04-05-23 17:42" OBJECT="org.freeplane.features.format.FormattedDate|2023-05-04T17:42-0400|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="02-08-23 22:23" OBJECT="org.freeplane.features.format.FormattedDate|2023-08-02T22:23-0400|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="03-11-26 18:57" OBJECT="org.freeplane.features.format.FormattedDate|2026-11-03T18:57-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="01-05-23 22:41" OBJECT="org.freeplane.features.format.FormattedDate|2023-05-01T22:41-0400|datetime"/>
 <attribute NAME="fileSize" VALUE="64.435" OBJECT="org.freeplane.features.format.FormattedNumber|64435|#,##0"/>
 </node>
-<node TEXT="groovyConsole-v0.0.6.addon.mm" POSITION="bottom_or_right" ID="ID_129298950" LINK="groovyConsole/groovyConsole-v0.0.6.addon.mm">
+<node TEXT="groovyConsole-v0.0.6.addon.mm" POSITION="bottom_or_right" ID="ID_129298950" CREATED="1793739878292" MODIFIED="1793747251365" LINK="groovyConsole/groovyConsole-v0.0.6.addon.mm">
 <attribute NAME="lastModifiedTime" VALUE="01-05-23 22:10" OBJECT="org.freeplane.features.format.FormattedDate|2023-05-01T22:10-0400|datetime"/>
-<attribute NAME="lastAccessTime" VALUE="02-08-23 22:23" OBJECT="org.freeplane.features.format.FormattedDate|2023-08-02T22:23-0400|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="03-11-26 18:57" OBJECT="org.freeplane.features.format.FormattedDate|2026-11-03T18:57-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="01-05-23 22:10" OBJECT="org.freeplane.features.format.FormattedDate|2023-05-01T22:10-0400|datetime"/>
 <attribute NAME="fileSize" VALUE="64.468" OBJECT="org.freeplane.features.format.FormattedNumber|64468|#,##0"/>
 </node>
-<node TEXT="groovyConsole-v0.0.5.addon.mm" POSITION="bottom_or_right" ID="ID_1282780823" LINK="groovyConsole/groovyConsole-v0.0.5.addon.mm">
+<node TEXT="groovyConsole-v0.0.5.addon.mm" POSITION="bottom_or_right" ID="ID_1282780823" CREATED="1793739878292" MODIFIED="1793747251365" LINK="groovyConsole/groovyConsole-v0.0.5.addon.mm">
 <attribute NAME="lastModifiedTime" VALUE="01-05-23 21:58" OBJECT="org.freeplane.features.format.FormattedDate|2023-05-01T21:58-0400|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="02-08-23 22:23" OBJECT="org.freeplane.features.format.FormattedDate|2023-08-02T22:23-0400|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="03-11-26 18:57" OBJECT="org.freeplane.features.format.FormattedDate|2026-11-03T18:57-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="28-04-23 19:01" OBJECT="org.freeplane.features.format.FormattedDate|2023-04-28T19:01-0400|datetime"/>
 <attribute NAME="fileSize" VALUE="64.282" OBJECT="org.freeplane.features.format.FormattedNumber|64282|#,##0"/>
 </node>
-<node TEXT="groovyConsole-v0.0.4.addon.mm" POSITION="bottom_or_right" ID="ID_1924355610" LINK="groovyConsole/groovyConsole-v0.0.4.addon.mm">
+<node TEXT="groovyConsole-v0.0.4.addon.mm" POSITION="bottom_or_right" ID="ID_1924355610" CREATED="1793739878292" MODIFIED="1793747251373" LINK="groovyConsole/groovyConsole-v0.0.4.addon.mm">
 <attribute NAME="lastModifiedTime" VALUE="25-04-22 18:47" OBJECT="org.freeplane.features.format.FormattedDate|2022-04-25T18:47-0400|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="02-08-23 22:23" OBJECT="org.freeplane.features.format.FormattedDate|2023-08-02T22:23-0400|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="03-11-26 18:57" OBJECT="org.freeplane.features.format.FormattedDate|2026-11-03T18:57-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="28-04-23 19:01" OBJECT="org.freeplane.features.format.FormattedDate|2023-04-28T19:01-0400|dd-MM-yy HH:mm"/>
 <attribute NAME="fileSize" VALUE="59.599" OBJECT="org.freeplane.features.format.FormattedNumber|59599|#,##0"/>
 </node>
-<node TEXT="groovyConsole-v0.0.3.addon.mm" POSITION="bottom_or_right" ID="ID_1462281203" LINK="groovyConsole/groovyConsole-v0.0.3.addon.mm">
+<node TEXT="groovyConsole-v0.0.3.addon.mm" POSITION="bottom_or_right" ID="ID_1462281203" CREATED="1793739878293" MODIFIED="1793747251373" LINK="groovyConsole/groovyConsole-v0.0.3.addon.mm">
 <attribute NAME="lastModifiedTime" VALUE="25-04-22 10:41" OBJECT="org.freeplane.features.format.FormattedDate|2022-04-25T10:41-0400|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="02-08-23 22:23" OBJECT="org.freeplane.features.format.FormattedDate|2023-08-02T22:23-0400|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="03-11-26 18:57" OBJECT="org.freeplane.features.format.FormattedDate|2026-11-03T18:57-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="28-04-23 19:01" OBJECT="org.freeplane.features.format.FormattedDate|2023-04-28T19:01-0400|dd-MM-yy HH:mm"/>
 <attribute NAME="fileSize" VALUE="57.737" OBJECT="org.freeplane.features.format.FormattedNumber|57737|#,##0"/>
 </node>
-<node TEXT="groovyConsole-v0.0.2.addon.mm" POSITION="bottom_or_right" ID="ID_21920088" LINK="groovyConsole/groovyConsole-v0.0.2.addon.mm">
+<node TEXT="groovyConsole-v0.0.2.addon.mm" POSITION="bottom_or_right" ID="ID_21920088" CREATED="1793739878293" MODIFIED="1793747251373" LINK="groovyConsole/groovyConsole-v0.0.2.addon.mm">
 <attribute NAME="lastModifiedTime" VALUE="25-04-22 10:03" OBJECT="org.freeplane.features.format.FormattedDate|2022-04-25T10:03-0400|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="02-08-23 22:23" OBJECT="org.freeplane.features.format.FormattedDate|2023-08-02T22:23-0400|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="03-11-26 18:57" OBJECT="org.freeplane.features.format.FormattedDate|2026-11-03T18:57-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="28-04-23 19:01" OBJECT="org.freeplane.features.format.FormattedDate|2023-04-28T19:01-0400|dd-MM-yy HH:mm"/>
 <attribute NAME="fileSize" VALUE="54.803" OBJECT="org.freeplane.features.format.FormattedNumber|54803|#,##0"/>
 </node>
-<node TEXT="groovyConsole-v0.0.1.addon.mm" POSITION="bottom_or_right" ID="ID_1544430857" LINK="groovyConsole/groovyConsole-v0.0.1.addon.mm">
+<node TEXT="groovyConsole-v0.0.1.addon.mm" POSITION="bottom_or_right" ID="ID_1544430857" CREATED="1793739878293" MODIFIED="1793747251373" LINK="groovyConsole/groovyConsole-v0.0.1.addon.mm">
 <attribute NAME="lastModifiedTime" VALUE="24-04-22 19:58" OBJECT="org.freeplane.features.format.FormattedDate|2022-04-24T19:58-0400|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="02-08-23 22:23" OBJECT="org.freeplane.features.format.FormattedDate|2023-08-02T22:23-0400|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="03-11-26 18:57" OBJECT="org.freeplane.features.format.FormattedDate|2026-11-03T18:57-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="28-04-23 19:01" OBJECT="org.freeplane.features.format.FormattedDate|2023-04-28T19:01-0400|dd-MM-yy HH:mm"/>
 <attribute NAME="fileSize" VALUE="54.190" OBJECT="org.freeplane.features.format.FormattedNumber|54190|#,##0"/>
 </node>
 </node>
-<node TEXT="groovyConsole.mm.bak" ID="ID_216837045" LINK="groovyConsole/groovyConsole.mm.bak">
-<attribute NAME="lastModifiedTime" VALUE="03-08-23 16:03" OBJECT="org.freeplane.features.format.FormattedDate|2023-08-03T16:03-0400|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="03-08-23 16:03" OBJECT="org.freeplane.features.format.FormattedDate|2023-08-03T16:03-0400|dd-MM-yy HH:mm"/>
+<node TEXT="groovyConsole.mm.bak" ID="ID_216837045" CREATED="1793739878293" MODIFIED="1793747275104" LINK="groovyConsole/groovyConsole.mm.bak">
+<attribute NAME="lastModifiedTime" VALUE="03-11-26 20:04" OBJECT="org.freeplane.features.format.FormattedDate|2026-11-03T20:04-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="03-11-26 20:04" OBJECT="org.freeplane.features.format.FormattedDate|2026-11-03T20:04-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="28-04-23 19:01" OBJECT="org.freeplane.features.format.FormattedDate|2023-04-28T19:01-0400|dd-MM-yy HH:mm"/>
-<attribute NAME="fileSize" VALUE="34.536" OBJECT="org.freeplane.features.format.FormattedNumber|34536|#,##0"/>
+<attribute NAME="fileSize" VALUE="37.769" OBJECT="org.freeplane.features.format.FormattedNumber|37769|#,##0"/>
 </node>
 </node>
-<node TEXT="gradle files" ID="ID_1636752753">
-<node TEXT="build.gradle" ID="ID_555807106" LINK="groovyConsole/build.gradle">
+<node TEXT="gradle files" ID="ID_1636752753" CREATED="1793739878293" MODIFIED="1793739878293">
+<node TEXT="build.gradle" ID="ID_555807106" CREATED="1793739878293" MODIFIED="1793739878293" LINK="groovyConsole/build.gradle">
 <attribute NAME="lastModifiedTime" VALUE="02-08-23 22:15" OBJECT="org.freeplane.features.format.FormattedDate|2023-08-02T22:15-0400|dd-MM-yy HH:mm"/>
 <attribute NAME="lastAccessTime" VALUE="03-08-23 16:02" OBJECT="org.freeplane.features.format.FormattedDate|2023-08-03T16:02-0400|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="24-04-23 15:04" OBJECT="org.freeplane.features.format.FormattedDate|2023-04-24T15:04-0400|dd-MM-yy HH:mm"/>
 <attribute NAME="fileSize" VALUE="3.523" OBJECT="org.freeplane.features.format.FormattedNumber|3523|#,##0"/>
 <attribute NAME="projectCode" VALUE="build.gradle"/>
 <attribute NAME="modifiedFile" VALUE="true"/>
-<node TEXT="gC Future A" STYLE_REF="milestone" ID="ID_1279713530">
-<node TEXT="hacer que gradle cargue librería groovyNode al proyecto" STYLE_REF="pendingTask" ID="ID_1438658355"/>
+<node TEXT="gC Future A" STYLE_REF="milestone" ID="ID_1279713530" CREATED="1793739878293" MODIFIED="1793739878293">
+<node TEXT="hacer que gradle cargue librería groovyNode al proyecto" STYLE_REF="pendingTask" ID="ID_1438658355" CREATED="1793739878293" MODIFIED="1793739878293"/>
 </node>
 </node>
-<node TEXT=".gradle" ID="ID_995192598" LINK="groovyConsole/.gradle/"/>
-<node TEXT="gradle" ID="ID_1444506084" LINK="groovyConsole/gradle/">
-<node TEXT="wrapper" ID="ID_141581309" LINK="groovyConsole/gradle/wrapper/">
-<node TEXT="gradle-wrapper.jar" ID="ID_890408326" LINK="groovyConsole/gradle/wrapper/gradle-wrapper.jar">
+<node TEXT=".gradle" ID="ID_995192598" CREATED="1793739878293" MODIFIED="1793739878293" LINK="groovyConsole/.gradle/"/>
+<node TEXT="gradle" ID="ID_1444506084" CREATED="1793739878293" MODIFIED="1793739878293" LINK="groovyConsole/gradle/">
+<node TEXT="wrapper" ID="ID_141581309" CREATED="1793739878293" MODIFIED="1793739878293" LINK="groovyConsole/gradle/wrapper/">
+<node TEXT="gradle-wrapper.jar" ID="ID_890408326" CREATED="1793739878293" MODIFIED="1793739878293" LINK="groovyConsole/gradle/wrapper/gradle-wrapper.jar">
 <attribute NAME="lastModifiedTime" VALUE="04-05-23 16:24" OBJECT="org.freeplane.features.format.FormattedDate|2023-05-04T16:24-0400|datetime"/>
 <attribute NAME="lastAccessTime" VALUE="08-05-23 18:18" OBJECT="org.freeplane.features.format.FormattedDate|2023-05-08T18:18-0400|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="04-05-23 16:24" OBJECT="org.freeplane.features.format.FormattedDate|2023-05-04T16:24-0400|datetime"/>
 <attribute NAME="fileSize" VALUE="61.608" OBJECT="org.freeplane.features.format.FormattedNumber|61608|#,##0"/>
 </node>
-<node TEXT="gradle-wrapper.properties" ID="ID_1922030171" LINK="groovyConsole/gradle/wrapper/gradle-wrapper.properties">
+<node TEXT="gradle-wrapper.properties" ID="ID_1922030171" CREATED="1793739878293" MODIFIED="1793739878293" LINK="groovyConsole/gradle/wrapper/gradle-wrapper.properties">
 <attribute NAME="lastModifiedTime" VALUE="04-05-23 16:24" OBJECT="org.freeplane.features.format.FormattedDate|2023-05-04T16:24-0400|datetime"/>
 <attribute NAME="lastAccessTime" VALUE="03-08-23 16:02" OBJECT="org.freeplane.features.format.FormattedDate|2023-08-03T16:02-0400|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="04-05-23 16:24" OBJECT="org.freeplane.features.format.FormattedDate|2023-05-04T16:24-0400|datetime"/>
@@ -898,94 +1039,132 @@ It adds access to Freeplane&apos;s and add-ons libraries
 </node>
 </node>
 </node>
-<node TEXT="gradlew" ID="ID_1327442642" LINK="groovyConsole/gradlew">
+<node TEXT="gradlew" ID="ID_1327442642" CREATED="1793739878293" MODIFIED="1793739878293" LINK="groovyConsole/gradlew">
 <attribute NAME="lastModifiedTime" VALUE="04-05-23 16:24" OBJECT="org.freeplane.features.format.FormattedDate|2023-05-04T16:24-0400|datetime"/>
 <attribute NAME="lastAccessTime" VALUE="02-08-23 22:23" OBJECT="org.freeplane.features.format.FormattedDate|2023-08-02T22:23-0400|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="04-05-23 16:24" OBJECT="org.freeplane.features.format.FormattedDate|2023-05-04T16:24-0400|datetime"/>
 <attribute NAME="fileSize" VALUE="8.495" OBJECT="org.freeplane.features.format.FormattedNumber|8495|#,##0"/>
 </node>
-<node TEXT="gradlew.bat" ID="ID_714658141" LINK="groovyConsole/gradlew.bat">
+<node TEXT="gradlew.bat" ID="ID_714658141" CREATED="1793739878293" MODIFIED="1793739878293" LINK="groovyConsole/gradlew.bat">
 <attribute NAME="lastModifiedTime" VALUE="04-05-23 16:24" OBJECT="org.freeplane.features.format.FormattedDate|2023-05-04T16:24-0400|datetime"/>
 <attribute NAME="lastAccessTime" VALUE="02-08-23 22:23" OBJECT="org.freeplane.features.format.FormattedDate|2023-08-02T22:23-0400|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="04-05-23 16:24" OBJECT="org.freeplane.features.format.FormattedDate|2023-05-04T16:24-0400|datetime"/>
 <attribute NAME="fileSize" VALUE="2.868" OBJECT="org.freeplane.features.format.FormattedNumber|2868|#,##0"/>
 </node>
 </node>
+<node TEXT="TEMPORARY-SCRIPTS.md" ID="ID_122804291" CREATED="1793837069233" MODIFIED="1793837516148" LINK="groovyConsole/TEMPORARY-SCRIPTS.md">
+<attribute NAME="lastModifiedTime" VALUE="04-11-26 17:49" OBJECT="org.freeplane.features.format.FormattedDate|2026-11-04T17:49-0300|datetime"/>
+<attribute NAME="lastAccessTime" VALUE="04-11-26 21:03" OBJECT="org.freeplane.features.format.FormattedDate|2026-11-04T21:03-0300|datetime"/>
+<attribute NAME="creationTime" VALUE="03-11-26 22:08" OBJECT="org.freeplane.features.format.FormattedDate|2026-11-03T22:08-0300|datetime"/>
+<attribute NAME="fileSize" VALUE="4.322" OBJECT="org.freeplane.features.format.FormattedNumber|4322|#,##0"/>
 </node>
-<node TEXT="resources" STYLE_REF="file_folder" ID="ID_1818290900" LINK="resources/">
+</node>
+<node TEXT="resources" STYLE_REF="file_folder" FOLDED="true" ID="ID_1818290900" CREATED="1793739878293" MODIFIED="1793741453652" LINK="resources/">
 <attribute NAME="lastModifiedTime" VALUE="25-04-22 17:44" OBJECT="org.freeplane.features.format.FormattedDate|2022-04-25T17:44-0400|dd-MM-yy HH:mm"/>
 <attribute NAME="lastAccessTime" VALUE="25-04-22 18:20" OBJECT="org.freeplane.features.format.FormattedDate|2022-04-25T18:20-0400|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="17-04-22 10:42" OBJECT="org.freeplane.features.format.FormattedDate|2022-04-17T10:42-0400|datetime"/>
 <attribute NAME="fileSize" VALUE="4.096" OBJECT="org.freeplane.features.format.FormattedNumber|4096|#,##0"/>
 <attribute NAME="projectCode" VALUE="resources"/>
-<node TEXT="groovyConsole_001.png" ID="ID_1941588475" LINK="resources/groovyConsole_001.png">
+<richcontent TYPE="DETAILS">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      folder con recursos e imagenes
+    </p>
+    <p>
+      &#xa0;para el README y otros
+    </p>
+  </body>
+</html></richcontent>
+<node TEXT="groovyConsole_001.png" ID="ID_1941588475" CREATED="1793739878293" MODIFIED="1793741287197" LINK="resources/groovyConsole_001.png">
 <attribute NAME="lastModifiedTime" VALUE="24-04-23 15:04" OBJECT="org.freeplane.features.format.FormattedDate|2023-04-24T15:04-0400|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="02-08-23 22:25" OBJECT="org.freeplane.features.format.FormattedDate|2023-08-02T22:25-0400|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="10-10-26 11:50" OBJECT="org.freeplane.features.format.FormattedDate|2026-10-10T11:50-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="24-04-23 15:04" OBJECT="org.freeplane.features.format.FormattedDate|2023-04-24T15:04-0400|dd-MM-yy HH:mm"/>
 <attribute NAME="fileSize" VALUE="28.435" OBJECT="org.freeplane.features.format.FormattedNumber|28435|#,##0"/>
 </node>
-<node TEXT="groovyConsole_002.png" ID="ID_1984441739" LINK="resources/groovyConsole_002.png">
+<node TEXT="groovyConsole_002.png" ID="ID_1984441739" CREATED="1793739878293" MODIFIED="1793741287197" LINK="resources/groovyConsole_002.png">
 <attribute NAME="lastModifiedTime" VALUE="24-04-23 15:04" OBJECT="org.freeplane.features.format.FormattedDate|2023-04-24T15:04-0400|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="30-06-23 21:54" OBJECT="org.freeplane.features.format.FormattedDate|2023-06-30T21:54-0400|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="10-10-26 11:50" OBJECT="org.freeplane.features.format.FormattedDate|2026-10-10T11:50-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="24-04-23 15:04" OBJECT="org.freeplane.features.format.FormattedDate|2023-04-24T15:04-0400|dd-MM-yy HH:mm"/>
 <attribute NAME="fileSize" VALUE="7.000" OBJECT="org.freeplane.features.format.FormattedNumber|7000|#,##0"/>
 </node>
-<node TEXT="groovyConsole_003.png" ID="ID_1034407721" LINK="resources/groovyConsole_003.png">
+<node TEXT="groovyConsole_003.png" ID="ID_1034407721" CREATED="1793739878293" MODIFIED="1793741287197" LINK="resources/groovyConsole_003.png">
 <attribute NAME="lastModifiedTime" VALUE="24-04-23 15:04" OBJECT="org.freeplane.features.format.FormattedDate|2023-04-24T15:04-0400|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="30-06-23 21:54" OBJECT="org.freeplane.features.format.FormattedDate|2023-06-30T21:54-0400|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="10-10-26 11:50" OBJECT="org.freeplane.features.format.FormattedDate|2026-10-10T11:50-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="24-04-23 15:04" OBJECT="org.freeplane.features.format.FormattedDate|2023-04-24T15:04-0400|dd-MM-yy HH:mm"/>
 <attribute NAME="fileSize" VALUE="7.486" OBJECT="org.freeplane.features.format.FormattedNumber|7486|#,##0"/>
 </node>
-<node TEXT="groovyConsole_004.png" ID="ID_1693528645" LINK="resources/groovyConsole_004.png">
+<node TEXT="groovyConsole_004.png" ID="ID_1693528645" CREATED="1793739878293" MODIFIED="1793741287202" LINK="resources/groovyConsole_004.png">
 <attribute NAME="lastModifiedTime" VALUE="24-04-23 15:04" OBJECT="org.freeplane.features.format.FormattedDate|2023-04-24T15:04-0400|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="30-06-23 21:54" OBJECT="org.freeplane.features.format.FormattedDate|2023-06-30T21:54-0400|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="10-10-26 11:50" OBJECT="org.freeplane.features.format.FormattedDate|2026-10-10T11:50-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="24-04-23 15:04" OBJECT="org.freeplane.features.format.FormattedDate|2023-04-24T15:04-0400|dd-MM-yy HH:mm"/>
 <attribute NAME="fileSize" VALUE="5.183" OBJECT="org.freeplane.features.format.FormattedNumber|5183|#,##0"/>
 </node>
-<node TEXT="groovyConsole_005.png" ID="ID_1736357139" LINK="resources/groovyConsole_005.png">
+<node TEXT="groovyConsole_005.png" ID="ID_1736357139" CREATED="1793739878293" MODIFIED="1793741287202" LINK="resources/groovyConsole_005.png">
 <attribute NAME="lastModifiedTime" VALUE="24-04-23 15:04" OBJECT="org.freeplane.features.format.FormattedDate|2023-04-24T15:04-0400|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="30-06-23 21:54" OBJECT="org.freeplane.features.format.FormattedDate|2023-06-30T21:54-0400|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="10-10-26 11:50" OBJECT="org.freeplane.features.format.FormattedDate|2026-10-10T11:50-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="24-04-23 15:04" OBJECT="org.freeplane.features.format.FormattedDate|2023-04-24T15:04-0400|dd-MM-yy HH:mm"/>
 <attribute NAME="fileSize" VALUE="653" OBJECT="org.freeplane.features.format.FormattedNumber|653|#,##0"/>
 </node>
-<node TEXT="groovyConsole_006.png" ID="ID_971400958" LINK="resources/groovyConsole_006.png">
+<node TEXT="groovyConsole_006.png" ID="ID_971400958" CREATED="1793739878295" MODIFIED="1793741287202" LINK="resources/groovyConsole_006.png">
 <attribute NAME="lastModifiedTime" VALUE="24-04-23 15:04" OBJECT="org.freeplane.features.format.FormattedDate|2023-04-24T15:04-0400|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="30-06-23 21:54" OBJECT="org.freeplane.features.format.FormattedDate|2023-06-30T21:54-0400|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="10-10-26 11:50" OBJECT="org.freeplane.features.format.FormattedDate|2026-10-10T11:50-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="24-04-23 15:04" OBJECT="org.freeplane.features.format.FormattedDate|2023-04-24T15:04-0400|dd-MM-yy HH:mm"/>
 <attribute NAME="fileSize" VALUE="518" OBJECT="org.freeplane.features.format.FormattedNumber|518|#,##0"/>
 </node>
-<node TEXT="groovyConsole_007.png" ID="ID_27340568" LINK="resources/groovyConsole_007.png">
+<node TEXT="groovyConsole_007.png" ID="ID_27340568" CREATED="1793739878295" MODIFIED="1793741287202" LINK="resources/groovyConsole_007.png">
 <attribute NAME="lastModifiedTime" VALUE="24-04-23 15:04" OBJECT="org.freeplane.features.format.FormattedDate|2023-04-24T15:04-0400|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="30-06-23 21:54" OBJECT="org.freeplane.features.format.FormattedDate|2023-06-30T21:54-0400|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="10-10-26 11:50" OBJECT="org.freeplane.features.format.FormattedDate|2026-10-10T11:50-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="24-04-23 15:04" OBJECT="org.freeplane.features.format.FormattedDate|2023-04-24T15:04-0400|dd-MM-yy HH:mm"/>
 <attribute NAME="fileSize" VALUE="1.583" OBJECT="org.freeplane.features.format.FormattedNumber|1583|#,##0"/>
 </node>
-<node TEXT="groovyConsole_008.png" ID="ID_603527740" LINK="resources/groovyConsole_008.png">
+<node TEXT="groovyConsole_008.png" ID="ID_603527740" CREATED="1793739878295" MODIFIED="1793741287202" LINK="resources/groovyConsole_008.png">
 <attribute NAME="lastModifiedTime" VALUE="24-04-23 15:04" OBJECT="org.freeplane.features.format.FormattedDate|2023-04-24T15:04-0400|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="30-06-23 21:54" OBJECT="org.freeplane.features.format.FormattedDate|2023-06-30T21:54-0400|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="10-10-26 11:50" OBJECT="org.freeplane.features.format.FormattedDate|2026-10-10T11:50-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="24-04-23 15:04" OBJECT="org.freeplane.features.format.FormattedDate|2023-04-24T15:04-0400|dd-MM-yy HH:mm"/>
 <attribute NAME="fileSize" VALUE="1.111" OBJECT="org.freeplane.features.format.FormattedNumber|1111|#,##0"/>
 </node>
-<node TEXT="groovyConsole_009.png" ID="ID_1628851653" LINK="resources/groovyConsole_009.png">
+<node TEXT="groovyConsole_009.png" ID="ID_1628851653" CREATED="1793739878295" MODIFIED="1793741287202" LINK="resources/groovyConsole_009.png">
 <attribute NAME="lastModifiedTime" VALUE="24-04-23 15:04" OBJECT="org.freeplane.features.format.FormattedDate|2023-04-24T15:04-0400|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="30-06-23 21:54" OBJECT="org.freeplane.features.format.FormattedDate|2023-06-30T21:54-0400|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="10-10-26 11:50" OBJECT="org.freeplane.features.format.FormattedDate|2026-10-10T11:50-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="24-04-23 15:04" OBJECT="org.freeplane.features.format.FormattedDate|2023-04-24T15:04-0400|dd-MM-yy HH:mm"/>
 <attribute NAME="fileSize" VALUE="10.334" OBJECT="org.freeplane.features.format.FormattedNumber|10334|#,##0"/>
 </node>
-<node TEXT="saveInNode.svg" ID="ID_1247712984" LINK="resources/saveInNode.svg">
+<node TEXT="saveInNode.svg" ID="ID_1247712984" CREATED="1793739878295" MODIFIED="1793741287202" LINK="resources/saveInNode.svg">
 <attribute NAME="lastModifiedTime" VALUE="30-06-23 21:48" OBJECT="org.freeplane.features.format.FormattedDate|2023-06-30T21:48-0400|datetime"/>
-<attribute NAME="lastAccessTime" VALUE="30-06-23 22:26" OBJECT="org.freeplane.features.format.FormattedDate|2023-06-30T22:26-0400|datetime"/>
+<attribute NAME="lastAccessTime" VALUE="03-11-26 18:20" OBJECT="org.freeplane.features.format.FormattedDate|2026-11-03T18:20-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="30-06-23 21:54" OBJECT="org.freeplane.features.format.FormattedDate|2023-06-30T21:54-0400|datetime"/>
 <attribute NAME="fileSize" VALUE="2.512" OBJECT="org.freeplane.features.format.FormattedNumber|2512|#,##0"/>
 </node>
-<node TEXT="saveInNodeAs.svg" ID="ID_903040677" LINK="resources/saveInNodeAs.svg">
+<node TEXT="saveInNodeAs.svg" ID="ID_903040677" CREATED="1793739878295" MODIFIED="1793741287202" LINK="resources/saveInNodeAs.svg">
 <attribute NAME="lastModifiedTime" VALUE="30-06-23 21:53" OBJECT="org.freeplane.features.format.FormattedDate|2023-06-30T21:53-0400|datetime"/>
-<attribute NAME="lastAccessTime" VALUE="30-06-23 22:26" OBJECT="org.freeplane.features.format.FormattedDate|2023-06-30T22:26-0400|datetime"/>
+<attribute NAME="lastAccessTime" VALUE="03-11-26 18:20" OBJECT="org.freeplane.features.format.FormattedDate|2026-11-03T18:20-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="30-06-23 21:54" OBJECT="org.freeplane.features.format.FormattedDate|2023-06-30T21:54-0400|datetime"/>
 <attribute NAME="fileSize" VALUE="4.467" OBJECT="org.freeplane.features.format.FormattedNumber|4467|#,##0"/>
 </node>
+<node TEXT="reloadFile.png" ID="ID_290020188" CREATED="1793741225731" MODIFIED="1793741287202" LINK="resources/reloadFile.png">
+<attribute NAME="lastModifiedTime" VALUE="04-08-23 17:23" OBJECT="org.freeplane.features.format.FormattedDate|2023-08-04T17:23-0400|datetime"/>
+<attribute NAME="lastAccessTime" VALUE="03-11-26 18:03" OBJECT="org.freeplane.features.format.FormattedDate|2026-11-03T18:03-0300|datetime"/>
+<attribute NAME="creationTime" VALUE="04-08-23 17:23" OBJECT="org.freeplane.features.format.FormattedDate|2023-08-04T17:23-0400|datetime"/>
+<attribute NAME="fileSize" VALUE="1.806" OBJECT="org.freeplane.features.format.FormattedNumber|1806|#,##0"/>
 </node>
-<node TEXT=".gitignore" ID="ID_632522946" LINK=".gitignore">
+<node TEXT="saveInNode.png" ID="ID_64373671" CREATED="1793741225736" MODIFIED="1793741287202" LINK="resources/saveInNode.png">
+<attribute NAME="lastModifiedTime" VALUE="04-08-23 17:23" OBJECT="org.freeplane.features.format.FormattedDate|2023-08-04T17:23-0400|datetime"/>
+<attribute NAME="lastAccessTime" VALUE="03-11-26 18:03" OBJECT="org.freeplane.features.format.FormattedDate|2026-11-03T18:03-0300|datetime"/>
+<attribute NAME="creationTime" VALUE="04-08-23 17:23" OBJECT="org.freeplane.features.format.FormattedDate|2023-08-04T17:23-0400|datetime"/>
+<attribute NAME="fileSize" VALUE="1.597" OBJECT="org.freeplane.features.format.FormattedNumber|1597|#,##0"/>
+</node>
+<node TEXT="saveInNodeAs.png" ID="ID_1008668338" CREATED="1793741225741" MODIFIED="1793741287209" LINK="resources/saveInNodeAs.png">
+<attribute NAME="lastModifiedTime" VALUE="04-08-23 17:23" OBJECT="org.freeplane.features.format.FormattedDate|2023-08-04T17:23-0400|datetime"/>
+<attribute NAME="lastAccessTime" VALUE="03-11-26 18:03" OBJECT="org.freeplane.features.format.FormattedDate|2026-11-03T18:03-0300|datetime"/>
+<attribute NAME="creationTime" VALUE="04-08-23 17:23" OBJECT="org.freeplane.features.format.FormattedDate|2023-08-04T17:23-0400|datetime"/>
+<attribute NAME="fileSize" VALUE="2.476" OBJECT="org.freeplane.features.format.FormattedNumber|2476|#,##0"/>
+</node>
+</node>
+<node TEXT=".gitignore" ID="ID_632522946" CREATED="1793739878295" MODIFIED="1793837208627" LINK=".gitignore">
 <icon BUILTIN="pencil"/>
 <richcontent TYPE="NOTE">
 <html>
@@ -1074,9 +1253,6 @@ It adds access to Freeplane&apos;s and add-ons libraries
     <p>
       delete/
     </p>
-    <p>
-      
-    </p>
   </body>
 </html></richcontent>
 <richcontent TYPE="DETAILS">
@@ -1095,37 +1271,38 @@ It adds access to Freeplane&apos;s and add-ons libraries
 <attribute NAME="creationTime" VALUE="24-04-23 15:04" OBJECT="org.freeplane.features.format.FormattedDate|2023-04-24T15:04-0400|dd-MM-yy HH:mm"/>
 <attribute NAME="fileSize" VALUE="487" OBJECT="org.freeplane.features.format.FormattedNumber|487|#,##0"/>
 </node>
-<node TEXT="README.MD" ID="ID_181733889" LINK="README.MD">
+<node TEXT="README.MD" FOLDED="true" ID="ID_181733889" CREATED="1793739878295" MODIFIED="1793739878295" LINK="README.MD">
 <richcontent TYPE="NOTE" CONTENT-TYPE="plain/markdown"/>
 <attribute NAME="lastModifiedTime" VALUE="24-04-23 15:04" OBJECT="org.freeplane.features.format.FormattedDate|2023-04-24T15:04-0400|dd-MM-yy HH:mm"/>
 <attribute NAME="lastAccessTime" VALUE="08-05-23 18:18" OBJECT="org.freeplane.features.format.FormattedDate|2023-05-08T18:18-0400|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="24-04-23 15:04" OBJECT="org.freeplane.features.format.FormattedDate|2023-04-24T15:04-0400|dd-MM-yy HH:mm"/>
 <attribute NAME="fileSize" VALUE="4.953" OBJECT="org.freeplane.features.format.FormattedNumber|4953|#,##0"/>
 <attribute NAME="projectCode" VALUE="README.MD"/>
-<node TEXT="README-groovyConsole-MDH.mm" ID="ID_1716777370" LINK="README-groovyConsole-MDH.mm">
+<node TEXT="README-groovyConsole-MDH.mm" ID="ID_1716777370" CREATED="1793739878295" MODIFIED="1793739878295" LINK="README-groovyConsole-MDH.mm">
 <attribute NAME="lastModifiedTime" VALUE="24-04-23 15:04" OBJECT="org.freeplane.features.format.FormattedDate|2023-04-24T15:04-0400|dd-MM-yy HH:mm"/>
 <attribute NAME="lastAccessTime" VALUE="03-08-23 16:07" OBJECT="org.freeplane.features.format.FormattedDate|2023-08-03T16:07-0400|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="24-04-23 15:04" OBJECT="org.freeplane.features.format.FormattedDate|2023-04-24T15:04-0400|dd-MM-yy HH:mm"/>
 <attribute NAME="fileSize" VALUE="22.728" OBJECT="org.freeplane.features.format.FormattedNumber|22728|#,##0"/>
-<node TEXT="gC Future A" STYLE_REF="milestone" ID="ID_565384637">
-<node TEXT="actualizar ReadMe" STYLE_REF="pendingTask" ID="ID_299518433">
-<node TEXT="nuevas fumcionalidades" FOLDED="true" ID="ID_750518914">
-<node TEXT="ver cambios en versiones" ID="ID_1999194206"/>
+<node TEXT="gC Future A" STYLE_REF="milestone" ID="ID_565384637" CREATED="1793739878295" MODIFIED="1793739878295">
+<node TEXT="README v0.0.9 actualizado — pendiente revisión" STYLE_REF="pendingTask" ID="ID_299518433" CREATED="1793739878295" MODIFIED="1793836559859" AI_EDITS="true"><richcontent TYPE="NOTE">
+<text>README.MD actualizado con la funcionalidad implementada en v0.0.9 y sus límites. Pendiente revisar el diff antes del commit. Las ideas de documentación para funcionalidades futuras no se dan por realizadas. Antes de regenerar README desde README-groovyConsole-MDH.mm, sincronizar esa fuente alternativa para no perder la documentación nueva.</text></richcontent>
+<node TEXT="nuevas fumcionalidades" FOLDED="true" ID="ID_750518914" CREATED="1793739878295" MODIFIED="1793739878295">
+<node TEXT="ver cambios en versiones" ID="ID_1999194206" CREATED="1793739878295" MODIFIED="1793739878295"/>
 </node>
-<node TEXT="link a último release" ID="ID_569264650"/>
-<node TEXT="link a release de myTempScripts" ID="ID_754310697"/>
-<node TEXT="imágenes de funcionalidades" FOLDED="true" ID="ID_180565491">
-<node TEXT="load con append" ID="ID_1373590109"/>
-<node TEXT="tempScripts" ID="ID_1534576302"/>
+<node TEXT="link a último release" ID="ID_569264650" CREATED="1793739878295" MODIFIED="1793739878295"/>
+<node TEXT="link a release de myTempScripts" ID="ID_754310697" CREATED="1793739878295" MODIFIED="1793739878295"/>
+<node TEXT="imágenes de funcionalidades" FOLDED="true" ID="ID_180565491" CREATED="1793739878295" MODIFIED="1793739878295">
+<node TEXT="load con append" ID="ID_1373590109" CREATED="1793739878295" MODIFIED="1793739878295"/>
+<node TEXT="tempScripts" ID="ID_1534576302" CREATED="1793739878295" MODIFIED="1793739878295"/>
 </node>
-<node TEXT="Agregar imágenes" ID="ID_1962469864"/>
-<node TEXT="agregar descripción de nuevos comandos" ID="ID_1732392611"/>
-<node TEXT="agregar historial de cambios" ID="ID_734610760"/>
-</node>
-</node>
+<node TEXT="Agregar imágenes" ID="ID_1962469864" CREATED="1793739878295" MODIFIED="1793739878295"/>
+<node TEXT="agregar descripción de nuevos comandos" ID="ID_1732392611" CREATED="1793739878295" MODIFIED="1793739878295"/>
+<node TEXT="agregar historial de cambios" ID="ID_734610760" CREATED="1793739878295" MODIFIED="1793739878295"/>
 </node>
 </node>
-<node TEXT="LICENSE.md" ID="ID_1060696446" LINK="LICENSE.md"><richcontent TYPE="NOTE">
+</node>
+</node>
+<node TEXT="LICENSE.md" ID="ID_1060696446" CREATED="1793739878295" MODIFIED="1793739878295" LINK="LICENSE.md"><richcontent TYPE="NOTE">
 <html>
   <head>
     
@@ -1201,14 +1378,14 @@ It adds access to Freeplane&apos;s and add-ons libraries
 <attribute NAME="creationTime" VALUE="24-04-23 15:04" OBJECT="org.freeplane.features.format.FormattedDate|2023-04-24T15:04-0400|dd-MM-yy HH:mm"/>
 <attribute NAME="fileSize" VALUE="1.093" OBJECT="org.freeplane.features.format.FormattedNumber|1093|#,##0"/>
 </node>
-<node TEXT="GroovyConsole project.mm" POSITION="bottom_or_right" ID="ID_308539569" LINK="GroovyConsole%20project.mm">
+<node TEXT="GroovyConsole project.mm" POSITION="bottom_or_right" ID="ID_308539569" CREATED="1793739878295" MODIFIED="1793739878295" LINK="GroovyConsole%20project.mm">
 <attribute NAME="lastModifiedTime" VALUE="30-06-23 21:37" OBJECT="org.freeplane.features.format.FormattedDate|2023-06-30T21:37-0400|dd-MM-yy HH:mm"/>
 <attribute NAME="lastAccessTime" VALUE="03-08-23 16:07" OBJECT="org.freeplane.features.format.FormattedDate|2023-08-03T16:07-0400|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="28-04-23 18:41" OBJECT="org.freeplane.features.format.FormattedDate|2023-04-28T18:41-0400|datetime"/>
 <attribute NAME="fileSize" VALUE="95.338" OBJECT="org.freeplane.features.format.FormattedNumber|95338|#,##0"/>
 </node>
 </node>
-<node TEXT="new imported files" STYLE_REF="newFolderImport" ID="ID_1776199503">
+<node TEXT="new imported files" STYLE_REF="newFolderImport" ID="ID_1776199503" CREATED="1793739878295" MODIFIED="1793837071427">
 <attribute NAME="log_MDI" VALUE="2" OBJECT="org.freeplane.features.format.FormattedNumber|2|#0.####"/>
 <richcontent TYPE="NOTE">
 <html>
@@ -1217,7 +1394,7 @@ It adds access to Freeplane&apos;s and add-ons libraries
   </head>
   <body>
     <p>
-      Inated:&#xa0;&#xa0;&#xa0;2023-08-03&#xa0;&#xa0;16:08:09
+      Inated:&#xa0;&#xa0;&#xa0;2026-11-04&#xa0;&#xa0;21:04:29
     </p>
     <p>
       
@@ -1232,7 +1409,7 @@ It adds access to Freeplane&apos;s and add-ons libraries
       &#xa0;0 link(s) corrected in nodes
     </p>
     <p>
-      &#xa0;2 new file(s) imported as node(s)&#xa0;
+      &#xa0;11 new file(s) imported as node(s)&#xa0;
     </p>
     <p>
       &#xa0;0 node(s) moved/renamed in drive
@@ -1247,7 +1424,7 @@ It adds access to Freeplane&apos;s and add-ons libraries
       ------- Folders: --------&#xa0;
     </p>
     <p>
-      24 folders didn't need to be moved&#xa0;
+      28 folders didn't need to be moved&#xa0;
     </p>
     <p>
       
@@ -1256,7 +1433,7 @@ It adds access to Freeplane&apos;s and add-ons libraries
       
     </p>
     <p>
-      0.2 seconds
+      2 seconds
     </p>
     <p>
       
@@ -1274,15 +1451,13 @@ It adds access to Freeplane&apos;s and add-ons libraries
       No failed operation in drive
     </p>
   </body>
-</html>
-</richcontent>
-<node TEXT="resources" ID="ID_1399560171" LINK="#ID_1818290900"/>
+</html></richcontent>
 </node>
-<node TEXT="versión instalada en AddOns" STYLE_REF="locked" ID="ID_1056009098"/>
-<node TEXT="Tareas varias" STYLE_REF="Organizador" ID="ID_1570336119">
+<node TEXT="versión instalada en AddOns" STYLE_REF="locked" ID="ID_1056009098" CREATED="1793739878297" MODIFIED="1793739878297"/>
+<node TEXT="Tareas varias" STYLE_REF="Organizador" FOLDED="true" ID="ID_1570336119" CREATED="1793739878297" MODIFIED="1793739878297">
 <attribute NAME="projectCode" VALUE="Tareas"/>
-<node TEXT="otras idea pendientes&#xa;Asignar" ID="ID_214809729">
-<node TEXT="botón para recargar script desde file" STYLE_REF="completedTask" ID="ID_1916463815"><richcontent TYPE="NOTE">
+<node TEXT="otras idea pendientes&#xa;Asignar" ID="ID_214809729" CREATED="1793739878297" MODIFIED="1793739878297">
+<node TEXT="botón para recargar script desde file" STYLE_REF="completedTask" ID="ID_1916463815" CREATED="1793739878297" MODIFIED="1793739878297"><richcontent TYPE="NOTE">
 <html>
   <head>
     
@@ -1294,7 +1469,7 @@ It adds access to Freeplane&apos;s and add-ons libraries
   </body>
 </html></richcontent>
 </node>
-<node TEXT="boton para ejecutar el script desde freeplane" STYLE_REF="pendingTask" ID="ID_655464826"><richcontent TYPE="NOTE">
+<node TEXT="boton para ejecutar el script desde freeplane" STYLE_REF="pendingTask" ID="ID_655464826" CREATED="1793739878297" MODIFIED="1793739878297"><richcontent TYPE="NOTE">
 <html>
   <head>
     
@@ -1309,40 +1484,40 @@ It adds access to Freeplane&apos;s and add-ons libraries
   </body>
 </html></richcontent>
 </node>
-<node TEXT="otro menu command para llamar a groovyConsole full permisos" STYLE_REF="completedTask" ID="ID_450354548"/>
-<node TEXT="rehabilitar comando para editar script asociado a menú" STYLE_REF="pendingTask" ID="ID_1347348011"/>
-<node TEXT="agregar formato a editor" STYLE_REF="pendingTask" ID="ID_162321591">
-<node TEXT="comandos groovy" STYLE_REF="pendingTask" ID="ID_1777352210"/>
-<node TEXT="palabras Freeplane API" STYLE_REF="pendingTask" ID="ID_607771690"/>
+<node TEXT="otro menu command para llamar a groovyConsole full permisos" STYLE_REF="completedTask" ID="ID_450354548" CREATED="1793739878297" MODIFIED="1793739878297"/>
+<node TEXT="rehabilitar comando para editar script asociado a menú" STYLE_REF="pendingTask" ID="ID_1347348011" CREATED="1793739878297" MODIFIED="1793739878297"/>
+<node TEXT="agregar formato a editor" STYLE_REF="pendingTask" ID="ID_162321591" CREATED="1793739878297" MODIFIED="1793739878297">
+<node TEXT="comandos groovy" STYLE_REF="pendingTask" ID="ID_1777352210" CREATED="1793739878297" MODIFIED="1793739878297"/>
+<node TEXT="palabras Freeplane API" STYLE_REF="pendingTask" ID="ID_607771690" CREATED="1793739878297" MODIFIED="1793739878297"/>
 </node>
-<node TEXT="Agregar botón que guarde en archivo .groovy temporal" STYLE_REF="nextTask" ID="ID_66179713">
-<node TEXT="cuyo path esté definido en las preferencias de Freeplane" STYLE_REF="pendingTask" ID="ID_350975537"/>
-<node TEXT="que facilite tener un único proyecto en IntelliJ con librerias precargadas, etc para usar con scripts temp" ID="ID_1671157507"/>
+<node TEXT="Agregar botón que guarde en archivo .groovy temporal" STYLE_REF="nextTask" ID="ID_66179713" CREATED="1793739878297" MODIFIED="1793739878297">
+<node TEXT="cuyo path esté definido en las preferencias de Freeplane" STYLE_REF="pendingTask" ID="ID_350975537" CREATED="1793739878297" MODIFIED="1793739878297"/>
+<node TEXT="que facilite tener un único proyecto en IntelliJ con librerias precargadas, etc para usar con scripts temp" ID="ID_1671157507" CREATED="1793739878297" MODIFIED="1793739878297"/>
 </node>
 </node>
-<node TEXT="gC Future A" STYLE_REF="milestone" ID="ID_1680075747">
-<node TEXT="ver tema &quot;isGroovyNode(node)&quot;, para que no tener problemas en mis mapas si desaparece WSE" STYLE_REF="discardedTask" ID="ID_100568344"/>
-<node TEXT="revisar que funcionalidades wikdshell extension voy a importar y cuales no" STYLE_REF="pendingTask" ID="ID_55180733"/>
+<node TEXT="gC Future A" STYLE_REF="milestone" ID="ID_1680075747" CREATED="1793739878297" MODIFIED="1793739878297">
+<node TEXT="ver tema &quot;isGroovyNode(node)&quot;, para que no tener problemas en mis mapas si desaparece WSE" STYLE_REF="discardedTask" ID="ID_100568344" CREATED="1793739878297" MODIFIED="1793739878297"/>
+<node TEXT="revisar que funcionalidades wikdshell extension voy a importar y cuales no" STYLE_REF="pendingTask" ID="ID_55180733" CREATED="1793739878297" MODIFIED="1793739878297"/>
 </node>
-<node TEXT="gC Future B" STYLE_REF="milestone" ID="ID_994209354">
-<node TEXT="revisar pendientes en wikdshell extension para ver cuales traer" STYLE_REF="pendingTask" ID="ID_1916577991"/>
-<node TEXT="myTempScripts" ID="ID_1209729951">
+<node TEXT="gC Future B" STYLE_REF="milestone" ID="ID_994209354" CREATED="1793739878297" MODIFIED="1793739878297">
+<node TEXT="revisar pendientes en wikdshell extension para ver cuales traer" STYLE_REF="pendingTask" ID="ID_1916577991" CREATED="1793739878297" MODIFIED="1793739878297"/>
+<node TEXT="myTempScripts" ID="ID_1209729951" CREATED="1793739878297" MODIFIED="1793739878297">
 <attribute NAME="projectCode" VALUE="my.Temp.Scripts"/>
-<node TEXT="es otro add-on?" STYLE_REF="pendingTask" ID="ID_182748821"/>
-<node TEXT="definir fase" STYLE_REF="pendingTask" ID="ID_1903437549"/>
+<node TEXT="es otro add-on?" STYLE_REF="pendingTask" ID="ID_182748821" CREATED="1793739878297" MODIFIED="1793739878297"/>
+<node TEXT="definir fase" STYLE_REF="pendingTask" ID="ID_1903437549" CREATED="1793739878297" MODIFIED="1793739878297"/>
 </node>
-<node TEXT="actualizar a listado de AddOns en FP wiki" STYLE_REF="pendingTask" FOLDED="true" ID="ID_1800996529">
-<node TEXT="agregar a listado de AddOns en FP wiki" ID="ID_1102237309"/>
-<node TEXT="usar addOn documentation de devTools" ID="ID_740052352"/>
+<node TEXT="actualizar a listado de AddOns en FP wiki" STYLE_REF="pendingTask" FOLDED="true" ID="ID_1800996529" CREATED="1793739878297" MODIFIED="1793739878297">
+<node TEXT="agregar a listado de AddOns en FP wiki" ID="ID_1102237309" CREATED="1793739878297" MODIFIED="1793739878297"/>
+<node TEXT="usar addOn documentation de devTools" ID="ID_740052352" CREATED="1793739878297" MODIFIED="1793739878297"/>
 </node>
 </node>
-<node TEXT="gC Future C" STYLE_REF="milestone" ID="ID_718955669">
-<node TEXT="actualizar wiki" STYLE_REF="maybeTask" ID="ID_303128084">
+<node TEXT="gC Future C" STYLE_REF="milestone" ID="ID_718955669" CREATED="1793739878297" MODIFIED="1793739878297">
+<node TEXT="actualizar wiki" STYLE_REF="maybeTask" ID="ID_303128084" CREATED="1793739878297" MODIFIED="1793739878297">
 <icon BUILTIN="help"/>
 </node>
 </node>
-<node TEXT="prueba" STYLE_REF="locked" FOLDED="true" ID="ID_749156692" VGAP_QUANTITY="2 px">
-<node TEXT="prueba" ID="ID_1223081684" LINK="file:/C:/Users/Edo/Documents/GitHub/Freeplane_groovyConsole/groovyConsole/scripts/openWithGroovyConsole.groovy">
+<node TEXT="prueba" STYLE_REF="locked" FOLDED="true" ID="ID_749156692" CREATED="1793739878297" MODIFIED="1793739878297" VGAP_QUANTITY="2 px">
+<node TEXT="prueba" ID="ID_1223081684" CREATED="1793739878297" MODIFIED="1793739878297" LINK="file:/C:/Users/Edo/Documents/GitHub/Freeplane_groovyConsole/groovyConsole/scripts/openWithGroovyConsole.groovy">
 <attribute NAME="script1" VALUE="node.text = node.text.reverse()"/>
 <attribute NAME="lastModifiedTime" VALUE="18-04-22 13:23" OBJECT="org.freeplane.features.format.FormattedDate|2022-04-18T13:23-0400|datetime"/>
 <attribute NAME="lastAccessTime" VALUE="24-04-22 21:59" OBJECT="org.freeplane.features.format.FormattedDate|2022-04-24T21:59-0400|dd-MM-yy HH:mm"/>
@@ -1371,7 +1546,7 @@ It adds access to Freeplane&apos;s and add-ons libraries
   </body>
 </html></richcontent>
 </node>
-<node TEXT="prueba" ID="ID_507966943">
+<node TEXT="prueba" ID="ID_507966943" CREATED="1793739878297" MODIFIED="1793739878297">
 <attribute NAME="script1" VALUE="node.text = node.text.reverse()"/>
 <richcontent TYPE="DETAILS">
 <html>
@@ -1385,10 +1560,10 @@ It adds access to Freeplane&apos;s and add-ons libraries
   </body>
 </html></richcontent>
 </node>
-<node TEXT="prueba" ID="ID_1729615805">
+<node TEXT="prueba" ID="ID_1729615805" CREATED="1793739878297" MODIFIED="1793739878297">
 <attribute NAME="script1" VALUE="node.text = node.text.reverse()"/>
 </node>
-<node TEXT="prueba" ID="ID_1256061346"><richcontent TYPE="DETAILS">
+<node TEXT="prueba" ID="ID_1256061346" CREATED="1793739878297" MODIFIED="1793739878297"><richcontent TYPE="DETAILS">
 <html>
   <head>
     
@@ -1411,7 +1586,7 @@ It adds access to Freeplane&apos;s and add-ons libraries
   </body>
 </html></richcontent>
 </node>
-<node TEXT="prueba" ID="ID_1523202208"><richcontent TYPE="NOTE">
+<node TEXT="prueba" ID="ID_1523202208" CREATED="1793739878297" MODIFIED="1793739878297"><richcontent TYPE="NOTE">
 <html>
   <head>
     
@@ -1423,7 +1598,7 @@ It adds access to Freeplane&apos;s and add-ons libraries
   </body>
 </html></richcontent>
 </node>
-<node TEXT="prueba" ID="ID_311000715" LINK="file:/C:/Users/Edo/Documents/GitHub/Freeplane_groovy_console_2/groovyConsole/scripts/openWithGroovyConsole.groovy"><richcontent TYPE="DETAILS">
+<node TEXT="prueba" ID="ID_311000715" CREATED="1793739878297" MODIFIED="1793739878297" LINK="file:/C:/Users/Edo/Documents/GitHub/Freeplane_groovy_console_2/groovyConsole/scripts/openWithGroovyConsole.groovy"><richcontent TYPE="DETAILS">
 <html>
   <head>
     
@@ -1435,21 +1610,21 @@ It adds access to Freeplane&apos;s and add-ons libraries
   </body>
 </html></richcontent>
 </node>
-<node TEXT="prueba" ID="ID_906227552" LINK="file:/C:/Users/Edo/Documents/GitHub/Freeplane_groovy_console_2/groovyConsole/scripts/openWithGroovyConsole.groovy"/>
-<node TEXT="prueba console simple" ID="ID_13784594">
+<node TEXT="prueba" ID="ID_906227552" CREATED="1793739878297" MODIFIED="1793739878297" LINK="file:/C:/Users/Edo/Documents/GitHub/Freeplane_groovy_console_2/groovyConsole/scripts/openWithGroovyConsole.groovy"/>
+<node TEXT="prueba console simple" ID="ID_13784594" CREATED="1793739878297" MODIFIED="1793739878297">
 <attribute NAME="script1" VALUE="import org.freeplane.plugin.script.FreeplaneScriptBaseClass&#xd;&#xa;import groovy.console.ui.Console //groovy.ui.Console&#xd;&#xa;import org.freeplane.plugin.script.GroovyScript&#xd;&#xa;&#xd;&#xa;def n = node&#xd;&#xa;&#xd;&#xa;Console console = new Console(null, getBinding(),GroovyScript.createCompilerConfiguration())&#xd;&#xa;console.setVariable(&apos;map&apos;, n.map)&#xd;&#xa;console.setVariable(&apos;root&apos;, n.map.root)&#xd;&#xa;def updateVars = {console.shell = updateNode(console.shell)}&#xd;&#xa;console.setBeforeExecution( updateVars )&#xd;&#xa;console.setVariable(&apos;console&apos;, console)&#xd;&#xa;&#xd;&#xa;console.run()&#xd;&#xa;&#xd;&#xa;// ------methods----&#xd;&#xa;&#xd;&#xa;GroovyShell updateNode(shell){&#xd;&#xa;    def variables = shell.context.variables&#xd;&#xa;    def selected = variables.c.selected&#xd;&#xa;    if(selected != null &amp;&amp; variables.node != selected) {&#xd;&#xa;        Binding binding = new Binding(new HashMap(variables))&#xd;&#xa;        binding.variables.node = selected&#xd;&#xa;        binding.variables.map  = selected.map&#xd;&#xa;        binding.variables.root = selected.map.root&#xd;&#xa;        def newConfig = GroovyScript.createCompilerConfiguration()&#xd;&#xa;        GroovyShell updatedShell = new GroovyShell(null, binding, newConfig)&#xd;&#xa;        return updatedShell&#xd;&#xa;    }&#xd;&#xa;    else&#xd;&#xa;        return shell&#xd;&#xa;}"/>
-<node TEXT="books" ID="ID_625821156" LINK="menuitem:_IconAction.emoji-1F4DA"/>
-<node TEXT="counterclockwise arrows button" ID="ID_718518942" LINK="menuitem:_IconAction.emoji-1F504"/>
+<node TEXT="books" ID="ID_625821156" CREATED="1793739878297" MODIFIED="1793739878297" LINK="menuitem:_IconAction.emoji-1F4DA"/>
+<node TEXT="counterclockwise arrows button" ID="ID_718518942" CREATED="1793739878297" MODIFIED="1793739878297" LINK="menuitem:_IconAction.emoji-1F504"/>
 </node>
-<node TEXT="prueba con wse" ID="ID_260761461">
-<node TEXT="printer" ID="ID_379622935" LINK="menuitem:_IconAction.emoji-1F5A8"/>
+<node TEXT="prueba con wse" ID="ID_260761461" CREATED="1793739878297" MODIFIED="1793739878297">
+<node TEXT="printer" ID="ID_379622935" CREATED="1793739878297" MODIFIED="1793739878297" LINK="menuitem:_IconAction.emoji-1F5A8"/>
 </node>
-<node TEXT="prueba console simple" ID="ID_1517080217">
+<node TEXT="prueba console simple" ID="ID_1517080217" CREATED="1793739878297" MODIFIED="1793739878297">
 <attribute NAME="script1" VALUE="import org.freeplane.plugin.script.FreeplaneScriptBaseClass&#xd;&#xa;import groovy.console.ui.Console //groovy.ui.Console&#xd;&#xa;&#xd;&#xa;def n = node&#xd;&#xa;&#xd;&#xa;//Console console = new Console(getBinding())&#xd;&#xa;Console console = new Console()&#xd;&#xa;//console.setVariable(&apos;map&apos;, n.map)&#xd;&#xa;//console.setVariable(&apos;root&apos;, n.map.root)&#xd;&#xa;//def updateVars = {console.shell = updateNode(console.shell,console.config)}&#xd;&#xa;//console.setBeforeExecution( updateVars )&#xd;&#xa;console.setVariable(&apos;console&apos;, console)&#xd;&#xa;&#xd;&#xa;console.run()&#xd;&#xa;&#xd;&#xa;// ------methods----&#xd;&#xa;&#xd;&#xa;GroovyShell updateNode(shell,config){&#xd;&#xa;    def variables = shell.context.variables&#xd;&#xa;    def selected = variables.c.selected&#xd;&#xa;    if(selected != null &amp;&amp; variables.node != selected) {&#xd;&#xa;        Binding binding = new Binding(new HashMap(variables))&#xd;&#xa;        binding.variables.node = selected&#xd;&#xa;        binding.variables.map  = selected.map&#xd;&#xa;        binding.variables.root = selected.map.root&#xd;&#xa;        GroovyShell updatedShell = new GroovyShell(null, binding, config)&#xd;&#xa;        return updatedShell&#xd;&#xa;    }&#xd;&#xa;    else&#xd;&#xa;        return shell&#xd;&#xa;}"/>
 <attribute NAME="script2" VALUE="println &apos;hola&apos;&#xd;&#xa;"/>
 </node>
-<node TEXT="groovy.console.ui.Console" FOLDED="true" ID="ID_638918291">
-<node TEXT="r" ID="ID_247641866"><richcontent TYPE="NOTE">
+<node TEXT="groovy.console.ui.Console" FOLDED="true" ID="ID_638918291" CREATED="1793739878298" MODIFIED="1793739878298">
+<node TEXT="r" ID="ID_247641866" CREATED="1793739878298" MODIFIED="1793739878298"><richcontent TYPE="NOTE">
 <html>
   <head>
     
@@ -1759,25 +1934,25 @@ It adds access to Freeplane&apos;s and add-ons libraries
     </p>
   </body>
 </html></richcontent>
-<node TEXT="toolbar" ID="ID_1474301762"/>
-<node TEXT="swing" ID="ID_1607530940"/>
-<node TEXT="frame" ID="ID_503982766"/>
-<node TEXT="beforeExecution" ID="ID_1880109329">
-<node TEXT="closure" ID="ID_1542051253"/>
+<node TEXT="toolbar" ID="ID_1474301762" CREATED="1793739878298" MODIFIED="1793739878298"/>
+<node TEXT="swing" ID="ID_1607530940" CREATED="1793739878298" MODIFIED="1793739878298"/>
+<node TEXT="frame" ID="ID_503982766" CREATED="1793739878298" MODIFIED="1793739878298"/>
+<node TEXT="beforeExecution" ID="ID_1880109329" CREATED="1793739878298" MODIFIED="1793739878298">
+<node TEXT="closure" ID="ID_1542051253" CREATED="1793739878298" MODIFIED="1793739878298"/>
 </node>
-<node TEXT="shell" ID="ID_1204353514"/>
-<node TEXT="config" ID="ID_1279163949"/>
-<node TEXT="baseConfig" ID="ID_235200661"/>
-<node TEXT="consolePreferences" ID="ID_1387074772"/>
-<node TEXT="frameConsoleDelegates" ID="ID_1016313635"/>
-<node TEXT="menuBarDelegate" ID="ID_389972245"/>
-<node TEXT="inputEditor" ID="ID_1779023384"/>
-<node TEXT="splitPane=null" ID="ID_586612487">
-<node TEXT="inputArea=null" ID="ID_506465512"/>
-<node TEXT="outputArea=null" ID="ID_810920230"/>
+<node TEXT="shell" ID="ID_1204353514" CREATED="1793739878298" MODIFIED="1793739878298"/>
+<node TEXT="config" ID="ID_1279163949" CREATED="1793739878298" MODIFIED="1793739878298"/>
+<node TEXT="baseConfig" ID="ID_235200661" CREATED="1793739878298" MODIFIED="1793739878298"/>
+<node TEXT="consolePreferences" ID="ID_1387074772" CREATED="1793739878298" MODIFIED="1793739878298"/>
+<node TEXT="frameConsoleDelegates" ID="ID_1016313635" CREATED="1793739878298" MODIFIED="1793739878298"/>
+<node TEXT="menuBarDelegate" ID="ID_389972245" CREATED="1793739878298" MODIFIED="1793739878298"/>
+<node TEXT="inputEditor" ID="ID_1779023384" CREATED="1793739878298" MODIFIED="1793739878298"/>
+<node TEXT="splitPane=null" ID="ID_586612487" CREATED="1793739878298" MODIFIED="1793739878298">
+<node TEXT="inputArea=null" ID="ID_506465512" CREATED="1793739878298" MODIFIED="1793739878298"/>
+<node TEXT="outputArea=null" ID="ID_810920230" CREATED="1793739878298" MODIFIED="1793739878298"/>
 </node>
 </node>
-<node TEXT="r" ID="ID_1049832233"><richcontent TYPE="NOTE">
+<node TEXT="r" ID="ID_1049832233" CREATED="1793739878298" MODIFIED="1793739878298"><richcontent TYPE="NOTE">
 <html>
   <head>
     
@@ -2094,7 +2269,7 @@ It adds access to Freeplane&apos;s and add-ons libraries
 </node>
 </node>
 </node>
-<node TEXT="Pendientes" STYLE_REF="tasksBucket" ID="ID_1627165533"><richcontent TYPE="DETAILS">
+<node TEXT="Pendientes" STYLE_REF="tasksBucket" ID="ID_1627165533" CREATED="1793739878298" MODIFIED="1793739878298"><richcontent TYPE="DETAILS">
 <html>
   <head>
     
@@ -2110,53 +2285,1618 @@ It adds access to Freeplane&apos;s and add-ons libraries
 </html></richcontent>
 <attribute NAME="tasksStyles" VALUE="nextTask,pendingTask,maybeTask"/>
 <attribute NAME="WIP filter" VALUE="false"/>
-<node TEXT="gC v0.0.5" ID="ID_1247161182">
-<node TEXT="groovyConsole.mm" STYLE_REF="project" ID="ID_1751394414">
-<node TEXT="cambiar &apos;versión Freeplane necesitada&apos; más baja" STYLE_REF="completedTask" ID="ID_1934646191"/>
+<node TEXT="gC v0.0.5" ID="ID_1247161182" CREATED="1793739878298" MODIFIED="1793739878298">
+<node TEXT="groovyConsole.mm" STYLE_REF="project" ID="ID_1751394414" CREATED="1793739878298" MODIFIED="1793739878298">
+<node TEXT="cambiar &apos;versión Freeplane necesitada&apos; más baja" STYLE_REF="completedTask" ID="ID_1934646191" CREATED="1793739878298" MODIFIED="1793739878298"/>
 </node>
 </node>
-<node TEXT="gC Future A" ID="ID_467926201">
-<node TEXT="README.MD" STYLE_REF="project" ID="ID_1510521114">
+<node TEXT="gC Future A" ID="ID_467926201" CREATED="1793739878298" MODIFIED="1793739878298">
+<node TEXT="README.MD" STYLE_REF="project" ID="ID_1510521114" CREATED="1793739878298" MODIFIED="1793739878298">
 <node ID="ID_404157918" CONTENT_ID="ID_299518433"/>
 </node>
-<node TEXT="Tareas" STYLE_REF="project" ID="ID_1346719946">
+<node TEXT="Tareas" STYLE_REF="project" ID="ID_1346719946" CREATED="1793739878298" MODIFIED="1793739878298">
 <node ID="ID_1486263343" CONTENT_ID="ID_100568344"/>
 <node ID="ID_1354982433" CONTENT_ID="ID_55180733"/>
 </node>
-<node TEXT="build.gradle" STYLE_REF="project" ID="ID_44072207">
+<node TEXT="build.gradle" STYLE_REF="project" ID="ID_44072207" CREATED="1793739878298" MODIFIED="1793739878298">
 <node ID="ID_338461459" CONTENT_ID="ID_1438658355"/>
 </node>
-<node TEXT="scripts" STYLE_REF="project" ID="ID_347284133">
+<node TEXT="scripts" STYLE_REF="project" ID="ID_347284133" CREATED="1793739878298" MODIFIED="1793739878298">
 <node ID="ID_1180964626" CONTENT_ID="ID_534212207"/>
 </node>
-<node TEXT="lib" STYLE_REF="project" ID="ID_168820308">
-<node TEXT="estilos.código.en.editor" STYLE_REF="project" ID="ID_294845810">
+<node TEXT="lib" STYLE_REF="project" ID="ID_168820308" CREATED="1793739878298" MODIFIED="1793739878298">
+<node TEXT="estilos.código.en.editor" STYLE_REF="project" ID="ID_294845810" CREATED="1793739878298" MODIFIED="1793739878298">
 <node ID="ID_1074802664" CONTENT_ID="ID_1563279741"/>
 <node ID="ID_1651801412" CONTENT_ID="ID_1217856581"/>
 <node ID="ID_381806987" CONTENT_ID="ID_1722518463"/>
 </node>
 </node>
 </node>
-<node TEXT="gC Future B" ID="ID_501920178">
-<node TEXT="Tareas" STYLE_REF="project" ID="ID_472245500">
+<node TEXT="gC Future B" ID="ID_501920178" CREATED="1793739878298" MODIFIED="1793739878298">
+<node TEXT="Tareas" STYLE_REF="project" ID="ID_472245500" CREATED="1793739878298" MODIFIED="1793739878298">
 <node ID="ID_850023409" CONTENT_ID="ID_1916577991"/>
-<node TEXT="my.Temp.Scripts" STYLE_REF="project" ID="ID_373429985">
+<node TEXT="my.Temp.Scripts" STYLE_REF="project" ID="ID_373429985" CREATED="1793739878298" MODIFIED="1793739878298">
 <node ID="ID_481583152" CONTENT_ID="ID_182748821"/>
 <node ID="ID_1197646869" CONTENT_ID="ID_1903437549"/>
 </node>
 <node ID="ID_964570810" CONTENT_ID="ID_1800996529"/>
 </node>
 </node>
-<node TEXT="gC Future C" ID="ID_1142281616">
-<node TEXT="translations" STYLE_REF="project" ID="ID_524602576">
+<node TEXT="gC Future C" ID="ID_1142281616" CREATED="1793739878298" MODIFIED="1793739878298">
+<node TEXT="translations" STYLE_REF="project" ID="ID_524602576" CREATED="1793739878298" MODIFIED="1793739878298">
 <node ID="ID_160690057" CONTENT_ID="ID_477855566"/>
 <node ID="ID_1161948679" CONTENT_ID="ID_1029836271"/>
 </node>
-<node TEXT="Tareas" STYLE_REF="project" ID="ID_1100698049">
+<node TEXT="Tareas" STYLE_REF="project" ID="ID_1100698049" CREATED="1793739878298" MODIFIED="1793739878298">
 <node ID="ID_1096385340" CONTENT_ID="ID_303128084"/>
 </node>
 </node>
+<node TEXT="Scripts temporales para IntelliJ — implementados en v0.0.9" ID="ID_582361247" CREATED="1793753840689" MODIFIED="1793836484629" AI_EDITS="true"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Implementado, instalado y probado en los recorridos cotidianos confirmados por el usuario. Estado vigente: archivo único por sesión de script; guardado independiente respecto al nodo; dirty por revisión del temporal; procedencia y ficha JSON; marcado automático al cerrar y revisión diferida no bloqueante. Historial de evolución conservado en los hitos y en la rama de cierre. No publicado ni registrado en Git todavía.
+    </p>
+  </body>
+</html></richcontent>
+<node TEXT="Crear archivo nuevo en carpeta configurable" ID="ID_1045765467" CREATED="1793753840692" MODIFIED="1793836484631" AI_EDITS="true"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      IMPLEMENTADO. Crear el primer temporal UTF-8 en carpeta configurable, solicitada en el primer uso si está vacía. Nombre automático desde texto core del nodo, adaptado a nombre válido y con sufijo para evitar colisiones. El botón cambia a guardar el mismo archivo después del primer uso; no crea otro en cada clic. Conservar selección/cancelación y errores sin perder el editor.
+    </p>
+  </body>
+</html></richcontent>
 </node>
+<node TEXT="Guardar archivo y conservar destino de nodo" ID="ID_1645154686" CREATED="1793753840692" MODIFIED="1793836484632" AI_EDITS="true"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      IMPLEMENTADO. El temporal queda asociado a la consola. Diskette y botón save temporary .groovy guardan el mismo archivo; Guardar como permite cambiarlo explícitamente. Se conserva el envío al nodo original y la recarga desde IntelliJ. No se abre IntelliJ automáticamente y no se borran archivos al cerrar la consola.
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node TEXT="Estados independientes: nodo y archivo" ID="ID_494127060" CREATED="1793753840692" MODIFIED="1793836484634" AI_EDITS="true"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      IMPLEMENTADO. Los cambios respecto al nodo y al archivo son independientes: guardar uno no limpia el estado del otro. Crear un temporal marca dirty aunque el código coincida con el nodo, por revisión pendiente al cerrar. Guardar archivo o enviar a nodo no limpia esa marca de revisión por sí solo. El cierre comprueba revisiones del archivo, además del indicador dirty.
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node TEXT="Marcado automático para limpieza diferida" ID="ID_1338261272" CREATED="1793753840692" MODIFIED="1793836484634" AI_EDITS="true"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      IMPLEMENTADO. Al cerrar, sólo marcar temporales propios cuya copia coincide con el editor y sin cambios pendientes respecto al nodo. Elegibilidad: sin cambios desde creación, o última revisión de disco recargada y enviada después al nodo. Plazo inicial 7 días configurable. No borrar inmediatamente. Reutilizar o detectar cambios externos cancela programación. Archivos sin ficha válida se conservan.
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node TEXT="Cierre y formulario de vencidos — comportamiento vigente" ID="ID_722454795" CREATED="1793753840692" MODIFIED="1793836484636" AI_EDITS="true"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      IMPLEMENTADO. Al cerrar: avisos de cambios externos y cambios pendientes de nodo/archivo, con posibilidad de cancelar; después marcado automático de elegibles. Al abrir consola: formulario independiente sólo si hay vencidos. Casilla marcada significa postergar por el plazo configurado desde Apply. Apply elimina no marcados y posterga marcados. Cerrar sin aplicar conserva todos. La ventana informa resultados sin bloquear la consola.
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node TEXT="Hito histórico — primera compilación y 35 comprobaciones" ID="ID_1784891272" CREATED="1793754513111" MODIFIED="1793836484638" AI_EDITS="true"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      HITO HISTÓRICO SUPERADO, conservado como referencia. La primera implementación pasó 35 comprobaciones y aún no tenía integración completa del mapa fuente. Ya no hay un script RUN pendiente: las preferencias se añadieron mediante MCP, el usuario guardó/regeneró/instaló el paquete y confirmó pruebas. Estado actual: 77 comprobaciones automáticas y ronda manual cotidiana registrada; limpieza diferida sustituye el cierre con borrado inmediato.
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node TEXT="Documentación v0.0.9 actualizada — pendiente revisión y commit" ID="ID_284955784" CREATED="1793836540575" MODIFIED="1793836540575" AI_EDITS="true"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      2026-11-04. README actualizado con flujo de IntelliJ, botón crear/guardar, estados independientes, revisión dirty, metadatos, marcado automático, limpieza diferida y preferencias. history.md y changes/v0.0.9 del mapa fuente sincronizados con nueve cambios implementados; WIP reemplazado. Mapa de organización corregido para distinguir estado vigente de hitos históricos. Enlaces locales del README y formato de diff comprobados. No se ejecutaron pruebas de código por tratarse de cambios documentales; última ejecución de implementación: 77 comprobaciones. Guardar ambos mapas antes de revisar el diff. Pendientes: revisar conjunto de cambios, decidir alcance del commit y compatibilidad declarada; publicación no realizada. La fuente alternativa README-groovyConsole-MDH.mm no se reescribió: revisar antes de usarla para regenerar README y no sobrescribir la documentación nueva.
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node TEXT="Corregidos: dos fallos de revisión y exclusión del Wrapper — 94 comprobaciones" ID="ID_1423914290" CREATED="1793838616353" MODIFIED="1793838616353" AI_EDITS="true"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      2026-11-04. Sin copia inicial de nodo: contenido no vacío queda pendiente aunque se guarde a archivo; no se programa limpieza mientras no se registre una copia en nodo. Ventana de vencidos: se refresca al abrir otra consola, incluso después de Apply, conservando casillas de candidatos que no cambiaron. .gitignore: excepción del gradle-wrapper.jar tras *.jar; el Wrapper aparece como archivo nuevo listo para incluir, mientras lib/groovyConsole.jar sigue ignorado. Gradle --offline check jar: BUILD SUCCESSFUL, 94 comprobaciones. README y guía de temporales actualizados; correcciones añadidas sólo a changes del mapa fuente, sin editar manualmente history.md. Sin commit ni staging; compatibles mínimo y configuración de ruta de construcción aún pendientes de decidir, sin cambios en esta tarea. Guardar ambos mapas y regenerar paquete por ciclo habitual cuando corresponda.
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node TEXT="Compatibilidad y construcción configuradas — mínimo seleccionado 1.13.3" ID="ID_1295904451" CREATED="1793839335128" MODIFIED="1793839335128" AI_EDITS="true"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Mínimo del mapa fuente groovyConsole.mm: v1.13.3. Pendiente antes de publicar: prueba breve del paquete actual instalado en Freeplane 1.13.3 (abrir consola, crear temporal, guardar y cerrar). Uso habitual ya probado en 1.13.4. Construcción mantiene Java 17, Gradle Wrapper 8.0 y Groovy 4.0.27. build.gradle toma freeplaneDir desde propiedad Gradle: archivo local groovyConsole/gradle.properties ignorado o argumento -P entre comillas en PowerShell. Incluido gradle.properties.example; creada configuración local relativa para la copia aislada existente. Bibliotecas exactas 1.13.3, sin version '+' ni descarga alternativa de bibliotecas Freeplane. Verificados ruta vacía, ruta inválida con mensaje de bibliotecas faltantes, override absoluto correcto y build local check jar: 94 comprobaciones correctas. README y guía actualizados. Cambios de historial registrados sólo en changes del mapa fuente; history.md y version.properties se regenerarán con el ciclo habitual del usuario. Sin commit ni staging.
+    </p>
+  </body>
+</html></richcontent>
+</node>
+</node>
+<node TEXT="Cierre y versiones del script — diseño y validación v0.0.9" ID="ID_694598929" CREATED="1793807270494" MODIFIED="1793836484643" AI_EDITS="true"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Diseño implementado en v0.0.9, con evolución histórica y validación manual. La limpieza diferida y las decisiones confirmadas del usuario prevalecen sobre propuestas anteriores de eliminación inmediata y salvaguardas descartadas. Consultar la ronda de pruebas cotidianas para resultados explícitos; no dar por superados todos los casos de la tabla.
+    </p>
+  </body>
+</html></richcontent>
+<node TEXT="Referencias y límites de detección" ID="ID_106498878" CREATED="1793807270599" MODIFIED="1793820850108" AI_EDITS="true"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      C = texto actual de consola.
+    </p>
+    <p>
+      N = contenido actual del nodo destino (y conservar identidad del nodo original).
+    </p>
+    <p>
+      F = contenido y revisión actual del temporal en disco.
+    </p>
+    <p>
+      L = contenido/revisión que la consola leyó por última vez.
+    </p>
+    <p>
+      S = última versión escrita por la consola al archivo.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Registrar además el contenido y destino de cada envío a nodo y los eventos de lectura/escritura.
+    </p>
+    <p>
+      Comparar contenido y revisiones: una fecha posterior no determina por sí sola qué versión es la correcta.
+    </p>
+    <p>
+      IntelliJ puede tener cambios no guardados: no son visibles leyendo F.
+    </p>
+    <p>
+      Dirty es un indicador, no una garantía de sincronización.
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node TEXT="Reglas de protección" ID="ID_1645835268" CREATED="1793807270599" MODIFIED="1793820903234" AI_EDITS="true"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      No sobrescribir ni descartar una versión diferente sin decisión explícita.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Resolver divergencias antes de ofrecer eliminación.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Sólo borrar temporales creados por esta función.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Guardar archivo y enviar a nodo son operaciones distintas.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Enviar a nodo tampoco equivale a guardar mapa en disco.
+    </p>
+    <p>
+      La revisión al cierre se hace siempre, independientemente de dirty.
+    </p>
+    <p>
+      &#xa0;
+    </p>
+    <p>
+      Cancelar la fase de cierre no borra archivos; no revierte guardados que el usuario haya confirmado antes.
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node TEXT="Tabla de casos — referencia de diseño y pruebas" FOLDED="true" ID="ID_534932889" CREATED="1793807270615" MODIFIED="1793836484648" AI_EDITS="true" CHILD_NODES_LAYOUT="AUTO_AFTERPARENT"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Referencia de casos C01-C20, con formulaciones históricas. Las menciones de eliminación inmediata deben leerse según la decisión vigente: marcado automático al cerrar y borrado únicamente mediante Apply en revisión de vencidos. Resultados manuales están en Ronda de pruebas cotidianas; los casos adicionales no recorridos siguen pendientes.
+    </p>
+  </body>
+</html></richcontent>
+<node TEXT="C01 — Sin temporal; consola igual al nodo" FOLDED="true" ID="ID_653879172" CREATED="1793807270615" MODIFIED="1793822046851" AI_EDITS="true" CHILD_NODES_LAYOUT="AUTO"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Situación: Sin temporal; consola igual al nodo
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Alerta o acción esperada: Cerrar sin alertas de cambios del script.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Archivo temporal: No aplica.
+    </p>
+  </body>
+</html></richcontent>
+<attribute NAME="Estado" VALUE="Definición propuesta; pendiente validar"/>
+<node TEXT="Situación" ID="ID_1438281420" CREATED="1793821831453" MODIFIED="1793822046851" CHILD_NODES_LAYOUT="AUTO">
+<node TEXT=" Sin temporal; consola igual al nodo" ID="ID_763374233" CREATED="1793821831490" MODIFIED="1793821831490"/>
+</node>
+<node TEXT="Alerta o acción esperada" ID="ID_1406412250" CREATED="1793821831508" MODIFIED="1793822046851" CHILD_NODES_LAYOUT="AUTO">
+<node TEXT=" Cerrar sin alertas de cambios del script." ID="ID_1164080764" CREATED="1793821831541" MODIFIED="1793821831541"/>
+</node>
+<node TEXT="Archivo temporal" ID="ID_1285250281" CREATED="1793821831574" MODIFIED="1793822046851" CHILD_NODES_LAYOUT="AUTO">
+<node TEXT=" No aplica." ID="ID_275720392" CREATED="1793821831598" MODIFIED="1793821831598"/>
+</node>
+</node>
+<node TEXT="C02 — Sin temporal; consola editada y no enviada al nodo" FOLDED="true" ID="ID_1695060972" CREATED="1793807270623" MODIFIED="1793822046851" AI_EDITS="true" CHILD_NODES_LAYOUT="AUTO"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Situación: Sin temporal; consola editada y no enviada al nodo
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Alerta o acción esperada: Alertar: cambios de consola pendientes de enviar al nodo. Enviar / descartar explícitamente / cancelar.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Archivo temporal: No aplica.
+    </p>
+  </body>
+</html></richcontent>
+<attribute NAME="Estado" VALUE="Definición propuesta; pendiente validar"/>
+<node TEXT="Situación" ID="ID_265512383" CREATED="1793821831627" MODIFIED="1793822046851" CHILD_NODES_LAYOUT="AUTO">
+<node TEXT=" Sin temporal; consola editada y no enviada al nodo" ID="ID_1261570789" CREATED="1793821831678" MODIFIED="1793821831678"/>
+</node>
+<node TEXT="Alerta o acción esperada" ID="ID_1086043915" CREATED="1793821831702" MODIFIED="1793822046851" CHILD_NODES_LAYOUT="AUTO">
+<node TEXT=" Alertar" ID="ID_1805523932" CREATED="1793821831725" MODIFIED="1793821831725"/>
+</node>
+<node TEXT="Archivo temporal" ID="ID_1755246070" CREATED="1793821831750" MODIFIED="1793822046851" CHILD_NODES_LAYOUT="AUTO">
+<node TEXT=" No aplica." ID="ID_1562828050" CREATED="1793821831804" MODIFIED="1793821831804"/>
+</node>
+</node>
+<node TEXT="C03 — Sin temporal; consola editada y enviada al nodo" FOLDED="true" ID="ID_624977376" CREATED="1793807270626" MODIFIED="1793822046851" AI_EDITS="true" CHILD_NODES_LAYOUT="AUTO"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Situación: Sin temporal; consola editada y enviada al nodo
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Alerta o acción esperada: Sin alerta por diferencias consola/nodo. Distinguir envío al nodo de guardado del mapa en disco.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Archivo temporal: No aplica.
+    </p>
+  </body>
+</html></richcontent>
+<attribute NAME="Estado" VALUE="Definición propuesta; pendiente validar"/>
+<node TEXT="Situación" ID="ID_552135414" CREATED="1793821831823" MODIFIED="1793822046851" CHILD_NODES_LAYOUT="AUTO">
+<node TEXT=" Sin temporal; consola editada y enviada al nodo" ID="ID_145128346" CREATED="1793821831851" MODIFIED="1793821831851"/>
+</node>
+<node TEXT="Alerta o acción esperada" ID="ID_1728984672" CREATED="1793821831900" MODIFIED="1793822046851" CHILD_NODES_LAYOUT="AUTO">
+<node TEXT=" Sin alerta por diferencias consola/nodo. Distinguir envío al nodo de guardado del mapa en disco." ID="ID_1193201236" CREATED="1793821831928" MODIFIED="1793821831928"/>
+</node>
+<node TEXT="Archivo temporal" ID="ID_26784297" CREATED="1793821831954" MODIFIED="1793822046851" CHILD_NODES_LAYOUT="AUTO">
+<node TEXT=" No aplica." ID="ID_1333133499" CREATED="1793821832009" MODIFIED="1793821832009"/>
+</node>
+</node>
+<node TEXT="C04 — Temporal creado; sin ediciones posteriores en consola ni archivo" FOLDED="true" ID="ID_1634542677" CREATED="1793807270627" MODIFIED="1793822046851" AI_EDITS="true" CHILD_NODES_LAYOUT="AUTO"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Situación: Temporal creado; sin ediciones posteriores en consola ni archivo
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Alerta o acción esperada: Resolver primero cualquier diferencia previa consola/nodo. Después ofrecer eliminar / conservar / cancelar.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Archivo temporal: Elegible por caso A: revisión del archivo confirma que no cambió desde su creación.
+    </p>
+  </body>
+</html></richcontent>
+<attribute NAME="Estado" VALUE="Definición propuesta; pendiente validar"/>
+<node TEXT="Situación" ID="ID_1746593619" CREATED="1793821832042" MODIFIED="1793822046851" CHILD_NODES_LAYOUT="AUTO">
+<node TEXT=" Temporal creado; sin ediciones posteriores en consola ni archivo" ID="ID_298299909" CREATED="1793821832063" MODIFIED="1793821832063"/>
+</node>
+<node TEXT="Alerta o acción esperada" ID="ID_406690335" CREATED="1793821832094" MODIFIED="1793822046851" CHILD_NODES_LAYOUT="AUTO">
+<node TEXT=" Resolver primero cualquier diferencia previa consola/nodo. Después ofrecer eliminar / conservar / cancelar." ID="ID_895622501" CREATED="1793821832121" MODIFIED="1793821832121"/>
+</node>
+<node TEXT="Archivo temporal" ID="ID_302362460" CREATED="1793821832143" MODIFIED="1793822046851" CHILD_NODES_LAYOUT="AUTO">
+<node TEXT=" Elegible por caso A" ID="ID_996290683" CREATED="1793821832194" MODIFIED="1793821832194"/>
+</node>
+</node>
+<node TEXT="C05 — Consola editada después de crear temporal; no guardada en archivo ni nodo" FOLDED="true" ID="ID_1131335723" CREATED="1793807270630" MODIFIED="1793822046851" AI_EDITS="true" CHILD_NODES_LAYOUT="AUTO"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Situación: Consola editada después de crear temporal; no guardada en archivo ni nodo
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Alerta o acción esperada: Alertar que la consola difiere del nodo y del archivo. Preservar o descartar explícitamente ese contenido antes de continuar.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Archivo temporal: No eliminar mientras el contenido actual de consola no esté resuelto.
+    </p>
+  </body>
+</html></richcontent>
+<attribute NAME="Estado" VALUE="Definición propuesta; pendiente validar"/>
+<node TEXT="Situación" ID="ID_486635315" CREATED="1793821832225" MODIFIED="1793822046851" CHILD_NODES_LAYOUT="AUTO">
+<node TEXT=" Consola editada después de crear temporal; no guardada en archivo ni nodo" ID="ID_1700917144" CREATED="1793821832252" MODIFIED="1793821832252"/>
+</node>
+<node TEXT="Alerta o acción esperada" ID="ID_594579669" CREATED="1793821832282" MODIFIED="1793822046851" CHILD_NODES_LAYOUT="AUTO">
+<node TEXT=" Alertar que la consola difiere del nodo y del archivo. Preservar o descartar explícitamente ese contenido antes de continuar." ID="ID_765818880" CREATED="1793821832309" MODIFIED="1793821832309"/>
+</node>
+<node TEXT="Archivo temporal" ID="ID_1676935671" CREATED="1793821832329" MODIFIED="1793822046851" CHILD_NODES_LAYOUT="AUTO">
+<node TEXT=" No eliminar mientras el contenido actual de consola no esté resuelto." ID="ID_1572697649" CREATED="1793821832354" MODIFIED="1793821832354"/>
+</node>
+</node>
+<node TEXT="C06 — Consola editada y guardada en temporal; no enviada al nodo" FOLDED="true" ID="ID_1883904439" CREATED="1793807270631" MODIFIED="1793822046851" AI_EDITS="true" CHILD_NODES_LAYOUT="AUTO"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Situación: Consola editada y guardada en temporal; no enviada al nodo
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Alerta o acción esperada: Alertar que el nodo no contiene los cambios de consola, aunque estén guardados en archivo.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Archivo temporal: Conservar: el temporal cambió; por sí solo guardar desde consola no satisface la secuencia de recarga y envío.
+    </p>
+  </body>
+</html></richcontent>
+<attribute NAME="Estado" VALUE="Definición propuesta; pendiente validar"/>
+<node TEXT="Situación" ID="ID_6867803" CREATED="1793821832406" MODIFIED="1793822046851" CHILD_NODES_LAYOUT="AUTO">
+<node TEXT=" Consola editada y guardada en temporal; no enviada al nodo" ID="ID_1564887197" CREATED="1793821832438" MODIFIED="1793821832438"/>
+</node>
+<node TEXT="Alerta o acción esperada" ID="ID_839004073" CREATED="1793821832462" MODIFIED="1793822046851" CHILD_NODES_LAYOUT="AUTO">
+<node TEXT=" Alertar que el nodo no contiene los cambios de consola, aunque estén guardados en archivo." ID="ID_173446353" CREATED="1793821832494" MODIFIED="1793821832494"/>
+</node>
+<node TEXT="Archivo temporal" ID="ID_1357589882" CREATED="1793821832519" MODIFIED="1793822046851" CHILD_NODES_LAYOUT="AUTO">
+<node TEXT=" Conservar" ID="ID_403441698" CREATED="1793821832570" MODIFIED="1793821832570"/>
+</node>
+</node>
+<node TEXT="C07 — Archivo cambiado y guardado desde IntelliJ; sin recargar en consola" FOLDED="true" ID="ID_534282849" CREATED="1793807270633" MODIFIED="1793822046851" AI_EDITS="true" CHILD_NODES_LAYOUT="AUTO"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Situación: Archivo cambiado y guardado desde IntelliJ; sin recargar en consola
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Alerta o acción esperada: Advertir que existe una versión en disco no cargada en consola ni necesariamente enviada al nodo.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Archivo temporal: Conservar; no ofrecer eliminación.
+    </p>
+  </body>
+</html></richcontent>
+<attribute NAME="Estado" VALUE="Definición propuesta; pendiente validar"/>
+<node TEXT="Situación" ID="ID_457962003" CREATED="1793821832597" MODIFIED="1793822046851" CHILD_NODES_LAYOUT="AUTO">
+<node TEXT=" Archivo cambiado y guardado desde IntelliJ; sin recargar en consola" ID="ID_1197143302" CREATED="1793821832629" MODIFIED="1793821832629"/>
+</node>
+<node TEXT="Alerta o acción esperada" ID="ID_1872331642" CREATED="1793821832662" MODIFIED="1793822046851" CHILD_NODES_LAYOUT="AUTO">
+<node TEXT=" Advertir que existe una versión en disco no cargada en consola ni necesariamente enviada al nodo." ID="ID_736506734" CREATED="1793821832688" MODIFIED="1793821832688"/>
+</node>
+<node TEXT="Archivo temporal" ID="ID_736658666" CREATED="1793821832712" MODIFIED="1793822046851" CHILD_NODES_LAYOUT="AUTO">
+<node TEXT=" Conservar; no ofrecer eliminación." ID="ID_1798810910" CREATED="1793821832735" MODIFIED="1793821832735"/>
+</node>
+</node>
+<node TEXT="C08 — Consola y archivo cambiaron por separado desde su última sincronización" FOLDED="true" ID="ID_406238414" CREATED="1793807270635" MODIFIED="1793822046851" AI_EDITS="true" CHILD_NODES_LAYOUT="AUTO"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Situación: Consola y archivo cambiaron por separado desde su última sincronización
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Alerta o acción esperada: Advertir divergencia antes de recargar, sobrescribir o enviar una versión antigua al nodo. Permitir comparar/conservar copias o cancelar; nunca elegir una automáticamente.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Archivo temporal: Conservar mientras no se resuelva la divergencia.
+    </p>
+  </body>
+</html></richcontent>
+<attribute NAME="Estado" VALUE="Definición propuesta; pendiente validar"/>
+<node TEXT="Situación" ID="ID_680997658" CREATED="1793821832762" MODIFIED="1793822046851" CHILD_NODES_LAYOUT="AUTO">
+<node TEXT=" Consola y archivo cambiaron por separado desde su última sincronización" ID="ID_728786674" CREATED="1793821832812" MODIFIED="1793821832812"/>
+</node>
+<node TEXT="Alerta o acción esperada" ID="ID_466615784" CREATED="1793821832832" MODIFIED="1793822046851" CHILD_NODES_LAYOUT="AUTO">
+<node TEXT=" Advertir divergencia antes de recargar, sobrescribir o enviar una versión antigua al nodo. Permitir comparar/conservar copias o cancelar; nunca elegir una automáticamente." ID="ID_1706953908" CREATED="1793821832863" MODIFIED="1793821832863"/>
+</node>
+<node TEXT="Archivo temporal" ID="ID_226497684" CREATED="1793821832883" MODIFIED="1793822046851" CHILD_NODES_LAYOUT="AUTO">
+<node TEXT=" Conservar mientras no se resuelva la divergencia." ID="ID_408836091" CREATED="1793821832924" MODIFIED="1793821832924"/>
+</node>
+</node>
+<node TEXT="C09 — Archivo modificado, recargado; sin enviar contenido actual al nodo" FOLDED="true" ID="ID_1113041941" CREATED="1793807270635" MODIFIED="1793822046851" AI_EDITS="true" CHILD_NODES_LAYOUT="AUTO"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Situación: Archivo modificado, recargado; sin enviar contenido actual al nodo
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Alerta o acción esperada: Alertar que el nodo no contiene la versión recargada.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Archivo temporal: Conservar hasta cumplir las condiciones de recarga + envío y ausencia de cambios posteriores.
+    </p>
+  </body>
+</html></richcontent>
+<attribute NAME="Estado" VALUE="Definición propuesta; pendiente validar"/>
+<node TEXT="Situación" ID="ID_740450520" CREATED="1793821832958" MODIFIED="1793822046851" CHILD_NODES_LAYOUT="AUTO">
+<node TEXT=" Archivo modificado, recargado; sin enviar contenido actual al nodo" ID="ID_907103048" CREATED="1793821832986" MODIFIED="1793821832986"/>
+</node>
+<node TEXT="Alerta o acción esperada" ID="ID_1559724505" CREATED="1793821833017" MODIFIED="1793822046851" CHILD_NODES_LAYOUT="AUTO">
+<node TEXT=" Alertar que el nodo no contiene la versión recargada." ID="ID_1251351262" CREATED="1793821833039" MODIFIED="1793821833039"/>
+</node>
+<node TEXT="Archivo temporal" ID="ID_703269771" CREATED="1793821833063" MODIFIED="1793822046851" CHILD_NODES_LAYOUT="AUTO">
+<node TEXT=" Conservar hasta cumplir las condiciones de recarga + envío y ausencia de cambios posteriores." ID="ID_250468921" CREATED="1793821833106" MODIFIED="1793821833106"/>
+</node>
+</node>
+<node TEXT="C10 — Archivo modificado, recargado y luego enviado a nodo; sin cambios posteriores" FOLDED="true" ID="ID_662115281" CREATED="1793807270635" MODIFIED="1793822046851" AI_EDITS="true" CHILD_NODES_LAYOUT="AUTO"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Situación: Archivo modificado, recargado y luego enviado a nodo; sin cambios posteriores
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Alerta o acción esperada: No hay diferencias pendientes entre estas copias. Ofrecer eliminar / conservar / cancelar.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Archivo temporal: Elegible por caso B; comprobar de nuevo el archivo antes de eliminar.
+    </p>
+  </body>
+</html></richcontent>
+<attribute NAME="Estado" VALUE="Definición propuesta; pendiente validar"/>
+<node TEXT="Situación" ID="ID_311941684" CREATED="1793821833133" MODIFIED="1793822046856" CHILD_NODES_LAYOUT="AUTO">
+<node TEXT=" Archivo modificado, recargado y luego enviado a nodo; sin cambios posteriores" ID="ID_1954930895" CREATED="1793821833156" MODIFIED="1793821833156"/>
+</node>
+<node TEXT="Alerta o acción esperada" ID="ID_21506104" CREATED="1793821833180" MODIFIED="1793822046856" CHILD_NODES_LAYOUT="AUTO">
+<node TEXT=" No hay diferencias pendientes entre estas copias. Ofrecer eliminar / conservar / cancelar." ID="ID_730523901" CREATED="1793821833214" MODIFIED="1793821833214"/>
+</node>
+<node TEXT="Archivo temporal" ID="ID_340957210" CREATED="1793821833236" MODIFIED="1793822046856" CHILD_NODES_LAYOUT="AUTO">
+<node TEXT=" Elegible por caso B; comprobar de nuevo el archivo antes de eliminar." ID="ID_896858673" CREATED="1793821833281" MODIFIED="1793821833281"/>
+</node>
+</node>
+<node TEXT="C11 — Después de recargar y enviar al nodo, se vuelve a editar en consola" FOLDED="true" ID="ID_920938405" CREATED="1793807270635" MODIFIED="1793822046856" AI_EDITS="true" CHILD_NODES_LAYOUT="AUTO"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Situación: Después de recargar y enviar al nodo, se vuelve a editar en consola
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Alerta o acción esperada: Alertar por versión de consola posterior al último envío. Si archivo también difiere, resolver las dos diferencias.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Archivo temporal: No eliminar mientras haya cambios de consola sin resolver.
+    </p>
+  </body>
+</html></richcontent>
+<attribute NAME="Estado" VALUE="Definición propuesta; pendiente validar"/>
+<node TEXT="Situación" ID="ID_928879314" CREATED="1793821833326" MODIFIED="1793822046856" CHILD_NODES_LAYOUT="AUTO">
+<node TEXT=" Después de recargar y enviar al nodo, se vuelve a editar en consola" ID="ID_1007560143" CREATED="1793821833401" MODIFIED="1793821833401"/>
+</node>
+<node TEXT="Alerta o acción esperada" ID="ID_172287678" CREATED="1793821833429" MODIFIED="1793822046856" CHILD_NODES_LAYOUT="AUTO">
+<node TEXT=" Alertar por versión de consola posterior al último envío. Si archivo también difiere, resolver las dos diferencias." ID="ID_1816659592" CREATED="1793821833465" MODIFIED="1793821833465"/>
+</node>
+<node TEXT="Archivo temporal" ID="ID_546240191" CREATED="1793821833489" MODIFIED="1793822046856" CHILD_NODES_LAYOUT="AUTO">
+<node TEXT=" No eliminar mientras haya cambios de consola sin resolver." ID="ID_771287632" CREATED="1793821833539" MODIFIED="1793821833539"/>
+</node>
+</node>
+<node TEXT="C12 — Después de recargar y enviar al nodo, IntelliJ vuelve a guardar el archivo" FOLDED="true" ID="ID_1138475100" CREATED="1793807270635" MODIFIED="1793822046856" AI_EDITS="true" CHILD_NODES_LAYOUT="AUTO"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Situación: Después de recargar y enviar al nodo, IntelliJ vuelve a guardar el archivo
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Alerta o acción esperada: Advertir que el disco cambió después de la última lectura y del envío al nodo.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Archivo temporal: Conservar; no ofrecer eliminación.
+    </p>
+  </body>
+</html></richcontent>
+<attribute NAME="Estado" VALUE="Definición propuesta; pendiente validar"/>
+<node TEXT="Situación" ID="ID_1045820587" CREATED="1793821833585" MODIFIED="1793822046856" CHILD_NODES_LAYOUT="AUTO">
+<node TEXT=" Después de recargar y enviar al nodo, IntelliJ vuelve a guardar el archivo" ID="ID_936586792" CREATED="1793821833611" MODIFIED="1793821833611"/>
+</node>
+<node TEXT="Alerta o acción esperada" ID="ID_340020232" CREATED="1793821833642" MODIFIED="1793822046856" CHILD_NODES_LAYOUT="AUTO">
+<node TEXT=" Advertir que el disco cambió después de la última lectura y del envío al nodo." ID="ID_1154067404" CREATED="1793821833667" MODIFIED="1793821833667"/>
+</node>
+<node TEXT="Archivo temporal" ID="ID_1917433934" CREATED="1793821833692" MODIFIED="1793822046856" CHILD_NODES_LAYOUT="AUTO">
+<node TEXT=" Conservar; no ofrecer eliminación." ID="ID_119152654" CREATED="1793821833736" MODIFIED="1793821833736"/>
+</node>
+</node>
+<node TEXT="C13 — Varias idas y vueltas IntelliJ/consola" FOLDED="true" ID="ID_568309649" CREATED="1793807270635" MODIFIED="1793822046856" AI_EDITS="true" CHILD_NODES_LAYOUT="AUTO"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Situación: Varias idas y vueltas IntelliJ/consola
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Alerta o acción esperada: Aplicar las mismas comparaciones a las últimas versiones y eventos de lectura/envío; no basta recordar que alguna vez se guardó en nodo.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Archivo temporal: Sólo elegible si la última versión cumple A o B. Cada nueva edición/lectura invalida las autorizaciones anteriores que ya no correspondan.
+    </p>
+  </body>
+</html></richcontent>
+<attribute NAME="Estado" VALUE="Definición propuesta; pendiente validar"/>
+<node TEXT="Situación" ID="ID_1353975170" CREATED="1793821833762" MODIFIED="1793822046856" CHILD_NODES_LAYOUT="AUTO">
+<node TEXT=" Varias idas y vueltas IntelliJ/consola" ID="ID_603587487" CREATED="1793821833785" MODIFIED="1793821833785"/>
+</node>
+<node TEXT="Alerta o acción esperada" ID="ID_388635609" CREATED="1793821833817" MODIFIED="1793822046856" CHILD_NODES_LAYOUT="AUTO">
+<node TEXT=" Aplicar las mismas comparaciones a las últimas versiones y eventos de lectura/envío; no basta recordar que alguna vez se guardó en nodo." ID="ID_1730764742" CREATED="1793821833842" MODIFIED="1793821833842"/>
+</node>
+<node TEXT="Archivo temporal" ID="ID_1746271534" CREATED="1793821833864" MODIFIED="1793822046856" CHILD_NODES_LAYOUT="AUTO">
+<node TEXT=" Sólo elegible si la última versión cumple A o B. Cada nueva edición/lectura invalida las autorizaciones anteriores que ya no correspondan." ID="ID_966860612" CREATED="1793821833913" MODIFIED="1793821833913"/>
+</node>
+</node>
+<node TEXT="C14 — Cambios visibles en IntelliJ pero todavía no guardados en disco" FOLDED="true" ID="ID_66841707" CREATED="1793807270643" MODIFIED="1793822046856" AI_EDITS="true" CHILD_NODES_LAYOUT="AUTO"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Situación: Cambios visibles en IntelliJ pero todavía no guardados en disco
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Alerta o acción esperada: La consola no puede detectarlos con el acceso actual. No afirmar que todo IntelliJ está sincronizado. Ofrecer una forma explícita de conservar el archivo.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Archivo temporal: Política pendiente: recordatorio al eliminar, o exigir confirmar guardado/cierre en IntelliJ. No decidir automáticamente.
+    </p>
+  </body>
+</html></richcontent>
+<attribute NAME="Estado" VALUE="Definición propuesta; pendiente validar"/>
+<node TEXT="Situación" ID="ID_1959862086" CREATED="1793821833942" MODIFIED="1793822046856" CHILD_NODES_LAYOUT="AUTO">
+<node TEXT=" Cambios visibles en IntelliJ pero todavía no guardados en disco" ID="ID_904653039" CREATED="1793821833967" MODIFIED="1793821833967"/>
+</node>
+<node TEXT="Alerta o acción esperada" ID="ID_1397014774" CREATED="1793821834017" MODIFIED="1793822046856" CHILD_NODES_LAYOUT="AUTO">
+<node TEXT=" La consola no puede detectarlos con el acceso actual. No afirmar que todo IntelliJ está sincronizado. Ofrecer una forma explícita de conservar el archivo." ID="ID_1085001801" CREATED="1793821834040" MODIFIED="1793821834040"/>
+</node>
+<node TEXT="Archivo temporal" ID="ID_1047553368" CREATED="1793821834062" MODIFIED="1793822046856" CHILD_NODES_LAYOUT="AUTO">
+<node TEXT=" Política pendiente" ID="ID_426870555" CREATED="1793821834100" MODIFIED="1793821834100"/>
+</node>
+</node>
+<node TEXT="C15 — Nodo editado fuera de la consola después de abrirlo o enviarle el script" FOLDED="true" ID="ID_1927353423" CREATED="1793807270648" MODIFIED="1793822046856" AI_EDITS="true" CHILD_NODES_LAYOUT="AUTO"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Situación: Nodo editado fuera de la consola después de abrirlo o enviarle el script
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Alerta o acción esperada: Comparar con el nodo actual, no sólo con una copia recordada. Advertir divergencia antes de sobrescribirlo.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Archivo temporal: No basar eliminación en un envío antiguo si el nodo ya no conserva ese contenido.
+    </p>
+  </body>
+</html></richcontent>
+<attribute NAME="Estado" VALUE="Definición propuesta; pendiente validar"/>
+<node TEXT="Situación" ID="ID_1906641545" CREATED="1793821834134" MODIFIED="1793822046856" CHILD_NODES_LAYOUT="AUTO">
+<node TEXT=" Nodo editado fuera de la consola después de abrirlo o enviarle el script" ID="ID_1789592105" CREATED="1793821834160" MODIFIED="1793821834160"/>
+</node>
+<node TEXT="Alerta o acción esperada" ID="ID_873634720" CREATED="1793821834189" MODIFIED="1793822046856" CHILD_NODES_LAYOUT="AUTO">
+<node TEXT=" Comparar con el nodo actual, no sólo con una copia recordada. Advertir divergencia antes de sobrescribirlo." ID="ID_1401946190" CREATED="1793821834210" MODIFIED="1793821834210"/>
+</node>
+<node TEXT="Archivo temporal" ID="ID_350543820" CREATED="1793821834234" MODIFIED="1793822046856" CHILD_NODES_LAYOUT="AUTO">
+<node TEXT=" No basar eliminación en un envío antiguo si el nodo ya no conserva ese contenido." ID="ID_65675076" CREATED="1793821834272" MODIFIED="1793821834272"/>
+</node>
+</node>
+<node TEXT="C16 — Script enviado a nodo, pero mapa aún no guardado en disco" FOLDED="true" ID="ID_1286108522" CREATED="1793807270650" MODIFIED="1793822046856" AI_EDITS="true" CHILD_NODES_LAYOUT="AUTO"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Situación: Script enviado a nodo, pero mapa aún no guardado en disco
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Alerta o acción esperada: Informar que el script está en el mapa abierto; eso no garantiza persistencia en disco.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Archivo temporal: Decisión pendiente: exigir guardar mapa antes de eliminar o mantener confirmación explícita de ese riesgo.
+    </p>
+  </body>
+</html></richcontent>
+<attribute NAME="Estado" VALUE="Definición propuesta; pendiente validar"/>
+<node TEXT="Situación" ID="ID_987305138" CREATED="1793821834307" MODIFIED="1793822046856" CHILD_NODES_LAYOUT="AUTO">
+<node TEXT=" Script enviado a nodo, pero mapa aún no guardado en disco" ID="ID_322090503" CREATED="1793821834326" MODIFIED="1793821834326"/>
+</node>
+<node TEXT="Alerta o acción esperada" ID="ID_1836149862" CREATED="1793821834363" MODIFIED="1793822046856" CHILD_NODES_LAYOUT="AUTO">
+<node TEXT=" Informar que el script está en el mapa abierto; eso no garantiza persistencia en disco." ID="ID_888557418" CREATED="1793821834394" MODIFIED="1793821834394"/>
+</node>
+<node TEXT="Archivo temporal" ID="ID_861760353" CREATED="1793821834414" MODIFIED="1793822046856" CHILD_NODES_LAYOUT="AUTO">
+<node TEXT=" Decisión pendiente" ID="ID_1701967849" CREATED="1793821834467" MODIFIED="1793821834467"/>
+</node>
+</node>
+<node TEXT="C17 — Temporal eliminado, movido, reemplazado, ilegible o sin permisos" FOLDED="true" ID="ID_270895202" CREATED="1793807270651" MODIFIED="1793822046856" AI_EDITS="true" CHILD_NODES_LAYOUT="AUTO"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Situación: Temporal eliminado, movido, reemplazado, ilegible o sin permisos
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Alerta o acción esperada: Informar qué copia no se pudo comprobar. Mantener la consola si no hay otra copia confirmada; conservar/cancelar como opciones.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Archivo temporal: No ofrecer eliminación de un archivo cuya identidad o contenido no puedan verificarse.
+    </p>
+  </body>
+</html></richcontent>
+<attribute NAME="Estado" VALUE="Definición propuesta; pendiente validar"/>
+<node TEXT="Situación" ID="ID_243411892" CREATED="1793821834486" MODIFIED="1793822046856" CHILD_NODES_LAYOUT="AUTO">
+<node TEXT=" Temporal eliminado, movido, reemplazado, ilegible o sin permisos" ID="ID_781733336" CREATED="1793821834517" MODIFIED="1793821834517"/>
+</node>
+<node TEXT="Alerta o acción esperada" ID="ID_19714472" CREATED="1793821834543" MODIFIED="1793822046856" CHILD_NODES_LAYOUT="AUTO">
+<node TEXT=" Informar qué copia no se pudo comprobar. Mantener la consola si no hay otra copia confirmada; conservar/cancelar como opciones." ID="ID_164686022" CREATED="1793821834569" MODIFIED="1793821834569"/>
+</node>
+<node TEXT="Archivo temporal" ID="ID_653308852" CREATED="1793821834597" MODIFIED="1793822046856" CHILD_NODES_LAYOUT="AUTO">
+<node TEXT=" No ofrecer eliminación de un archivo cuya identidad o contenido no puedan verificarse." ID="ID_980118897" CREATED="1793821834643" MODIFIED="1793821834643"/>
+</node>
+</node>
+<node TEXT="C18 — Guardar como… o abrir otro archivo tras crear el temporal" FOLDED="true" ID="ID_1880399715" CREATED="1793807270652" MODIFIED="1793822046856" AI_EDITS="true" CHILD_NODES_LAYOUT="AUTO"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Situación: Guardar como… o abrir otro archivo tras crear el temporal
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Alerta o acción esperada: Tratar archivo asociado actual y temporal propio como copias diferentes. No borrar un archivo ajeno ni perder el seguimiento del temporal anterior.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Archivo temporal: Evaluar cada temporal propio; no extender su propiedad a archivos abiertos o elegidos mediante Guardar como.
+    </p>
+  </body>
+</html></richcontent>
+<attribute NAME="Estado" VALUE="Definición propuesta; pendiente validar"/>
+<node TEXT="Situación" ID="ID_907925271" CREATED="1793821834661" MODIFIED="1793822046856" CHILD_NODES_LAYOUT="AUTO">
+<node TEXT=" Guardar como… o abrir otro archivo tras crear el temporal" ID="ID_483184286" CREATED="1793821834693" MODIFIED="1793821834693"/>
+</node>
+<node TEXT="Alerta o acción esperada" ID="ID_690317180" CREATED="1793821834721" MODIFIED="1793822046856" CHILD_NODES_LAYOUT="AUTO">
+<node TEXT=" Tratar archivo asociado actual y temporal propio como copias diferentes. No borrar un archivo ajeno ni perder el seguimiento del temporal anterior." ID="ID_139724232" CREATED="1793821834751" MODIFIED="1793821834751"/>
+</node>
+<node TEXT="Archivo temporal" ID="ID_1383937399" CREATED="1793821834766" MODIFIED="1793822046856" CHILD_NODES_LAYOUT="AUTO">
+<node TEXT=" Evaluar cada temporal propio; no extender su propiedad a archivos abiertos o elegidos mediante Guardar como." ID="ID_1147406063" CREATED="1793821834817" MODIFIED="1793821834817"/>
+</node>
+</node>
+<node TEXT="C19 — Cambio del archivo mientras el diálogo de cierre está abierto" FOLDED="true" ID="ID_750871892" CREATED="1793807270655" MODIFIED="1793822046856" AI_EDITS="true" CHILD_NODES_LAYOUT="AUTO"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Situación: Cambio del archivo mientras el diálogo de cierre está abierto
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Alerta o acción esperada: Revalidar al confirmar. Si cambió, suspender eliminación e informar.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Archivo temporal: Conservar/cancelar; no usar una comprobación anterior al diálogo.
+    </p>
+  </body>
+</html></richcontent>
+<attribute NAME="Estado" VALUE="Definición propuesta; pendiente validar"/>
+<node TEXT="Situación" ID="ID_265829054" CREATED="1793821834846" MODIFIED="1793822046856" CHILD_NODES_LAYOUT="AUTO">
+<node TEXT=" Cambio del archivo mientras el diálogo de cierre está abierto" ID="ID_1988773353" CREATED="1793821834869" MODIFIED="1793821834869"/>
+</node>
+<node TEXT="Alerta o acción esperada" ID="ID_986250506" CREATED="1793821834903" MODIFIED="1793822046856" CHILD_NODES_LAYOUT="AUTO">
+<node TEXT=" Revalidar al confirmar. Si cambió, suspender eliminación e informar." ID="ID_282275729" CREATED="1793821834931" MODIFIED="1793821834931"/>
+</node>
+<node TEXT="Archivo temporal" ID="ID_1130314204" CREATED="1793821834956" MODIFIED="1793822046856" CHILD_NODES_LAYOUT="AUTO">
+<node TEXT=" Conservar/cancelar; no usar una comprobación anterior al diálogo." ID="ID_1068457883" CREATED="1793821834998" MODIFIED="1793821834998"/>
+</node>
+</node>
+<node TEXT="C20 — Cancelar cierre o hay varios temporales bajo seguimiento" FOLDED="true" ID="ID_1072208505" CREATED="1793807270655" MODIFIED="1793822046856" AI_EDITS="true" CHILD_NODES_LAYOUT="AUTO"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Situación: Cancelar cierre o hay varios temporales bajo seguimiento
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Alerta o acción esperada: Cancelar mantiene abierta la consola y no borra archivos, incluso si se había elegido eliminar otro temporal en un diálogo previo.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Archivo temporal: Recoger decisiones primero; realizar eliminaciones sólo tras confirmación completa.
+    </p>
+  </body>
+</html></richcontent>
+<attribute NAME="Estado" VALUE="Definición propuesta; pendiente validar"/>
+<node TEXT="Situación" ID="ID_360136297" CREATED="1793821835030" MODIFIED="1793822046856" CHILD_NODES_LAYOUT="AUTO">
+<node TEXT=" Cancelar cierre o hay varios temporales bajo seguimiento" ID="ID_661043579" CREATED="1793821835051" MODIFIED="1793821835051"/>
+</node>
+<node TEXT="Alerta o acción esperada" ID="ID_642905132" CREATED="1793821835084" MODIFIED="1793822046858" CHILD_NODES_LAYOUT="AUTO">
+<node TEXT=" Cancelar mantiene abierta la consola y no borra archivos, incluso si se había elegido eliminar otro temporal en un diálogo previo." ID="ID_1015874437" CREATED="1793821835116" MODIFIED="1793821835116"/>
+</node>
+<node TEXT="Archivo temporal" ID="ID_993914598" CREATED="1793821835134" MODIFIED="1793822046858" CHILD_NODES_LAYOUT="AUTO">
+<node TEXT=" Recoger decisiones primero; realizar eliminaciones sólo tras confirmación completa." ID="ID_530212039" CREATED="1793821835175" MODIFIED="1793821835175"/>
+</node>
+</node>
+</node>
+<node TEXT="Árbol de decisión de cierre — orden propuesto" FOLDED="true" ID="ID_1695222176" CREATED="1793807270656" MODIFIED="1793807270656" AI_EDITS="true">
+<node TEXT="1. Obtener versiones y comprobar acceso" ID="ID_751784474" CREATED="1793807270656" MODIFIED="1793807270656" AI_EDITS="true"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Leer consola, nodo actual, archivos propios y revisión en disco. Si no se pueden verificar: explicar el problema, no eliminar y permitir conservar o cancelar.
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node TEXT="2. ¿Cambió el archivo fuera de la consola?" ID="ID_1661429347" CREATED="1793807270658" MODIFIED="1793807270658" AI_EDITS="true"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Comparar con última lectura/escritura conocida. Si tiene una versión no cargada, advertir antes de proponer enviar la consola al nodo. Si consola también cambió, tratarlo como divergencia y preservar ambas versiones.
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node TEXT="3. ¿La consola difiere del nodo actual?" ID="ID_1470498622" CREATED="1793807270658" MODIFIED="1793807270658" AI_EDITS="true"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Ofrecer enviar, conservar otra copia, descartar explícitamente o cancelar. Detectar si el nodo fue editado por otra vía antes de sobrescribirlo. Resolver cambios posteriores al último envío.
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node TEXT="4. ¿La consola tiene cambios no conservados en archivo?" ID="ID_914070315" CREATED="1793807270659" MODIFIED="1793807270659" AI_EDITS="true"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Ofrecer guardar o conservar otra copia, descartar explícitamente o cancelar. Antes de guardar, comprobar que no se pisa una versión externa. Volver a evaluar el estado tras cada acción.
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node TEXT="5. ¿El temporal es elegible para eliminar?" ID="ID_1151817316" CREATED="1793807270659" MODIFIED="1793807270659" AI_EDITS="true"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Caso A acordado: no cambió desde su creación. Caso B acordado: cambió, se recargó, no cambió después en disco y el contenido cargado se envió luego a un nodo. Además no debe haber cambios posteriores sin resolver. Revisar límites C14-C16 antes de cerrar la definición.
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node TEXT="6. Recoger decisión y confirmar revisión" ID="ID_1568800495" CREATED="1793807270660" MODIFIED="1793807270660" AI_EDITS="true"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Si es elegible: eliminar / conservar / cancelar. Si no lo es: conservar y explicar la diferencia pertinente. Revalidar antes de borrar. No borrar ningún archivo si se cancela la fase de decisión.
+    </p>
+  </body>
+</html></richcontent>
+</node>
+</node>
+<node TEXT="Decisiones iniciales — alcance resuelto para v0.0.9" FOLDED="true" ID="ID_1293569511" CREATED="1793807270661" MODIFIED="1793836484658" AI_EDITS="true"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Histórico de preguntas iniciales. Alcance actual: guardar mapa sigue siendo responsabilidad del usuario; no se exige comprobar el contenido del mapa en disco ni rastrear mapas movidos. No se detectan buffers de IntelliJ sin guardar. Diferencias de nodo/archivo tienen avisos independientes. Mantener la secuencia de recarga y envío como criterio para temporales modificados. Ver decisiones confirmadas y pruebas manuales para el comportamiento vigente.
+    </p>
+  </body>
+</html></richcontent>
+<attribute NAME="script1" VALUE="def tx = node.note.plain.split(&apos;\n&apos;)&#xd;&#xa;tx.each{t -&gt;&#xd;&#xa;    node.createChild(t)&#xd;&#xa;}"/>
+<node TEXT="1. ¿Exigir guardar el mapa antes de eliminar, o informar y pedir confirmación?" ID="ID_1193122038" CREATED="1793823993713" MODIFIED="1793823993713"/>
+<node TEXT="2. ¿Qué recordatorio/confirmación usar para cambios no guardados en IntelliJ que no podemos detectar?" ID="ID_1228234727" CREATED="1793823993725" MODIFIED="1793823993725"/>
+<node TEXT="3. ¿Qué acciones concretas tendrá el diálogo cuando archivo y consola contienen versiones distintas?" ID="ID_600074283" CREATED="1793823993751" MODIFIED="1793823993751"/>
+<node TEXT="4. Al enviar a otro nodo, ¿qué nodo se considera la copia conservada y cómo se muestra? Mantener siempre identificable el original." ID="ID_1597041354" CREATED="1793823993826" MODIFIED="1793823993826"/>
+<node TEXT="5. La igualdad de contenido no demuestra el orden de recarga/envío: conservar la secuencia acordada como criterio de eliminación." ID="ID_1412004433" CREATED="1793823993861" MODIFIED="1793823993861"/>
+</node>
+<node TEXT="Procedencia y eliminación diferida — implementadas" FOLDED="true" ID="ID_1912076748" CREATED="1793823903348" MODIFIED="1793836484653" AI_EDITS="true"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Alternativa adoptada e implementada en v0.0.9. Plazo configurable 7 días; fichas JSON junto a temporales; comentario generado excluido del código que vuelve al nodo; marcado automático y ventana no bloqueante al abrir consola. Los hitos anteriores describen propuestas y se conservan como historia; las decisiones confirmadas y la ronda manual reflejan el estado actual.
+    </p>
+  </body>
+</html></richcontent>
+<node TEXT="Procedencia dentro del .groovy" ID="ID_386388221" CREATED="1793823903370" MODIFIED="1793823903370" AI_EDITS="true"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Comentario identificable con versión de formato, identificador del temporal, ruta del mapa de origen, ID del nodo, texto core del nodo, destino (nota/script1), fecha de creación y, si se conoce, fecha de última escritura del mapa. La fecha documenta el contexto; no prueba que el mapa conserve el script. Si el mapa aún no tiene archivo, registrarlo explícitamente. Escapar el texto para que no pueda romper el comentario ni alterar el código. No duplicar el encabezado al ir y volver ni enviarlo involuntariamente al nodo.
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node TEXT="Ficha de control separada del código" ID="ID_1467418604" CREATED="1793823903370" MODIFIED="1793823903370" AI_EDITS="true"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Guardar fuera del script la propiedad del archivo, su identidad y ruta, mapa/nodo que conserva la copia, huella del contenido, revisión del archivo, fecha de marcado y fecha de vencimiento. No reescribir el .groovy sólo para cambiar su estado de eliminación: evita dirty artificial y conflictos con IntelliJ. Un comentario por sí solo no concede permiso de borrado; ficha ausente, ilegible o inconsistente implica conservar. Formato y ubicación pendientes.
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node TEXT="Al cerrar: programar eliminación, no borrar de inmediato" ID="ID_742697329" CREATED="1793823903371" MODIFIED="1793823903371" AI_EDITS="true"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Si el usuario elige eliminar y el caso es elegible, marcar para eliminación diferida conservando físicamente el archivo. Alternativas: Conservar (sin eliminación programada) o Cancelar cierre. El plazo de 7 días es una propuesta, aún no una decisión definitiva. Mostrar la fecha prevista y dónde está conservada la copia. Esto no reemplaza las alertas por diferencias entre consola, archivo y nodo.
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node TEXT="Cancelar la eliminación pendiente al volver a utilizarlo" ID="ID_357797582" CREATED="1793823903371" MODIFIED="1793823903371" AI_EDITS="true"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Reabrir o recargar el temporal en una consola, guardarlo desde la consola o detectar un cambio externo en disco cancela la eliminación pendiente. Para programarla otra vez debe evaluarse y confirmarse nuevamente. Si sigue abierto en alguna consola, no borrar. Las ediciones no guardadas dentro de IntelliJ no son detectables mediante la lectura del disco.
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node TEXT="Al vencer: volver a comprobar antes de eliminar" ID="ID_1824820819" CREATED="1793823903374" MODIFIED="1793823903374" AI_EDITS="true"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Exigir conjuntamente: archivo propio del add-on con ficha válida y marcado explícito; plazo vencido; misma identidad, revisión y contenido que al marcar; contenido conservado en el nodo correcto del mapa efectivamente guardado en disco; ninguna consola utilizando ese archivo. Comparar el cuerpo del script sin el encabezado generado mediante reglas definidas, sin eliminar comentarios del usuario ni normalizar diferencias significativas. Revalidar justo antes del borrado. Si el archivo, nodo o mapa no existen, cambiaron o no pueden verificarse, conservar e informar.
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node TEXT="No decidir sólo por fechas" ID="ID_692320901" CREATED="1793823903374" MODIFIED="1793823903374" AI_EDITS="true"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Mapa guardado después del temporal NO demuestra que incluya esa versión: pudo guardarse por otro cambio. Una fecha vencida sólo habilita la comprobación, nunca basta para borrar. Fechas de archivo pueden alterarse por copia, sincronización o reloj; ante anomalías, conservar. La huella y el contenido respaldado son la comprobación de seguridad.
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node TEXT="Ampliación de casos de prueba" ID="ID_1766699438" CREATED="1793823903380" MODIFIED="1793823903380" AI_EDITS="true"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      D01: vence plazo y todas las condiciones se mantienen -&gt; eliminar.
+    </p>
+    <p>
+      D02: IntelliJ guarda después del marcado -&gt; cancelar programación y conservar.
+    </p>
+    <p>
+      D03: consola reabre/recarga/guarda -&gt; cancelar programación.
+    </p>
+    <p>
+      D04: nodo cambia o mapa no conserva contenido en disco -&gt; conservar.
+    </p>
+    <p>
+      D05: ficha corrupta/ausente o archivo sustituido -&gt; conservar.
+    </p>
+    <p>
+      D06: archivo abierto por otra consola -&gt; conservar.
+    </p>
+    <p>
+      D07: archivo cambia durante revisión -&gt; suspender borrado.
+    </p>
+    <p>
+      D08: ciclos repetidos no duplican encabezado ni lo añaden al nodo.
+    </p>
+    <p>
+      D09: mapa sin ruta, movido, inaccesible o nodo eliminado -&gt; conservar.
+    </p>
+    <p>
+      D10: cambios únicamente en buffer de IntelliJ -&gt; límite no detectable; mantener confirmación o recordatorio explícito.
+    </p>
+    <p>
+      Todos son expectativas propuestas, no pruebas ejecutadas.
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node TEXT="Decisiones resueltas — limpieza diferida" ID="ID_133111697" CREATED="1793823903380" MODIFIED="1793836484655" AI_EDITS="true"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      RESUELTO. Plazo inicial 7 días configurable, también usado para postergar. Revisión al abrir consola, sólo con candidatos vencidos. Fichas .freeplane-temp.json en carpeta de temporales. Sin controles adicionales de buffers no guardados de IntelliJ ni seguimiento complejo de mapas movidos. Marcado automático al cerrar; Apply borra no marcados y posterga marcados; cerrar formulario sin aplicar conserva todos.
+    </p>
+  </body>
+</html></richcontent>
+<node TEXT="1. Plazo: ¿7 días y configurable?" ID="ID_718364930" CREATED="1793824137051" MODIFIED="1793824137051"/>
+<node TEXT="2. ¿Cuándo revisar vencidos: al abrir consola, al cerrarla, mediante comando manual o combinación? No implica ejecutar mientras Freeplane esté cerrado." ID="ID_1362650301" CREATED="1793824137057" MODIFIED="1793824137057"/>
+<node TEXT="3. Formato/ubicación de fichas y persistencia entre reinicios." ID="ID_841084251" CREATED="1793824137071" MODIFIED="1793824137071"/>
+<node TEXT="4. Recordatorio sobre buffers no guardados en IntelliJ y forma de recuperar archivos durante el plazo." ID="ID_656717354" CREATED="1793824137096" MODIFIED="1793824137096"/>
+<node TEXT="5. Comportamiento ante mapas movidos o copias con el mismo ID de nodo: nunca inferir un destino sólo por ID." ID="ID_1893606010" CREATED="1793824137152" MODIFIED="1793824137152"/>
+<node TEXT="6. Revisar C04/C10 y el árbol anterior: reemplazar eliminación inmediata por marcado más limpieza posterior una vez aprobada la alternativa." ID="ID_547965223" CREATED="1793824137187" MODIFIED="1793824137187"/>
+</node>
+<node TEXT="Decisiones del usuario — prevalecen sobre las propuestas anteriores" ID="ID_1310784657" CREATED="1793824705819" MODIFIED="1793836484659" AI_EDITS="true"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Decisiones del usuario implementadas en v0.0.9. Prevalecen sobre las propuestas iniciales: limpieza como ayuda práctica; marcado automático, plazo configurable y revisión no bloqueante con Apply. Los hitos inferiores conservan la historia de la definición; las preguntas sobre Apply y postergación ya están resueltas.
+    </p>
+  </body>
+</html></richcontent>
+<node TEXT="Plazo: 7 días, configurable" ID="ID_1907888584" CREATED="1793824705821" MODIFIED="1793824705821" AI_EDITS="true"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Plazo inicial aprobado: 7 días mediante preferencia. El formulario permite postergar archivos por otros 7 días. Si se cambia el plazo general, queda por precisar si la postergación usa siempre 7 días o el valor configurado.
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node TEXT="Revisión al abrir consola; formulario no modal" ID="ID_824782695" CREATED="1793824705822" MODIFIED="1793824705822" AI_EDITS="true"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Al abrir una consola, revisar los temporales vencidos. Si no hay candidatos, no abrir ventana. Si hay candidatos, abrir un formulario con su listado. El formulario funciona en paralelo, no bloquea la consola y puede revisarse más tarde. Cada archivo tiene casilla para solicitar postergación por otros 7 días; marcar significa postergar, no borrar.
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node TEXT="Fichas en la carpeta de temporales" ID="ID_1305604114" CREATED="1793824705822" MODIFIED="1793824705822" AI_EDITS="true"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Guardar las fichas de control en la misma carpeta configurada para los .groovy temporales. El formato de las fichas es una decisión de implementación.
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node TEXT="No ampliar protección de IntelliJ ni seguimiento de mapas" ID="ID_343073538" CREATED="1793824705824" MODIFIED="1793824705824" AI_EDITS="true"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      El usuario considera fuera de alcance recordatorios o confirmaciones especiales para buffers no guardados en IntelliJ y seguimiento complejo de mapas movidos/copias/IDs. No implementar esas salvaguardas propuestas anteriormente. Sigue siendo válido que no podemos detectar cambios que aún no estén en disco.
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node TEXT="Marcado automático cuando sea elegible" ID="ID_316262629" CREATED="1793824705825" MODIFIED="1793824705825" AI_EDITS="true"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Cuando el temporal cumple las reglas de elegibilidad acordadas, marcarlo automáticamente para eliminación posterior. Reemplaza la propuesta de pedir al usuario programar la eliminación al cerrar. Se mantienen las alertas por cambios pendientes; el marcado no elimina físicamente el archivo.
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node TEXT="CONFIRMADO e implementado — Apply y plazo de postergación" ID="ID_1170649441" CREATED="1793824705826" MODIFIED="1793836484661" AI_EDITS="true"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      El usuario confirmó y probó el flujo: Apply posterga marcados y elimina no marcados; sin aplicar no se borra. La postergación usa el plazo configurado (7 días por defecto), contado desde Apply. La ventana no bloquea la consola ni borra automáticamente mientras se revisa.
+    </p>
+  </body>
+</html></richcontent>
+</node>
+</node>
+<node TEXT="Implementado: marcado automático y revisión no bloqueante — 73 comprobaciones" ID="ID_931787118" CREATED="1793825394382" MODIFIED="1793825394382" AI_EDITS="true"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      2026-11-04. Al cerrar se marcan automáticamente los temporales elegibles, sin borrar. Plazo configurable (7 días iniciales), usado también para postergar desde la fecha de Aplicar. Al abrir consola se revisa la carpeta; sólo se abre formulario si hay vencidos. Casilla marcada = postergar; Aplicar borra no marcados y posterga marcados; cerrar sin aplicar conserva todos. Resultados en la misma ventana, sin diálogo modal. Cada temporal nuevo tiene comentario de procedencia y ficha .freeplane-temp.json en su carpeta; la consola no envía el encabezado generado al nodo. Reabrir, recargar, guardar o detectar cambios externos cancela el marcado. Aplicar revalida revisión e identidad y conserva archivos en uso. No se añaden controles de buffers no guardados de IntelliJ ni seguimiento complejo de mapas movidos. Los temporales anteriores sin ficha no se borran automáticamente. Preferencia y traducciones añadidas al mapa fuente mediante MCP; guardar ese mapa antes de empaquetar. Gradle verifyTemporaryScripts jar: BUILD SUCCESSFUL, 73 comprobaciones; incluyen formulario real y Aplicar (postergación/borrado), cierre sin aplicar, fechas, reapertura, cambios externos y CRLF. JAR generado; pendiente instalación y validación manual en Freeplane mediante el ciclo del usuario.
+    </p>
+  </body>
+</html></richcontent>
+</node>
+</node>
+<node TEXT="Ronda de pruebas cotidianas — cerrada 2026-11-04" FOLDED="true" ID="ID_440119621" CREATED="1793836171351" MODIFIED="1793836171351" AI_EDITS="true"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Pruebas manuales realizadas por el usuario en el add-on instalado y reportadas en el chat. No es certificación exhaustiva de todos los casos de la tabla ni reemplaza las comprobaciones automáticas. Sin cambios de código durante esta ronda.
+    </p>
+  </body>
+</html></richcontent>
+<node TEXT="SUPERADO — IntelliJ guarda sin recargar en consola" ID="ID_249757314" CREATED="1793836171351" MODIFIED="1793836171351" AI_EDITS="true"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      El archivo conservó la versión nueva de IntelliJ; el nodo mantuvo la original; la ficha quedó sin dueAt. Confirmación explícita del usuario.
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node TEXT="SUPERADO — Cancelar cierre con cambios posteriores a recarga" ID="ID_1788094799" CREATED="1793836171353" MODIFIED="1793836171353" AI_EDITS="true"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Tras editar en IntelliJ, recargar y volver a editar en consola sin guardar, apareció la advertencia. Cancel mantuvo la consola abierta y la última edición intacta.
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node TEXT="RECORRIDO REALIZADO — Divergencia consola/IntelliJ" ID="ID_1659667171" CREATED="1793836171353" MODIFIED="1793836171353" AI_EDITS="true"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Se indicó probar No ante sobrescritura del archivo y cancelar la recarga para conservar ambas versiones. El usuario respondió «hecho. siguiente», sin detallar separadamente cada resultado. No atribuir una verificación más precisa de la informada.
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node TEXT="SUPERADO — Recarga y envío al nodo" ID="ID_446334821" CREATED="1793836171353" MODIFIED="1793836171353" AI_EDITS="true"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      El nodo quedó con la versión de IntelliJ recargada; el usuario guardó el mapa; cierre sin advertencias; temporal conservado con dueAt.
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node TEXT="SUPERADO — Guardar archivo sin enviar al nodo" ID="ID_800633267" CREATED="1793836171353" MODIFIED="1793836171353" AI_EDITS="true"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Apareció advertencia de cambios del nodo. Continue without sending cerró; archivo con versión nueva, nodo con anterior y ficha sin dueAt.
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node TEXT="SUPERADO — Enviar al nodo sin guardar archivo" ID="ID_248230933" CREATED="1793836171353" MODIFIED="1793836171353" AI_EDITS="true"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Se preguntó por guardar el archivo. Cancel mantuvo la consola y contenido; después No permitió cerrar. Nodo con versión nueva, archivo con anterior y ficha sin dueAt. Usuario confirmó «tal cual».
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node TEXT="SUPERADO — Reabrir temporal programado" ID="ID_828102597" CREATED="1793836171353" MODIFIED="1793836171353" AI_EDITS="true"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Al cargar un temporal con dueAt, la fecha desapareció de su ficha; el archivo permaneció intacto. Confirmación del usuario: «tal cual».
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node TEXT="SUPERADO — Revisión de vencidos, aplicar y postergar" ID="ID_202264570" CREATED="1793836171353" MODIFIED="1793836171353" AI_EDITS="true"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      El usuario adelantó dueAt de dos temporales descartables. Confirmó el funcionamiento indicado: ventana no bloqueante; cerrar sin aplicar conserva; reapertura muestra el listado; Apply posterga el marcado según plazo configurado y elimina el no marcado y su ficha.
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node TEXT="Pendientes para otra sesión — no ejecutados en esta ronda" ID="ID_762168831" CREATED="1793836171353" MODIFIED="1793836171353" AI_EDITS="true"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Modificar un archivo después de aparecer en el formulario de vencidos y antes de Apply: debe conservarse. Casos adicionales de archivos ausentes o inaccesibles, varias consolas y cambios durante la revisión. Mantener pendientes los casos de diseño no recorridos; no marcarlos globalmente como superados. Los controles complejos sobre buffers de IntelliJ no guardados y mapas movidos quedaron fuera de alcance por decisión del usuario.
+    </p>
+  </body>
+</html></richcontent>
+</node>
+</node>
+</node>
+</node>
+<node TEXT="AGENTS.md" STYLE_REF="freshNew" ID="ID_120718097" CREATED="1793837069237" MODIFIED="1793837111629" LINK="AGENTS.md"/>
+</node>
+<node TEXT="Retomar desarrollo — 2026-11-03" POSITION="top_or_left" ID="ID_1195080121" CREATED="1793742120266" MODIFIED="1793742120266" AI_EDITS="true"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Diagnóstico inicial con Codex. No se modificó código. Las pruebas funcionales todavía no se ejecutaron.
+    </p>
+  </body>
+</html></richcontent>
+<node TEXT="Verificado: Java 17 y Gradle 8.0 arrancan" ID="ID_1432020595" CREATED="1793742120269" MODIFIED="1793742120269" AI_EDITS="true"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Java de terminal: Temurin 17.0.20.1. IntelliJ tiene enlazado el subproyecto groovyConsole; su configuración declara SDK temurin-17 y nivel de lenguaje JDK_20: revisar coherencia.
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node TEXT="Bloqueo de compilación: localizar instalación de Freeplane" ID="ID_1135951874" CREATED="1793742120270" MODIFIED="1793742120270" AI_EDITS="true"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      compileGroovy --offline falla al resolver freeplanelauncher, freeplaneviewer, freeplaneeditor y plugin de scripting. build.gradle apunta a C:/Program Files/Freeplane, carpeta inexistente en este equipo. No se ha comprobado aún la resolución con red.
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node TEXT="Pendiente: confirmar versiones de Freeplane, Groovy y add-on instalado" ID="ID_188459380" CREATED="1793742120271" MODIFIED="1793742120271" AI_EDITS="true"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      El MCP rechazó la consulta mediante Groovy porque la ejecución de scripts está deshabilitada en el nivel de disponibilidad actual.
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node TEXT="Pendiente: pruebas funcionales en mapa de prueba" ID="ID_1588989488" CREATED="1793742120271" MODIFIED="1793742120271" AI_EDITS="true"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Abrir consola; cargar desde archivo, nota y script1; guardar en nodo; cambiar selección; recargar archivo; actualizar configuración del compilador. No marcar como probado hasta ejecutarlo.
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node TEXT="Pendiente: reconciliar tareas históricas con v0.0.8" ID="ID_689176709" CREATED="1793742120273" MODIFIED="1793742120273" AI_EDITS="true"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Los archivos reales indican v0.0.8. Algunas notas del inventario conservan v0.0.2. Revisar pendientes de README y resaltado del editor antes de priorizar nuevas funciones.
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node TEXT="Groovy 4.0.27 configurado; bloqueo identificado en freeplaneviewer.jar" ID="ID_1845477497" CREATED="1793743014764" MODIFIED="1793743014764" AI_EDITS="true"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      build.gradle usa la instalación en AppData/Local/Programs/Freeplane y Groovy 4.0.27. Corregida declaración de groovy-all como dependencia de biblioteca, no plataforma. jarsigner confirma que freeplaneviewer.jar falla con cannot verify signature block file META-INF/OPEN_SOU. Las otras tres bibliotecas directas de Freeplane no están firmadas. Retirar viewer no sirve: contiene MenuUtils, requerido por el add-on. Se restauró la dependencia. No se alteró la instalación ni se generó nuevo JAR. Siguiente paso: obtener una copia válida de esta biblioteca desde una distribución oficial de la misma versión y verificarla antes de usarla para compilar.
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node TEXT="Comprobado: freeplaneviewer oficial coincide con el instalado" ID="ID_782887153" CREATED="1793743704944" MODIFIED="1793743704944" AI_EDITS="true"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Descargado https://github.com/freeplane/freeplane/releases/download/release-1.13.4/freeplane_bin-1.13.4.zip y extraído freeplaneviewer.jar en ignoredByGitHub/freeplane-check/freeplaneviewer-official.jar. SHA-256 de ambas copias: C9AECA85B5098536B41EBF19BA1E7BE09118B5CFCA613AFAEBFB34E327C0A43B. jarsigner con Java 17 falla también en la copia oficial: cannot verify signature block file META-INF/OPEN_SOU. Esto descarta una diferencia local del archivo instalado frente a ese ZIP oficial. Instalación actual intacta. Pendiente investigar el empaquetado y la validación de firmas antes de decidir cómo compilar.
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node TEXT="Freeplane 1.13.1: firma de freeplaneviewer.jar verificable" ID="ID_994997047" CREATED="1793744212297" MODIFIED="1793744212297" AI_EDITS="true"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      ZIP oficial descargado desde https://github.com/freeplane/freeplane/releases/download/release-1.13.1/freeplane_bin-1.13.1.zip. Extraído en ignoredByGitHub/freeplane-check/freeplaneviewer-1.13.1-official.jar. jarsigner devuelve jar verified con Java 17 y Java 21. Java 21 advierte que no puede establecer una cadena de confianza del certificado (PKIX); esto es distinto del error de bloque de firma de 1.13.4. SHA-256: 6C5AC0FF7940F03E15E0CE3EFDA50C40CAD4D540C203A3A88198956D069E0662. No se modificó la instalación ni se sustituyeron dependencias del proyecto.
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node TEXT="Freeplane 1.13.3: firma de freeplaneviewer.jar verificable" ID="ID_1815008666" CREATED="1793744379088" MODIFIED="1793744379088" AI_EDITS="true"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      ZIP oficial: https://github.com/freeplane/freeplane/releases/download/release-1.13.3/freeplane_bin-1.13.3.zip. jarsigner devuelve jar verified con Java 17 y Java 21. Java 21 advierte cadena de confianza PKIX no establecida, igual que 1.13.1. SHA-256: CE44AD8D240BE4CD12B95711A60A088A890122C55FCCA59272C6FBC217077516. Comparación: 1.13.1 y 1.13.3 verificables; 1.13.4 falla con META-INF/OPEN_SOU en ambos Java. Instalación y dependencias sin cambios.
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node TEXT="Compilación y JAR correctos con Freeplane 1.13.3" ID="ID_1493238849" CREATED="1793744486924" MODIFIED="1793744486924" AI_EDITS="true"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Distribución oficial extraída en ignoredByGitHub/freeplane-check/1.13.3/freeplane-1.13.3. build.gradle selecciona v13_3 mediante una ruta relativa al proyecto. Groovy 4.0.27; Java 17; Gradle 8.0. Comando gradlew.bat --offline compileGroovy jar: BUILD SUCCESSFUL. JAR generado en groovyConsole/lib/groovyConsole.jar. Instalación actual de Freeplane intacta. Pendiente probar la biblioteca en un entorno de prueba antes de instalar o generar una nueva versión distribuible del add-on.
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node TEXT="PASS: carga aislada y funciones básicas del nuevo JAR" ID="ID_564438603" CREATED="1793746262581" MODIFIED="1793746262581" AI_EDITS="true"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Ejecución por el usuario mediante MCP: RUN_SUCCEEDED, PASS, 4 comprobaciones. Se cargó groovyConsole/lib/groovyConsole.jar con cargador separado y se confirmó que la clase pertenece a ese cargador, no al del add-on instalado. Extensión groovy reconocida en minúsculas y mayúsculas; nodo simulado sin script devuelve [null,null]. Entorno activo: Java 21.0.11 y Groovy 4.0.27. No se abrió la consola ni se modificaron nodos durante la prueba. Pendientes: interfaz, ejecución de scripts, carga/guardado y recarga desde archivos y nodos.
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node TEXT="Pruebas iniciales superadas — aceptadas por el usuario" ID="ID_947112206" CREATED="1793746752992" MODIFIED="1793746752992" AI_EDITS="true"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      2026-11-03. El usuario da por superadas las pruebas realizadas con el JAR recién compilado, cargado separadamente del instalado. Compilación: Freeplane 1.13.3, Groovy 4.0.27, Java 17 y Gradle 8.0. Ejecución: Freeplane instalado con Java 21.0.11 y Groovy 4.0.27. Verificado: carga aislada del JAR; funciones básicas; apertura de consola y botones (confirmación del usuario); ejecución inicial (confirmación del usuario); guardado y recuperación en nota y script1 mediante llamadas a los métodos de la consola; prioridad de script1; carga de archivo en editor. Cierre de pruebas aceptado por el usuario. No equivale a una prueba exhaustiva de todos los botones, diálogos, recarga o permisos. Instalación actual sin reemplazos. No se publicó ni instaló una nueva versión.
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node TEXT="Siguiente: elegir primer cambio de desarrollo" ID="ID_1967567682" CREATED="1793746752993" MODIFIED="1793746752993" AI_EDITS="true"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Base de compilación recuperada y pruebas iniciales aceptadas. Candidatos detectados por lectura, aún pendientes de reproducir: actualización de configuración del compilador manteniendo el mismo nodo; confirmación de guardado cuando source=file. Después priorizar ampliaciones del mapa, como scripts temporales e integración con IntelliJ.
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node TEXT="RESUELTO: error de instalación por formato de la descripción" ID="ID_1150084082" CREATED="1793752381441" MODIFIED="1793752381441" AI_EDITS="true"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      El usuario identificó y confirmó la solución: el nodo con el contenido de la descripción del add-on tenía formato; al quitarlo y dejar texto simple, la instalación funcionó. Síntoma: Error on installation: org.freeplane.plugin.script.ExecuteScriptException: java.lang.StackOverflowError. También se observó al intentar instalar el paquete anterior y en Freeplane 1.13.3 con perfil aislado. Para próximas versiones, mantener ese nodo como texto simple en el mapa fuente y regenerar el paquete con el ciclo habitual. No atribuir este fallo al JAR compilado ni confundirlo con el problema separado de firma de freeplaneviewer.jar 1.13.4. El detalle interno del fallo del instalador no se ha determinado.
+    </p>
+  </body>
+</html></richcontent>
+</node>
+</node>
+<node TEXT="Convención: el historial se mantiene en changes del mapa fuente" POSITION="bottom_or_right" ID="ID_737794537" CREATED="1793836974256" MODIFIED="1793836974256" AI_EDITS="true"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Información confirmada por el usuario el 2026-11-04. El script que genera el add-on desde groovyConsole/groovyConsole.mm también genera automáticamente el archivo de historial (history.md / History.md), tomando el contenido del nodo changes. Para documentar versiones, actualizar únicamente el nodo changes mediante MCP; no editar manualmente el archivo de historial generado. Esta regla reemplaza la práctica anterior de sincronizar manualmente ambos.
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node TEXT="Convención: mantener README.MD directamente; mapa MDH histórico" POSITION="top_or_left" ID="ID_760483295" CREATED="1793837757146" MODIFIED="1793837757146" AI_EDITS="true"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Decisión del usuario, 2026-11-04: README.MD se edita directamente con Codex. README-groovyConsole-MDH.mm deja de ser fuente activa del README; se conserva como referencia histórica, sin actualizarlo ni sincronizarlo. Queda cancelado el pendiente anterior de sincronizar ese mapa antes de regenerar README. No eliminar el archivo histórico por esta decisión. La regla del historial es distinta y no cambia: actualizar changes en groovyConsole.mm; el generador produce history.md.
+    </p>
+  </body>
+</html></richcontent>
 </node>
 </node>
 </map>

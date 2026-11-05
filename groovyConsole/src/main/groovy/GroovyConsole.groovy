@@ -11,6 +11,7 @@ import groovy.swing.SwingBuilder
 import org.freeplane.core.util.MenuUtils            as menuUtils
 import org.freeplane.plugin.script.FreeplaneScriptBaseClass.ConfigProperties
 import org.freeplane.plugin.script.GroovyScript
+import org.freeplane.features.icon.factory.IconFactory
 
 
 
@@ -33,7 +34,7 @@ class GroovyConsole {
     }
 
     def static openGroovyConsole(n, bind, inPut, source, boolean fs = fullScreen){
-        Console console = new Console(null, bind, GroovyScript.createCompilerConfiguration())
+        Console console = new TemporaryScriptConsole(bind, GroovyScript.createCompilerConfiguration())
         console.setVariable('map', n.map)
         console.setVariable('root', n.map.root)
         console.setVariable('source', source)
@@ -69,6 +70,8 @@ class GroovyConsole {
                break
         }
         console.setDirty(false)        
+        console.startTracking(source)
+        console.showCleanupReview()
         
         if (fs) console.getFrame().setExtendedState(JFrame.MAXIMIZED_BOTH)
 
@@ -107,7 +110,7 @@ class GroovyConsole {
 
     def static scriptFromNode(n){
         def sc = scriptAndSourceFromNode(n)[0]
-        sc = sc?.class == File? sc.text : sc
+        sc = sc?.class == File? TemporaryScriptStore.body(sc, sc.getText('UTF-8')) : sc
         return sc
     }
     
@@ -186,7 +189,7 @@ class GroovyConsole {
         def vars   = console.shell.context
         def nodo   = vars.targetNode
         def source = vars.source
-        if (!nodo || !source){
+        if (!nodo || !(source in ['note', 'script1'])){
             writeTo(console)
         } else {
             write(console,nodo, source)
@@ -202,7 +205,7 @@ class GroovyConsole {
 
     def static write(console, nodo, source){
         if(!nodo || !source) return 'it couldn\'t be saved'
-        def script = console.inputArea.getText().toString().trim()
+        def script = console.inputArea.getText().toString()
         def msg
         switch(source){
             case 'note':
@@ -214,8 +217,11 @@ class GroovyConsole {
                 nodo['script1'] = script
                 msg = "in attribute 'script1' from"
                 break
+            default:
+                return 'it couldn\'t be saved'
         }
-        console.setDirty(false)
+        if (console instanceof TemporaryScriptConsole) console.savedInNode(script, nodo.text.toString().take(100))
+        else console.setDirty(false)
         console.statusLabel.text = "Script saved $msg node '${nodo.text.take(100)}'".toString()
         // updateTitle(console)
     }
@@ -343,6 +349,14 @@ class GroovyConsole {
         console.toolbar.add(startSysOutInterceptor)
         console.toolbar.addSeparator()   
         console.toolbar.add(reLoadButton)
+        console.temporaryButton = swing.button(
+                text: showLabels ? 'create temporary .groovy' : null,
+                toolTipText: 'Create a temporary Groovy file for IntelliJ',
+                icon: IconFactory.getInstance().getIcon(GroovyConsole.getResource('/icons/groovyConsole/temporaryScript.svg')),
+                actionPerformed: { e -> console.saveTemporaryScript() }
+        )
+        console.showTemporaryButtonLabel = showLabels
+        console.toolbar.add(console.temporaryButton)
     }
 
 //endregion

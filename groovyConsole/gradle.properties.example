@@ -1,0 +1,3 @@
+# Copy this file to gradle.properties and set your own extracted Freeplane 1.13.3 folder.
+# Use forward slashes on Windows. Relative paths are based on the groovyConsole folder.
+freeplaneDir=C:/path/to/freeplane-1.13.3

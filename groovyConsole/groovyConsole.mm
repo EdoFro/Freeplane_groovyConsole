@@ -475,7 +475,7 @@
 <attribute NAME="OptionPanel.${name}_scriptTabDoubleClick.tooltip" VALUE="Double clicking on ScriptTab should open groovyConsole?"/>
 </node>
 </node>
-<node TEXT="deinstall" POSITION="top_or_left" ID="ID_1482851217" CREATED="1793746894960" MODIFIED="1793980782508"><richcontent TYPE="NOTE">
+<node TEXT="deinstall" POSITION="top_or_left" ID="ID_1482851217" CREATED="1793746894960" MODIFIED="1793984424885"><richcontent TYPE="NOTE">
 <html>
   <head>
     
@@ -500,6 +500,8 @@
 <attribute NAME="delete" VALUE="${installationbase}/icons/groovyConsole/temporaryScript.svg"/>
 <attribute NAME="delete" VALUE="${installationbase}/addons/${name}/scripts/showScriptTab.groovy"/>
 <attribute NAME="delete" VALUE="${installationbase}/scripts/init/GroovyConsole_init.groovy"/>
+<attribute NAME="delete" VALUE="${installationbase}/icons/groovyConsole/scriptTab-dark.svg"/>
+<attribute NAME="delete" VALUE="${installationbase}/icons/groovyConsole/scriptTab-light.svg"/>
 </node>
 <node TEXT="scripts" POSITION="bottom_or_right" ID="ID_550261175" CREATED="1793746894960" MODIFIED="1793746894960"><richcontent TYPE="NOTE">
 <html>

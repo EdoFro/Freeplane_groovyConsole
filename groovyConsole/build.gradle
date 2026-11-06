@@ -91,7 +91,8 @@ tasks.register('verifyEditor', JavaExec) {
 tasks.named('check') { dependsOn 'verifyTemporaryScripts', 'verifyEditor' }
 
 tasks.named('processResources') {
-    from('zips/icons/groovyConsole/temporaryScript.svg') {
+    from('zips/icons/groovyConsole') {
+        include 'temporaryScript.svg', 'scriptTab-light.svg', 'scriptTab-dark.svg'
         into 'icons/groovyConsole'
     }
 }

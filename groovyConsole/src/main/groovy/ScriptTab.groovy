@@ -2,18 +2,24 @@ package edofro.groovyconsole
 
 import java.awt.BorderLayout
 import java.awt.Component
+import java.awt.Graphics
 import java.awt.Window
 import java.awt.event.MouseAdapter
 import java.awt.event.MouseEvent
+import java.beans.PropertyChangeListener
+import javax.swing.AbstractButton
+import javax.swing.Icon
 import javax.swing.JButton
 import javax.swing.JLabel
 import javax.swing.JPanel
 import javax.swing.JScrollPane
 import javax.swing.JTextPane
+import javax.swing.JTabbedPane
 import javax.swing.SwingUtilities
 import groovy.console.ui.text.SmartDocumentFilter
 import org.freeplane.core.ui.components.UITools
 import org.freeplane.features.attribute.NodeAttributeTableModel
+import org.freeplane.features.icon.factory.IconFactory
 import org.freeplane.features.map.INodeChangeListener
 import org.freeplane.features.map.INodeSelectionListener
 import org.freeplane.features.map.MapController
@@ -39,6 +45,28 @@ class ScriptTab extends JPanel {
     private String shownScript
     private boolean listening
     private boolean refreshPending
+    private final Icon tabIcon = createTabIcon()
+    private JTabbedPane tabPane
+    private final PropertyChangeListener tabHeaderListener = { event ->
+        int index = tabPane.indexOfComponent(this)
+        if (index >= 0 && event.newValue == index) {
+            def header = tabPane.getTabComponentAt(index)
+            if (header instanceof AbstractButton) header.icon = tabIcon
+        }
+    } as PropertyChangeListener
+
+    private static Icon createTabIcon() {
+        def factory = IconFactory.getInstance()
+        Icon light = factory.getIcon(ScriptTab.getResource('/icons/groovyConsole/scriptTab-light.svg'))
+        Icon dark = factory.getIcon(ScriptTab.getResource('/icons/groovyConsole/scriptTab-dark.svg'))
+        return new Icon() {
+            int getIconWidth() { light.iconWidth }
+            int getIconHeight() { light.iconHeight }
+            void paintIcon(Component component, Graphics graphics, int x, int y) {
+                (UITools.isLightLookAndFeelInstalled() ? light : dark).paintIcon(component, graphics, x, y)
+            }
+        }
+    }
 
     private final INodeSelectionListener selectionListener = [
         onSelect: { NodeModel node -> scheduleRefresh() },
@@ -69,7 +97,7 @@ class ScriptTab extends JPanel {
             def tab = tabs.components.find { it.name == TAB_KEY }
             if (tab == null) {
                 tab = new ScriptTab(variables)
-                tabs.addTab('Script', null, tab, 'Script')
+                tabs.addTab('Script', tab.tabIcon, tab, 'Script')
             }
             tabs.selectedComponent = tab
             def showToolPanel = Controller.currentModeController.getAction('ShowFormatPanel')
@@ -117,6 +145,8 @@ class ScriptTab extends JPanel {
     @Override
     void addNotify() {
         super.addNotify()
+        tabPane = SwingUtilities.getAncestorOfClass(JTabbedPane, this) as JTabbedPane
+        tabPane?.addPropertyChangeListener('indexForTabComponent', tabHeaderListener)
         maps.addNodeSelectionListener(selectionListener)
         maps.addNodeChangeListener(changeListener)
         controller.mapViewManager.addMapViewChangeListener(viewListener)
@@ -126,6 +156,8 @@ class ScriptTab extends JPanel {
 
     @Override
     void removeNotify() {
+        tabPane?.removePropertyChangeListener('indexForTabComponent', tabHeaderListener)
+        tabPane = null
         listening = false
         controller.mapViewManager.removeMapViewChangeListener(viewListener)
         maps.removeNodeChangeListener(changeListener)

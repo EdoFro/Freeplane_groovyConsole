@@ -19,6 +19,7 @@ groovyConsole is an add-on for Freeplane that opens a Groovy Console and works w
 - Syntax colors distinguish Groovy keywords, strings, numbers and comments.
 - The Tool Panel's **Script** tab shows the selected node's `script1` attribute in a read-only Groovy editor. It refreshes when you change nodes or update the attribute. **Edit** opens GroovyConsole and saves back to that node's `script1`.
 - The **Script** tab opens when Freeplane starts with GroovyConsole enabled. You can also open it from the add-on menu with **Show script tab**.
+- The **Script** tab uses a theme-aware script icon, including when TabbedPanelMod is enabled.
 - To open GroovyConsole by double-clicking the script text, enable **Open Script tab editor on double-click** in the GroovyConsole preferences. This option is off by default.
 
 From the add-on directory, run `gradlew.bat check` to verify completion, inference, comments, indentation and Undo/Redo with highlighting enabled. The editor checks require a graphical environment and run without opening Freeplane.

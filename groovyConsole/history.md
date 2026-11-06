@@ -12,6 +12,7 @@
 * Added a Script tab to the Tool Panel. It shows the selected node's script1 attribute in a read-only Groovy editor and refreshes when the selection or attribute changes. Edit opens GroovyConsole linked to that attribute.
 * The Script tab opens when Freeplane starts with GroovyConsole enabled. The Show script tab menu command also opens it on demand.
 * Added a preference to open GroovyConsole by double-clicking the Script tab editor. The preference is off by default.
+* Added a theme-aware script icon to the Script tab, including when TabbedPanelMod is enabled.
 
 ## v0.0.9
 

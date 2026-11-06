@@ -24,6 +24,11 @@ groovyConsole is an add-on for Freeplane that opens a Groovy Console and works w
 
 From the add-on directory, run `gradlew.bat check` to verify completion, inference, comments, indentation and Undo/Redo with highlighting enabled. The editor checks require a graphical environment and run without opening Freeplane.
 
+### Planned Script tab improvements
+
+- Let the **Script** tab follow Freeplane's editor background. The tab currently shares GroovyConsole's white editor background. Use a separate syntax palette for the tab so keywords, strings, numbers and comments stay readable in both themes and GroovyConsole keeps its existing colors.
+- Verify the palette with the **Script** tab and GroovyConsole open together in both light and dark themes.
+
 ### What's new in v0.0.9
 
 - Edit node scripts in IntelliJ through temporary `.groovy` files, then reload them in the console and send them back to the node.

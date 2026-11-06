@@ -2285,6 +2285,18 @@ It adds access to Freeplane&apos;s and add-ons libraries
 </html></richcontent>
 <attribute NAME="tasksStyles" VALUE="nextTask,pendingTask,maybeTask"/>
 <attribute NAME="WIP filter" VALUE="false"/>
+<node TEXT="Adaptar el resaltado de la pestaña Script al tema de Freeplane" ID="ID_311625966" CREATED="1793989825217" MODIFIED="1793989825217" AI_EDITS="true"><richcontent TYPE="NOTE">
+<html>
+  <head>
+
+  </head>
+  <body>
+    <p>
+      Usar el fondo del tema de Freeplane y una paleta de resaltado propia de la pestaña Script. Mantener los colores actuales del editor de GroovyConsole. Verificar palabras clave, cadenas, números y comentarios con la pestaña y GroovyConsole abiertos a la vez en los temas claro y oscuro.
+    </p>
+  </body>
+</html></richcontent>
+</node>
 <node TEXT="gC v0.0.5" ID="ID_1247161182" CREATED="1793739878298" MODIFIED="1793739878298">
 <node TEXT="groovyConsole.mm" STYLE_REF="project" ID="ID_1751394414" CREATED="1793739878298" MODIFIED="1793739878298">
 <node TEXT="cambiar &apos;versión Freeplane necesitada&apos; más baja" STYLE_REF="completedTask" ID="ID_1934646191" CREATED="1793739878298" MODIFIED="1793739878298"/>

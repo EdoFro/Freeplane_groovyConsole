@@ -1,7 +1,7 @@
 <map version="freeplane 1.12.15">
 <!--To view this file, download free mind mapping software Freeplane from https://www.freeplane.org -->
 <bookmarks/>
-<node TEXT="groovyConsole" LOCALIZED_STYLE_REF="AutomaticLayout.level.root" FOLDED="false" ID="ID_1090958577" CREATED="1793746894960" MODIFIED="1793839242145" LINK="https://github.com/EdoFro/Freeplane_groovyConsole" STYLE="bubble" SHAPE_HORIZONTAL_MARGIN="10 pt" SHAPE_VERTICAL_MARGIN="15 pt" MAX_WIDTH="15 cm" AI_EDITS="true"><hook NAME="MapStyle" background="#f9f9f8ff" zoom="0.9090909">
+<node TEXT="groovyConsole" LOCALIZED_STYLE_REF="AutomaticLayout.level.root" FOLDED="false" ID="ID_1090958577" CREATED="1793746894960" MODIFIED="1793983273259" LINK="https://github.com/EdoFro/Freeplane_groovyConsole" STYLE="bubble" SHAPE_HORIZONTAL_MARGIN="10 pt" SHAPE_VERTICAL_MARGIN="15 pt" MAX_WIDTH="15 cm" AI_EDITS="true"><hook NAME="MapStyle" background="#f9f9f8ff" zoom="0.9090909">
     <properties edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff" mapUsesOwnSaveOptions="true" associatedTemplateLocation="template:/vis01%20light_nord_template%20vEdo.mm" showTagCategories="false" show_icon_for_attributes="true" save_modification_times="false" show_tags="UNDER_NODES" save_last_visited_node="default" show_note_icons="true" save_folding="save_folding_if_map_is_changed" fit_to_viewport="false" show_icons="BESIDE_NODES"/>
     <tags category_separator="::"/>
 
@@ -83,7 +83,7 @@
 </hook>
 <attribute_layout NAME_WIDTH="103.5 pt" VALUE_WIDTH="241.49999 pt"/>
 <attribute NAME="name" VALUE="groovyConsole"/>
-<attribute NAME="version" VALUE="v0.0.9"/>
+<attribute NAME="version" VALUE="v0.0.10"/>
 <attribute NAME="author" VALUE="EdoFro"/>
 <attribute NAME="freeplaneVersionFrom" VALUE="v1.13.3"/>
 <attribute NAME="freeplaneVersionTo" VALUE=""/>
@@ -227,7 +227,7 @@
 <node TEXT="added addon&apos;s images" ID="ID_1715708800" CREATED="1793746894960" MODIFIED="1793746894960"/>
 <node TEXT="retain white inputArea also for Dark themes" ID="ID_1145769937" CREATED="1793746894960" MODIFIED="1793746894960"/>
 </node>
-<node TEXT="v0.0.9" ID="ID_604876097" CREATED="1793746904803" MODIFIED="1793746914138">
+<node TEXT="v0.0.9" FOLDED="true" ID="ID_604876097" CREATED="1793746904803" MODIFIED="1793746914138">
 <node TEXT="Added temporary .groovy files for editing scripts in IntelliJ, with a configurable folder, UTF-8 encoding and unique names based on the original node." ID="ID_1524403428" CREATED="1793746915622" MODIFIED="1793836509876" AI_EDITS="true"/>
 <node TEXT="After creating a temporary, the toolbar button and normal Save update the associated file instead of creating another copy; sending to the original node remains available." ID="ID_1672722494" CREATED="1793836513428" MODIFIED="1793836513428" AI_EDITS="true"/>
 <node TEXT="Track node changes, file changes and pending temporary review independently, with warnings for unsaved node/file changes and external file modifications." ID="ID_1213612954" CREATED="1793836513428" MODIFIED="1793836513428" AI_EDITS="true"/>
@@ -242,6 +242,18 @@
 <node TEXT="Keep the Gradle Wrapper bootstrap JAR available for version control while continuing to ignore generated JARs. Added regression coverage; 94 checks pass." ID="ID_1120756604" CREATED="1793838612951" MODIFIED="1793838612951" AI_EDITS="true"/>
 <node TEXT="Set the selected minimum Freeplane version to 1.13.3; installed-package smoke validation on that minimum is pending before publication." ID="ID_117009296" CREATED="1793839313713" MODIFIED="1793839313713" AI_EDITS="true"/>
 <node TEXT="Configure the Freeplane library folder through freeplaneDir in an ignored local gradle.properties or a command-line -P override. Include a settings example, validate required libraries early, and use exact Freeplane 1.13.3 library files instead of dynamic dependencies." ID="ID_1879309470" CREATED="1793839313714" MODIFIED="1793839313714" AI_EDITS="true"/>
+</node>
+<node TEXT="v0.0.10" FOLDED="true" ID="ID_1860763143" CREATED="1793907844798" MODIFIED="1793907850827">
+<node TEXT="Added code completion for variables, properties and methods from the Freeplane scripting API, Java and Groovy, including Groovy extension methods." ID="ID_1202950401" CREATED="1793907853332" MODIFIED="1793978171652" AI_EDITS="true"/>
+<node TEXT="Completion infers types from simple assignments, explicit declarations, and chains of properties and method calls without executing the script. Supports explicit, wildcard and static imports, including aliases for explicit imports." ID="ID_1689054601" CREATED="1793978174828" MODIFIED="1793978174828" AI_EDITS="true"/>
+<node TEXT="Enter completes the prefix and Tab replaces the whole identifier. Method completion inserts or reuses parentheses and positions the caret according to the selected signature. Ctrl+Space opens suggestions and Ctrl+K completes words from the script." ID="ID_1551678445" CREATED="1793978174828" MODIFIED="1793978174828" AI_EDITS="true"/>
+<node TEXT="Undo and Redo treat completion as a single editor operation. Undo restores the original prefix and any suffix replaced by Tab." ID="ID_1643217307" CREATED="1793978174828" MODIFIED="1793978174828" AI_EDITS="true"/>
+<node TEXT="Added line commenting with Ctrl+Shift+K (or Ctrl+/) and indentation to four-column stops with Tab and Shift+Tab. Multi-line edits can be undone in one step." ID="ID_1265957273" CREATED="1793978174828" MODIFIED="1793978174828" AI_EDITS="true"/>
+<node TEXT="Added syntax colors for Groovy keywords, strings, numbers and comments." ID="ID_353085726" CREATED="1793978174828" MODIFIED="1793978174828" AI_EDITS="true"/>
+<node TEXT="Added automated editor checks to Gradle for completion, inference, comments, indentation, and Undo/Redo with syntax highlighting enabled." ID="ID_23090199" CREATED="1793978174828" MODIFIED="1793978174828" AI_EDITS="true"/>
+<node TEXT="Added a Script tab to the Tool Panel. It shows the selected node&apos;s script1 attribute in a read-only Groovy editor and refreshes when the selection or attribute changes. Edit opens GroovyConsole linked to that attribute." ID="ID_886794078" CREATED="1793983139897" MODIFIED="1793983139897" AI_EDITS="true"/>
+<node TEXT="The Script tab opens when Freeplane starts with GroovyConsole enabled. The Show script tab menu command also opens it on demand." ID="ID_616232654" CREATED="1793983139897" MODIFIED="1793983139897" AI_EDITS="true"/>
+<node TEXT="Added a preference to open GroovyConsole by double-clicking the Script tab editor. The preference is off by default." ID="ID_767469920" CREATED="1793983139897" MODIFIED="1793983139897" AI_EDITS="true"/>
 </node>
 </node>
 <node TEXT="license" FOLDED="true" POSITION="top_or_left" ID="ID_1329071946" CREATED="1793746894960" MODIFIED="1793746894960" VGAP_QUANTITY="2 px"><richcontent TYPE="NOTE">
@@ -263,7 +275,7 @@
 </html></richcontent>
 <node TEXT="MIT License&#xa;&#xa;Copyright (c) 2022 Eduardo Frohlich.&#xa;&#xa;Permission is hereby granted, free of charge, to any person obtaining a copy&#xa;of this software and associated documentation files (the &quot;Software&quot;), to deal&#xa;in the Software without restriction, including without limitation the rights&#xa;to use, copy, modify, merge, publish, distribute, sublicense, and/or sell&#xa;copies of the Software, and to permit persons to whom the Software is&#xa;furnished to do so, subject to the following conditions:&#xa;&#xa;The above copyright notice and this permission notice shall be included in all&#xa;copies or substantial portions of the Software.&#xa;&#xa;THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR&#xa;IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,&#xa;FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE&#xa;AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER&#xa;LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,&#xa;OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE&#xa;SOFTWARE." ID="ID_797385026" CREATED="1793746894960" MODIFIED="1793746894960"/>
 </node>
-<node TEXT="preferences.xml" FOLDED="true" POSITION="top_or_left" ID="ID_1801404411" CREATED="1793746894960" MODIFIED="1793825151873" AI_EDITS="true"><richcontent TYPE="NOTE">
+<node TEXT="preferences.xml" FOLDED="true" POSITION="top_or_left" ID="ID_1801404411" CREATED="1793746894960" MODIFIED="1793979841485" AI_EDITS="true"><richcontent TYPE="NOTE">
 <html>
   <head>
     
@@ -377,9 +389,10 @@
 <attribute NAME="defaultWriteTo" VALUE="number,0,1"/>
 <attribute NAME="temporaryDirectory" VALUE="string"/>
 <attribute NAME="temporaryRetentionDays" VALUE="number,1,3650"/>
-<node TEXT="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#xa;&lt;preferences_structure&gt;&#xa;         &lt;tabbed_pane&gt;&#xa;                  &lt;tab name=&quot;plugins&quot;&gt;&#xa;                            &lt;separator name = &quot;${name}&quot;&gt;&#xa;                                    &lt;string name = &quot;${name}_attributeForExtensions&quot;/&gt;&#xa;                                    &lt;boolean name = &quot;${name}_fullScreen&quot;/&gt;&#xa;                                    &lt;boolean name = &quot;${name}_showButtonLabels&quot;/&gt;&#xa;                                    &lt;number name  = &quot;${name}_defaultWriteTo&quot; min=&quot;0&quot; max=&quot;1&quot;/&gt;&#xa;                                    &lt;string name = &quot;${name}_temporaryDirectory&quot;/&gt;&#xa;                                    &lt;number name  = &quot;${name}_temporaryRetentionDays&quot; min=&quot;1&quot; max=&quot;3650&quot;/&gt;&#xa;                           &lt;/separator&gt;&#xa;                  &lt;/tab&gt;&#xa;         &lt;/tabbed_pane&gt;&#xa;&lt;/preferences_structure&gt;" ID="ID_486925025" CREATED="1793746894960" MODIFIED="1793825520346" MAX_WIDTH="20 cm" AI_EDITS="true"/>
+<attribute NAME="scriptTabDoubleClick" VALUE="boolean"/>
+<node TEXT="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#xa;&lt;preferences_structure&gt;&#xa;         &lt;tabbed_pane&gt;&#xa;                  &lt;tab name=&quot;plugins&quot;&gt;&#xa;                            &lt;separator name = &quot;${name}&quot;&gt;&#xa;                                    &lt;string name = &quot;${name}_attributeForExtensions&quot;/&gt;&#xa;                                    &lt;boolean name = &quot;${name}_fullScreen&quot;/&gt;&#xa;                                    &lt;boolean name = &quot;${name}_showButtonLabels&quot;/&gt;&#xa;                                    &lt;number name  = &quot;${name}_defaultWriteTo&quot; min=&quot;0&quot; max=&quot;1&quot;/&gt;&#xa;                                    &lt;string name = &quot;${name}_temporaryDirectory&quot;/&gt;&#xa;                                    &lt;number name  = &quot;${name}_temporaryRetentionDays&quot; min=&quot;1&quot; max=&quot;3650&quot;/&gt;&#xa;                                    &lt;boolean name = &quot;${name}_scriptTabDoubleClick&quot;/&gt;&#xa;                           &lt;/separator&gt;&#xa;                  &lt;/tab&gt;&#xa;         &lt;/tabbed_pane&gt;&#xa;&lt;/preferences_structure&gt;" ID="ID_486925025" CREATED="1793746894960" MODIFIED="1793979917166" MAX_WIDTH="20 cm" AI_EDITS="true"/>
 </node>
-<node TEXT="default.properties" POSITION="top_or_left" ID="ID_250057726" CREATED="1793746894960" MODIFIED="1793831478956" AI_EDITS="true"><richcontent TYPE="NOTE">
+<node TEXT="default.properties" POSITION="top_or_left" ID="ID_250057726" CREATED="1793746894960" MODIFIED="1793983273291" AI_EDITS="true"><richcontent TYPE="NOTE">
 <html>
   <head>
     
@@ -406,6 +419,7 @@
 <attribute NAME="${name}.icon" VALUE="images/${name}-icon.svg"/>
 <attribute NAME="${name}_temporaryDirectory" VALUE=""/>
 <attribute NAME="${name}_temporaryRetentionDays" VALUE="7"/>
+<attribute NAME="${name}_scriptTabDoubleClick" VALUE="false"/>
 </node>
 <node TEXT="translations" POSITION="top_or_left" ID="ID_1204579435" CREATED="1793746894960" MODIFIED="1793746894960"><richcontent TYPE="NOTE">
 <html>
@@ -438,13 +452,14 @@
     </ul>
   </body>
 </html></richcontent>
-<node TEXT="en" ID="ID_1298070476" CREATED="1793754908020" MODIFIED="1793831478956" AI_EDITS="true">
+<node TEXT="en" ID="ID_1298070476" CREATED="1793754908020" MODIFIED="1793983273295" AI_EDITS="true" MAX_WIDTH="25 cm">
 <attribute_layout NAME_WIDTH="222.74999 pt" VALUE_WIDTH="508.49998 pt"/>
-<attribute NAME="OptionPanel.${name}_temporaryDirectory" VALUE="Temporary Groovy scripts folder"/>
-<attribute NAME="addons.${name}.openWithGroovyConsoleFull" VALUE="Open with groovy console without restrictions"/>
 <attribute NAME="addons.${name}" VALUE="groovyConsole"/>
-<attribute NAME="OptionPanel.${name}_temporaryDirectory.tooltip" VALUE="Folder for temporary .groovy files edited with IntelliJ. Leave empty to choose on first use."/>
+<attribute NAME="addons.${name}.openWithGroovyConsoleFull" VALUE="Open with groovy console without restrictions"/>
 <attribute NAME="addons.${name}.openWithGroovyConsole" VALUE="Open with groovy console"/>
+<attribute NAME="addons.${name}.showScriptTab" VALUE="Show script tab"/>
+<attribute NAME="OptionPanel.${name}_temporaryDirectory.tooltip" VALUE="Folder for temporary .groovy files edited with IntelliJ. Leave empty to choose on first use."/>
+<attribute NAME="OptionPanel.${name}_temporaryDirectory" VALUE="Temporary Groovy scripts folder"/>
 <attribute NAME="OptionPanel.${name}_attributeForExtensions" VALUE="Attribute for file extensions"/>
 <attribute NAME="OptionPanel.${name}_fullScreen.tooltip" VALUE="Groovy Console must open in full screen mode?"/>
 <attribute NAME="OptionPanel.${name}_defaultWriteTo" VALUE="Default writing target (see tooltip)"/>
@@ -456,9 +471,11 @@
 <attribute NAME="OptionPanel.${name}_attributeForExtensions.tooltip" VALUE="Name of the attribute to indicate the file extension associated with the node"/>
 <attribute NAME="OptionPanel.${name}_temporaryRetentionDays" VALUE="Temporary scripts retention (days)"/>
 <attribute NAME="OptionPanel.${name}_temporaryRetentionDays.tooltip" VALUE="Days before cleanup review and days added when postponing a temporary script. Default: 7."/>
+<attribute NAME="OptionPanel.${name}_scriptTabDoubleClick" VALUE="Open Script tab editor on double-click"/>
+<attribute NAME="OptionPanel.${name}_scriptTabDoubleClick.tooltip" VALUE="Double clicking on ScriptTab should open groovyConsole?"/>
 </node>
 </node>
-<node TEXT="deinstall" POSITION="top_or_left" ID="ID_1482851217" CREATED="1793746894960" MODIFIED="1793756551847"><richcontent TYPE="NOTE">
+<node TEXT="deinstall" POSITION="top_or_left" ID="ID_1482851217" CREATED="1793746894960" MODIFIED="1793980782508"><richcontent TYPE="NOTE">
 <html>
   <head>
     
@@ -481,6 +498,8 @@
 <attribute NAME="delete" VALUE="${installationbase}/icons/groovyConsole/saveInNode.svg"/>
 <attribute NAME="delete" VALUE="${installationbase}/icons/groovyConsole/saveInNodeAs.svg"/>
 <attribute NAME="delete" VALUE="${installationbase}/icons/groovyConsole/temporaryScript.svg"/>
+<attribute NAME="delete" VALUE="${installationbase}/addons/${name}/scripts/showScriptTab.groovy"/>
+<attribute NAME="delete" VALUE="${installationbase}/scripts/init/GroovyConsole_init.groovy"/>
 </node>
 <node TEXT="scripts" POSITION="bottom_or_right" ID="ID_550261175" CREATED="1793746894960" MODIFIED="1793746894960"><richcontent TYPE="NOTE">
 <html>
@@ -598,7 +617,7 @@
     </p>
   </body>
 </html></richcontent>
-<node TEXT="openWithGroovyConsole.groovy" ID="ID_313603667" CREATED="1793746894960" MODIFIED="1793831478974">
+<node TEXT="openWithGroovyConsole.groovy" ID="ID_313603667" CREATED="1793746894960" MODIFIED="1793983273319">
 <attribute_layout NAME_WIDTH="187.49999 pt" VALUE_WIDTH="175.49999 pt"/>
 <attribute NAME="menuTitleKey" VALUE="addons.${name}.openWithGroovyConsole"/>
 <attribute NAME="menuLocation" VALUE="${addonsMenu}/addons.${name}"/>
@@ -610,7 +629,7 @@
 <attribute NAME="execute_scripts_without_exec_restriction" VALUE="false"/>
 <attribute NAME="execute_scripts_without_network_restriction" VALUE="false"/>
 </node>
-<node TEXT="openWithGroovyConsoleFull.groovy" ID="ID_241081477" CREATED="1793746894960" MODIFIED="1793831478978">
+<node TEXT="openWithGroovyConsoleFull.groovy" ID="ID_241081477" CREATED="1793746894960" MODIFIED="1793983273327">
 <attribute_layout NAME_WIDTH="187.49999 pt" VALUE_WIDTH="188.24999 pt"/>
 <attribute NAME="menuTitleKey" VALUE="addons.${name}.openWithGroovyConsoleFull"/>
 <attribute NAME="menuLocation" VALUE="${addonsMenu}/addons.${name}"/>
@@ -621,6 +640,18 @@
 <attribute NAME="execute_scripts_without_write_restriction" VALUE="true"/>
 <attribute NAME="execute_scripts_without_exec_restriction" VALUE="true"/>
 <attribute NAME="execute_scripts_without_network_restriction" VALUE="true"/>
+</node>
+<node TEXT="showScriptTab.groovy" ID="ID_1336646876" CREATED="1793976095263" MODIFIED="1793983273327">
+<attribute_layout NAME_WIDTH="187.49999 pt" VALUE_WIDTH="142.5 pt"/>
+<attribute NAME="menuTitleKey" VALUE="addons.${name}.showScriptTab"/>
+<attribute NAME="menuLocation" VALUE="${addonsMenu}/addons.${name}"/>
+<attribute NAME="executionMode" VALUE="on_single_node"/>
+<attribute NAME="keyboardShortcut" VALUE=""/>
+<attribute NAME="execute_scripts_without_asking" VALUE="true"/>
+<attribute NAME="execute_scripts_without_file_restriction" VALUE="true"/>
+<attribute NAME="execute_scripts_without_write_restriction" VALUE="false"/>
+<attribute NAME="execute_scripts_without_exec_restriction" VALUE="false"/>
+<attribute NAME="execute_scripts_without_network_restriction" VALUE="false"/>
 </node>
 </node>
 <node TEXT="lib" POSITION="bottom_or_right" ID="ID_991651799" CREATED="1793746894960" MODIFIED="1793746894960"><richcontent TYPE="NOTE">
@@ -698,6 +729,7 @@
 <node TEXT="doc" ID="ID_779236736" CREATED="1793746894960" MODIFIED="1793746894960"/>
 <node TEXT="icons" ID="ID_424245267" CREATED="1793746894960" MODIFIED="1793746894960"/>
 <node TEXT="templates" ID="ID_1924220664" CREATED="1793746894960" MODIFIED="1793746894960"/>
+<node TEXT="scripts" ID="ID_1844528751" CREATED="1793980778147" MODIFIED="1793980778147"/>
 </node>
 <node TEXT="images" POSITION="bottom_or_right" ID="ID_739365883" CREATED="1793746894960" MODIFIED="1793746894960"><richcontent TYPE="NOTE">
 <html>

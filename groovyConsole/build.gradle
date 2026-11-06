@@ -81,7 +81,14 @@ tasks.register('verifyTemporaryScripts', JavaExec) {
     args file('src/test/scripts/TemporaryScriptChecks.groovy').absolutePath, layout.buildDirectory.get().asFile.absolutePath
 }
 
-tasks.named('check') { dependsOn 'verifyTemporaryScripts' }
+tasks.register('verifyEditor', JavaExec) {
+    dependsOn classes
+    classpath = sourceSets.main.runtimeClasspath
+    mainClass = 'groovy.ui.GroovyMain'
+    args file('src/test/scripts/EditorChecks.groovy').absolutePath
+}
+
+tasks.named('check') { dependsOn 'verifyTemporaryScripts', 'verifyEditor' }
 
 tasks.named('processResources') {
     from('zips/icons/groovyConsole/temporaryScript.svg') {

@@ -1,5 +1,18 @@
 # History
 
+## v0.0.10
+
+* Added code completion for variables, properties and methods from the Freeplane scripting API, Java and Groovy, including Groovy extension methods.
+* Completion infers types from simple assignments, explicit declarations, and chains of properties and method calls without executing the script. Supports explicit, wildcard and static imports, including aliases for explicit imports.
+* Enter completes the prefix and Tab replaces the whole identifier. Method completion inserts or reuses parentheses and positions the caret according to the selected signature. Ctrl+Space opens suggestions and Ctrl+K completes words from the script.
+* Undo and Redo treat completion as a single editor operation. Undo restores the original prefix and any suffix replaced by Tab.
+* Added line commenting with Ctrl+Shift+K (or Ctrl+/) and indentation to four-column stops with Tab and Shift+Tab. Multi-line edits can be undone in one step.
+* Added syntax colors for Groovy keywords, strings, numbers and comments.
+* Added automated editor checks to Gradle for completion, inference, comments, indentation, and Undo/Redo with syntax highlighting enabled.
+* Added a Script tab to the Tool Panel. It shows the selected node's script1 attribute in a read-only Groovy editor and refreshes when the selection or attribute changes. Edit opens GroovyConsole linked to that attribute.
+* The Script tab opens when Freeplane starts with GroovyConsole enabled. The Show script tab menu command also opens it on demand.
+* Added a preference to open GroovyConsole by double-clicking the Script tab editor. The preference is off by default.
+
 ## v0.0.9
 
 * Added temporary .groovy files for editing scripts in IntelliJ, with a configurable folder, UTF-8 encoding and unique names based on the original node.

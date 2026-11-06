@@ -172,6 +172,7 @@ class TemporaryScriptConsole extends Console {
             fileBaseline = text
             fileSnapshot = after
             inputArea.text = text
+            EditorCompletion.resetHistory(inputArea)
             def record = TemporaryScriptStore.read(file)
             if (record) {
                 if (!temporaryScripts.any { it.file.canonicalPath == file.canonicalPath })

@@ -4,6 +4,12 @@ import java.awt.Color
 
 import javax.swing.JFrame
 import javax.swing.JOptionPane
+import javax.swing.text.StyleConstants
+import javax.swing.text.StyleContext
+import javax.swing.text.JTextComponent
+
+import groovy.console.ui.text.SmartDocumentFilter
+import org.apache.groovy.parser.antlr4.GroovyLexer
 
 import groovy.console.ui.Console
 import groovy.swing.SwingBuilder
@@ -33,7 +39,7 @@ class GroovyConsole {
         openGroovyConsole(n, bind, scriptInfo[0], scriptInfo[1], fullScreen)
     }
 
-    def static openGroovyConsole(n, bind, inPut, source, boolean fs = fullScreen){
+    def static openGroovyConsole(n, bind, inPut, source, boolean fs = fullScreen, boolean padInput = true){
         Console console = new TemporaryScriptConsole(bind, GroovyScript.createCompilerConfiguration())
         console.setVariable('map', n.map)
         console.setVariable('root', n.map.root)
@@ -52,24 +58,19 @@ class GroovyConsole {
 
         addButtonsTo(console)
 
-        console.inputArea.with{
-            background        = Color.WHITE
-            caretColor        = Color.BLUE
-            disabledTextColor = new Color(145,145,145)
-            foreground        = Color.BLACK
-            selectedTextColor = new Color(245,245,245)
-            selectionColor    = new Color( 38,117,191)
-      }
+        applyEditorColors(console.inputArea)
+        applySyntaxColors()
 
         switch(inPut?.class){
             case File:
                 console.loadScriptFile(inPut)
                 break
             case String:
-                console.inputArea.setText(inPut + "\n\n\n")
+                console.inputArea.setText(padInput ? inPut + "\n\n\n" : inPut)
                break
         }
         console.setDirty(false)        
+        EditorCompletion.install(console)
         console.startTracking(source)
         console.showCleanupReview()
         
@@ -81,6 +82,32 @@ class GroovyConsole {
     }
 
 //endregion
+
+    static void applyEditorColors(JTextComponent editor) {
+        editor.background = Color.WHITE
+        editor.caretColor = Color.BLUE
+        editor.disabledTextColor = new Color(145, 145, 145)
+        editor.foreground = Color.BLACK
+        editor.selectedTextColor = new Color(245, 245, 245)
+        editor.selectionColor = new Color(38, 117, 191)
+    }
+
+    static void applySyntaxColors() {
+        // SmartDocumentFilter stores its token styles by token number in Swing's shared context.
+        def styles = StyleContext.defaultStyleContext
+        def colors = SmartDocumentFilter.HIGHLIGHTED_TOKEN_TYPE_LIST.collectEntries { [(it): new Color(0x254CA3)] }
+        [GroovyLexer.StringLiteral, GroovyLexer.GStringBegin, GroovyLexer.GStringPart, GroovyLexer.GStringEnd].each {
+            colors[it] = new Color(0x21683D)
+        }
+        [GroovyLexer.IntegerLiteral, GroovyLexer.FloatingPointLiteral].each {
+            colors[it] = new Color(0x8A3B12)
+        }
+        colors[GroovyLexer.NL] = new Color(0x626B75)
+        colors.each { token, color ->
+            def style = styles.getStyle(token.toString())
+            if (style != null) StyleConstants.setForeground(style, color)
+        }
+    }
 
 //region updateNode
 

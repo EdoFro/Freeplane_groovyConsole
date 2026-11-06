@@ -10,6 +10,19 @@ A Groovy 4 console integrated with Freeplane, with node-based scripts and tempor
 
 groovyConsole is an add-on for Freeplane that opens a Groovy Console and works with Groovy 4 and can be used with the new versions of Freeplane.
 
+### What's new in v0.0.10
+
+- The editor suggests variable names, properties and methods from the Freeplane scripting API, Java and Groovy, including Groovy extension methods. It uses declarations, simple assignments, imports and chained calls to infer types without running the script.
+- Suggestions appear as you type. Use **Ctrl+Space** to reopen them or **Ctrl+K** to complete a word already in the script. **Enter** completes the prefix and **Tab** replaces the whole identifier. Method suggestions insert or reuse parentheses.
+- **Ctrl+Z** undoes a completion in one step, including any suffix replaced by Tab. Undo and Redo operate on the console text.
+- **Ctrl+Shift+K** or **Ctrl+/** toggles line comments. With the suggestions menu closed, **Tab** indents selected lines to the next four-column stop and **Shift+Tab** moves them to the previous stop.
+- Syntax colors distinguish Groovy keywords, strings, numbers and comments.
+- The Tool Panel's **Script** tab shows the selected node's `script1` attribute in a read-only Groovy editor. It refreshes when you change nodes or update the attribute. **Edit** opens GroovyConsole and saves back to that node's `script1`.
+- The **Script** tab opens when Freeplane starts with GroovyConsole enabled. You can also open it from the add-on menu with **Show script tab**.
+- To open GroovyConsole by double-clicking the script text, enable **Open Script tab editor on double-click** in the GroovyConsole preferences. This option is off by default.
+
+From the add-on directory, run `gradlew.bat check` to verify completion, inference, comments, indentation and Undo/Redo with highlighting enabled. The editor checks require a graphical environment and run without opening Freeplane.
+
 ### What's new in v0.0.9
 
 - Edit node scripts in IntelliJ through temporary `.groovy` files, then reload them in the console and send them back to the node.

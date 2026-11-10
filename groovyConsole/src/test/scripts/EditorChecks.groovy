@@ -119,6 +119,7 @@ SwingUtilities.invokeAndWait {
     assert context.invoke(completion)[0]*.toString() == ['laMejorVariable']
     assert suggestions.invoke(null, String)*.toString().containsAll(['reverse()', 'substring(int)', 'substring(int, int)'])
     def widget = new ConsoleTextEditor()
+    widget.enableHighLighter(SmartDocumentFilter)
     def reloadEditor = widget.textEditor
     def console = new TemporaryScriptConsole(new Binding(), new CompilerConfiguration()) {
         @Override
@@ -131,6 +132,19 @@ SwingUtilities.invokeAndWait {
     console.inputEditor = widget
     console.inputArea = reloadEditor
     console.frame = new JInternalFrame()
+    console.swing = new groovy.swing.SwingBuilder()
+    ['undoAction', 'redoAction'].each { name ->
+        console.swing.setVariable(name, new AbstractAction(name) {
+            @Override
+            void actionPerformed(java.awt.event.ActionEvent event) {
+                assert false : 'Toolbar must use the editor history'
+            }
+        })
+    }
+    def toolbar = new JToolBar()
+    def undoButton = toolbar.add(console.swing.getVariable('undoAction') as Action)
+    def redoButton = toolbar.add(console.swing.getVariable('redoAction') as Action)
+    console.frame.contentPane.add(toolbar)
     reloadEditor.text = 'println "old"'
     EditorCompletion.install(console)
     reloadEditor.caretPosition = reloadEditor.document.length
@@ -141,14 +155,24 @@ SwingUtilities.invokeAndWait {
         file.setText('println "new"', 'UTF-8')
         console.loadScriptFile(file)
         assert reloadEditor.text == 'println "new"'
-        action(reloadEditor, 'control Z')
-        assert reloadEditor.text == 'println "new"'
+        assert !undoButton.enabled && !redoButton.enabled
+        ['control Z', 'control Y'].each { stroke ->
+            def shortcut = KeyStroke.getKeyStroke(stroke)
+            def binding = reloadEditor.actionMap.get(reloadEditor.inputMap.get(shortcut))
+            def event = new KeyEvent(reloadEditor, KeyEvent.KEY_PRESSED, 0,
+                shortcut.modifiers, shortcut.keyCode, KeyEvent.CHAR_UNDEFINED)
+            assert SwingUtilities.notifyAction(binding, shortcut, event, reloadEditor, event.modifiersEx)
+            assert reloadEditor.text == 'println "new"'
+        }
+        paint(reloadEditor)
 
         reloadEditor.caretPosition = reloadEditor.document.length
         reloadEditor.replaceSelection(' // next edit')
-        action(reloadEditor, 'control Z')
+        assert undoButton.enabled && !redoButton.enabled
+        undoButton.doClick(0)
         assert reloadEditor.text == 'println "new"'
-        action(reloadEditor, 'control shift Z')
+        assert !undoButton.enabled && redoButton.enabled
+        redoButton.doClick(0)
         assert reloadEditor.text == 'println "new" // next edit'
     } finally {
         java.nio.file.Files.deleteIfExists(file.toPath())

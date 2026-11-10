@@ -6,13 +6,15 @@ apply plugin: 'groovy'
 
 targetCompatibility='1.8'
 
-def freeplaneVersion = '1.13.3'
+def freeplaneVersion = '1.13.5'
 def configuredFreeplaneDir = providers.gradleProperty('freeplaneDir').orNull?.trim()
-if (!configuredFreeplaneDir) {
-    throw new GradleException('Set freeplaneDir in groovyConsole/gradle.properties (copy gradle.properties.example), or pass -PfreeplaneDir=C:/path/to/freeplane-1.13.3.')
+def localAppData = providers.environmentVariable('LOCALAPPDATA').orNull
+if (!configuredFreeplaneDir && !localAppData) {
+    throw new GradleException('Set freeplaneDir in groovyConsole/gradle.properties or pass -PfreeplaneDir=<Freeplane installation directory>.')
 }
-// Relative paths are resolved against this Gradle project (groovyConsole).
-def freeplaneDir = file(configuredFreeplaneDir)
+
+// Relative overrides are resolved against this Gradle project.
+def freeplaneDir = configuredFreeplaneDir ? file(configuredFreeplaneDir) : new File(localAppData, 'Programs/Freeplane')
 def freeplaneLibraries = [
     new File(freeplaneDir, 'freeplanelauncher.jar'),
     new File(freeplaneDir, 'core/org.freeplane.core/lib/freeplaneviewer.jar'),
@@ -21,7 +23,7 @@ def freeplaneLibraries = [
 ]
 def missingLibraries = freeplaneLibraries.findAll { !it.isFile() }
 if (missingLibraries) {
-    throw new GradleException("freeplaneDir must point to an extracted Freeplane ${freeplaneVersion} distribution. Missing libraries:\n" + missingLibraries.join('\n'))
+    throw new GradleException("Expected Freeplane  libraries in . Set freeplaneDir to override this location. Missing libraries:\n" + missingLibraries.join('\n'))
 }
 
 def groovyVersion = '4.0.27'
@@ -46,7 +48,7 @@ repositories {
     
 
 dependencies {
-    // Exact files from the chosen 1.13.3 distribution; no dynamic version or remote fallback.
+    // Use the exact library files from the configured Freeplane installation.
     implementation files(freeplaneLibraries)
     if(isNewerGroovy){
         implementation ("${groovyGroupId}:groovy-all:${groovyVersion}".toString()) {

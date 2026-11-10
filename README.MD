@@ -132,17 +132,16 @@ The automated suite covers 94 checks, including independent save states, scripts
 ### Building from another checkout
 
 1. Use Java 17 and the included Gradle 8.0 Wrapper.
-2. Extract an official Freeplane **1.13.3** distribution into a folder of your choice; it does not need to be your installed application.
-3. Copy `groovyConsole/gradle.properties.example` to `groovyConsole/gradle.properties` and set `freeplaneDir` to that folder. This machine-local file is ignored by Git. On Windows, use forward slashes. Relative paths are resolved from `groovyConsole`.
-4. From `groovyConsole`, run `gradlew.bat check jar`. Once Maven dependencies are cached, you can add `--offline`.
+2. Install Freeplane **1.13.5**. On Windows, Gradle defaults to `%LOCALAPPDATA%/Programs/Freeplane`.
+3. From `groovyConsole`, run `gradlew.bat check jar`. Once Maven dependencies are cached, you can add `--offline`.
 
-To override the folder for one build without editing any file:
+For a different installation directory, copy `groovyConsole/gradle.properties.example` to `groovyConsole/gradle.properties` and set `freeplaneDir`. Git ignores this local file. Relative paths are resolved from `groovyConsole`. For a one-time override, run:
 
 ```powershell
-.\gradlew.bat check jar "-PfreeplaneDir=C:/libraries/freeplane-1.13.3"
+.\gradlew.bat check jar "-PfreeplaneDir=C:/path/to/Freeplane"
 ```
 
-Freeplane library filenames are pinned to 1.13.3, and Groovy is pinned to 4.0.27. Missing configuration or missing libraries produces an explicit error before compilation. The dependency distribution and local settings are not committed. The official 1.13.4 `freeplaneviewer.jar` failed signature verification during compilation; building against 1.13.3 avoids that separate issue without replacing the installed Freeplane application.
+The build checks for the expected Freeplane 1.13.5 JARs and uses Groovy 4.0.27. The add-on still declares Freeplane 1.13.3 as its minimum runtime version.
 
 See the [detailed guide](groovyConsole/TEMPORARY-SCRIPTS.md) for the remaining manual checks and implementation limits.
 

@@ -1,5 +1,12 @@
 # History
 
+## v0.1.0
+
+* I think I was using version numbers incorrectly. I decided to switch to v0.1.x since the application is already functional. This way, I can increment the version number as I add new features or fix bugs.
+* Gradle now builds against the installed Freeplane 1.13.5 by default on Windows. Use freeplaneDir to point to a different installation. The minimum runtime version remains Freeplane 1.13.3.
+* Reloading a script from disk starts a fresh editor history. Ctrl+Z and Ctrl+Y leave the newly loaded content intact until further edits, preventing a view error that could freeze Freeplane.
+* The Undo and Redo toolbar buttons now use the same editor history as the keyboard shortcuts and update their enabled state after editing or reloading.
+
 ## v0.0.10
 
 * Added code completion for variables, properties and methods from the Freeplane scripting API, Java and Groovy, including Groovy extension methods.

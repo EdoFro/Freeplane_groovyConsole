@@ -426,19 +426,32 @@ class EditorCompletion {
         }
         [undo: undo, redo: redo].each { name, action ->
             Action original = name == 'undo' ? originalUndo : originalRedo
+            Action consoleAction = console.swing?.variables?.get(name + 'Action') as Action
             [Action.NAME, Action.SMALL_ICON, Action.SHORT_DESCRIPTION, Action.ACCELERATOR_KEY,
-             Action.MNEMONIC_KEY].each { key -> action.putValue(key, original.getValue(key)) }
+             Action.MNEMONIC_KEY].each { key ->
+                action.putValue(key, consoleAction?.getValue(key) ?: original.getValue(key))
+            }
             editor.actionMap.put("groovyConsole.${name}".toString(), action)
+            // Consume the shortcut even when the menu action is disabled, so Swing
+            // cannot fall through to a window-level binding for the old history.
+            editor.actionMap.put("groovyConsole.${name}.shortcut".toString(), new AbstractAction() {
+                @Override
+                void actionPerformed(ActionEvent event) { action.actionPerformed(event) }
+            })
             replaceAction(console.frame.rootPane, original, action)
+            if (consoleAction != null && !consoleAction.is(original)) {
+                replaceAction(console.frame.rootPane, consoleAction, action)
+            }
         }
         int shortcut = java.awt.Toolkit.defaultToolkit.menuShortcutKeyMaskEx
-        editor.inputMap.put(KeyStroke.getKeyStroke(KeyEvent.VK_Z, shortcut), 'groovyConsole.undo')
-        editor.inputMap.put(KeyStroke.getKeyStroke(KeyEvent.VK_Y, shortcut), 'groovyConsole.redo')
-        editor.inputMap.put(KeyStroke.getKeyStroke(KeyEvent.VK_Z, shortcut | KeyEvent.SHIFT_DOWN_MASK), 'groovyConsole.redo')
+        editor.inputMap.put(KeyStroke.getKeyStroke(KeyEvent.VK_Z, shortcut), 'groovyConsole.undo.shortcut')
+        editor.inputMap.put(KeyStroke.getKeyStroke(KeyEvent.VK_Y, shortcut), 'groovyConsole.redo.shortcut')
+        editor.inputMap.put(KeyStroke.getKeyStroke(KeyEvent.VK_Z, shortcut | KeyEvent.SHIFT_DOWN_MASK), 'groovyConsole.redo.shortcut')
 
         AbstractDocument document = (AbstractDocument) editor.document
         document.undoableEditListeners.findAll { it instanceof TextUndoManager }.each {
             document.removeUndoableEditListener(it)
+            it.discardAllEdits()
         }
         previousText = editor.text
         document.addDocumentListener(new DocumentListener() {

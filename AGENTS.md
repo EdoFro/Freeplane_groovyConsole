@@ -5,6 +5,7 @@
 - Add release notes under the matching version in the source map's `changes` node. Save the map in Freeplane and use **Package add-on for publication** to generate the versioned `.addon.mm`, `history.md`, and `version.properties`. Edit the release notes in `changes` and regenerate the history through packaging.
 - Run the relevant automated checks. For behavior that needs Freeplane, provide a short manual test with the expected result. Record the version tested and distinguish manual results from automated results.
 - Before a release commit, compare the generated release notes with the source map, check the version and compatibility metadata, and review which changes belong in the commit.
+- When adapting an existing add-on to this Windows machine, use GroovyConsole's `groovyConsole/build.gradle` as a reference for locating the installed Freeplane libraries and configuring the `freeplaneDir` override. Check the target add-on's dependencies, tasks, and version requirements before adapting its build.
 
 ## GroovyConsole
 

@@ -17,6 +17,7 @@ gradle-app.setting
 # Addon maps
 *.addon.mm
 *.mm.bak
+/GroovyConsole project.mm
 # version.properties
 
 # ignore .jar files

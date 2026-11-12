@@ -19,6 +19,10 @@ The **Script** tab in Freeplane's Tool Panel previews the selected node's `scrip
 
 Click **Edit** to open the script in GroovyConsole. When you're done, click **Send to node**, then save the map. GroovyConsole can also work with scripts stored in node notes.
 
+## Highlight matches in the editor
+
+Select text to preview its matches, then press **Ctrl+Shift+H** to pin them for the current console session. Use **Manage highlights** to set colors, add regular expressions, and jump between matches. [Highlighting guide](docs/USER-GUIDE.md#highlight-matches)
+
 ## Edit in IntelliJ
 
 Use **Create temporary .groovy** to export a script. Edit and save it in IntelliJ, then use **Reload from file** and **Send to node** to bring your changes back into the map. [Temporary scripts guide](groovyConsole/TEMPORARY-SCRIPTS.md)

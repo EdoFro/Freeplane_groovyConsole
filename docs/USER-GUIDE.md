@@ -21,7 +21,7 @@ Save the map after sending a script to a node to persist the change on disk.
 | --- | --- |
 | **Ctrl+Space** | Open completion suggestions. |
 | **Ctrl+K** | Complete a word already in the script. |
-| **Ctrl+Shift+H** | Pin the selected text for this console session. Press again to expand the selection to word boundaries and match whole words. Press a third time to remove the mark. Selecting text previews its exact, case-sensitive matches. |
+| **Ctrl+Shift+H** | Cycle the selected text through a pinned literal match, a whole-word match, and removal. See [Highlight matches](#highlight-matches). |
 | **Enter** with suggestions open | Accept the suggestion and complete the prefix. |
 | **Tab** with suggestions open | Accept the suggestion and replace the whole identifier. |
 | **Esc** | Close the suggestion list. |
@@ -57,11 +57,25 @@ The same menu lets you run selected code, compile the script, manage the classpa
 | ![Capture standard output icon](../resources/groovyConsole_008.png) **Starts System.out interceptor** | Restart output capture for `print()` and `println()`. Use **View → Capture Standard Output** to direct output to the console or Freeplane's log. |
 | ![Reload from file icon](../resources/reloadFile.png) **Reload from file** | Replace the editor contents with the saved file. |
 | ![Temporary script icon](../groovyConsole/zips/icons/groovyConsole/temporaryScript.svg) **Create / save temporary .groovy** | Create a temporary script file or update the one already associated with the editor. |
-| **Manage highlights** | List pinned marks for this console, change their color, or remove them. **Whole word** keeps the pinned text as entered and matches it at word boundaries. **Add regex…** pins a Java regular expression, such as `node\d+`. |
+| **Manage highlights** | Edit pinned marks and navigate their matches. See [Highlight matches](#highlight-matches). |
 
-Click a mark's text in **Manage highlights** to edit it. Saving keeps its color and whole-word setting. An invalid regex is reported so you can correct it before applying the edit.
+## Highlight matches
 
-Each row shows the number of matches in the editor. Use **↑** and **↓** to select the previous or next match. The arrows wrap at the beginning and end of the script.
+Select text in the editor to preview its other literal, case-sensitive matches in yellow. For example, selecting `Object` also highlights that fragment inside `citationObject`.
+
+![Yellow previews of Object within longer identifiers in the script editor](../resources/highlights-selection-preview.png)
+
+1. Press **Ctrl+Shift+H** to pin the selected text with its own color for the current console session.
+2. With the same text selected, press the shortcut again to expand the selection to word boundaries and switch to whole-word matching.
+3. With the whole-word match selected, press the shortcut again to remove the mark.
+
+Open **Manage highlights** in the toolbar to see the pinned marks and their match counts. Click a row's text to edit it while keeping its color and whole-word setting. **Whole word** applies the boundary rule to the existing text as entered. Use **Change color…** or **Remove** to update a mark, and **↑** or **↓** to navigate its matches. The arrows wrap at either end of the script.
+
+![Manage highlights listing literal, whole-word, and regex marks with match counts and navigation arrows](../resources/highlights-manager.png)
+
+Use **Add regex…** to pin a Java regular expression. In the example, `\b\w*Slurper\w*\b` matches identifiers such as `JsonSlurperClassic` and `jsonSlurper`. Invalid patterns are reported before changes are applied. As you edit the script, pinned highlights follow the updated matches.
+
+![Editor showing Object fragments in green, the whole word each in red, and regex matches for Slurper in pink](../resources/highlights-pinned-matches.png)
 
 ## Preferences
 

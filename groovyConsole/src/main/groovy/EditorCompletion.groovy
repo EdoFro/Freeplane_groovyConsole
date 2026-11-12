@@ -42,6 +42,8 @@ class EditorCompletion {
         def completion = new EditorCompletion(console.inputArea)
         completion.installHistory(console)
         console.inputArea.putClientProperty(EditorCompletion, completion)
+        def highlights = new EditorHighlights(console.inputArea)
+        console.toolbar?.add(highlights.manageButton())
     }
 
     static void resetHistory(JTextComponent editor) {

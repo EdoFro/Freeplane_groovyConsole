@@ -21,6 +21,7 @@ Save the map after sending a script to a node to persist the change on disk.
 | --- | --- |
 | **Ctrl+Space** | Open completion suggestions. |
 | **Ctrl+K** | Complete a word already in the script. |
+| **Ctrl+Shift+H** | Pin the selected text for this console session. Press again to expand the selection to word boundaries and match whole words. Press a third time to remove the mark. Selecting text previews its exact, case-sensitive matches. |
 | **Enter** with suggestions open | Accept the suggestion and complete the prefix. |
 | **Tab** with suggestions open | Accept the suggestion and replace the whole identifier. |
 | **Esc** | Close the suggestion list. |
@@ -56,6 +57,11 @@ The same menu lets you run selected code, compile the script, manage the classpa
 | ![Capture standard output icon](../resources/groovyConsole_008.png) **Starts System.out interceptor** | Restart output capture for `print()` and `println()`. Use **View → Capture Standard Output** to direct output to the console or Freeplane's log. |
 | ![Reload from file icon](../resources/reloadFile.png) **Reload from file** | Replace the editor contents with the saved file. |
 | ![Temporary script icon](../groovyConsole/zips/icons/groovyConsole/temporaryScript.svg) **Create / save temporary .groovy** | Create a temporary script file or update the one already associated with the editor. |
+| **Manage highlights** | List pinned marks for this console, change their color, or remove them. **Whole word** keeps the pinned text as entered and matches it at word boundaries. **Add regex…** pins a Java regular expression, such as `node\d+`. |
+
+Click a mark's text in **Manage highlights** to edit it. Saving keeps its color and whole-word setting. An invalid regex is reported so you can correct it before applying the edit.
+
+Each row shows the number of matches in the editor. Use **↑** and **↓** to select the previous or next match. The arrows wrap at the beginning and end of the script.
 
 ## Preferences
 

@@ -1,5 +1,12 @@
 # History
 
+## v0.2.0
+
+* Selecting text previews its literal, case-sensitive matches. Ctrl+Shift+H pins matches for the current console session, switches the mark to whole-word matching on the next press, and removes it on the third press.
+* Manage highlights lists pinned text and regular expressions. Click a mark to edit it, change its color, or remove it. For literal marks, the Whole word checkbox changes matching without expanding the pinned text.
+* Add regex pins matches of a Java regular expression. The manager validates patterns before adding or editing a mark, and highlights update as the script changes.
+* Each mark shows its match count and has arrows to navigate to the previous or next match, wrapping at either end of the script.
+
 ## v0.1.0
 
 * I think I was using version numbers incorrectly. I decided to switch to v0.1.x since the application is already functional. This way, I can increment the version number as I add new features or fix bugs.

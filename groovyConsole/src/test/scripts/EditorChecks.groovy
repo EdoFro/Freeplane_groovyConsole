@@ -1,4 +1,5 @@
 import edofro.groovyconsole.EditorCompletion
+import edofro.groovyconsole.EditorHighlights
 import edofro.groovyconsole.TemporaryScriptConsole
 import org.codehaus.groovy.control.CompilerConfiguration
 import groovy.console.ui.Console
@@ -179,4 +180,153 @@ SwingUtilities.invokeAndWait {
         java.nio.file.Files.deleteIfExists(reloadDirectory.toPath())
     }
 }
-println 'PASS: editor completion, undo/redo, comments, indentation and inference'
+def highlightEditor
+def toggleHighlight = {
+    highlightEditor.actionMap.get('groovyConsole.toggleHighlight').actionPerformed(null)
+}
+def colorsFor = { String needle ->
+    highlightEditor.highlighter.highlights.findAll { mark ->
+        highlightEditor.document.getText(mark.startOffset, mark.endOffset - mark.startOffset) == needle
+    }.collect { it.painter.color }
+}
+
+SwingUtilities.invokeAndWait {
+    def widget = new ConsoleTextEditor()
+    widget.enableHighLighter(SmartDocumentFilter)
+    highlightEditor = widget.textEditor
+    highlightEditor.text = 'node nodeID Node node.text node.text'
+    def console = new Console(inputEditor: widget, inputArea: highlightEditor, frame: new JInternalFrame())
+    EditorCompletion.install(console)
+    highlightEditor.select(0, 4)
+}
+SwingUtilities.invokeAndWait {
+    assert colorsFor('node').size() == 3
+    assert colorsFor('Node').empty
+    toggleHighlight()
+    highlightEditor.select(17, 26)
+    toggleHighlight()
+    highlightEditor.caretPosition = highlightEditor.document.length
+    highlightEditor.replaceSelection(' node')
+}
+SwingUtilities.invokeAndWait {
+    assert colorsFor('node').size() == 5
+    assert colorsFor('node.text').size() == 2
+    assert colorsFor('node').first() != colorsFor('node.text').first()
+    highlightEditor.select(0, 4)
+    toggleHighlight()
+    toggleHighlight()
+}
+SwingUtilities.invokeAndWait {
+    assert colorsFor('node').empty
+    assert colorsFor('node.text').size() == 2
+}
+SwingUtilities.invokeAndWait {
+    highlightEditor.text = 'nodeID nodeID nodeIDs mynodeID NodeID'
+    highlightEditor.select(1, 4)
+    toggleHighlight()
+}
+SwingUtilities.invokeAndWait {
+    assert colorsFor('ode').size() == 4
+    toggleHighlight()
+    assert highlightEditor.selectedText == 'nodeID'
+}
+SwingUtilities.invokeAndWait {
+    assert colorsFor('ode').empty
+    assert colorsFor('nodeID').size() == 1
+    toggleHighlight()
+}
+SwingUtilities.invokeAndWait {
+    assert colorsFor('nodeID').empty
+}
+def wholeWordCheckbox
+SwingUtilities.invokeAndWait {
+    highlightEditor = new JTextPane(text: 'node nodeID node')
+    def highlights = new EditorHighlights(highlightEditor)
+    highlightEditor.select(0, 4)
+    toggleHighlight()
+    def managementPanel = EditorHighlights.getDeclaredMethod('managementPanel')
+    managementPanel.accessible = true
+    def panel = managementPanel.invoke(highlights)
+    def row = panel.components.find { it instanceof JPanel }
+    assert row.components.find { it instanceof JTextField }.text == 'node'
+    def controls = row.components.find { it instanceof JPanel }.components
+    def count = controls.find { it instanceof JLabel }
+    def previous = controls.find { it instanceof JButton && it.toolTipText == 'Previous match' }
+    def next = controls.find { it instanceof JButton && it.toolTipText == 'Next match' }
+    wholeWordCheckbox = controls.find { it instanceof JCheckBox }
+    assert count.text == '3'
+    assert !wholeWordCheckbox.selected
+    highlightEditor.select(5, 9)
+    wholeWordCheckbox.doClick(0)
+    assert highlightEditor.selectionStart == 5 && highlightEditor.selectionEnd == 9
+    assert row.components.find { it instanceof JTextField }.text == 'node'
+    assert count.text == '2'
+    next.doClick(0)
+    assert highlightEditor.selectionStart == 12 && highlightEditor.selectedText == 'node'
+    next.doClick(0)
+    assert highlightEditor.selectionStart == 0
+    previous.doClick(0)
+    assert highlightEditor.selectionStart == 12
+    highlightEditor.caretPosition = highlightEditor.document.length
+}
+SwingUtilities.invokeAndWait {
+    assert colorsFor('node').size() == 2
+    wholeWordCheckbox.doClick(0)
+}
+SwingUtilities.invokeAndWait {
+    assert colorsFor('node').size() == 3
+}
+SwingUtilities.invokeAndWait {
+    highlightEditor = new JTextPane(text: 'node12 nodeAB node34')
+    def highlights = new EditorHighlights(highlightEditor)
+    def pinRegex = EditorHighlights.getDeclaredMethod('pinRegex', String)
+    pinRegex.accessible = true
+    pinRegex.invoke(highlights, /node\d+/)
+    try {
+        pinRegex.invoke(highlights, '[')
+        assert false : 'Invalid regex accepted'
+    } catch (java.lang.reflect.InvocationTargetException error) {
+        assert error.cause instanceof java.util.regex.PatternSyntaxException
+    }
+}
+SwingUtilities.invokeAndWait {
+    assert colorsFor('node12').size() == 1
+    assert colorsFor('node12') == colorsFor('node34')
+    assert colorsFor('nodeAB').empty
+    highlightEditor.caretPosition = highlightEditor.document.length
+    highlightEditor.replaceSelection(' node56')
+}
+SwingUtilities.invokeAndWait {
+    assert colorsFor('node56') == colorsFor('node12')
+}
+SwingUtilities.invokeAndWait {
+    def editor = new JTextPane(text: 'node node12')
+    def highlights = new EditorHighlights(editor)
+    def replaceMark = EditorHighlights.getDeclaredMethod('replaceMark', Object, String)
+    def pinned = EditorHighlights.getDeclaredField('pinned')
+    def wholeWords = EditorHighlights.getDeclaredField('wholeWords')
+    [replaceMark, pinned, wholeWords]*.setAccessible(true)
+    editor.select(0, 4)
+    editor.actionMap.get('groovyConsole.toggleHighlight').actionPerformed(null)
+    editor.actionMap.get('groovyConsole.toggleHighlight').actionPerformed(null)
+    def originalColor = pinned.get(highlights)['node']
+    replaceMark.invoke(highlights, 'node', 'value')
+    assert pinned.get(highlights)['value'] == originalColor
+    assert wholeWords.get(highlights).contains('value')
+    assert !wholeWords.get(highlights).contains('node')
+    def pinRegex = EditorHighlights.getDeclaredMethod('pinRegex', String)
+    pinRegex.accessible = true
+    def pattern = pinRegex.invoke(highlights, /node\d+/)
+    def regexColor = pinned.get(highlights)[pattern]
+    try {
+        replaceMark.invoke(highlights, pattern, '[')
+        assert false : 'Invalid edited regex accepted'
+    } catch (java.lang.reflect.InvocationTargetException error) {
+        assert error.cause instanceof java.util.regex.PatternSyntaxException
+    }
+    assert pinned.get(highlights)[pattern] == regexColor
+    def updated = replaceMark.invoke(highlights, pattern, /value\d+/)
+    assert pinned.get(highlights)[updated] == regexColor
+    assert !pinned.get(highlights).containsKey(pattern)
+}
+println 'PASS: editor completion, undo/redo, comments, indentation, inference and highlights'

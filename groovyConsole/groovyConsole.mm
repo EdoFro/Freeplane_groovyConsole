@@ -1,7 +1,7 @@
 <map version="freeplane 1.12.15">
 <!--To view this file, download free mind mapping software Freeplane from https://www.freeplane.org -->
 <bookmarks/>
-<node TEXT="groovyConsole" LOCALIZED_STYLE_REF="AutomaticLayout.level.root" FOLDED="false" ID="ID_1090958577" CREATED="1793746894960" MODIFIED="1794320733343" LINK="https://github.com/EdoFro/Freeplane_groovyConsole" STYLE="bubble" SHAPE_HORIZONTAL_MARGIN="10 pt" SHAPE_VERTICAL_MARGIN="15 pt" MAX_WIDTH="15 cm" AI_EDITS="true"><hook NAME="MapStyle" background="#f9f9f8ff" zoom="0.9090909">
+<node TEXT="groovyConsole" LOCALIZED_STYLE_REF="AutomaticLayout.level.root" FOLDED="false" ID="ID_1090958577" CREATED="1793746894960" MODIFIED="1794513197509" LINK="https://github.com/EdoFro/Freeplane_groovyConsole" STYLE="bubble" SHAPE_HORIZONTAL_MARGIN="10 pt" SHAPE_VERTICAL_MARGIN="15 pt" MAX_WIDTH="15 cm" AI_EDITS="true"><hook NAME="MapStyle" background="#f9f9f8ff" zoom="0.9090909">
     <properties edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff" mapUsesOwnSaveOptions="true" associatedTemplateLocation="template:/vis01%20light_nord_template%20vEdo.mm" showTagCategories="false" show_icon_for_attributes="true" save_modification_times="false" show_tags="UNDER_NODES" save_last_visited_node="default" show_note_icons="true" save_folding="save_folding_if_map_is_changed" fit_to_viewport="false" show_icons="BESIDE_NODES"/>
     <tags category_separator="::"/>
 
@@ -83,7 +83,7 @@
 </hook>
 <attribute_layout NAME_WIDTH="106.5 pt" VALUE_WIDTH="244.49999 pt"/>
 <attribute NAME="name" VALUE="groovyConsole"/>
-<attribute NAME="version" VALUE="v0.1.0"/>
+<attribute NAME="version" VALUE="v0.2.0"/>
 <attribute NAME="author" VALUE="EdoFro"/>
 <attribute NAME="freeplaneVersionFrom" VALUE="v1.13.3"/>
 <attribute NAME="freeplaneVersionTo" VALUE=""/>
@@ -256,11 +256,17 @@
 <node TEXT="Added a preference to open GroovyConsole by double-clicking the Script tab editor. The preference is off by default." ID="ID_767469920" CREATED="1793983139897" MODIFIED="1793983139897" AI_EDITS="true"/>
 <node TEXT="Added a theme-aware script icon to the Script tab, including when TabbedPanelMod is enabled." ID="ID_294819633" CREATED="1793989417097" MODIFIED="1793989417097" AI_EDITS="true"/>
 </node>
-<node TEXT="v0.1.0" ID="ID_21374028" CREATED="1794319069539" MODIFIED="1794319081859">
+<node TEXT="v0.1.0" FOLDED="true" ID="ID_21374028" CREATED="1794319069539" MODIFIED="1794319081859">
 <node TEXT="I think I was using version numbers incorrectly. I decided to switch to v0.1.x since the application is already functional. This way, I can increment the version number as I add new features or fix bugs." ID="ID_1878319327" CREATED="1794319287269" MODIFIED="1794319290697"/>
 <node TEXT="Gradle now builds against the installed Freeplane 1.13.5 by default on Windows. Use freeplaneDir to point to a different installation. The minimum runtime version remains Freeplane 1.13.3." ID="ID_1072470872" CREATED="1794319304344" MODIFIED="1794321580177" AI_EDITS="true"/>
 <node TEXT="Reloading a script from disk starts a fresh editor history. Ctrl+Z and Ctrl+Y leave the newly loaded content intact until further edits, preventing a view error that could freeze Freeplane." ID="ID_938579869" CREATED="1794321584484" MODIFIED="1794321584484" AI_EDITS="true"/>
 <node TEXT="The Undo and Redo toolbar buttons now use the same editor history as the keyboard shortcuts and update their enabled state after editing or reloading." ID="ID_378896762" CREATED="1794321584484" MODIFIED="1794321584484" AI_EDITS="true"/>
+</node>
+<node TEXT="v0.2.0" ID="ID_330964082" CREATED="1794508928570" MODIFIED="1794513213862">
+<node TEXT="Selecting text previews its literal, case-sensitive matches. Ctrl+Shift+H pins matches for the current console session, switches the mark to whole-word matching on the next press, and removes it on the third press." ID="ID_1297695618" CREATED="1794508937205" MODIFIED="1794513335508" AI_EDITS="true"/>
+<node TEXT="Manage highlights lists pinned text and regular expressions. Click a mark to edit it, change its color, or remove it. For literal marks, the Whole word checkbox changes matching without expanding the pinned text." ID="ID_1520305892" CREATED="1794513340261" MODIFIED="1794513340261" AI_EDITS="true"/>
+<node TEXT="Add regex pins matches of a Java regular expression. The manager validates patterns before adding or editing a mark, and highlights update as the script changes." ID="ID_589383281" CREATED="1794513340261" MODIFIED="1794513340261" AI_EDITS="true"/>
+<node TEXT="Each mark shows its match count and has arrows to navigate to the previous or next match, wrapping at either end of the script." ID="ID_1341945219" CREATED="1794513340261" MODIFIED="1794513340261" AI_EDITS="true"/>
 </node>
 </node>
 <node TEXT="license" FOLDED="true" POSITION="top_or_left" ID="ID_1329071946" CREATED="1793746894960" MODIFIED="1793746894960" VGAP_QUANTITY="2 px"><richcontent TYPE="NOTE">
@@ -399,7 +405,7 @@
 <attribute NAME="scriptTabDoubleClick" VALUE="boolean"/>
 <node TEXT="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#xa;&lt;preferences_structure&gt;&#xa;         &lt;tabbed_pane&gt;&#xa;                  &lt;tab name=&quot;plugins&quot;&gt;&#xa;                            &lt;separator name = &quot;${name}&quot;&gt;&#xa;                                    &lt;string name = &quot;${name}_attributeForExtensions&quot;/&gt;&#xa;                                    &lt;boolean name = &quot;${name}_fullScreen&quot;/&gt;&#xa;                                    &lt;boolean name = &quot;${name}_showButtonLabels&quot;/&gt;&#xa;                                    &lt;number name  = &quot;${name}_defaultWriteTo&quot; min=&quot;0&quot; max=&quot;1&quot;/&gt;&#xa;                                    &lt;string name = &quot;${name}_temporaryDirectory&quot;/&gt;&#xa;                                    &lt;number name  = &quot;${name}_temporaryRetentionDays&quot; min=&quot;1&quot; max=&quot;3650&quot;/&gt;&#xa;                                    &lt;boolean name = &quot;${name}_scriptTabDoubleClick&quot;/&gt;&#xa;                           &lt;/separator&gt;&#xa;                  &lt;/tab&gt;&#xa;         &lt;/tabbed_pane&gt;&#xa;&lt;/preferences_structure&gt;" ID="ID_486925025" CREATED="1793746894960" MODIFIED="1793979917166" MAX_WIDTH="20 cm" AI_EDITS="true"/>
 </node>
-<node TEXT="default.properties" POSITION="top_or_left" ID="ID_250057726" CREATED="1793746894960" MODIFIED="1794320733357" AI_EDITS="true"><richcontent TYPE="NOTE">
+<node TEXT="default.properties" POSITION="top_or_left" ID="ID_250057726" CREATED="1793746894960" MODIFIED="1794512452892" AI_EDITS="true"><richcontent TYPE="NOTE">
 <html>
   <head>
     
@@ -459,7 +465,7 @@
     </ul>
   </body>
 </html></richcontent>
-<node TEXT="en" ID="ID_1298070476" CREATED="1793754908020" MODIFIED="1794320733362" AI_EDITS="true" MAX_WIDTH="25 cm">
+<node TEXT="en" ID="ID_1298070476" CREATED="1793754908020" MODIFIED="1794512452894" AI_EDITS="true" MAX_WIDTH="25 cm">
 <attribute_layout NAME_WIDTH="225.74999 pt" VALUE_WIDTH="511.49998 pt"/>
 <attribute NAME="addons.${name}" VALUE="groovyConsole"/>
 <attribute NAME="addons.${name}.openWithGroovyConsoleFull" VALUE="Open with groovy console without restrictions"/>
@@ -626,7 +632,7 @@
     </p>
   </body>
 </html></richcontent>
-<node TEXT="openWithGroovyConsole.groovy" ID="ID_313603667" CREATED="1793746894960" MODIFIED="1794320733371">
+<node TEXT="openWithGroovyConsole.groovy" ID="ID_313603667" CREATED="1793746894960" MODIFIED="1794512452905">
 <attribute_layout NAME_WIDTH="190.49999 pt" VALUE_WIDTH="178.49999 pt"/>
 <attribute NAME="menuTitleKey" VALUE="addons.${name}.openWithGroovyConsole"/>
 <attribute NAME="menuLocation" VALUE="${addonsMenu}/addons.${name}"/>
@@ -638,7 +644,7 @@
 <attribute NAME="execute_scripts_without_exec_restriction" VALUE="false"/>
 <attribute NAME="execute_scripts_without_network_restriction" VALUE="false"/>
 </node>
-<node TEXT="openWithGroovyConsoleFull.groovy" ID="ID_241081477" CREATED="1793746894960" MODIFIED="1794320733374">
+<node TEXT="openWithGroovyConsoleFull.groovy" ID="ID_241081477" CREATED="1793746894960" MODIFIED="1794512452907">
 <attribute_layout NAME_WIDTH="190.49999 pt" VALUE_WIDTH="191.24999 pt"/>
 <attribute NAME="menuTitleKey" VALUE="addons.${name}.openWithGroovyConsoleFull"/>
 <attribute NAME="menuLocation" VALUE="${addonsMenu}/addons.${name}"/>
@@ -650,7 +656,7 @@
 <attribute NAME="execute_scripts_without_exec_restriction" VALUE="true"/>
 <attribute NAME="execute_scripts_without_network_restriction" VALUE="true"/>
 </node>
-<node TEXT="showScriptTab.groovy" ID="ID_1336646876" CREATED="1793976095263" MODIFIED="1794320733375">
+<node TEXT="showScriptTab.groovy" ID="ID_1336646876" CREATED="1793976095263" MODIFIED="1794512452908">
 <attribute_layout NAME_WIDTH="190.49999 pt" VALUE_WIDTH="145.5 pt"/>
 <attribute NAME="menuTitleKey" VALUE="addons.${name}.showScriptTab"/>
 <attribute NAME="menuLocation" VALUE="${addonsMenu}/addons.${name}"/>
